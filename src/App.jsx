@@ -8,7 +8,7 @@ import DianOrgMission from './studyContent/DianOrgMission';
 // Importa TODOS tus archivos JSON de preguntas aquí
 import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_datos.json';
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
-import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json'; // <-- NUEVA IMPORTACIÓN
+import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json';
 // ... otros imports de JSON ...
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
   // --- Mapeo de Preguntas por Tema ---
   const questionBanks = {
     "Introducción al Proceso de Selección DIAN 2667": funcionalesGobiernoDatos,
-    "Estructura Organizacional y Misionalidad de la DIAN": preguntasDianOrgMission, // <-- CORRECCIÓN APLICADA AQUÍ
+    "Estructura Organizacional y Misionalidad de la DIAN": preguntasDianOrgMission,
     "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
     "Gobierno de Datos (Parte 2): Estándares y Políticas": funcionalesGobiernoDatos,
     "Ciclo de Vida de Gestión de Datos": funcionalesGobiernoDatos,
@@ -226,6 +226,55 @@ function App() {
     setActiveStudyMaterial(null);
   };
 
+  // Función para obtener todas las preguntas fallidas de todo el historial
+// Función para obtener todas las preguntas fallidas de todo el historial
+const getAllFailedQuestions = () => {
+  const allFailedIds = new Set(); // Usamos un Set para asegurar IDs únicos
+  // Itera sobre cada simulacro en el historial
+  for (const simulacroId in simulacroHistory) {
+    simulacroHistory[simulacroId].forEach(attempt => {
+      // AÑADIR ESTA VERIFICACIÓN:
+      // Asegurarse de que failedQuestionIds exista y sea un array antes de intentar iterar
+      if (attempt && Array.isArray(attempt.failedQuestionIds)) {
+        attempt.failedQuestionIds.forEach(qId => allFailedIds.add(qId));
+      }
+    });
+  }
+
+  // Ahora, recopila las preguntas completas de todos los bancos de preguntas
+  let uniqueFailedQuestions = [];
+  // Flatten all questions from all banks into a single array for easier lookup
+  const allAvailableQuestions = Object.values(questionBanks).flat();
+
+  allFailedIds.forEach(failedId => {
+    const question = allAvailableQuestions.find(q => q.id === failedId);
+    if (question) {
+      uniqueFailedQuestions.push(question);
+    }
+  });
+
+  return uniqueFailedQuestions;
+};
+
+  // Función para iniciar el simulacro de "Mis Errores"
+  const startMisErroresSimulacro = () => {
+    setActiveStudyMaterial(null); // Asegura que no haya material de estudio activo
+    const failedQuestions = getAllFailedQuestions();
+
+    if (failedQuestions.length > 0) {
+      setActiveSimulacro({
+        tipo: 'mis-errores',
+        numPreguntas: failedQuestions.length, // O un número fijo, ej. 20, si hay muchas
+        preguntas: failedQuestions,
+        titulo: `Simulacro: Mis Errores (${failedQuestions.length} preguntas)`,
+        id: 'simulacro-mis-errores' // ID único para este simulacro
+      });
+    } else {
+      alert("¡Excelente! No tienes preguntas falladas registradas, o aún no has completado ningún simulacro.");
+    }
+  };
+
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 p-4 md:p-8"> {/* Padding responsivo */}
       <header className="text-center mb-8 md:mb-12 relative"> {/* Margen responsivo y posición relativa */}
@@ -251,6 +300,21 @@ function App() {
             <p>El Pomodoro te ayuda a estudiar de forma concentrada.</p>
             <p>25 min estudio / 5 min descanso / 15 min descanso largo (cada 4 ciclos).</p>
           </div>
+          {/* Botón para iniciar el simulacro de "Mis Errores" en la barra lateral */}
+          <div className="mt-6 border-t border-gray-200 pt-6">
+            <h3 className="text-lg font-semibold mb-3 text-gray-700">Refuerzo Personalizado</h3>
+            <button
+              onClick={startMisErroresSimulacro}
+              className="w-full py-2 px-4 bg-red-600 text-white rounded-md font-semibold hover:bg-red-700 transition-colors duration-200 shadow-md"
+            >
+              Simulacro: Mis Errores
+            </button>
+            {getAllFailedQuestions().length > 0 && (
+              <p className="mt-2 text-center text-sm text-gray-600">
+                ({getAllFailedQuestions().length} preguntas registradas)
+              </p>
+            )}
+          </div>
         </aside>
 
         {/* Contenedor principal de contenido (Cronograma, Simulacro o Material de Estudio) */}
@@ -265,12 +329,11 @@ function App() {
             />
           ) : activeStudyMaterial ? (
             // Renderiza el componente de material de estudio si hay uno activo
-            // Busca el componente de estudio en el mapeo 'studyMaterials'
             studyMaterials[activeStudyMaterial] || (
               // Mensaje de error si el material no se encuentra (posiblemente no mapeado)
               <div>
                 <button
-                  onClick={resetAppToHome} // Permite volver al cronograma
+                  onClick={resetAppToHome}
                   className="mb-4 py-1.5 px-3 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors duration-200 font-semibold text-sm"
                 >
                   ← Volver al Cronograma
@@ -281,7 +344,8 @@ function App() {
             )
           ) : (
             // Renderiza el cronograma por defecto
-            <div>
+            // Contenido del cronograma (el que ya tenías)
+            <div> {/* Se usa un div simple como contenedor padre para el cronograma */}
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-700">Mi Cronograma de Estudio</h2>
 
               {cronograma.map((semana, semanaIndex) => (
@@ -374,11 +438,39 @@ function App() {
                           </div>
                         );
                       })}
+                      {/* Simulacro General del Día */}
+                      {(() => {
+                        const dailySimulacroId = `${dia.fecha}-general`;
+                        const dailySimulacros = simulacroHistory[dailySimulacroId] || [];
+                        return (
+                          <div className="mt-3 md:mt-4 pt-3 md:pt-4 border-t border-gray-200">
+                            <button
+                              className="w-full py-2 px-6 bg-emerald-600 text-white rounded-md font-semibold hover:bg-emerald-700 transition-colors duration-200 text-sm md:text-base"
+                              onClick={() => startDiaSimulacro(dia)}
+                            >
+                              Simulacro General del Día (50 preguntas)
+                            </button>
+                            {dailySimulacros.length > 0 && (
+                              <div className="mt-2 text-xs md:text-sm text-center text-gray-600">
+                                Historial diario:
+                                <ul className="list-none p-0 ml-1 md:ml-2">
+                                  {dailySimulacros.map((res, i) => (
+                                    <li key={i} className="mt-0.5">
+                                      Intento {dailySimulacros.length - i}: <span className={`font-semibold ${res.score >= 70 ? 'text-emerald-700' : 'text-red-700'}`}>{res.score} pts</span>
+                                      {res.score >= 70 ? ' ✓' : ' ✗'} ({new Date(res.timestamp).toLocaleDateString()})
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })()}
                     </div>
                   ))}
                 </div>
               ))}
-            </div>
+            </div> 
           )}
         </main>
       </div>
