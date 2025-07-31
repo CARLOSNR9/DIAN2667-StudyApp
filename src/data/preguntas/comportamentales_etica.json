@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ce001",
+    "tema": "Comportamiento Ético",
+    "pregunta": "Usted es testigo de cómo un compañero de trabajo utiliza recursos de la DIAN para fines personales menores. ¿Cuál sería su primera acción más apropiada conforme al comportamiento ético?",
+    "opciones": [
+      "Ignorar la situación, ya que son 'fines menores' y no le afecta directamente.",
+      "Advertirle discretamente a su compañero que detenga la práctica.",
+      "Reportar la situación de inmediato a su superior jerárquico."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Código de Integridad y los principios éticos en el servicio público demandan una conducta intachable. Ignorar o advertir discretamente no aborda la falta a la transparencia y el buen uso de los recursos públicos. La acción más apropiada es escalar la situación a la autoridad competente."
+  },
+  {
+    "id": "ce002",
+    "tema": "Comportamiento Ético",
+    "pregunta": "Un ciudadano le ofrece un pequeño obsequio como agradecimiento por un trámite rápido que usted le facilitó siguiendo los procedimientos. ¿Cómo debe actuar?",
+    "opciones": [
+      "Aceptarlo amablemente para no ofender al ciudadano, ya que es un gesto de agradecimiento.",
+      "Aceptarlo y entregarlo inmediatamente a la oficina de control interno.",
+      "Rechazar el obsequio de forma cortés y explicar que su servicio es parte de su deber."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los servidores públicos deben evitar cualquier situación que pueda generar conflicto de interés o percibir un beneficio personal por sus funciones, incluso si el obsequio es 'pequeño'. Rechazarlo cortésmente y reafirmar el deber es la acción más ética."
+  }
+]

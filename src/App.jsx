@@ -1,0 +1,418 @@
+import React, { useState, useEffect } from 'react';
+import PomodoroTimer from './components/PomodoroTimer';
+import cronograma from './data/cronograma';
+import Simulacro from './components/Simulacro';
+import IntroDIAN2667 from './studyContent/IntroDIAN2667';
+import DianOrgMission from './studyContent/DianOrgMission';
+
+// Importa TODOS tus archivos JSON de preguntas aquí
+import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_datos.json';
+import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
+import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json'; // <-- NUEVA IMPORTACIÓN
+// ... otros imports de JSON ...
+
+function App() {
+  const [activeSimulacro, setActiveSimulacro] = useState(null);
+  const [activeStudyMaterial, setActiveStudyMaterial] = useState(null);
+  const [completedJornadas, setCompletedJornadas] = useState(() => {
+    try {
+      const storedCompleted = localStorage.getItem('completedJornadas');
+      return storedCompleted ? JSON.parse(storedCompleted) : [];
+    } catch (error) {
+      console.error("Error al cargar jornadas completadas de localStorage:", error);
+      return [];
+    }
+  });
+  const [simulacroHistory, setSimulacroHistory] = useState(() => {
+    try {
+      const storedHistory = localStorage.getItem('simulacroHistory');
+      return storedHistory ? JSON.parse(storedHistory) : {};
+    } catch (error) {
+      console.error("Error al cargar historial de simulacros de localStorage:", error);
+      return {};
+    }
+  });
+
+
+  // --- Mapeo de Preguntas por Tema ---
+  const questionBanks = {
+    "Introducción al Proceso de Selección DIAN 2667": funcionalesGobiernoDatos,
+    "Estructura Organizacional y Misionalidad de la DIAN": preguntasDianOrgMission, // <-- ¡CORRECCIÓN AQUÍ!
+    "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
+    "Gobierno de Datos (Parte 2): Estándares y Políticas": funcionalesGobiernoDatos,
+    "Ciclo de Vida de Gestión de Datos": funcionalesGobiernoDatos,
+    "Diseño de Soluciones de Gestión de Datos": funcionalesGobiernoDatos,
+    "Herramientas ETL (Extract, Transform, Load)": funcionalesGobiernoDatos,
+    "SQL (Structured Query Language)": funcionalesGobiernoDatos,
+    "Python (Fundamentos para Datos)": funcionalesGobiernoDatos,
+
+    "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
+    "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
+    "Competencia Comportamental: Diligencia y Compromiso": comportamentalesEtica,
+    "Competencia Comportamental: Adaptabilidad (Nivel 1)": comportamentalesEtica,
+    "Competencia Comportamental: Orientación al Logro (Nivel 1)": comportamentalesEtica,
+    "Competencia Comportamental: Comunicación Efectiva (Nivel 1 y 3)": comportamentalesEtica,
+    "Competencia Comportamental: Trabajo en Equipo (Nivel 1 y 3)": comportamentalesEtica,
+    "Competencia Comportamental: Orientación al Usuario y al Ciudadano (Nivel 1)": comportamentalesEtica,
+
+    "Conceptos Generales de Metodología Ágil para Datos": funcionalesGobiernoDatos,
+    "Roles y Responsabilidades en Metodología Ágil para Procesamiento de Datos": funcionalesGobiernoDatos,
+    "Herramientas de Metodologías Ágiles para Procesamiento de Datos": funcionalesGobiernoDatos,
+    "Integridad (Prueba de Integridad)": comportamentalesEtica,
+  };
+
+  // --- Mapeo de Material de Estudio por Tema ---
+  const studyMaterials = {
+    "Introducción al Proceso de Selección DIAN 2667": (
+      <IntroDIAN2667
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Introducción al Proceso de Selección DIAN 2667")}
+      />
+    ),
+
+// <-- ¡Añade este nuevo mapeo para el segundo tema!
+    "Estructura Organizacional y Misionalidad de la DIAN": (
+      <DianOrgMission
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Estructura Organizacional y Misionalidad de la DIAN")}
+      />
+    ),
+
+
+  };
+
+  // Efecto para guardar completedJornadas en localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('completedJornadas', JSON.stringify(completedJornadas));
+    } catch (error) {
+      console.error("Error al guardar jornadas completadas en localStorage:", error);
+    }
+  }, [completedJornadas]);
+
+  // Efecto para guardar simulacroHistory en localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('simulacroHistory', JSON.stringify(simulacroHistory));
+    } catch (error) {
+      console.error("Error al guardar historial de simulacros en localStorage:", error);
+    }
+  }, [simulacroHistory]);
+
+
+  // Funciones para marcar jornada (sin cambios)
+  const markJornadaAsCompleted = (jornadaId) => {
+    setCompletedJornadas(prev => {
+      if (!prev.includes(jornadaId)) {
+        return [...prev, jornadaId];
+      }
+      return prev;
+    });
+  };
+
+  const markJornadaAsIncomplete = (jornadaId) => {
+    setCompletedJornadas(prev => prev.filter(id => id !== jornadaId));
+  };
+
+
+  // Función auxiliar para obtener las preguntas (sin cambios)
+  const getQuestionsByTopicOrType = (topics, simulacroType) => {
+    let questions = [];
+
+    if (simulacroType === 'diario-general') {
+      Object.values(questionBanks).forEach(bank => {
+        questions.push(...bank);
+      });
+      return Array.from(new Set(questions.map(q => q.id)))
+                  .map(id => questions.find(q => q.id === id));
+    } else if (simulacroType === 'tema-especifico') {
+      topics.forEach(topic => {
+        if (questionBanks[topic]) {
+          questions.push(...questionBanks[topic]);
+        } else {
+          console.warn(`Advertencia: No se encontraron preguntas para el tema '${topic}'. Asegúrate de que el tema esté mapeado en 'questionBanks' y el JSON exista.`);
+        }
+      });
+    } else { // Para simulacros de jornada
+        topics.forEach(topic => {
+            if (questionBanks[topic]) {
+                questions.push(...questionBanks[topic]);
+            } else {
+                console.warn(`Advertencia: No se encontraron preguntas para el tema '${topic}'. Asegúrate de que el tema esté mapeado en 'questionBanks' y el JSON exista.`);
+            }
+        });
+    }
+    return questions;
+  };
+
+  // Funciones para iniciar simulacros (sin cambios)
+  const startJornadaSimulacro = (jornada, diaFecha) => {
+    setActiveStudyMaterial(null);
+    const preguntasParaSimulacro = getQuestionsByTopicOrType(jornada.temas, jornada.tipoSimulacro);
+
+    if (preguntasParaSimulacro.length >= 20) {
+      setActiveSimulacro({
+        tipo: 'jornada',
+        numPreguntas: 20,
+        preguntas: preguntasParaSimulacro,
+        titulo: `Simulacro de Jornada: ${jornada.nombre} (${diaFecha})`,
+        id: `${diaFecha}-${jornada.nombre}`
+      });
+    } else {
+      alert(`Advertencia: No hay suficientes preguntas (${preguntasParaSimulacro.length}) para un simulacro de 20 preguntas para ${jornada.tipoSimulacro} de ${jornada.nombre}. Por favor, añade más preguntas al archivo JSON correspondiente.`);
+    }
+  };
+
+  const startDiaSimulacro = (dia) => {
+    setActiveStudyMaterial(null);
+    const preguntasParaSimulacro = getQuestionsByTopicOrType(dia.temas, 'diario-general');
+
+    if (preguntasParaSimulacro.length >= 50) {
+      setActiveSimulacro({
+        tipo: 'diario',
+        numPreguntas: 50,
+        preguntas: preguntasParaSimulacro,
+        titulo: `Simulacro General del Día: ${dia.fecha}`,
+        id: `${dia.fecha}-general`
+      });
+    } else {
+      alert(`Advertencia: No hay suficientes preguntas (${preguntasParaSimulacro.length}) para un simulacro diario general de 50 preguntas para el ${dia.fecha}. ¡Añade más preguntas a tus archivos JSON!`);
+    }
+  };
+
+  const startTopicSimulacro = (topicName) => {
+    setActiveStudyMaterial(null);
+    const preguntasParaSimulacro = getQuestionsByTopicOrType([topicName], 'tema-especifico');
+
+    if (preguntasParaSimulacro.length >= 20) {
+      setActiveSimulacro({
+        tipo: 'tema',
+        numPreguntas: 20,
+        preguntas: preguntasParaSimulacro,
+        titulo: `Simulacro del Tema: ${topicName}`,
+        id: `topic-${topicName}`
+      });
+    } else {
+      alert(`Advertencia: No hay suficientes preguntas (${preguntasParaSimulacro.length}) para un simulacro de 20 preguntas para el tema '${topicName}'. Por favor, añade más preguntas al archivo JSON correspondiente.`);
+    }
+  };
+
+  // Modificación de handleSimulacroEnd para guardar el historial
+  const handleSimulacroEnd = (score, wrongQuestions) => {
+    if (activeSimulacro) {
+      const { id } = activeSimulacro;
+      const newEntry = {
+        score: score,
+        timestamp: new Date().toISOString(),
+        wrongQuestionsCount: wrongQuestions.length,
+        failedQuestionIds: wrongQuestions.map(q => q.id),
+      };
+
+      setSimulacroHistory(prevHistory => ({
+        ...prevHistory,
+        [id]: [newEntry, ...(prevHistory[id] || [])].slice(0, 5) // Guarda solo los últimos 5 intentos
+      }));
+    }
+
+    console.log("Simulacro terminado. Puntuación:", score);
+    setActiveSimulacro(null);
+    alert(`Simulacro finalizado. Puntuación: ${score} puntos. Necesitas 70 para clasificar.`);
+  };
+
+  // Funciones de navegación (sin cambios)
+  const showStudyMaterial = (topicName) => {
+    setActiveSimulacro(null);
+    setActiveStudyMaterial(topicName);
+  };
+
+  const resetAppToHome = () => {
+    setActiveSimulacro(null);
+    setActiveStudyMaterial(null);
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800 p-8">
+      <header className="text-center mb-12 relative">
+        <h1 className="text-5xl font-extrabold text-blue-800 mb-4">DIAN ProExam</h1>
+        <p className="text-xl text-gray-600">Tu plataforma de estudio personalizada para la DIAN 2667</p>
+
+        {(activeSimulacro || activeStudyMaterial) && (
+          <button
+            onClick={resetAppToHome}
+            className="absolute top-4 left-4 py-2 px-4 bg-purple-600 text-white rounded-md font-semibold hover:bg-purple-700 transition-colors duration-200 shadow-md"
+          >
+            ← Volver al Cronograma
+          </button>
+        )}
+      </header>
+
+      <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
+        {/* Contenedor del Pomodoro */}
+        <aside className="lg:w-1/3 p-4 bg-white rounded-lg shadow-xl sticky top-8 h-fit">
+          <PomodoroTimer />
+          <div className="mt-8 text-center text-sm text-gray-500">
+            <p>El Pomodoro te ayuda a estudiar de forma concentrada.</p>
+            <p>25 min estudio / 5 min descanso / 15 min descanso largo (cada 4 ciclos).</p>
+          </div>
+        </aside>
+
+        {/* Contenedor principal de contenido (Cronograma, Simulacro o Material de Estudio) */}
+        <main className="lg:w-2/3 bg-white p-6 rounded-lg shadow-xl">
+          {activeSimulacro ? (
+            <Simulacro
+              preguntas={activeSimulacro.preguntas}
+              tipoSimulacro={activeSimulacro.tipo}
+              numPreguntas={activeSimulacro.numPreguntas}
+              onSimulacroEnd={handleSimulacroEnd}
+            />
+          ) : activeStudyMaterial ? (
+            studyMaterials[activeStudyMaterial] || (
+              <div>
+                <button
+                  onClick={resetAppToHome}
+                  className="mb-6 py-2 px-4 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors duration-200 font-semibold"
+                >
+                  ← Volver al Cronograma
+                </button>
+                <p className="text-red-500">Error: Material de estudio no encontrado para: "{activeStudyMaterial}".</p>
+                <p className="text-red-500">Asegúrate de que el tema esté mapeado en `studyMaterials` en App.jsx y que el componente exista.</p>
+              </div>
+            )
+          ) : (
+            <>
+              <h2 className="text-3xl font-bold mb-6 text-gray-700">Mi Cronograma de Estudio</h2>
+
+              {cronograma.map((semana, semanaIndex) => (
+                <div key={semanaIndex} className="mb-8 border-b border-gray-200 pb-4">
+                  <h3 className="text-2xl font-semibold text-emerald-700 mb-4">{semana.semana}</h3>
+                  {semana.dias.map((dia, diaIndex) => (
+                    <div key={diaIndex} className="mb-6 p-4 border border-gray-100 rounded-md bg-gray-50 shadow-sm">
+                      <h4 className="text-xl font-medium text-blue-700 mb-3">{dia.fecha}</h4>
+                      {dia.jornadas.map((jornada, jornadaIndex) => {
+                        const jornadaId = `${dia.fecha}-${jornada.nombre}`;
+                        const isJornadaCompleted = completedJornadas.includes(jornadaId);
+                        // Obtenemos el historial completo de la jornada
+                        const jornadaSimulacros = simulacroHistory[jornadaId] || [];
+
+                        return (
+                          <div
+                            key={jornadaIndex}
+                            className={`mb-4 pl-4 border-l-4 ${isJornadaCompleted ? 'border-emerald-500 bg-emerald-50' : 'border-blue-400'}`}
+                          >
+                            <p className="font-semibold text-lg text-gray-700">{jornada.nombre}</p>
+                            <ul className="list-disc list-inside text-gray-600 ml-4 mt-1">
+                              {jornada.temas.map((tema, temaIndex) => {
+                                const topicSimulacroId = `topic-${tema}`;
+                                // Obtenemos el historial completo del tema específico
+                                const topicSimulacros = simulacroHistory[topicSimulacroId] || [];
+
+                                return (
+                                  <li
+                                    key={temaIndex}
+                                    className="cursor-pointer hover:text-blue-600 hover:underline transition-colors duration-200"
+                                    onClick={() => showStudyMaterial(tema)}
+                                  >
+                                    {tema}
+                                    {/* Mostrar historial de simulacro de TEMA ESPECÍFICO */}
+                                    {topicSimulacros.length > 0 && (
+                                      <div className="ml-4 text-sm text-gray-600">
+                                        Historial de simulacros de tema:
+                                        <ul className="list-none p-0 ml-2">
+                                          {topicSimulacros.map((res, i) => (
+                                            <li key={i} className="mt-1">
+                                              Intento {topicSimulacros.length - i}: <span className={`font-semibold ${res.score >= 70 ? 'text-emerald-700' : 'text-red-700'}`}>{res.score} pts</span>
+                                              {res.score >= 70 ? ' ✓' : ' ✗'} ({new Date(res.timestamp).toLocaleDateString()})
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    )}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+
+                            <div className="flex flex-wrap gap-2 mt-3">
+                              <button
+                                className="py-1 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 text-sm"
+                                onClick={() => startJornadaSimulacro(jornada, dia.fecha)}
+                              >
+                                Hacer Simulacro de Jornada (20 preguntas)
+                              </button>
+
+                              {/* Mostrar historial de simulacro de JORNADA (debajo del botón) */}
+                              {jornadaSimulacros.length > 0 && (
+                                <div className="mt-1 text-xs text-gray-600 w-full text-left pl-1">
+                                  Historial de simulacros de jornada:
+                                  <ul className="list-none p-0 ml-2">
+                                    {jornadaSimulacros.map((res, i) => (
+                                      <li key={i} className="mt-1">
+                                        Intento {jornadaSimulacros.length - i}: <span className={`font-semibold ${res.score >= 70 ? 'text-emerald-700' : 'text-red-700'}`}>{res.score} pts</span>
+                                        {res.score >= 70 ? ' ✓' : ' ✗'} ({new Date(res.timestamp).toLocaleDateString()})
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {isJornadaCompleted ? (
+                                <button
+                                  onClick={() => markJornadaAsIncomplete(jornadaId)}
+                                  className="py-1 px-4 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors duration-200 text-sm flex items-center"
+                                >
+                                  <span className="mr-1">✓</span> Marcar como Pendiente
+                                </button>
+                              ) : (
+                                <button
+                                  onClick={() => markJornadaAsCompleted(jornadaId)}
+                                  className="py-1 px-4 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition-colors duration-200 text-sm flex items-center"
+                                >
+                                  <span className="mr-1">◎</span> Marcar como Completada
+                                </button>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                      {/* Simulacro General del Día */}
+                      {(() => {
+                        const dailySimulacroId = `${dia.fecha}-general`;
+                        // Obtenemos el historial completo del simulacro diario
+                        const dailySimulacros = simulacroHistory[dailySimulacroId] || [];
+                        return (
+                          <div className="mt-4 pt-4 border-t border-gray-200">
+                            <button
+                              className="w-full py-2 px-6 bg-emerald-600 text-white rounded-md font-semibold hover:bg-emerald-700 transition-colors duration-200"
+                              onClick={() => startDiaSimulacro(dia)}
+                            >
+                              Simulacro General del Día (50 preguntas)
+                            </button>
+                            {dailySimulacros.length > 0 && (
+                              <div className="mt-2 text-sm text-center text-gray-600">
+                                Historial de simulacros diarios:
+                                <ul className="list-none p-0 ml-2">
+                                  {dailySimulacros.map((res, i) => (
+                                    <li key={i} className="mt-1">
+                                      Intento {dailySimulacros.length - i}: <span className={`font-semibold ${res.score >= 70 ? 'text-emerald-700' : 'text-red-700'}`}>{res.score} pts</span>
+                                      {res.score >= 70 ? ' ✓' : ' ✗'} ({new Date(res.timestamp).toLocaleDateString()})
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })()}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </>
+          )}
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default App;

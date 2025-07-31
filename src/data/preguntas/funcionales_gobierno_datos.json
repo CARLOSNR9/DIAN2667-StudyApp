@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "gd001",
+    "tema": "Gobierno de Datos",
+    "pregunta": "¿Cuál de los siguientes NO es un pilar fundamental del Gobierno de Datos según las mejores prácticas?",
+    "opciones": [
+      "Definición de roles y responsabilidades.",
+      "Creación de infraestructura tecnológica avanzada.",
+      "Establecimiento de políticas y estándares."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Aunque la infraestructura tecnológica es necesaria, el pilar fundamental del Gobierno de Datos se enfoca más en aspectos organizacionales y normativos como roles, políticas, estándares y procesos. La infraestructura es un medio, no un pilar central per se."
+  },
+  {
+    "id": "gd002",
+    "tema": "Gobierno de Datos",
+    "pregunta": "En el contexto de la gestión de datos en la DIAN, ¿qué implica la 'integridad de los datos'?",
+    "opciones": [
+      "Que los datos sean accesibles en cualquier momento y lugar.",
+      "Que los datos sean consistentes, precisos y fiables durante todo su ciclo de vida.",
+      "Que los datos estén protegidos contra accesos no autorizados."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La integridad de los datos garantiza que la información se mantenga completa, precisa y consistente a lo largo del tiempo, y que no pueda ser alterada sin autorización. La accesibilidad se refiere a la disponibilidad, y la protección a la seguridad."
+  },
+
+  
+  {
+    "id": "gd003",
+    "tema": "Marco Normativo",
+    "pregunta": "¿Cuál de las siguientes normativas es la principal reguladora del Proceso de Selección DIAN 2667, estableciendo sus reglas y especificaciones técnicas?",
+    "opciones": [
+      "Ley 909 de 2004.",
+      "Decreto Ley 927 de 2023.",
+      "Acuerdo No. 205 del 10 de octubre de 2024 y su Anexo.",
+      "Resolución DIAN No. 067 de 2024."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Aunque todas son normativas que rigen el proceso, el Acuerdo No. 205 del 10 de octubre de 2024 y su Anexo son la principal regulación que establece las reglas y especificaciones técnicas del Proceso de Selección DIAN 2667[cite: 244, 245].",
+    "citas": [244, 245]
+  },
+  {
+    "id": "gd004",
+    "tema": "Entidades Involucradas",
+    "pregunta": "¿Quién es el operador encargado de realizar las pruebas escritas y de valoración de antecedentes del Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "La Dirección de Impuestos y Aduanas Nacionales (DIAN).",
+      "La Comisión Nacional del Servicio Civil (CNSC).",
+      "La Fundación Universitaria del Área Andina (FUAA).",
+      "El Sistema de Apoyo para la Igualdad, el Mérito y la Oportunidad (SIMO)."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La CNSC suscribió el Contrato de Prestación de Servicios No. 436 de 2025 con la Fundación Universitaria del Área Andina, encargada de realizar las pruebas escritas y de valoración de antecedentes[cite: 231].",
+    "citas": [231]
+  },
+  {
+    "id": "gd005",
+    "tema": "Principios del Concurso",
+    "pregunta": "¿Cuáles son los tres principios fundamentales que rigen el Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "Eficiencia, Transparencia y Rapidez.",
+      "Igualdad, Mérito y Oportunidad.",
+      "Objetividad, Legalidad y Celeridad.",
+      "Participación, Confiabilidad y Equidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Proceso de Selección DIAN 2667 se rige por los principios de Igualdad, Mérito y Oportunidad[cite: 176, 179, 180, 187, 188, 191, 198, 199, 201, 210, 211, 213, 234, 235, 237, 261, 262, 264, 288, 289, 291, 310, 311, 314, 328, 329, 331, 351, 352, 354, 362, 363, 372, 373, 375, 400, 401, 403, 423, 424, 426, 443, 444, 446, 469, 470, 472, 612, 613, 622, 640, 641, 648, 708, 709, 712, 715, 720, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 817, 841, 842, 849, 1027, 1028, 1030, 1061, 1062, 1064, 1089, 1090, 1092, 1119, 1120, 1122, 1143, 1144, 1146, 1169, 1170, 1173, 1195, 1196, 1198, 1223, 1224, 1227, 1252, 1253, 1255, 1278, 1279, 1282, 1301, 1302, 1304, 1329, 1330, 1332, 1359, 1360, 1362, 1387, 1388, 1390, 1412, 1413, 1415, 1433, 1434, 1436, 1461, 1462, 1464, 1491, 1492, 1494, 1516, 1517, 1519].",
+    "citas": [176, 179, 180]
+  },
+  {
+    "id": "gd006",
+    "tema": "Fases del Proceso",
+    "pregunta": "Según el artículo 3 del Acuerdo No. 205 de 2024, ¿cuál de las siguientes etapas NO forma parte de la estructura del Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "Adquisición de Derechos de Participación e Inscripciones.",
+      "Aplicación de pruebas de selección.",
+      "Entrevista personal con el nominador.",
+      "Verificación de Requisitos Mínimos (VRM)."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las etapas del proceso incluyen la adquisición de derechos, la aplicación de pruebas y la verificación de requisitos mínimos[cite: 259, 260, 272, 273, 274], pero no se menciona una entrevista personal con el nominador como parte de la estructura en la guía proporcionada.",
+    "citas": [259, 260, 272, 273, 274]
+  },
+  {
+    "id": "gd007",
+    "tema": "Propósito de las Pruebas",
+    "pregunta": "¿Cuál es la finalidad principal de las pruebas a aplicar en el Proceso de Selección DIAN 2667, según el Decreto Ley 927 de 2023?",
+    "opciones": [
+      "Seleccionar personal por experiencia laboral únicamente.",
+      "Evaluar la capacidad de memorización de los aspirantes.",
+      "Valorar y calificar los conocimientos, competencias laborales, aptitudes, habilidades y potencialidades.",
+      "Determinar el nivel de estudio académico de los participantes."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "De conformidad con el numeral 32.3 del artículo 32 del Decreto Ley 927 de 2023, las pruebas tienen como finalidad valorar y calificar los conocimientos, competencias laborales, aptitudes, habilidades y potencialidades de los aspirantes[cite: 282].",
+    "citas": [282]
+  },
+  {
+    "id": "gd008",
+    "tema": "Pruebas Eliminatorias",
+    "pregunta": "Para el empleo de 'Gestor II' (Nivel Profesional con experiencia), ¿cuál de las siguientes pruebas tiene carácter eliminatorio?",
+    "opciones": [
+      "Prueba de Integridad.",
+      "Prueba de Competencias Comportamentales.",
+      "Prueba de Competencias Funcionales.",
+      "Valoración de Antecedentes."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Para el nivel profesional que requiere experiencia, la Prueba de Competencias Funcionales es de carácter eliminatorio[cite: 304].",
+    "citas": [304]
+  },
+  {
+    "id": "gd009",
+    "tema": "Ponderación de Pruebas",
+    "pregunta": "En el caso del empleo 'Gestor II' (Nivel Profesional con experiencia), ¿qué peso porcentual se le asigna a la Prueba de Competencias Funcionales?",
+    "opciones": [
+      "20%.",
+      "50%.",
+      "60%.",
+      "10%."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Prueba de Competencias Funcionales tiene un peso porcentual del 60% para el empleo de Gestor II en la modalidad de ingreso que requiere experiencia[cite: 304].",
+    "citas": [304]
+  },
+  {
+    "id": "gd010",
+    "tema": "Puntajes Mínimos",
+    "pregunta": "¿Cuál es el puntaje mínimo aprobatorio que debe obtenerse en la Prueba de Competencias Funcionales para el empleo de 'Gestor II'?",
+    "opciones": [
+      "50 puntos.",
+      "60 puntos.",
+      "70 puntos.",
+      "No aplica puntaje mínimo."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Prueba de Competencias Funcionales tiene un puntaje mínimo aprobatorio de 70 para el empleo de Gestor II[cite: 304].",
+    "citas": [304]
+  },
+  {
+    "id": "gd011",
+    "tema": "Resultados de Pruebas",
+    "pregunta": "¿Qué sucede si un aspirante no supera el puntaje mínimo aprobatorio en la Prueba de Competencias Funcionales?",
+    "opciones": [
+      "Sus resultados de Integridad y Comportamentales serán reevaluados.",
+      "Continuará en el proceso, pero con una menor ponderación en la siguiente fase.",
+      "Será excluido del Proceso de Selección.",
+      "Podrá presentar la prueba nuevamente en una fecha posterior."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los aspirantes que no hayan superado el mínimo aprobatorio de puntuación de 70,00 en las pruebas sobre Competencias Funcionales no continuarán en el Proceso de Selección por tratarse de una prueba de carácter eliminatorio[cite: 1084].",
+    "citas": [1084]
+  },
+  {
+    "id": "gd012",
+    "tema": "Calificación",
+    "pregunta": "¿En qué escala se calificarán las pruebas escritas del Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "De 1 a 5 puntos.",
+      "De 0 a 10 puntos.",
+      "De 0 a 100 puntos.",
+      "De 1 a 100 puntos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las pruebas escritas del presente Proceso de Selección se calificarán en una escala de cero (0) a cien (100) puntos, con una parte entera y dos (2) decimales truncados[cite: 1083].",
+    "citas": [1083]
+  },
+  {
+    "id": "gd013",
+    "tema": "Formato de Pregunta (Funcionales)",
+    "pregunta": "¿Qué tipo de formato de pregunta se utilizará para las Pruebas sobre Competencias Funcionales?",
+    "opciones": [
+      "Preguntas abiertas de desarrollo.",
+      "Preguntas de selección múltiple con múltiple respuesta.",
+      "Prueba de Juicio Situacional.",
+      "Preguntas de verdadero o falso."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El formato de pregunta que se utilizará para las pruebas sobre competencias funcionales es el de Prueba de Juicio Situacional[cite: 361].",
+    "citas": [361]
+  },
+  {
+    "id": "gd014",
+    "tema": "Formato de Pregunta (Comportamentales/Integridad)",
+    "pregunta": "¿Cuál es el formato de pregunta empleado en las pruebas sobre Competencias Comportamentales y la Prueba de Integridad?",
+    "opciones": [
+      "Preguntas de opción múltiple con única respuesta numérica.",
+      "Formato basado en frases evaluadas mediante una escala tipo Likert.",
+      "Estudios de caso con soluciones abiertas.",
+      "Preguntas de emparejamiento."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las pruebas sobre competencias comportamentales e integridad utilizarán un formato basado en frases que son evaluadas mediante una escala tipo Likert[cite: 414].",
+    "citas": [414]
+  },
+  {
+    "id": "gd015",
+    "tema": "Número de Preguntas",
+    "pregunta": "¿Cuántas preguntas de Competencias Funcionales están contempladas para el cuadernillo del Nivel Profesional?",
+    "opciones": [
+      "42.",
+      "54.",
+      "66.",
+      "20."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El componente funcional para el nivel profesional tiene 66 preguntas[cite: 453].",
+    "citas": [453]
+  },
+  {
+    "id": "gd016",
+    "tema": "Número de Preguntas",
+    "pregunta": "¿Cuál es el número total de preguntas que componen el cuadernillo para el Nivel Profesional en el Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "122.",
+      "138.",
+      "152.",
+      "100."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El total de preguntas por cuadernillo para el nivel profesional es 152[cite: 453].",
+    "citas": [453]
+  },
+  {
+    "id": "gd017",
+    "tema": "Día del Examen",
+    "pregunta": "¿Qué día está programada la aplicación de las pruebas escritas para el Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "15 de julio de 2025.",
+      "30 de agosto de 2025.",
+      "17 de agosto de 2025.",
+      "10 de septiembre de 2025."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La aplicación de las pruebas escritas está programada en una única sesión el día 17 de agosto de 2025[cite: 1103].",
+    "citas": [1103]
+  },
+  {
+    "id": "gd018",
+    "tema": "Horario del Examen",
+    "pregunta": "¿A qué hora se cerrarán las puertas del sitio de aplicación de las pruebas escritas?",
+    "opciones": [
+      "7:15 a.m.",
+      "8:00 a.m.",
+      "8:30 a.m.",
+      "9:00 a.m."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las puertas del sitio de aplicación se cerrarán a las 8:30 a. m.[cite: 1109].",
+    "citas": [1109]
+  },
+  {
+    "id": "gd019",
+    "tema": "Identificación",
+    "pregunta": "¿Cuál de los siguientes documentos NO es válido para la identificación del aspirante en la aplicación de las pruebas escritas?",
+    "opciones": [
+      "Cédula de ciudadanía digital.",
+      "Pasaporte vencido.",
+      "Cédula de ciudadanía amarilla con hologramas.",
+      "Contraseña con código QR emitida por la Registraduría con menos de 6 meses de expedición."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los pasaportes tienen fecha de vencimiento; por lo tanto, si este documento no se encuentra vigente, no se considerará válido[cite: 1138].",
+    "citas": [1138]
+  },
+  {
+    "id": "gd020",
+    "tema": "Elementos Permitidos/Prohibidos",
+    "pregunta": "¿Qué elementos se permite ingresar al salón para presentar las pruebas escritas?",
+    "opciones": [
+      "Teléfono celular (siempre encendido).",
+      "Calculadora y reloj inteligente.",
+      "Lápiz de mina negra N.º 2, sacapuntas y borrador de lápiz.",
+      "Cualquier tipo de material de estudio personal."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los elementos permitidos son lápiz de mina negra N.º 2, sacapuntas y borrador de lápiz[cite: 1166, 1167].",
+    "citas": [1166, 1167]
+  },
+  {
+    "id": "gd021",
+    "tema": "Elementos Prohibidos",
+    "pregunta": "¿Qué acción, con respecto a los dispositivos electrónicos, está permitida excepcionalmente durante la aplicación de las pruebas escritas?",
+    "opciones": [
+      "Usar el teléfono celular para consultar información de la prueba.",
+      "Mantener el teléfono celular encendido en todo momento para recibir llamadas.",
+      "Ingresar el teléfono celular para validar la identificación con cédula digital, manteniéndolo apagado y en el lugar indicado.",
+      "Compartir el teléfono celular con otros aspirantes para revisar la hora."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Cuando el aspirante necesite validar su identificación con cédula de ciudadanía digital podrá, excepcionalmente, ingresar su teléfono celular al sitio de aplicación, debiéndolo mantener apagado en todo momento y en todo lugar y situarlo en el lugar indicado por el correspondiente Jefe de Salón[cite: 1180].",
+    "citas": [1180]
+  },
+  {
+    "id": "gd022",
+    "tema": "Manejo de la Hoja de Respuestas",
+    "pregunta": "Al diligenciar la hoja de respuestas, ¿cuál de las siguientes instrucciones es correcta?",
+    "opciones": [
+      "Marcar más de una respuesta por ítem para tener opciones.",
+      "Rellenar parcialmente el círculo de la respuesta escogida.",
+      "Borrar totalmente la respuesta que desee cambiar con borrador de nata.",
+      "Responder directamente en el cuadernillo de preguntas."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Se debe borrar totalmente (con borrador de nata) la respuesta que se desee cambiar[cite: 467]. No se debe marcar más de una respuesta por ítem [cite: 464], ni rellenar parcialmente el círculo [cite: 465], y las respuestas deben ir en la hoja de respuestas, no en el cuadernillo[cite: 457, 638, 1050].",
+    "citas": [457, 464, 465, 467, 638, 1050]
+  },
+  {
+    "id": "gd023",
+    "tema": "Causales de Invalidación/Exclusión",
+    "pregunta": "¿Cuál de las siguientes es una causal de exclusión del proceso de selección?",
+    "opciones": [
+      "Presentarse en estado de embriaguez o bajo los efectos de sustancias psicoactivas.",
+      "Solicitar acceso a las pruebas para complementar una reclamación.",
+      "Recibir orientación del jefe de salón sobre cómo llenar la hoja de respuestas.",
+      "Tener una calificación de 'Satisfactorio' en la Evaluación del Desempeño Laboral del año anterior para ascenso."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Presentarse en estado de embriaguez o bajo los efectos de sustancias psicoactivas a las pruebas previstas en este proceso de selección es una causal de exclusión[cite: 1235].",
+    "citas": [1235]
+  },
+  {
+    "id": "gd024",
+    "tema": "Causales de Invalidación/Exclusión",
+    "pregunta": "Según el Acuerdo de Convocatoria 205 de 2024, ¿qué se considera fraude o intento de fraude en el desarrollo de las pruebas escritas?",
+    "opciones": [
+      "La transcripción parcial de contenidos de las pruebas para estudio personal en casa.",
+      "La comunicación no autorizada (audiovisual, escrita, verbal o no verbal) en las instalaciones de la aplicación de las pruebas.",
+      "La solicitud de un formato de ítems dudosos al jefe de salón.",
+      "El uso de borrador de nata para corregir una respuesta."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La comunicación (audiovisual, escrita, verbal o no verbal, entre otras) no autorizada en las instalaciones de la aplicación de las pruebas se considera fraude[cite: 1264].",
+    "citas": [1264]
+  },
+  {
+    "id": "gd025",
+    "tema": "Acceso a Pruebas",
+    "pregunta": "¿Cuál es el propósito principal del acceso a las pruebas escritas para el aspirante?",
+    "opciones": [
+      "Obtener una copia física o digital del cuadernillo de preguntas.",
+      "Permitir al aspirante identificar respuestas incorrectas y fundamentar reclamaciones.",
+      "Realizar un nuevo intento de la prueba en un ambiente controlado.",
+      "Comparar sus resultados con los de otros aspirantes para evaluar su posición."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El acceso a las pruebas escritas se realiza con el propósito de permitir a los aspirantes verificar sus respuestas y compararlas con las respuestas clave-correctas, garantizando así el ejercicio de su derecho a la defensa[cite: 1317].",
+    "citas": [1317]
+  },
+  {
+    "id": "gd026",
+    "tema": "Acceso a Pruebas - Restricciones",
+    "pregunta": "Durante la jornada de acceso al material de prueba, ¿qué acción está estrictamente prohibida?",
+    "opciones": [
+      "Tomar notas sucintas en las hojas en blanco proporcionadas.",
+      "Firmar el acuerdo de confidencialidad.",
+      "Reproducir físicamente o digitalmente el material de prueba.",
+      "Entregar el material suministrado al jefe de salón al finalizar."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "En ningún caso está autorizada la reproducción física y/o digital (fotocopia, fotografía, documento escaneado u otro similar) del material de prueba[cite: 1044, 1404, 1426].",
+    "citas": [1044, 1404, 1426]
+  },
+  {
+    "id": "gd027",
+    "tema": "Acceso a Pruebas - Tiempo",
+    "pregunta": "¿Cuál es el tiempo máximo permitido para el acceso al material de las pruebas escritas?",
+    "opciones": [
+      "Cinco (5) horas.",
+      "La mitad del tiempo total previsto para la aplicación de las pruebas.",
+      "Una (1) hora.",
+      "El tiempo necesario que requiera el aspirante sin límite."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El aspirante solo podrá acceder a las pruebas que él presentó, por un término correspondiente, como máximo, a la mitad del tiempo total previsto para la aplicación de las mismas[cite: 1297, 1404].",
+    "citas": [1297, 1404]
+  },
+  {
+    "id": "gd028",
+    "tema": "Reclamaciones",
+    "pregunta": "¿Cuál es el plazo para presentar reclamaciones contra los resultados de las pruebas escritas?",
+    "opciones": [
+      "Diez (10) días hábiles siguientes a la publicación.",
+      "Cinco (5) días hábiles siguientes a la fecha de publicación.",
+      "Tres (3) días calendario después del examen.",
+      "Quince (15) días hábiles después de la aplicación de la prueba."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las reclamaciones contra los resultados de estas pruebas se presentarán por los aspirantes únicamente a través del SIMO, dentro de los cinco (5) días hábiles siguientes a la fecha de publicación de estos[cite: 1294].",
+    "citas": [1294]
+  },
+  {
+    "id": "gd029",
+    "tema": "Complemento de Reclamaciones",
+    "pregunta": "Si un aspirante asiste a la jornada de acceso a pruebas, ¿en qué plazo puede complementar su reclamación inicial?",
+    "opciones": [
+      "Durante los dos (2) días hábiles siguientes al acceso a pruebas.",
+      "En cualquier momento antes de la publicación de resultados definitivos.",
+      "Durante los cinco (5) días hábiles posteriores a la aplicación del examen.",
+      "No se permite complementar la reclamación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una vez finalizado el acceso al material de pruebas escritas, el aspirante que asistió a la jornada, podrá complementar su reclamación durante los dos (2) días hábiles siguientes a la jornada de acceso a pruebas a través del aplicativo SIMO[cite: 1508].",
+    "citas": [1508]
+  },
+  {
+    "id": "gd030",
+    "tema": "Publicación de Resultados",
+    "pregunta": "¿En qué plataforma se publicarán los resultados definitivos de las pruebas escritas?",
+    "opciones": [
+      "Únicamente en la página web de la DIAN.",
+      "A través de correo electrónico certificado a cada aspirante.",
+      "En el sitio web de la CNSC (enlace SIMO), la DIAN y/o la Institución de Educación Superior contratada.",
+      "En carteleras físicas en las sedes de la DIAN."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los resultados definitivos de cada una de estas pruebas se publicarán en el sitio web de la CNSC, www.cnsc.gov.co, enlace SIMO, en el sitio web de la DIAN, www.dian.gov.co y/o en el sitio web de la Institución de Educación Superior contratada[cite: 1514].",
+    "citas": [1514]
+  },
+  {
+    "id": "gd031",
+    "tema": "Rol del Contratista",
+    "pregunta": "¿Qué tipo de pruebas específicas están incluidas en el contrato de la Fundación Universitaria del Área Andina para el Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "Solo la prueba de ejecución.",
+      "Solo la valoración de antecedentes.",
+      "Pruebas escritas y de valoración de antecedentes, y la prueba de ejecución.",
+      "Únicamente el diseño de las pruebas."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Este contrato incluye la construcción, validación, diseño, ensamble, diagramación y la aplicación de las Pruebas Escritas, de valoración de antecedentes y la prueba de ejecución del proceso de selección en la modalidad de ingreso[cite: 231, 232].",
+    "citas": [231, 232]
+  },
+  {
+    "id": "gd032",
+    "tema": "Jerarquía Normativa",
+    "pregunta": "Si bien existen varias leyes y decretos que rigen el concurso, el Acuerdo No. 205 de 2024 y su Anexo se definen como:",
+    "opciones": [
+      "Recomendaciones de buenas prácticas.",
+      "Normas supletorias ante vacíos legales.",
+      "Las reglas a las que estará sujeto el presente proceso de selección, de obligatorio cumplimiento.",
+      "Lineamientos orientativos sin fuerza vinculante."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Tanto el Acuerdo como su Anexo, determinan de manera precisa las reglas a las que estará sujeto el presente proceso de selección, siendo de obligatorio cumplimiento para todas las partes[cite: 245, 246].",
+    "citas": [245, 246]
+  },
+
+  
+  {
+    "id": "gd033",
+    "tema": "Marco Normativo",
+    "pregunta": "Un aspirante al proceso de selección DIAN 2667 se encuentra en una discusión con otro concursante sobre la jerarquía y el carácter vinculante de la normativa que rige el concurso. El aspirante argumenta que el Acuerdo No. 205 del 10 de octubre de 2024 y su Anexo son las únicas disposiciones de obligatorio cumplimiento. ¿Es correcta esta afirmación y por qué?",
+    "opciones": [
+      "Sí, es correcta, porque el Acuerdo y su Anexo son los documentos que establecen de manera específica todas las reglas del Proceso de Selección y no necesitan de otras normas. [cite: 78]",
+      "No, no es correcta, porque además del Acuerdo y su Anexo, otras normas como el Decreto Ley 927 de 2023, la Ley 909 de 2004 y sus reglamentarios, y las Resoluciones de la DIAN también son de obligatorio cumplimiento. [cite: 79, 80, 87, 88]",
+      "Sí, es correcta, siempre y cuando no existan modificaciones posteriores a esos documentos que los invaliden o contradigan sus disposiciones. [cite: 61]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La afirmación no es correcta. Si bien el Acuerdo No. 205 de 2024 y su Anexo establecen las reglas específicas, la guía de orientación claramente indica que el proceso de selección también se rige por un marco normativo más amplio que incluye decretos ley, leyes y resoluciones de la DIAN, todos los cuales son de obligatorio cumplimiento para todos los actores del proceso. [cite: 79, 80, 87, 88]"
+  },
+  {
+    "id": "gd034",
+    "tema": "Estructura del Proceso",
+    "pregunta": "Una persona interesada en el Proceso de Selección DIAN 2667, pero que no ha participado en convocatorias anteriores, pregunta si la etapa de 'Valoración de Antecedentes' es una de las primeras fases a las que debe prestar atención. Considerando la estructura del proceso, ¿cuál sería la orientación adecuada?",
+    "opciones": [
+      "Sí, la Valoración de Antecedentes es una de las etapas iniciales, ya que permite determinar la idoneidad del aspirante antes de cualquier prueba escrita. [cite: 110]",
+      "No, la Valoración de Antecedentes se aplica después de la Verificación de Requisitos Mínimos y de las Pruebas Escritas, y es una fase clasificatoria. [cite: 106, 108, 110]",
+      "La Valoración de Antecedentes solo aplica para la modalidad de ascenso, por lo que no debe preocuparse si se postuló por ingreso. [cite: 137, 142]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Según la estructura del Proceso de Selección DIAN 2667, la Valoración de Antecedentes (7.3) es una etapa que se aplica después de la Verificación de Requisitos Mínimos (6) y de las Pruebas Escritas (7.1), siendo además de carácter clasificatorio. [cite: 106, 108, 110]"
+  },
+  {
+    "id": "gd035",
+    "tema": "Pruebas Escritas - Generalidades",
+    "pregunta": "Un aspirante se ha postulado al cargo de 'Gestor II' y, al revisar la guía de orientación, le surge la duda sobre el carácter y la ponderación de la 'Prueba de Integridad'. Considerando el nivel y los requisitos de su empleo, ¿qué información es correcta sobre esta prueba?",
+    "opciones": [
+      "La Prueba de Integridad tiene carácter eliminatorio y una ponderación del 10% para su nivel, con un puntaje mínimo aprobatorio de 70 puntos. [cite: 137]",
+      "La Prueba de Integridad tiene carácter clasificatorio y una ponderación del 10%, sin un puntaje mínimo aprobatorio específico para ser superada. [cite: 137]",
+      "La Prueba de Integridad es una prueba que solo aplica para cargos asistenciales y técnicos, por lo que no es relevante para el cargo de Gestor II. [cite: 137, 156, 160, 174]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Para los empleos de nivel profesional que requieren experiencia (como Gestor II), la Prueba de Integridad es de carácter clasificatorio, tiene un peso porcentual del 10% y no aplica un puntaje mínimo aprobatorio para esta prueba en particular. [cite: 137]"
+  },
+  {
+    "id": "gd036",
+    "tema": "Prueba de Competencias Funcionales",
+    "pregunta": "Durante la preparación para la prueba de 'Competencias Funcionales', un aspirante se pregunta sobre el formato de las preguntas. Ha escuchado que son de selección múltiple con única respuesta, pero desea saber si son directas o si implican un contexto. ¿Cuál es la característica principal del formato de pregunta para esta prueba?",
+    "opciones": [
+      "Serán preguntas directas de conocimiento teórico sobre los ejes temáticos, sin necesidad de analizar casos o situaciones. [cite: 194, 195, 197]",
+      "Utilizará el formato de 'Prueba de Juicio Situacional', presentando casos hipotéticos laborales con un enunciado y tres opciones de solución. [cite: 194, 195, 197]",
+      "Consistirá en afirmaciones evaluadas con una escala Likert, donde se mide el grado de acuerdo o desacuerdo del aspirante con conceptos técnicos. [cite: 194, 247]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El formato de pregunta para las pruebas sobre Competencias Funcionales es la 'Prueba de Juicio Situacional', la cual se caracteriza por presentar situaciones hipotéticas de orden laboral, junto a un enunciado y un número de alternativas (soluciones), de las cuales se debe elegir una. [cite: 194, 195, 197]"
+  },
+  {
+    "id": "gd037",
+    "tema": "Pruebas Comportamentales e Integridad",
+    "pregunta": "Un aspirante se siente preocupado por las pruebas de 'Competencias Comportamentales' y de 'Integridad', ya que no está seguro de cómo prepararse para preguntas que, según entiende, no tienen una respuesta correcta o incorrecta en el sentido tradicional. ¿Qué formato y lógica se aplican a estas pruebas?",
+    "opciones": [
+      "Son preguntas de selección múltiple con única respuesta donde se evalúa el conocimiento de normativas éticas y de comportamiento laboral. [cite: 247, 252]",
+      "Utilizan un formato basado en frases evaluadas con una escala tipo Likert, sin punto neutro, para identificar la predisposición organizada del aspirante ante situaciones laborales. [cite: 247, 250, 253]",
+      "Son pruebas de desarrollo donde el aspirante debe redactar su opinión sobre situaciones éticas, demostrando su capacidad de análisis y argumentación. [cite: 247, 252]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las pruebas sobre Competencias Comportamentales e Integridad utilizan un formato basado en frases evaluadas mediante una escala tipo Likert. Se presenta una serie de afirmaciones y el aspirante selecciona una opción que refleje su grado de acuerdo o desacuerdo, sin un punto neutro. Este formato no busca respuestas correctas o incorrectas en sentido tradicional, sino identificar la predisposición del aspirante. [cite: 247, 250, 253]"
+  },
+  {
+    "id": "gd038",
+    "tema": "Día del Examen - Logística",
+    "pregunta": "Faltando un día para el examen, un aspirante recuerda que la guía de orientación recomendaba visitar el sitio de presentación de las pruebas con antelación. ¿Cuál es el plazo mínimo sugerido para esta visita y cuál es su objetivo principal?",
+    "opciones": [
+      "Con dos (2) días de anticipación para verificar si hay cambios de último momento en el sitio o la hora de la prueba. [cite: 935]",
+      "Con al menos cinco (5) días hábiles de anticipación para familiarizarse con las rutas y el acceso, evitando confusiones el día de la aplicación. [cite: 933, 935]",
+      "Con dos (2) días de anticipación, a fin de conocer las rutas y el acceso, evitando así posibles confusiones el día de la aplicación. [cite: 935]"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La guía de orientación recomienda visitar el sitio de presentación de las pruebas escritas por lo menos con dos (2) días de anticipación, a fin de conocer las rutas y el acceso, evitando así posibles confusiones el día de la aplicación. [cite: 935]"
+  },
+  {
+    "id": "gd039",
+    "tema": "Día del Examen - Horarios",
+    "pregunta": "El 17 de agosto de 2025, día de la aplicación de las pruebas, un aspirante planea llegar justo a las 8:00 a.m. a la sede. ¿Cuál es el riesgo de esta decisión y hasta qué hora tiene permitido el ingreso, considerando el inicio oficial de la prueba?",
+    "opciones": [
+      "Corre el riesgo de que las puertas ya estén cerradas, pues el ingreso solo se permite hasta las 7:50 a.m., y si llega tarde no podrá presentar la prueba. [cite: 937, 942]",
+      "Podría perder parte del tiempo de la prueba, ya que el inicio oficial es a las 8:00 a.m., pero aún se le permitirá el ingreso hasta las 8:30 a.m. sin tiempo adicional. [cite: 937, 942, 943]",
+      "Será considerado ausente si no llega antes de las 8:00 a.m., sin ninguna excepción, ya que es la hora de inicio oficial y las puertas se cierran de inmediato. [cite: 937, 942]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El inicio oficial de la prueba es a las 8:00 a.m. y las puertas del sitio de aplicación se cerrarán a las 8:30 a.m.. Si el aspirante llega con retraso, dispondrá de treinta (30) minutos después de iniciada la prueba para presentarse, pero no contará con tiempo adicional para el desarrollo de las pruebas. [cite: 937, 942, 943]"
+  },
+  {
+    "id": "gd040",
+    "tema": "Identificación en el Examen",
+    "pregunta": "Un aspirante se da cuenta que perdió su cédula de ciudadanía amarilla con hologramas y decide llevar únicamente una fotocopia ampliada al 150% como documento de identificación. ¿Esta fotocopia será válida para el ingreso al examen y qué alternativas de identificación válidas tendría?",
+    "opciones": [
+      "Sí, la fotocopia ampliada es válida, siempre y cuando esté autenticada por una notaría pública. [cite: 951]",
+      "No, la fotocopia no es válida; los únicos documentos permitidos son la cédula de ciudadanía (física o digital), pasaporte vigente o la contraseña con código de barras y QR vigente. [cite: 951, 974]",
+      "Sí, la fotocopia es válida si se acompaña de una denuncia de pérdida del documento ante las autoridades, para verificar la identidad. [cite: 951]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Ningún documento diferente a la cédula de ciudadanía (física o digital), el pasaporte vigente o la contraseña con código de barras y QR vigente será tenido en cuenta para la identificación del aspirante. La fotocopia no es un documento válido. [cite: 951, 974, 996]"
+  },
+  {
+    "id": "gd041",
+    "tema": "Elementos Permitidos/Prohibidos",
+    "pregunta": "Un aspirante con cédula de ciudadanía digital necesita llevar su teléfono celular al sitio de aplicación para validar su identidad. ¿Bajo qué condiciones específicas le es permitido el ingreso del celular y su uso?",
+    "opciones": [
+      "Puede ingresar el celular y usarlo libremente en el salón para consultar información relacionada con el examen, siempre y cuando no hable por teléfono. [cite: 1013, 1015]",
+      "Puede ingresar el celular, manteniéndolo apagado y en el lugar indicado por el jefe de salón, y solo podrá encenderlo exclusivamente cuando se lo solicite el jefe de salón o el dactiloscopista para verificar su identidad. [cite: 1013]",
+      "Puede ingresar el celular, pero debe entregarlo al jefe de salón para que lo guarde y solo se le devolverá al finalizar la prueba, sin posibilidad de uso durante la jornada. [cite: 1013]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Cuando el aspirante necesite validar su identificación con cédula de ciudadanía digital, podrá, excepcionalmente, ingresar su teléfono celular al sitio de aplicación, debiéndolo mantener apagado en todo momento y en todo lugar y situarlo en el lugar indicado por el Jefe de Salón, y solo podrá encenderlo, exclusivamente cuando se lo solicite para verificar su identidad. [cite: 1013]"
+  },
+  {
+    "id": "gd042",
+    "tema": "Hoja de Respuestas",
+    "pregunta": "Al iniciar el examen, un aspirante observa que sus nombres y apellidos en la hoja de respuestas no están correctamente escritos. ¿Cuál es el procedimiento inmediato que debe seguir el aspirante en esta situación?",
+    "opciones": [
+      "Debe intentar corregirlo él mismo con el borrador de lápiz para evitar cualquier inconveniente en la calificación. [cite: 292, 293]",
+      "Debe informarlo inmediatamente al jefe de salón para que se realice la corrección o se le entregue una nueva hoja de respuestas. [cite: 292, 293]",
+      "Debe continuar con la prueba, ya que la identificación principal es el número de documento y el error en el nombre no afectará su resultado. [cite: 292]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El aspirante debe verificar que sus nombres y apellidos estén escritos correctamente en el cuadernillo y en la hoja de respuestas. De no ser así, deberá informarlo inmediatamente al jefe de salón. [cite: 292, 293]"
+  },
+  {
+    "id": "gd043",
+    "tema": "Calificación y Carácter de las Pruebas",
+    "pregunta": "Un aspirante obtuvo un puntaje de 68.50 en la Prueba de Competencias Funcionales para el cargo de Gestor II. Preocupado, se pregunta qué implicaciones tiene este resultado para su continuación en el proceso. ¿Cuál es la consecuencia directa de este puntaje?",
+    "opciones": [
+      "Puede continuar en el proceso, pero su puntaje será compensado con los resultados de las pruebas clasificatorias. [cite: 137, 917]",
+      "No podrá continuar en el Proceso de Selección, ya que la Prueba de Competencias Funcionales es eliminatoria y el puntaje mínimo aprobatorio es 70.00. [cite: 137, 917]",
+      "Debe esperar la publicación de los resultados de todas las pruebas, pues el puntaje mínimo aprobatorio es un promedio general de todas las fases. [cite: 137, 917]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los aspirantes que no hayan superado el mínimo aprobatorio de puntuación de 70.00 en las pruebas sobre Competencias Funcionales no continuarán en el Proceso de Selección por tratarse de una prueba de carácter eliminatorio. [cite: 917]"
+  },
+  {
+    "id": "gd044",
+    "tema": "Acceso a Pruebas y Reclamaciones",
+    "pregunta": "Después de la publicación de resultados de las pruebas escritas, un aspirante desea solicitar acceso a su material de prueba para fundamentar una reclamación. ¿Cuál es el procedimiento y las restricciones principales para este acceso?",
+    "opciones": [
+      "Puede solicitar acceso a sus pruebas y a las de otros aspirantes para comparar, pudiendo tomar fotos del material para analizarlas con calma en casa. [cite: 1130, 1132, 1237]",
+      "Debe presentar la reclamación a través de SIMO solicitando el acceso, y solo podrá acceder a sus propias pruebas por un tiempo máximo limitado, sin posibilidad de reproducción física o digital. [cite: 1127, 1128, 1130, 1237]",
+      "El acceso es solo presencial y no se permite la toma de apuntes, únicamente la revisión visual del material para memorizar los ítems. [cite: 1244]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las reclamaciones se presentan únicamente a través de SIMO y se puede solicitar el acceso a las pruebas presentadas. El aspirante solo podrá acceder a sus propias pruebas por un término correspondiente, como máximo, a la mitad del tiempo total previsto para la aplicación de las mismas, y en ningún caso está autorizada su reproducción física y/o digital. [cite: 1127, 1128, 1130, 1237]"
+  },
+  {
+    "id": "gd045",
+    "tema": "Causales de Exclusión",
+    "pregunta": "Durante la aplicación de las pruebas, el jefe de salón observa a un aspirante utilizando un reloj inteligente de manera disimulada. Al ser confrontado, el aspirante argumenta que lo usa solo para ver la hora y que no está haciendo trampa. ¿Cuál es la implicación de esta acción según las causales de exclusión?",
+    "opciones": [
+      "No es una causal de exclusión si el aspirante puede demostrar que el reloj no tiene funciones de comunicación o grabación. [cite: 1011, 1012, 1094]",
+      "Es una causal de exclusión, ya que el uso de cualquier dispositivo electrónico como relojes inteligentes está prohibido en el salón de aplicación y puede llevar a la anulación de la prueba. [cite: 1011, 1012, 1094]",
+      "Podría ser una advertencia, pero no una exclusión directa, a menos que se compruebe que hubo un intento de fraude específico. [cite: 1012]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El uso o intento de uso de celulares, relojes inteligentes, audífonos o cualquier otro dispositivo electrónico o medio de comunicación en el salón de aplicación de las pruebas es una causal de exclusión. El aspirante que incumpla esta regla será excluido del proceso de selección. [cite: 1011, 1012, 1094]"
+  },
+  {
+    "id": "gd046",
+    "tema": "Propósito de las Pruebas",
+    "pregunta": "Un aspirante se encuentra ansioso por el examen y un amigo le pregunta cuál es el objetivo principal de todas las pruebas que se aplicarán en el Proceso de Selección DIAN 2667. Basado en el marco normativo, ¿cuál es la finalidad de estas evaluaciones?",
+    "opciones": [
+      "Evaluar la capacidad de los aspirantes para seguir instrucciones y su nivel de resiliencia bajo presión. [cite: 115]",
+      "Determinar la experiencia laboral previa de los aspirantes y su trayectoria en el sector público o privado. [cite: 115]",
+      "Valorar y calificar los conocimientos, competencias laborales, aptitudes, habilidades y potencialidades de los aspirantes a los diferentes empleos ofertados. [cite: 115]"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "De conformidad con el numeral 32.3 del artículo 32 del Decreto Ley 927 de 2023, las pruebas a aplicar en este proceso de selección, 'tienen como finalidad valorar y calificar los conocimientos, competencias laborales, aptitudes, habilidades y potencialidades' de los aspirantes. [cite: 115]"
+  },
+  {
+    "id": "gd047",
+    "tema": "Roles y Responsabilidades de la CNSC y el Operador",
+    "pregunta": "La Fundación Universitaria del Área Andina (FUAA) es la entidad encargada de aplicar las pruebas escritas. Un aspirante cree que esta entidad es la única responsable de definir las reglas del concurso y los contenidos de las pruebas. ¿Cuál es la relación correcta entre la CNSC y la FUAA en este proceso?",
+    "opciones": [
+      "La FUAA define de manera autónoma las reglas y el contenido de las pruebas, mientras que la CNSC solo supervisa el cumplimiento del cronograma. [cite: 64, 79]",
+      "La CNSC, en ejercicio de sus facultades, suscribió un contrato con la FUAA para realizar las pruebas, pero las reglas y los contenidos se establecen conjuntamente con la DIAN y la CNSC. [cite: 64, 79, 178]",
+      "La FUAA es el ente regulador principal del concurso, y la CNSC actúa como un apoyo logístico en el proceso. [cite: 10, 64]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La CNSC, en ejercicio de sus facultades constitucionales y legales, suscribió el Contrato de Prestación de Servicios No. 436 DE 2025 con la Fundación Universitaria del Área Andina, encargada de realizar las pruebas escritas. Sin embargo, la DIAN, en conjunto con la CNSC, definió los contenidos que conforman la estructura de las pruebas escritas. [cite: 64, 79, 178]"
+  },
+  {
+    "id": "gd048",
+    "tema": "Identificación para Personas con Discapacidad",
+    "pregunta": "Un aspirante que usa audífonos por prescripción médica está preocupado por las estrictas normas sobre dispositivos electrónicos. ¿Qué requisito debe cumplir para que se le permita el uso de sus audífonos durante la prueba?",
+    "opciones": [
+      "Debe notificar al jefe de salón al momento de ingresar, quien evaluará si se permite el dispositivo. [cite: 1011, 1121]",
+      "Debe presentar un documento expedido por la EPS o entidad competente que certifique la necesidad del uso del dispositivo auditivo durante la prueba, el cual será verificado al ingreso. [cite: 1121, 1122]",
+      "Se le permitirá automáticamente, ya que los dispositivos por prescripción médica son siempre una excepción a la regla general. [cite: 1011]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Si el aspirante requiere el uso de dispositivos auxiliares para la audición (como audífonos), se realizará una verificación al momento de ingreso al salón de aplicación. Para ello, será necesario presentar un documento expedido por la EPS o entidad competente, en el que se certifique la necesidad del uso del dispositivo auditivo durante la prueba. [cite: 1121, 1122]"
+  },
+  {
+    "id": "gd049",
+    "tema": "Gestión de Reclamaciones",
+    "pregunta": "Un aspirante presenta una reclamación sobre los resultados de sus pruebas escritas. Después de acceder al material de prueba, desea complementar su reclamación inicial con nueva información. ¿Cuál es el procedimiento y el plazo para realizar este complemento?",
+    "opciones": [
+      "Puede presentar una nueva reclamación completa a través de SIMO dentro de los cinco (5) días hábiles siguientes al acceso a pruebas. [cite: 1127, 1133, 1341]",
+      "El aplicativo SIMO le permitirá editar la reclamación ya generada, durante los dos (2) días hábiles siguientes a la jornada de acceso a pruebas. [cite: 1133, 1341, 1343]",
+      "El complemento a la reclamación se realiza de forma presencial en la sede de la CNSC, entregando un documento físico con las nuevas justificaciones. [cite: 1127]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "De conformidad con lo establecido por la CNSC, la reclamación se podrá complementar durante los dos (2) días hábiles siguientes al acceso a pruebas, y solo se habilitará el aplicativo SIMO a los aspirantes que en su reclamación inicial solicitaron y accedieron efectivamente a las pruebas, permitiendo editar la ya generada. [cite: 1133, 1341, 1343]"
+  },
+  {
+    "id": "gd050",
+    "tema": "Reglas de la Hoja de Respuestas",
+    "pregunta": "Durante la prueba, un aspirante comete un error al marcar una respuesta en la hoja y desea corregirla. ¿Cuál es la forma correcta de realizar esta corrección según las instrucciones de la guía?",
+    "opciones": [
+      "Rellenar la nueva opción deseada y hacer una pequeña 'X' sobre la opción anterior para indicar la corrección. [cite: 297, 300]",
+      "Borrar totalmente (con borrador de nata) la respuesta que desea cambiar y luego marcar completamente la nueva opción. [cite: 296, 300]",
+      "Pedir una nueva hoja de respuestas al jefe de salón, ya que no se permiten correcciones directas en la hoja inicial. [cite: 296, 300]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La hoja de respuestas indica que se debe 'Borrar totalmente (con borrador de nata) la respuesta que desee cambiar' y luego 'Marcar sus respuestas únicamente con lápiz de mina negra número 2, llenando completamente el círculo que corresponde a su escogencia'. [cite: 296, 300]"
+  },
+  {
+    "id": "gd051",
+    "tema": "Confidencialidad de las Pruebas",
+    "pregunta": "Un aspirante accede al material de sus pruebas escritas para revisar su reclamación. Al salir, decide que sería útil para futuros concursos compartir las preguntas escaneadas con otros amigos. ¿Qué consecuencia puede acarrear esta acción?",
+    "opciones": [
+      "Ninguna, ya que el material ya fue presentado y es de su propiedad intelectual. [cite: 58, 1132, 1238, 1259]",
+      "La exclusión del aspirante del concurso y/o la imposición de sanciones conforme a la normativa vigente, por uso indebido y violación de la confidencialidad. [cite: 58, 60, 1132, 1238, 1239, 1258, 1259]",
+      "Solo una advertencia, ya que el objetivo principal de la prohibición es evitar la suplantación, no la divulgación posterior. [cite: 58, 1132]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las pruebas escritas son propiedad patrimonial de la CNSC. Su uso por parte del aspirante para fines distintos a la consulta y trámite de su reclamación se constituye en un delito que será sancionado de conformidad con la normativa vigente, lo cual puede incluir la exclusión del concurso. Está prohibida la reproducción física o digital del material. [cite: 58, 60, 1132, 1238, 1239, 1258, 1259]"
+  },
+  {
+    "id": "gd052",
+    "tema": "Tiempo del Examen",
+    "pregunta": "Un aspirante se encuentra en el salón de examen el 17 de agosto de 2025. Una vez que el jefe de salón da la orden de iniciar la prueba a las 8:00 a.m., ¿cuánto tiempo total dispone el aspirante para resolver todas las pruebas escritas?",
+    "opciones": [
+      "Cuatro (4) horas. [cite: 941]",
+      "Cinco (5) horas. [cite: 941]",
+      "El tiempo es variable y depende del nivel del cargo. [cite: 941]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El aspirante dispondrá de cinco (5) horas para responder las pruebas escritas, es decir, la sesión terminará a la 1:00 p.m. [cite: 941]"
+  },
+  {
+    "id": "gd053",
+    "tema": "Propósito de la Prueba de Integridad",
+    "pregunta": "Un miembro de la familia de un aspirante le pregunta qué busca medir la 'Prueba de Integridad' en un concurso de méritos para la DIAN. ¿Cuál es el objetivo de esta prueba, según la guía de orientación?",
+    "opciones": [
+      "Evaluar la capacidad del aspirante para memorizar el Código de Integridad de la DIAN. [cite: 131]",
+      "Medir el nivel de conocimiento del aspirante sobre leyes anticorrupción. [cite: 131]",
+      "Evaluar las características estables de una persona que da cuenta de la coherencia que existe entre su sistema de creencias y su forma de actuar frente a la búsqueda del bien común en situaciones cotidianas. [cite: 131]"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Prueba de Integridad evalúa las características estables de una persona que da cuenta de la coherencia que existe entre su sistema de creencias y su forma de actuar frente a la búsqueda del bien común en las situaciones a las cuales se enfrenta en la cotidianidad. [cite: 131]"
+  },
+  {
+    "id": "gd054",
+    "tema": "Nivel de Detalle en la Calificación",
+    "pregunta": "Un aspirante está revisando el proceso de calificación de las pruebas escritas. Le interesa saber si se tendrán en cuenta todos los ítems del cuadernillo para la calificación final. ¿Qué establece la guía sobre los ítems que se utilizan para la calificación?",
+    "opciones": [
+      "Se calificarán todos los ítems del cuadernillo, sin excepción, para garantizar la objetividad del proceso. [cite: 919, 920]",
+      "La calificación será obtenida después de un análisis técnico y psicométrico de los ítems, y aquellos que no cumplan con esos criterios no harán parte de la calificación. [cite: 919, 920]",
+      "Solo se califican los ítems de las pruebas eliminatorias; los de las pruebas clasificatorias no afectan el puntaje final. [cite: 137, 919]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La calificación de cada una de las pruebas será obtenida luego del análisis técnico mediante criterios psicométricos y estadísticos de los ítems y las afirmaciones, el cual tiene como propósito identificar los ítems y las afirmaciones que se deben tener en cuenta para la calificación. Aquellos ítems y/o afirmaciones que no cumplen con esos criterios no harán parte de la calificación de las pruebas escritas. [cite: 919, 920]"
+  },
+  {
+    "id": "gd055",
+    "tema": "Funciones Esenciales del Cargo (Relevancia para el Examen)",
+    "pregunta": "Un aspirante al cargo de 'Gestor II' observa que el propósito principal del empleo es 'Generar reportes y efectuar el seguimiento permanente de los lineamientos que permitan mantener la integridad y disponibilidad de los datos'. Además, existen siete funciones esenciales. ¿Cuál es la relación entre estas funciones y la prueba de Competencias Funcionales?",
+    "opciones": [
+      "Las funciones esenciales son importantes para la entrevista, pero la prueba funcional solo evalúa conocimientos generales de tecnología. [cite: 118]",
+      "La prueba de Competencias Funcionales evaluará los conocimientos teóricos, profesionales y/o técnicos específicos necesarios para desarrollar adecuadamente estas funciones, conforme al MERF. [cite: 118]",
+      "Las funciones esenciales son una guía para la valoración de antecedentes, pero no son directamente evaluadas en las pruebas escritas. [cite: 118]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Prueba sobre Competencias Funcionales evalúa los conocimientos teóricos, profesionales y/o técnicos, específicos y necesarios para desarrollar adecuadamente una determinada actividad laboral, conforme lo determina para cada empleo el MERF de la DIAN (que incluye las funciones esenciales). [cite: 118]"
+  },
+  {
+    "id": "gd056",
+    "tema": "Conformación de Listas de Elegibles",
+    "pregunta": "Después de presentar todas las pruebas y la valoración de antecedentes, un aspirante desea conocer cuál es la última etapa del Proceso de Selección DIAN 2667 antes de la posible vinculación. ¿Cuál es esta etapa final?",
+    "opciones": [
+      "La entrevista final con los directivos de la DIAN. [cite: 111]",
+      "La publicación de resultados definitivos de las pruebas escritas. [cite: 111, 1145]",
+      "La Conformación y adopción de las Listas de Elegibles para los empleos ofertados. [cite: 111]"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La última etapa del Proceso de Selección, después de la aplicación de todas las pruebas, es la Conformación y adopción de las Listas de Elegibles para los empleos ofertados en este proceso de selección. [cite: 111]"
+  },
+  {
+    "id": "gd057",
+    "tema": "Responsabilidad del Aspirante en el Examen",
+    "pregunta": "Un aspirante se da cuenta, durante el examen, que ha marcado más de una opción de respuesta para una misma pregunta. ¿Cuál es la consecuencia de esta acción según las instrucciones para la hoja de respuestas?",
+    "opciones": [
+      "La pregunta será calificada como parcialmente correcta si una de las opciones marcadas es la correcta. [cite: 297, 469]",
+      "La pregunta será anulada automáticamente por la máquina lectora. [cite: 297, 469]",
+      "El aspirante debe borrar todas las marcas y dejar la pregunta en blanco para evitar una penalización. [cite: 297, 300]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las instrucciones de la hoja de respuestas indican claramente: 'No marcar más de una respuesta por ítem, pues le será anulada' y 'No marque más de una respuesta por pregunta, porque será anulada'. [cite: 297, 469]"
+  },
+  {
+    "id": "gd058",
+    "tema": "Excepciones para Personas con Discapacidad",
+    "pregunta": "Un aspirante que tiene discapacidad visual ha sido citado para presentar las pruebas. ¿Qué tipo de apoyo específico le será habilitado durante el desarrollo de las pruebas?",
+    "opciones": [
+      "Se le permitirá el uso de un software lector de pantalla en un computador personal que debe llevar. [cite: 1108]",
+      "Se le habilitarán acompañantes que harán las veces de lectores y se ubicarán en un salón especial. [cite: 1108]",
+      "Se le entregará el cuadernillo en formato Braille para que pueda leerlo de forma autónoma. [cite: 1108]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Para los aspirantes en situación de discapacidad visual, se habilitarán acompañantes que durante todas las pruebas harán las veces de lectores y se ubicarán en un salón especial. [cite: 1108]"
+  },
+  {
+    "id": "gd059",
+    "tema": "Entidades Involucradas",
+    "pregunta": "Además de la CNSC y los aspirantes, ¿cuáles son las otras dos entidades que, según el marco normativo, tienen un rol y son de obligatorio cumplimiento para ellas en el Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "El Ministerio de Hacienda y la Procuraduría General de la Nación. [cite: 79]",
+      "La Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN) y la Fundación Universitaria del Área Andina (FUAA). [cite: 79]",
+      "El Departamento Administrativo de la Función Pública (DAFP) y la Escuela Superior de Administración Pública (ESAP). [cite: 79]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las citadas disposiciones (Acuerdo y Anexo) son de obligatorio cumplimiento, para la Unidad Administrativa Especial Dirección de Impuestos y Aduanas Nacionales (DIAN), la Comisión Nacional del Servicio Civil (CNSC), los participantes inscritos y para el operador del proceso, Fundación Universitaria del Área Andina (FUAA). [cite: 79]"
+  },
+  {
+    "id": "gd060",
+    "tema": "Objetivo del Acceso a Pruebas",
+    "pregunta": "Un aspirante ha manifestado que el objetivo principal del acceso a las pruebas es obtener una copia de las mismas para practicar en futuros concursos. ¿Esta interpretación se alinea con el propósito establecido en la guía?",
+    "opciones": [
+      "Sí, es uno de los objetivos secundarios, ya que la CNSC busca que los aspirantes se familiaricen con el tipo de preguntas para futuras oportunidades. [cite: 1150, 1238, 1239]",
+      "No, el objetivo principal es permitir a los aspirantes verificar sus respuestas y compararlas con las claves correctas para fundamentar sus reclamaciones, estando prohibida la reproducción para otros fines. [cite: 1150, 1152, 1153, 1238, 1239]",
+      "Sí, siempre y cuando se firme un acuerdo de no divulgación en redes sociales, el uso personal de las copias es permitido. [cite: 1259]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El acceso a las pruebas escritas se realiza con el propósito de permitir a los aspirantes verificar sus respuestas y compararlas con las respuestas clave-correctas, garantizando así el ejercicio de su derecho a la defensa y fundamentar reclamaciones. El uso para fines distintos conlleva exclusión y sanciones. [cite: 1150, 1152, 1153, 1238, 1239]"
+  },
+  {
+    "id": "gd061",
+    "tema": "Reglas durante el Examen",
+    "pregunta": "En medio del examen, un aspirante siente hambre y decide sacar una barra energética y una botella de agua para consumir. ¿Esta acción está permitida dentro del salón de aplicación de las pruebas?",
+    "opciones": [
+      "Sí, se permite el consumo de alimentos ligeros y bebidas no alcohólicas para mantener la concentración. [cite: 1020]",
+      "No, durante la sesión no está permitido el consumo de alimentos ni bebidas. [cite: 1020]",
+      "Sí, siempre y cuando no se haga ruido al comer o beber para no molestar a los demás aspirantes. [cite: 1020]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Durante la sesión no está permitido el consumo de alimentos ni bebidas. [cite: 1020]"
+  },
+  {
+    "id": "gd062",
+    "tema": "Tipos de Experiencia Requerida (Relevancia)",
+    "pregunta": "El empleo de 'Gestor II' al que te postulaste, según el manual de funciones, requiere 'Un (1) año de experiencia profesional'. ¿Qué tipo de experiencia se considera para este requisito, de acuerdo con la información disponible?",
+    "opciones": [
+      "Cualquier tipo de experiencia laboral, incluyendo la informal o la adquirida en voluntariados. [cite: 1424]",
+      "Únicamente experiencia profesional, que se refiere a la adquirida en el ejercicio de actividades propias de la profesión, después de haber obtenido el título profesional. [cite: 1424]",
+      "Experiencia relacionada con el sector público exclusivamente, ya que es un cargo de carrera administrativa. [cite: 1424]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El requisito de experiencia para el cargo de Gestor II es de 'Un (1) año de experiencia profesional'. Este término, en el contexto de concursos de méritos, generalmente se refiere a la experiencia obtenida después de la titulación, en el ejercicio de las actividades de la profesión. [cite: 1424]"
+  },
+  {
+    "id": "gd063",
+    "tema": "Publicación de Resultados",
+    "pregunta": "Un aspirante está ansioso por conocer los resultados de las pruebas escritas. ¿Dónde y cómo se publicarán estos resultados y con cuánta antelación se informará la fecha de publicación?",
+    "opciones": [
+      "Se publicarán en la página web de la DIAN y se informará la fecha con al menos tres (3) días hábiles de antelación. [cite: 1124, 1347]",
+      "Se publicarán en el sitio web de la CNSC, enlace SIMO, y la fecha de publicación será informada con una antelación no inferior a cinco (5) días hábiles. [cite: 1124, 1125]",
+      "Se enviarán directamente al correo electrónico registrado en SIMO, sin necesidad de consultar páginas web. [cite: 1124]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los resultados de estas pruebas se publicarán en el sitio web de la CNSC, www.cnsc.gov.co, enlace SIMO, en la fecha que disponga la CNSC, la cual será informada por estos mismos medios con una antelación no inferior a cinco (5) días hábiles. [cite: 1124, 1125]"
+  },
+  {
+    "id": "gd064",
+    "tema": "Propiedad del Material de Prueba",
+    "pregunta": "Durante la jornada de acceso a pruebas, un aspirante recuerda que las pruebas son propiedad de la CNSC. ¿Qué implicación tiene esta propiedad en cuanto al uso del material por parte del aspirante?",
+    "opciones": [
+      "El aspirante puede usar el material como desee una vez finalizado el acceso, ya que se le ha permitido verlo. [cite: 1238, 1239]",
+      "El aspirante solo podrá utilizar las pruebas para la consulta y trámite de reclamaciones, y cualquier otro uso podrá conllevar exclusión y sanciones. [cite: 1238, 1239]",
+      "El material puede ser compartido con otros aspirantes para el estudio colaborativo, siempre que no se publique en redes sociales. [cite: 1238, 1259]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las pruebas son propiedad patrimonial de la CNSC y el aspirante solo podrá utilizarlas para la consulta y trámite de reclamaciones. El uso de estas para fines distintos podrá conllevar la exclusión del proceso de selección y/o sanciones de acuerdo con la normativa vigente. [cite: 1238, 1239]"
+  },
+  {
+    "id": "gd065",
+    "tema": "Apertura de Actuaciones Administrativas",
+    "pregunta": "Si durante el proceso de selección se identifican posibles fraudes, copias, o sustracciones de materiales de pruebas, ¿qué entidad es la encargada de adelantar las actuaciones administrativas correspondientes?",
+    "opciones": [
+      "La DIAN, como entidad empleadora, es la única responsable de investigar y sancionar estas conductas. [cite: 1046]",
+      "La Fundación Universitaria del Área Andina (FUAA), encargada de la aplicación de las pruebas, adelantará las actuaciones administrativas. [cite: 1046]",
+      "La Procuraduría General de la Nación, como organismo de control, es la que inicia estos procesos disciplinarios. [cite: 1046]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "En atención al artículo 25 del Acuerdo de Convocatoria 205 de 2024, la FUAA (Fundación Universitaria del Área Andina), adelantará la apertura de actuaciones administrativas que correspondan, por posibles fraudes, por copia o intento de copia, divulgación y/o sustracción. [cite: 1046]"
+  },
+  {
+    "id": "gd066",
+    "tema": "Validez de la Contraseña (Identificación)",
+    "pregunta": "Un aspirante perdió su cédula y solo tiene una contraseña emitida por la Registraduría con código QR. Le preocupa la vigencia de este documento para el día del examen. ¿Cuál es el requisito de vigencia para que esta contraseña sea válida como identificación?",
+    "opciones": [
+      "Debe haber sido emitida en los últimos tres (3) meses. [cite: 975]",
+      "Debe tener una vigencia de seis (6) meses; si no está vigente, no se considerará válida. [cite: 975, 1180]",
+      "No tiene fecha de vencimiento, pero debe estar acompañada de un documento que certifique su autenticidad. [cite: 975]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las contraseñas tienen una vigencia de seis (6) meses; si este documento no se encuentra vigente, no se considerará válido para la identificación. [cite: 975, 1180]"
+  },
+  {
+    "id": "gd067",
+    "tema": "Composición del Cuadernillo (Nivel Profesional)",
+    "pregunta": "Un aspirante del nivel profesional está revisando la composición del cuadernillo de preguntas para el examen. ¿Cuántas preguntas de 'Competencias Comportamentales' y de 'Integridad' encontrará en su cuadernillo?",
+    "opciones": [
+      "54 preguntas de Competencias Comportamentales y 20 de Integridad. [cite: 286]",
+      "66 preguntas de Competencias Comportamentales y 20 de Integridad. [cite: 286]",
+      "66 preguntas de Competencias Comportamentales y 42 de Integridad. [cite: 286]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Para el nivel Profesional, el cuadernillo contiene 66 preguntas de Competencias Comportamentales y 20 preguntas de Integridad. [cite: 286]"
+  },
+  {
+    "id": "gd068",
+    "tema": "Duración de la Jornada de Acceso a Pruebas",
+    "pregunta": "Un aspirante asiste a la jornada de acceso al material de pruebas escritas para revisar su examen. ¿Cuál es la duración total de esta jornada para la revisión del material?",
+    "opciones": [
+      "Una (1) hora y treinta (30) minutos. [cite: 1278]",
+      "Dos (2) horas y treinta (30) minutos. [cite: 1278]",
+      "Cinco (5) horas, igual que la aplicación de la prueba. [cite: 1278]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La jornada está programada en una única sesión con una duración de dos (2) horas y treinta (30) minutos. [cite: 1278]"
+  },
+  {
+    "id": "gd069",
+    "tema": "Acuerdo de Confidencialidad (Acceso a Pruebas)",
+    "pregunta": "Al ingresar a la jornada de acceso a pruebas, se le pide a un aspirante firmar un acuerdo de confidencialidad y registrar su huella dactilar. ¿Qué sucede si el aspirante se niega a cumplir con este requisito?",
+    "opciones": [
+      "Podrá acceder al material, pero con una supervisión más estricta por parte del personal de la FUAA. [cite: 1257]",
+      "No podrá acceder al material de las pruebas escritas que presentó. [cite: 1257]",
+      "Se le permitirá el acceso, pero se le aplicará una penalización en la calificación final de la prueba. [cite: 1257]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "En caso de que el aspirante se niegue a firmar y registrar su huella dactilar en el acuerdo de confidencialidad, no podrá acceder al material de las pruebas escritas que presentó. [cite: 1257]"
+  },
+  {
+    "id": "gd070",
+    "tema": "Repaso de Conceptos (Ejes de Evaluación)",
+    "pregunta": "Un aspirante se encuentra estudiando los 'Ejes de Evaluación' y le surge una duda sobre quién define los contenidos de la prueba. ¿Qué entidades definieron los contenidos de las pruebas escritas de Competencias Funcionales y Comportamentales?",
+    "opciones": [
+      "Solo la Fundación Universitaria del Área Andina (FUAA) como operador del proceso. [cite: 178]",
+      "La DIAN, en conjunto con la CNSC, definió los contenidos con base en el perfil del MERF y el Diccionario de Competencias de la DIAN. [cite: 178, 179]",
+      "La CNSC define solo los contenidos de Competencias Comportamentales, y la DIAN los de Competencias Funcionales. [cite: 178, 179]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La DIAN, en conjunto con la CNSC, definió los contenidos que conforman la estructura de las pruebas escritas de Competencias Funcionales y Competencias Comportamentales, con base en el perfil establecido en el MERF, así como en el contenido funcional y normativo del empleo, y en el Diccionario de Competencias de la DIAN. [cite: 178, 179]"
+  },
+  {
+    "id": "gd071",
+    "tema": "Ponderación de Pruebas (Impacto en Resultados)",
+    "pregunta": "Considerando que la Prueba de Competencias Funcionales tiene un peso porcentual del 60% y es eliminatoria, mientras que la Prueba de Integridad tiene un 10% y es clasificatoria para el cargo de Gestor II. ¿Qué implicación directa tiene esta diferencia de ponderación y carácter para la estrategia de estudio del aspirante?",
+    "opciones": [
+      "Debe enfocarse equitativamente en ambas pruebas, ya que un buen desempeño en la de Integridad puede compensar un bajo puntaje en la Funcional. [cite: 137, 917]",
+      "Debe priorizar el estudio y la preparación para la Prueba de Competencias Funcionales, asegurando alcanzar el puntaje mínimo aprobatorio, ya que sin este no continuará en el proceso. [cite: 137, 917]",
+      "La Prueba de Integridad es más importante, ya que evalúa valores esenciales y su carácter clasificatorio es determinante para la posición final. [cite: 137]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Dado que la Prueba de Competencias Funcionales tiene un 60% de peso y es eliminatoria con un mínimo aprobatorio de 70.00, es crucial priorizar su preparación, ya que no superarla implica la exclusión del proceso, independientemente del desempeño en las pruebas clasificatorias como la de Integridad. [cite: 137, 917]"
+  },
+  {
+    "id": "gd072",
+    "tema": "Documentos a Entregar al Finalizar el Examen",
+    "pregunta": "Al finalizar la sesión de pruebas escritas, un aspirante desea retirarse del salón. ¿Qué material debe entregar obligatoriamente al jefe de salón antes de retirarse?",
+    "opciones": [
+      "Solamente la hoja de respuestas firmada y la hoja de operaciones. [cite: 1041]",
+      "El cuadernillo de preguntas, la hoja de respuestas y la hoja de operaciones. [cite: 1041]",
+      "El cuadernillo de preguntas y la hoja de operaciones, pudiendo llevarse la hoja de respuestas para su control personal. [cite: 1041]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Al finalizar las pruebas escritas, el aspirante debe 'Entregar al jefe de salón el cuadernillo, la hoja de respuestas y la hoja de operaciones, una vez terminadas las pruebas escritas.' [cite: 1041]"
+  },
+  {
+    "id": "gd073",
+    "tema": "Aportar Documentos Falsos",
+    "pregunta": "Un aspirante, en la etapa de inscripción, aportó un certificado de experiencia con información que sabía que era falsa. Aunque pasó la verificación de requisitos mínimos, ¿es posible que esta acción lo excluya del concurso en una etapa posterior?",
+    "opciones": [
+      "No, si ya superó la Verificación de Requisitos Mínimos, la información de la inscripción no puede ser revisada nuevamente. [cite: 1051]",
+      "Sí, aportar documentos falsos o adulterados para su inscripción es una causal de exclusión en cualquier momento del proceso. [cite: 1051]",
+      "Solo si la falsedad se descubre durante la valoración de antecedentes, pero no en otras etapas. [cite: 1051]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Aportar documentos falsos o adulterados para su inscripción es una de las causales de exclusión, y el resultado de las actuaciones administrativas puede llevar a la invalidación de las pruebas y la exclusión en cualquier momento del proceso. [cite: 1047, 1051]"
+  },
+  {
+    "id": "gd074",
+    "tema": "Recomendaciones para el día del examen",
+    "pregunta": "Un aspirante se está preparando para el día del examen y está considerando llevar sus propias hojas para realizar operaciones y cálculos durante la prueba. ¿Es esta una acción permitida según las instrucciones del proceso?",
+    "opciones": [
+      "Sí, se permite llevar hojas adicionales para operaciones, siempre y cuando no tengan anotaciones previas. [cite: 1001]",
+      "No, las hojas de operaciones serán suministradas por el operador del proceso, y no se permite el ingreso de hojas adicionales. [cite: 289, 1001, 1039]",
+      "Solo se permite el uso de hojas rayadas o destruidas por el mismo aspirante del cuadernillo. [cite: 1039]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Se hará entrega al aspirante de una hoja de respuestas, una de operaciones y un cuadernillo. Además, está prohibido el ingreso de 'hojas, anotaciones, cuadernos u otros documentos'. [cite: 289, 1001, 1039]"
+  },
+  {
+    "id": "gd075",
+    "tema": "Consulta de Resultados Definitivos",
+    "pregunta": "Una vez resueltas las reclamaciones, un aspirante desea consultar los resultados definitivos de las pruebas escritas. ¿Dónde y cómo podrá consultar estos resultados?",
+    "opciones": [
+      "Serán publicados únicamente por correo electrónico o por notificación física. [cite: 1145, 1146]",
+      "Podrán ser consultados en el sitio web de la CNSC, www.cnsc.gov.co, enlace SIMO, ingresando con usuario y contraseña. [cite: 1145, 1146]",
+      "Se publicarán en periódicos de circulación nacional para asegurar una amplia difusión. [cite: 1145]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los resultados definitivos de cada una de estas pruebas se publicarán en el sitio web de la CNSC, www.cnsc.gov.co, enlace SIMO. Los mismos podrán ser consultados por los aspirantes ingresando al aplicativo con su usuario y contraseña. [cite: 1145, 1146]"
+  },
+  {
+    "id": "gd076",
+    "tema": "Retiro del Salón durante la Prueba",
+    "pregunta": "Un aspirante necesita ir al baño durante el desarrollo de las pruebas escritas. ¿Qué procedimiento debe seguir para poder ausentarse temporalmente del salón?",
+    "opciones": [
+      "Puede salir en cualquier momento, siempre que no exceda los 5 minutos, para no interrumpir el proceso. [cite: 1042, 1043]",
+      "Debe salir del salón sin autorización del jefe de salón, pero llevando consigo todo su material de prueba. [cite: 1042, 1043]",
+      "No debe salir del salón sin autorización del jefe de salón; solo se autorizará a una persona a la vez por salón, quien tendrá que entregar el material de prueba que quedará bajo la vigilancia del jefe de salón. [cite: 1042, 1043]"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El aspirante 'NO salir del salón sin autorización del jefe de salón; para acudir al baño solo se autorizará a una persona a la vez por salón, quien tendrá que entregar el material de prueba que quedará bajo la vigilancia y custodia del jefe de salón.' [cite: 1042, 1043]"
+  },
+  {
+    "id": "gd077",
+    "tema": "Acompañantes en el Sitio de Aplicación",
+    "pregunta": "Un aspirante está organizando su logística para el día del examen y planea ir acompañado por un familiar que lo esperará en la entrada del sitio. ¿Está permitido el ingreso de acompañantes a los sitios de aplicación de las pruebas escritas?",
+    "opciones": [
+      "Sí, se permite el ingreso de acompañantes siempre y cuando permanezcan en las zonas comunes y no interfieran. [cite: 1021]",
+      "No, no está permitido el ingreso de acompañantes a los sitios de aplicación de las Pruebas Escritas, excepto en casos de discapacidad que requieran asistencia especializada. [cite: 1021, 1022]",
+      "Solo se permite un acompañante por aspirante si este presenta alguna condición de salud que lo requiera. [cite: 1022]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "No está permitido el ingreso de acompañantes a los sitios de aplicación de las Pruebas Escritas; por lo tanto, en caso de requerir asistencia, las personas con discapacidad serán apoyadas en el sitio de aplicación por el personal encargado de esta labor. [cite: 1021, 1022]"
+  },
+  {
+    "id": "gd078",
+    "tema": "Integridad del Material de Prueba",
+    "pregunta": "Durante la aplicación de la prueba, un aspirante, para facilitar su estudio posterior, decide arrancar una hoja del cuadernillo de preguntas con algunos ítems que le parecieron relevantes. ¿Qué implicación tiene esta acción?",
+    "opciones": [
+      "Ninguna, siempre y cuando no sea una hoja con información confidencial o clave. [cite: 1023]",
+      "Es una acción prohibida que puede llevar a la exclusión del proceso de selección y/o a sanciones, ya que no se deben rayar, marcar, destruir, doblar o extraer el cuadernillo. [cite: 1012, 1023, 1081]",
+      "Se permite si el aspirante notifica al jefe de salón y este lo autoriza, con el fin de facilitar el estudio personal. [cite: 1023]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los aspirantes no deben rayar, marcar, destruir, doblar o extraer el Cuadernillo de preguntas o la Hoja de Respuestas del respectivo salón ni, por supuesto, del sitio de aplicación. La sustracción o intento de sustracción de cualquier material de la prueba es considerada fraude y causal de exclusión. [cite: 1012, 1023, 1081]"
+  },
+  {
+    "id": "gd079",
+    "tema": "Principios de la Función Pública (Relevancia para el Examen)",
+    "pregunta": "Dentro de los temas a evaluar en las 'Competencias Funcionales Básicas y Competencias Comportamentales Básicas', se mencionan los 'Principios de la Función Pública. Disposiciones generales, Procedimiento Administrativo General (Ley 1437 de 2011 - Título I, Título II, Título III - Capítulos I, V al VIII-)'. ¿Por qué es importante para un Gestor II de la DIAN tener conocimiento sobre este tema?",
+    "opciones": [
+      "Porque estos principios rigen la estructura y el funcionamiento de toda la administración pública colombiana, incluyendo la DIAN, y son fundamentales para el ejercicio de las funciones. [cite: 1451, 1452]",
+      "Principalmente porque son temas que serán evaluados en una entrevista de selección, no en las pruebas escritas. [cite: 1451, 1452]",
+      "Solo son relevantes para los cargos de nivel directivo o asesores jurídicos, no para un cargo profesional como Gestor II. [cite: 1451, 1452]"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El conocimiento de los 'Principios de la Función Pública' y el 'Procedimiento Administrativo General' es fundamental porque rigen la actuación de los servidores públicos y la administración. Para un Gestor II, entender estos principios y el procedimiento administrativo asegura un correcto actuar dentro de la DIAN, en cumplimiento de sus funciones y responsabilidades con los ciudadanos, y son parte de los temas evaluables en competencias funcionales básicas. [cite: 1451, 1452]"
+  },
+  {
+    "id": "gd080",
+    "tema": "Sistema SIMO",
+    "pregunta": "El Sistema de Apoyo para la Igualdad, el Mérito y la Oportunidad (SIMO) es mencionado repetidamente en la guía de orientación. ¿Cuál es la función principal de SIMO en el contexto del Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "Es la plataforma donde los aspirantes pagan los derechos de participación únicamente. [cite: 90]",
+      "Es el sistema a través del cual la CNSC informará citaciones, y donde los aspirantes consultarán resultados y presentarán reclamaciones. [cite: 90, 1125, 1127]",
+      "Es una base de datos donde la DIAN almacena la información de los empleados de carrera. [cite: 90]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Sistema de Apoyo para la Igualdad, el Mérito y la Oportunidad (SIMO) es la plataforma a través de la cual los aspirantes admitidos serán citados para la presentación de las pruebas, y donde podrán consultar sus resultados y presentar reclamaciones. [cite: 90, 1125, 1127]"
+  },
+  {
+    "id": "gd081",
+    "tema": "Verificación de Requisitos Mínimos (VRM)",
+    "pregunta": "Un aspirante se pregunta sobre la etapa de Verificación de Requisitos Mínimos (VRM). ¿Cuál es el propósito de esta etapa y qué sucede si un aspirante no la supera?",
+    "opciones": [
+      "Su propósito es calificar la experiencia y los estudios de los aspirantes, y si no se supera, se puede apelar el resultado. [cite: 106]",
+      "Su propósito es verificar que los aspirantes cumplan con los requisitos mínimos del empleo. Si un aspirante no la supera, no será citado a la aplicación de pruebas. [cite: 106, 933, 1052]",
+      "Es una etapa de registro de información básica, y todos los aspirantes inscritos son automáticamente admitidos para la siguiente fase. [cite: 106]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Verificación de Requisitos Mínimos (VRM) de los participantes inscritos es una etapa fundamental. Los aspirantes admitidos en esta etapa son quienes serán citados para la presentación de las pruebas escritas. No cumplir o no acreditar los requisitos mínimos del empleo es una causal de exclusión. [cite: 106, 933, 1052]"
+  },
+  {
+    "id": "gd082",
+    "tema": "Puntaje en Competencias Comportamentales e Integridad (Visibilidad)",
+    "pregunta": "Un aspirante que obtuvo 75.00 en la Prueba de Competencias Funcionales desea conocer sus puntajes en las pruebas de Competencias Comportamentales y de Integridad. ¿Cuándo se publicarán estos resultados para él?",
+    "opciones": [
+      "Se publicarán inmediatamente después de la Prueba Funcional, sin importar el resultado de esta. [cite: 918]",
+      "Solo serán publicados a los aspirantes que alcancen el 'PUNTAJE MÍNIMO APROBATORIO' en la Prueba sobre Competencias Funcionales. [cite: 918]",
+      "No se publicarán individualmente, solo se tendrá en cuenta su ponderación en el puntaje final. [cite: 918]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los resultados de la Prueba sobre Competencias Comportamentales e Integridad serán publicados únicamente a los aspirantes que alcancen el 'PUNTAJE MÍNIMO APROBATORIO' en la Prueba sobre Competencias Funcionales, que es Eliminatoria. [cite: 918]"
+  },
+  {
+    "id": "gd083",
+    "tema": "Prohibiciones durante el Acceso a Pruebas",
+    "pregunta": "Durante la jornada de acceso al material de pruebas, un aspirante observa que un compañero está intentando transcribir textualmente varias preguntas y respuestas del cuadernillo a una hoja de apuntes. ¿Es esta una acción permitida durante el acceso a pruebas?",
+    "opciones": [
+      "Sí, se permite la transcripción completa de los ítems a la hoja de apuntes para un estudio detallado posterior. [cite: 1244, 1307]",
+      "No, está prohibido transcribir parcial o totalmente los contenidos de las preguntas y/o de sus respuestas del material, solo se permiten notas sucintas para la reclamación. [cite: 1244, 1307]",
+      "Solo se permite si la transcripción se realiza en la hoja de operaciones suministrada, no en la hoja de apuntes. [cite: 1244, 1307]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "En la diligencia de 'Acceso a Pruebas', el aspirante solamente podrá tomar notas sucintas sobre aquellas preguntas cuya calificación le genera dudas razonables, con el fin de complementar su reclamación. Está prohibido transcribir parcial o totalmente los contenidos de las preguntas y/o de sus respuestas del material al cual tuvo acceso. [cite: 1244, 1307]"
+  },
+  {
+    "id": "gd084",
+    "tema": "Alcance de las Causales de Exclusión",
+    "pregunta": "Las causales de exclusión mencionan que cualquier evento que afecte o intente afectar la integridad de la prueba, o socave su reserva, se considera fraude. ¿Esto aplica solo al momento de la aplicación de la prueba, o en otros momentos del proceso?",
+    "opciones": [
+      "Aplica solo durante el tiempo que el aspirante está dentro del salón de examen. [cite: 1046, 1076]",
+      "Aplica a eventos identificados antes, durante o después de la aplicación de las pruebas, y busca afectar la integridad, reserva o correcto desempeño del proceso. [cite: 1046, 1076]",
+      "Solo aplica si el fraude es evidente y es advertido de manera flagrante por el personal de la CNSC. [cite: 1048]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El fraude o intento de fraude se refiere a cualquier evento que afecte o intente afectar la integridad de la prueba, que intente socavar su reserva o el correcto desempeño de la aplicación, y puede ser identificado antes, durante o después de la aplicación de las pruebas. [cite: 1046, 1076]"
+  },
+  {
+    "id": "gd085",
+    "tema": "Finalización de la Revisión de Material",
+    "pregunta": "Una vez que un aspirante ha terminado de revisar el material de pruebas en la jornada de acceso, ¿qué pasos debe seguir antes de abandonar el sitio?",
+    "opciones": [
+      "Puede llevarse consigo el cuadernillo y la hoja de respuestas para un estudio más profundo. [cite: 1306, 1308]",
+      "Debe entregar todo el material suministrado al jefe de salón (cuadernillo, hoja de claves, copias de hojas de respuestas), quien verificará que no haya apuntes no autorizados ni alteraciones, y luego abandonar el salón y las instalaciones. [cite: 1287, 1291, 1292, 1293, 1304, 1308]",
+      "Puede quedarse en las instalaciones del edificio para socializar sus impresiones con otros aspirantes. [cite: 1309]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Al finalizar la jornada de revisión del material, el aspirante deberá entregar de manera obligatoria todo el material suministrado al jefe de salón (incluyendo el cuadernillo, la hoja de claves y las copias de las hojas de respuestas), quien verificará que no se hayan realizado apuntes o transcripciones no autorizadas y que el material no presente alteraciones. Una vez verificado, se le solicitará que abandone inmediatamente el salón y las instalaciones del edificio. [cite: 1287, 1291, 1292, 1293, 1304, 1308]"
+  },
+  {
+    "id": "gd086",
+    "tema": "Exclusión por Disposición Judicial o Administrativa",
+    "pregunta": "Un aspirante al concurso en modalidad de ascenso fue declarado responsable disciplinariamente por falta grave hace dos (2) años por una decisión ejecutoriada. ¿Esta situación lo excluye del Proceso de Selección DIAN 2667?",
+    "opciones": [
+      "No, porque solo aplica para faltas gravísimas, no para faltas graves. [cite: 1074]",
+      "Sí, porque existe una decisión administrativa ejecutoriada que lo declaró responsable disciplinariamente por falta grave dentro de los tres (3) años anteriores a la convocatoria. [cite: 1074]",
+      "No, esta causal solo aplica si la decisión fue de tipo penal o fiscal, no disciplinaria. [cite: 1074, 1075]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Es una causal de exclusión 'Existir decisión administrativa ejecutoriada que haya declarado responsable disciplinariamente por falta grave al empleado público de carrera dentro de los tres (3) años anteriores a la convocatoria'. [cite: 1074]"
+  },
+  {
+    "id": "gd087",
+    "tema": "Significado de Ítems Excluidos",
+    "pregunta": "Durante la revisión del material de prueba, un aspirante observa en la hoja de claves que algunos ítems han sido señalados como 'excluidos'. ¿Qué significa esto en el contexto de la calificación de su prueba?",
+    "opciones": [
+      "Significa que el aspirante respondió incorrectamente esas preguntas y por eso fueron marcadas así. [cite: 1322, 1323]",
+      "Indica que esos ítems no se considerarán en la calificación final de la prueba porque no cumplieron con los parámetros de calidad establecidos en el análisis psicométrico. [cite: 1322, 1323]",
+      "Son preguntas opcionales que el aspirante podía elegir no responder sin que afectara su calificación. [cite: 1322, 1323]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Si un ítem ha sido señalado como excluido en la hoja de claves, esto indica que 'durante el proceso de calificación, se llevó a cabo un análisis exhaustivo de los ítems evaluados. Como resultado de dicho análisis, algunos ítems pueden haber sido excluidos de la calificación por no cumplir con los parámetros de calidad establecidos. Estos ítems están identificados en la hoja de claves con la denominación correspondiente y no se considerarán en la calificación final debido a su comportamiento atípico respecto a los criterios de calidad.' [cite: 1322, 1323]"
+  },
+  {
+    "id": "gd088",
+    "tema": "Finalidad de las Normas Reguladoras",
+    "pregunta": "Un aspirante se pregunta por qué el Acuerdo No. 205 del 10 de octubre de 2024 y su Anexo son tan importantes para el Proceso de Selección DIAN 2667. ¿Cuál es su finalidad principal según la guía de orientación?",
+    "opciones": [
+      "Determinar de manera precisa las reglas a las que estará sujeto el presente proceso de selección. [cite: 78]",
+      "Establecer únicamente los requisitos de inscripción para los aspirantes. [cite: 78]",
+      "Servir como una guía de referencia, pero sin un carácter vinculante estricto. [cite: 78]"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Tanto el Acuerdo como su Anexo, determinan de manera precisa las reglas a las que estará sujeto el presente proceso de selección. [cite: 78]"
+  },
+  {
+    "id": "gd089",
+    "tema": "Responsabilidad al Firmar Hoja de Respuestas",
+    "pregunta": "Al momento de firmar la hoja de respuestas, el aspirante lee la declaración 'Hago constar que he leído y acepto las instrucciones que aparecen al respaldo y manifiesto ser quien afirmo ser y quien se inscribió para presentar esta prueba'. ¿Qué implicación tiene esta firma para el aspirante?",
+    "opciones": [
+      "Es una formalidad sin mayor implicación legal, necesaria solo para identificar el documento. [cite: 326]",
+      "Implica la aceptación de las instrucciones y la ratificación de su identidad, siendo un compromiso fundamental con la transparencia del proceso. [cite: 326]",
+      "Autoriza a la CNSC a usar sus datos personales para fines comerciales. [cite: 326]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Al firmar, el aspirante 'Hago constar que he leido y acepto las instrucciones que aparecen al respaldo y manifiesto ser quien afirmo ser y quien se inscribió para presentar esta prueba'. Esto es un acto de ratificación de identidad y aceptación de las reglas del proceso. [cite: 326]"
+  },
+  {
+    "id": "gd090",
+    "tema": "Prohibiciones de Comunicación",
+    "pregunta": "En el sitio de aplicación de las pruebas, un aspirante intenta comunicarse con otro utilizando un lenguaje de señas para compartir información sobre una pregunta. ¿Esta forma de comunicación no verbal está prohibida y puede considerarse fraude?",
+    "opciones": [
+      "No, solo la comunicación verbal o escrita es considerada una prohibición. [cite: 1097]",
+      "Sí, cualquier comunicación (audiovisual, escrita, verbal o no verbal, entre otras) no autorizada en las instalaciones de la aplicación de las pruebas es prohibida y puede llevar a la exclusión. [cite: 1097]",
+      "Solo si es detectada por los funcionarios de la CNSC y no por el personal logístico. [cite: 1097]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La guía establece como fraude o intento de fraude: 'Comunicación (audiovisual, escrita, verbal o no verbal, entre otras) no autorizada en las instalaciones de la aplicación de las pruebas.' [cite: 1097]"
+  },
+  {
+    "id": "gd091",
+    "tema": "Información para Aspirantes con Discapacidad Auditiva",
+    "pregunta": "Un aspirante con discapacidad auditiva ha sido admitido al concurso y necesita un intérprete de lenguas de señas para el día de la prueba. ¿Qué debe hacer para solicitar este apoyo?",
+    "opciones": [
+      "Debe solicitarlo directamente al jefe de salón el día del examen. [cite: 1110]",
+      "Debe reportarlo dentro de los 5 días hábiles siguientes a la publicación de la guía de orientación, para que la FUAA pueda proporcionarlo. [cite: 1110]",
+      "No es necesario solicitarlo, ya que se disponen auxiliares logísticos generales en las sedes para todos los aspirantes con discapacidad auditiva. [cite: 1109, 1110]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Para aquellas personas que hayan acreditado discapacidad auditiva al momento de la inscripción y requieran un intérprete de lenguas de señas, se les proporcionará, lo cual deberán reportar dentro de los 5 días hábiles siguientes a la publicación de esta guía. [cite: 1110]"
+  },
+  {
+    "id": "gd092",
+    "tema": "Abandono de la Sesión de Acceso a Pruebas",
+    "pregunta": "Durante la jornada de acceso al material de pruebas, un aspirante se niega a someterse a la confrontación dactilar que es un requisito obligatorio. ¿Qué implicación tiene esta negativa?",
+    "opciones": [
+      "Se le permitirá continuar, pero se le tomará una nota en su expediente. [cite: 1283, 1284]",
+      "Se entenderá que abandona la sesión y renuncia a su derecho de revisión del material de pruebas. [cite: 1283, 1284]",
+      "Solo se le denegará la posibilidad de presentar una reclamación. [cite: 1283, 1284]"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El aspirante deberá someterse a la confrontación dactilar como requisito obligatorio. En caso de no atender esta indicación, se entenderá que abandona la sesión y renuncia a su derecho de revisión del material de pruebas. [cite: 1283, 1284]"
+  }
+
+
+]
