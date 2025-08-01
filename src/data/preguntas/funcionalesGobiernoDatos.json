@@ -1,0 +1,2437 @@
+[
+  {
+    "id": "gd-f1",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué es el Gobierno de Datos según los principios de la DIAN?",
+    "opciones": [
+      "Un software para almacenar bases de datos.",
+      "Un marco de políticas para la gestión de datos como activo estratégico.",
+      "La política de uso de redes sociales de la entidad.",
+      "El conjunto de normas para el manejo del equipo de cómputo."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Gobierno de Datos es un marco de gestión que establece políticas y estándares para el uso y manejo de los datos de una organización, asegurando que sean un activo estratégico."
+  },
+  {
+    "id": "gd-f2",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué rol es el responsable máximo de la calidad, seguridad y uso de un conjunto de datos?",
+    "opciones": [
+      "Data Custodian",
+      "Data Steward",
+      "Data Owner",
+      "Analista de datos"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner o Dueño de los Datos es el responsable máximo de la calidad, seguridad y uso del conjunto de datos."
+  },
+  {
+    "id": "gd-f3",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál es la principal diferencia entre un 'Data Owner' y un 'Data Custodian' en el marco del Gobierno de Datos?",
+    "opciones": [
+      "El Custodio define las políticas, el Dueño las implementa.",
+      "El Dueño es responsable de la parte técnica (infraestructura), el Custodio de la estratégica.",
+      "El Dueño es responsable de la estrategia y calidad, el Custodio del almacenamiento seguro y la implementación técnica.",
+      "Ambos tienen las mismas responsabilidades en la práctica."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner es el responsable estratégico y legal del dato, mientras que el Data Custodian es la persona o equipo técnico responsable del almacenamiento seguro y de la infraestructura."
+  },
+  {
+    "id": "gd-f4",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Según la normativa colombiana, ¿qué ley es fundamental para el tratamiento de datos personales, aspecto crucial del gobierno de datos?",
+    "opciones": [
+      "Ley 100 de 1993",
+      "Ley 1581 de 2012",
+      "Ley 1437 de 2011",
+      "Ley 2015 de 2020"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Ley 1581 de 2012 es la que establece el régimen general de protección de datos personales en Colombia, un pilar fundamental de la privacidad en el gobierno de datos."
+  },
+  {
+    "id": "gd-f5",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, ¿qué actividad se relaciona directamente con el cumplimiento de los principios de Calidad de Datos desde el Origen?",
+    "opciones": [
+      "Validar que los datos cumplan estándares al momento de su captura.",
+      "Reportar al equipo de tecnología los problemas de conexión.",
+      "Crear reportes detallados para la dirección general.",
+      "Revisar el desempeño de los sistemas de almacenamiento."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El principio de 'Calidad desde el Origen' implica que los datos deben ser validados y estandarizados en el mismo momento en que son capturados, antes de que entren a los repositorios principales."
+  },
+  {
+    "id": "gd-f6",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, se le encarga participar en un proyecto para asegurar la calidad de los datos. ¿Qué define el conjunto de reglas y directrices que rigen cómo los datos deben ser creados y almacenados en la organización?",
+    "opciones": [
+      "Los Data Stewards, ya que son los responsables de la implementación técnica.",
+      "Las Políticas y Estándares de Datos, ya que establecen las directrices de manera formal.",
+      "Los Data Owners, por ser quienes tienen la responsabilidad de los datos a nivel técnico."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las Políticas y Estándares de Datos son el componente del gobierno de datos que establece formalmente las reglas y directrices para la creación y almacenamiento de la información."
+  },
+  {
+    "id": "gd-f7",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un nuevo funcionario en la DIAN pregunta por qué la entidad invierte en la gobernanza de datos. ¿Cuál es la razón fundamental que justifica esta inversión estratégica?",
+    "opciones": [
+      "Para generar más empleo en el área de tecnología de la información de la entidad.",
+      "Para asegurar que los datos sean un activo estratégico confiable para la toma de decisiones misionales.",
+      "Para tener la capacidad de almacenar grandes volúmenes de datos en los sistemas de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El propósito principal del gobierno de datos es garantizar que los datos sean un activo estratégico de la entidad, que se utilicen de manera eficiente y que su gestión se alinee con los objetivos institucionales, como la toma de decisiones en la DIAN."
+  },
+  {
+    "id": "gd-f8",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted recibe un informe sobre la calidad de los datos de los contribuyentes. El informe destaca que los datos son precisos, completos y consistentes. ¿Qué tipo de política de gobierno de datos se ha cumplido en este caso?",
+    "opciones": [
+      "Políticas de Seguridad de la Información, ya que se protege la información personal del contribuyente.",
+      "Políticas de Nomenclatura, ya que se usan nombres estandarizados para todos los registros.",
+      "Políticas de Calidad de Datos, ya que aseguran que los datos sean precisos, completos y consistentes."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las Políticas de Calidad de Datos son el conjunto de reglas y directrices que aseguran que la información de la entidad sea precisa, completa y consistente para su uso."
+  },
+  {
+    "id": "gd-f9",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un grupo de analistas de datos necesita acceder a información sensible de los contribuyentes para un proyecto de fiscalización. ¿Qué componente del gobierno de datos les indicaría el proceso y los flujos de trabajo que deben seguir para obtener este acceso de manera segura y autorizada?",
+    "opciones": [
+      "Las Políticas de Seguridad, ya que estas son las únicas que se encargan de la protección de datos en la entidad.",
+      "Los Procesos y Procedimientos, que son los flujos de trabajo definidos para el manejo seguro de los datos.",
+      "La Tecnología y Herramientas, que son los sistemas de gestión de bases de datos para el acceso seguro."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los procesos y procedimientos son los flujos de trabajo definidos para la gestión de los datos a lo largo de su ciclo de vida, lo que incluye los pasos para solicitar y obtener un acceso autorizado a la información."
+  },
+  {
+    "id": "gd-f10",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Dentro de la estructura de roles del gobierno de datos, ¿quién es el responsable máximo de la calidad, seguridad y uso de un conjunto de datos específico de la DIAN?",
+    "opciones": [
+      "El Data Steward, por ser quien implementa las políticas y la estandarización de los datos.",
+      "El Data Custodian, que es la persona o el equipo técnico que se encarga del almacenamiento seguro.",
+      "El Data Owner, ya que es el dueño que tiene la máxima responsabilidad sobre la gestión de su conjunto de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner o Dueño de los Datos es el responsable máximo de la calidad, seguridad y uso de un conjunto de datos, siendo quien define las políticas y reglas que lo rigen."
+  },
+  {
+    "id": "gd-f11",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II en el área de procesamiento de datos, usted trabaja con el Repositorio Único de Datos de la DIAN. En el marco del gobierno de datos, ¿qué papel o rol desempeña su Dirección de Gestión de Tecnología y Telecomunicaciones en relación con este repositorio?",
+    "opciones": [
+      "El rol de Data Owner, ya que define las reglas de uso de la información para los procesos misionales.",
+      "El rol de Data Steward, ya que son los encargados de la estandarización y calidad de los datos.",
+      "El rol de Data Custodian, ya que es la dependencia técnica responsable del almacenamiento seguro de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El rol de Data Custodian o Custodio de los Datos es la persona o equipo técnico responsable del almacenamiento seguro y de la implementación de la infraestructura de datos, que en la DIAN corresponde a la Dirección de Gestión de Tecnología y Telecomunicaciones."
+  },
+  {
+    "id": "gd-f12",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La DIAN establece reglas para el manejo de información sensible, garantizando que solo el personal autorizado pueda acceder a ella. ¿Qué tipo de política se está implementando para proteger los datos de un acceso no autorizado?",
+    "opciones": [
+      "Políticas de Calidad de Datos, para asegurar que los datos sean precisos y completos en el repositorio.",
+      "Políticas de Nomenclatura, para garantizar que todos los nombres de los datos sean consistentes y claros.",
+      "Políticas de Seguridad de la Información, para proteger la información contra un acceso no autorizado."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las Políticas de Seguridad de la Información son las reglas que protegen los datos contra accesos no autorizados, divulgación, alteración o destrucción, garantizando su confidencialidad."
+  },
+  {
+    "id": "gd-f13",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un equipo de la DIAN está discutiendo la importancia de documentar los metadatos de los conjuntos de datos, es decir, la información sobre cómo se crearon y qué significan. ¿Qué pilar del gobierno de datos se enfoca en este aspecto para mantener la consistencia y la usabilidad de los datos?",
+    "opciones": [
+      "Los Procesos y Procedimientos, que describen los pasos para la documentación de los datos.",
+      "Las Políticas y Estándares de Datos, ya que establecen las directrices de cómo documentar y usar la información.",
+      "Los Roles y Responsabilidades, ya que asignan a una persona específica la tarea de documentar los datos."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las Políticas y Estándares de Datos establecen las directrices de cómo se deben documentar los metadatos, asegurando que la información sea consistente, comprensible y usable para todos los usuarios."
+  },
+  {
+    "id": "gd-f14",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Impuestos necesita generar un reporte detallado sobre el comportamiento de pago de los contribuyentes. ¿Qué componente del gobierno de datos le asegura que la información de ese reporte es fiable y se alinea con la misionalidad de la DIAN?",
+    "opciones": [
+      "Los Roles y Responsabilidades, porque garantizan que la persona correcta está haciendo el reporte.",
+      "El Gobierno de Datos, ya que es el sistema que garantiza la integridad, la disponibilidad y el uso correcto de los datos.",
+      "La Tecnología y Herramientas, que son los sistemas de información que generan el reporte."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Gobierno de Datos, como marco de gestión, asegura que los datos sean fiables, consistentes y que su uso se alinee con los objetivos institucionales, garantizando así la validez del reporte para la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f15",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted es notificado sobre una violación de la confidencialidad de la información en un sistema. ¿Cuál de los siguientes principios fundamentales del gobierno de datos se ha visto comprometido en esta situación?",
+    "opciones": [
+      "El principio de Usabilidad, al hacer que la información ya no sea útil para los analistas de datos.",
+      "El principio de Disponibilidad, al hacer que la información ya no esté accesible para los usuarios.",
+      "El principio de Seguridad de la Información, ya que se comprometió la confidencialidad de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La seguridad de la información es el pilar del gobierno de datos que protege la confidencialidad, la integridad y la disponibilidad de los datos. Una violación de la confidencialidad es una falla en la seguridad de la información."
+  },
+  {
+    "id": "gd-f16",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "El Repositorio Único de Datos de la DIAN (DataR) se ha implementado como una tecnología central para almacenar información de múltiples fuentes. ¿Qué pilar del gobierno de datos se relaciona directamente con este repositorio y los sistemas que lo gestionan?",
+    "opciones": [
+      "Los Roles y Responsabilidades, ya que el repositorio define quién puede acceder a los datos.",
+      "La Tecnología y Herramientas, que es la infraestructura que soporta el almacenamiento de datos de la organización.",
+      "Las Políticas y Estándares, que establecen las reglas para usar el repositorio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La tecnología y herramientas son la infraestructura que soporta el gobierno de datos, incluyendo sistemas de gestión de bases de datos y repositorios como el DataR."
+  },
+  {
+    "id": "gd-f17",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un equipo de la Dirección de Fiscalización necesita un nuevo informe que consolide datos de recaudo de IVA y de comercio exterior para un caso específico. ¿Qué rol de gobierno de datos debe ser consultado para aprobar el acceso a estos conjuntos de datos y definir los criterios de uso?",
+    "opciones": [
+      "El Data Custodian, porque es la persona que se encarga de la custodia física de los datos de la entidad.",
+      "El Data Steward, porque es el rol encargado de la estandarización y calidad de los datos del informe.",
+      "El Data Owner, ya que es el responsable máximo que tiene la autoridad de aprobar el acceso y definir las reglas de uso del conjunto de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner o Dueño de los Datos es el responsable máximo del uso del conjunto de datos. Por lo tanto, es el rol correcto para ser consultado y aprobar el acceso a los datos y definir los criterios para su uso en un nuevo informe."
+  },
+  {
+    "id": "gd-f18",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted debe asegurar que la información en los reportes que genera sea consistente y veraz. ¿Qué pilar del gobierno de datos le brinda las herramientas y las reglas para verificar la precisión y completitud de los datos?",
+    "opciones": [
+      "Los Procesos y Procedimientos, porque describen los pasos para generar el reporte de la entidad.",
+      "Los Roles y Responsabilidades, porque asignan al Gestor II la tarea de generar los reportes de datos.",
+      "Las Políticas y Estándares de Datos, que establecen las reglas de calidad de la información."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las Políticas y Estándares de Datos, en particular las de calidad de datos, son el componente que establece las reglas y directrices para asegurar que la información sea consistente, veraz y completa."
+  },
+  {
+    "id": "gd-f19",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "El equipo de Desarrollo de Aplicaciones de la DIAN está creando un nuevo sistema y necesita que las bases de datos sigan una convención de nombres estándar. ¿Qué tipo de política de gobierno de datos se ha definido para este propósito?",
+    "opciones": [
+      "Políticas de Calidad de Datos, para asegurar que los nombres de las bases de datos sean precisos.",
+      "Políticas de Nomenclatura, para garantizar que se sigan las convenciones estándar de nombres en la entidad.",
+      "Políticas de Seguridad de la Información, para proteger los nombres de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Las Políticas de Nomenclatura son las reglas que definen cómo se nombran las bases de datos, tablas, campos y otros elementos para mantener la consistencia y la claridad en la organización."
+  },
+  {
+    "id": "gd-f20",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se ha establecido un comité para supervisar el cumplimiento de las políticas de datos en la DIAN. En este comité, un Data Steward se encarga de un conjunto de datos específico. ¿Qué rol tiene el Data Steward en el marco del gobierno de datos de la DIAN?",
+    "opciones": [
+      "Ser el responsable de las políticas, asegurando que se aprueben y se actualicen anualmente.",
+      "Implementar las políticas del Data Owner y asegurar la calidad y estandarización de los datos.",
+      "Ser el responsable de la infraestructura técnica y del almacenamiento seguro de todos los datos."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Data Steward es el rol que implementa las políticas definidas por el Data Owner y es responsable de asegurar la calidad y estandarización de los datos en un conjunto de datos específico de la entidad."
+  },
+  {
+    "id": "gd-f21",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, identifica que un conjunto de datos fiscales ingresados al sistema no tiene metadatos. ¿Qué acción prioritaria debe tomar?",
+    "opciones": [
+      "Procesar los datos igualmente para no retrasar el flujo de trabajo.",
+      "Solicitar al área generadora que complete los metadatos faltantes.",
+      "Eliminar los datos sin metadatos para mantener la calidad del repositorio."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los metadatos son esenciales para la trazabilidad según la Política de Gobierno de Datos DIAN. Debe requerirse su completitud a la fuente primaria antes de procesar."
+  },
+  {
+    "id": "gd-f22",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al notar inconsistencias en datos de declaraciones tributarias, ¿qué principio del Gobierno de Datos debe aplicar primero?",
+    "opciones": [
+      "Acceso controlado para restringir la visualización de los datos.",
+      "Calidad desde el origen verificando con la fuente primaria.",
+      "Interoperabilidad para cruzar con otros sistemas."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El principio de calidad exige resolver inconsistencias con la fuente generadora antes de cualquier otro proceso (Manual de Calidad DIAN, Cap. 2)."
+  },
+  {
+    "id": "gd-f23",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un funcionario solicita acceso a datos sensibles del RUT para un estudio. ¿Qué debe verificar el Gestor II?",
+    "opciones": [
+      "Que la solicitud esté aprobada por el jefe inmediato del solicitante.",
+      "Que exista autorización del Comité de Seguridad de la Información.",
+      "Que el estudio tenga menos de tres meses de duración."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El acceso a datos sensibles requiere autorización expresa del Comité de Seguridad según el Protocolo de Accesos DIAN (v3.1)."
+  },
+  {
+    "id": "gd-f24",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué elemento es obligatorio registrar para cumplir con el lineage de datos en la DIAN?",
+    "opciones": [
+      "La identificación del servidor físico donde se almacenan los datos.",
+      "Las transformaciones aplicadas a los datos y su justificación.",
+      "Los nombres completos de todos los funcionarios que consultaron los datos."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El lineage requiere documentar transformaciones y su razón técnica/jurídica para garantizar trazabilidad (Estándar DIAN-LIN-002)."
+  },
+  {
+    "id": "gd-f25",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al recibir datos de una dirección seccional con formatos inconsistentes, ¿qué acción alinea con el Gobierno de Datos?",
+    "opciones": [
+      "Estandarizar los datos aplicando las reglas del diccionario corporativo.",
+      "Devolver todos los datos a la seccional para que los corrijan.",
+      "Procesar solo los registros que cumplan con el formato requerido."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La estandarización según diccionario corporativo es clave para mantener calidad e interoperabilidad (Política DIAN 2024, Art. 7)."
+  },
+  {
+    "id": "gd-f26",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué instancia debe resolver un conflicto entre áreas sobre el uso de un conjunto de datos compartido?",
+    "opciones": [
+      "El Comité de Gobierno de Datos de la DIAN.",
+      "La Subdirección de Gestión de Información.",
+      "La Oficina de Control Interno."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Comité de Gobierno de Datos es el órgano máximo para resolver conflictos sobre gestión de datos (Reglamento DIAN 2024, Art. 15)."
+  },
+  {
+    "id": "gd-f27",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un proveedor externo solicita datos anonimizados para un estudio. ¿Qué documento es indispensable?",
+    "opciones": [
+      "Un convenio de confidencialidad firmado por ambas partes.",
+      "Una solicitud formal del representante legal del proveedor.",
+      "Una carta de intención avalada por la Subdirección Jurídica."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El convenio de confidencialidad es requisito mínimo para compartir datos según la Ley 1581 de 2012 y políticas DIAN."
+  },
+  {
+    "id": "gd-f28",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué principio del Gobierno de Datos justifica la creación de un diccionario corporativo en la DIAN?",
+    "opciones": [
+      "Transparencia en las definiciones técnicas.",
+      "Estandarización para interoperabilidad.",
+      "Seguridad en el acceso a metadatos."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La estandarización mediante diccionario único garantiza que todos los sistemas interpreten igual los datos (Guía de Interoperabilidad DIAN 2023)."
+  },
+  {
+    "id": "gd-f29",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al migrar datos a un nuevo sistema, ¿qué elemento es prioritario para mantener la calidad?",
+    "opciones": [
+      "La velocidad de transferencia de los registros.",
+      "La validación de integridad referencial post-migración.",
+      "La capacidad de almacenamiento del sistema destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La validación de integridad referencial asegura que no se pierdan relaciones críticas entre datos (Estándar DIAN-MIG-001)."
+  },
+  {
+    "id": "gd-f30",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un ciudadano solicita corrección de sus datos personales en el RUT. ¿Qué plazo máximo tiene la DIAN para responder?",
+    "opciones": [
+      "5 días hábiles según la Ley de Transparencia.",
+      "10 días hábiles conforme a la Ley 1581 de 2012.",
+      "15 días hábiles por protocolos internos DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Ley 1581 de Protección de Datos establece 10 días hábiles para atender solicitudes de rectificación (Art. 14)."
+  },
+  {
+    "id": "gd-f31",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué documento formaliza los roles y responsabilidades en el tratamiento de datos personales en la DIAN?",
+    "opciones": [
+      "El Manual de Funciones del cargo respectivo.",
+      "La Autorización de Tratamiento de Datos Personales.",
+      "El Acta de Gobierno de Datos del proyecto específico."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Autorización de Tratamiento es el documento legal que asigna responsabilidades según la Ley 1581 de 2012."
+  },
+  {
+    "id": "gd-f32",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al diseñar un formulario electrónico para captura de datos, ¿qué elemento es obligatorio incluir?",
+    "opciones": [
+      "Un aviso sobre el uso previsto de los datos según finalidad del tratamiento.",
+      "Un recuadro para aceptar términos y condiciones generales.",
+      "Un logotipo institucional que certifique autenticidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El aviso de privacidad es requisito legal para informar la finalidad del tratamiento de datos personales (Ley 1581, Art. 9)."
+  },
+  {
+    "id": "gd-f33",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué instancia debe aprobar la destrucción segura de datos obsoletos del Repositorio Único?",
+    "opciones": [
+      "El Comité de Gobierno de Datos mediante acta formal.",
+      "El área usuaria que generó originalmente los datos.",
+      "La Oficina de Archivo General de la Nación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La destrucción de datos corporativos requiere aprobación del Comité de Gobierno de Datos (Protocolo DIAN-DES-001)."
+  },
+  {
+    "id": "gd-f34",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un reporte automático está generando resultados inconsistentes. ¿Qué debe verificar primero el Gestor II?",
+    "opciones": [
+      "La calidad de los datos de entrada al proceso ETL.",
+      "La capacidad del servidor donde se ejecuta el reporte.",
+      "La versión del software utilizado para generar el reporte."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El principio 'garbage in, garbage out' señala que la calidad de los resultados depende primero de los datos de entrada (Guía de Calidad DIAN 2024)."
+  },
+  {
+    "id": "gd-f35",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué elemento es esencial en un metadato según estándares DIAN?",
+    "opciones": [
+      "La firma digital del funcionario que capturó el dato.",
+      "La fecha y hora exacta de creación/modificación.",
+      "El código del servidor donde se almacena físicamente."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La trazabilidad temporal es un metadato obligatorio para todos los activos de datos (Estándar DIAN-MTD-003)."
+  },
+  {
+    "id": "gd-m36",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, identifica que un proceso ETL está transformando incorrectamente códigos arancelarios. ¿Qué documento debe consultar prioritariamente?",
+    "opciones": [
+      "El diccionario de datos corporativo de comercio exterior.",
+      "El manual de procedimientos del área de aduanas.",
+      "El registro de cambios del sistema ETL."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El diccionario corporativo contiene las reglas de transformación estandarizadas para mantener la calidad e interoperabilidad (Política DIAN 2024, Anexo Técnico 2)."
+  },
+  {
+    "id": "gd-m37",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al diseñar un modelo de datos para el nuevo sistema de fiscalización, ¿qué principio debe priorizar para garantizar su escalabilidad?",
+    "opciones": [
+      "Normalización hasta tercera forma normal (3FN).",
+      "Desnormalización controlada para optimizar consultas.",
+      "Esquema en estrella con tablas de hechos y dimensiones."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los modelos dimensionales (esquema estrella) son estándar en entornos analíticos como fiscalización, permitiendo crecimiento y rendimiento (Guía de Modelado DIAN 2023)."
+  },
+  {
+    "id": "gd-m38",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué mecanismo implementaría para garantizar el principio de 'datos como activo estratégico' en contratos con proveedores tecnológicos?",
+    "opciones": [
+      "Cláusulas de propiedad intelectual sobre bases de datos generadas.",
+      "Acuerdos de nivel de servicio (SLA) con penalizaciones por caídas.",
+      "Certificaciones ISO 27001 para los proveedores."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Las cláusulas de propiedad intelectual protegen los activos de datos como bienes estratégicos según la Política de Gobierno de Datos (Art. 15)."
+  },
+  {
+    "id": "gd-m39",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un modelo predictivo requiere datos personales anonimizados. ¿Qué técnica cumple con el estándar DIAN-PRIV-003?",
+    "opciones": [
+      "Enmascaramiento dinámico con tokens reversibles.",
+      "K-anonimidad con k≥11 y l-diversidad.",
+      "Pseudonimización con llaves custodiadas por área usuaria."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El estándar DIAN-PRIV-003 exige k-anonimidad (k≥11) como técnica base para anonimización efectiva (Resolución 134 de 2023)."
+  },
+  {
+    "id": "gd-m40",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al detectar que datos del RUT están siendo utilizados sin autorización, ¿qué protocolo activar?",
+    "opciones": [
+      "Procedimiento de notificación de incidentes de seguridad.",
+      "Mecanismo de revocación inmediata de accesos.",
+      "Protocolo de preservación de evidencia digital."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La revocación inmediata de accesos es la acción prioritaria para contener violaciones a datos sensibles (Protocolo DIAN-SEG-007)."
+  },
+  {
+    "id": "gd-m41",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué elemento debe contener el plan de gestión de metadatos para cumplir con ISO 11179?",
+    "opciones": [
+      "Esquema de versionamiento semántico (v1.0.0).",
+      "Clasificación por dominios de negocio y técnicos.",
+      "Mapeo completo a estándares internacionales UN/CEFACT."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "ISO 11179 exige clasificar metadatos en dominios de negocio (semántica) y técnicos (estructura), según Guía DIAN-MTD-004."
+  },
+  {
+    "id": "gd-m42",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un sistema heredado no cumple con los estándares de calidad de datos. ¿Qué estrategia de modernización priorizar?",
+    "opciones": [
+      "Construir capas de abstracción con servicios API REST.",
+      "Implementar un data warehouse intermedio con transformaciones.",
+      "Desarrollar conectores ETL con reglas de limpieza en tiempo real."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los conectores ETL con reglas de limpieza resuelven problemas de calidad sin modificar sistemas heredados (Arquitectura DIAN v3.1)."
+  },
+  {
+    "id": "gd-m43",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para garantizar la interoperabilidad con la UGPP, ¿qué estándar técnico es obligatorio?",
+    "opciones": [
+      "Esquema JSON-LD con vocabularios controlados.",
+      "XSD validado por la AGETIC.",
+      "CSV UTF-8 con cabeceras normalizadas."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El estándar DIAN-INT-002 exige XSD validados por AGETIC para intercambios entre entidades públicas (Resolución 045 de 2024)."
+  },
+  {
+    "id": "gd-m44",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué técnica aplicar para mantener la integridad referencial al migrar datos a la nube?",
+    "opciones": [
+      "Checksums criptográficos por lotes de datos.",
+      "Transacciones atómicas con confirmación en dos fases.",
+      "Restricciones FOREIGN KEY habilitadas en destino."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las restricciones FOREIGN KEY en destino garantizan integridad referencial post-migración (Estándar DIAN-MIG-003)."
+  },
+  {
+    "id": "gd-m45",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un modelo de datos para fiscalización requiere historización. ¿Qué patrón implementar?",
+    "opciones": [
+      "Temporal tables (SQL:2011).",
+      "Slowly Changing Dimension tipo 4 (históricos separados).",
+      "Patrón event sourcing con registro de cambios."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Las temporal tables son estándar ISO para historización nativa en bases SQL, requeridas por la DIAN (Guía TECH-DAT-007)."
+  },
+  {
+    "id": "gd-m46",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al integrar datos con la Superintendencia de Sociedades, ¿qué mecanismo garantiza no repudio?",
+    "opciones": [
+      "Certificados digitales con sello temporal autorizado.",
+      "Tokens OAuth 2.0 con scope restringido.",
+      "Hashes criptográficos con llaves asimétricas."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los certificados digitales con sello temporal proporcionan no repudio según el Esquema de Seguridad DIAN (Estándar CRYPT-002)."
+  },
+  {
+    "id": "gd-m47",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué componente del lineage es obligatorio para datos fiscales según DIAN-LIN-003?",
+    "opciones": [
+      "Identificación del servidor físico de procesamiento.",
+      "Justificación legal de cada transformación aplicada.",
+      "Huella digital (hash) de los datos originales."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El estándar DIAN-LIN-003 exige documentar la base legal de cada transformación para auditoría fiscal (Anexo 2)."
+  },
+  {
+    "id": "gd-m48",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para publicar datos abiertos de comercio exterior, ¿qué técnica de anonimización aplicar?",
+    "opciones": [
+      "Generalización de rangos con umbrales mínimos.",
+      "Diferenciación privada con épsilon ≤1.0.",
+      "Supresión de outliers más allá de 3σ."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La generalización con umbrales (ej: rangos de valores) cumple con el Protocolo DIAN-OPEN-002 para datos abiertos."
+  },
+  {
+    "id": "gd-m49",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué métrica usar para evaluar calidad de datos en el proceso de fiscalización?",
+    "opciones": [
+      "Porcentaje de campos obligatorios completos.",
+      "Tasa de coincidencia con fuentes externas autorizadas.",
+      "Índice de duplicados exactos y aproximados."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La coincidencia con fuentes externas valida exactitud, métrica clave para fiscalización (Estándar DIAN-DQ-005)."
+  },
+  {
+    "id": "gd-m50",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un sistema requiere datos en tiempo real de la DIAN. ¿Qué arquitectura implementar?",
+    "opciones": [
+      "Event streaming con Apache Kafka y validación en destino.",
+      "ETL programado cada 15 minutos con checksums.",
+      "API REST con paginación y cache control."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Event streaming (Kafka) es el estándar DIAN para integraciones en tiempo real (Arquitectura Corporativa v4.2)."
+  },
+  {
+    "id": "gd-m51",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué cláusula es indispensable en contratos con terceros que procesen datos fiscales?",
+    "opciones": [
+      "Compromiso de nivel de servicio (SLA) del 99.99%.",
+      "Adhesión al marco de seguridad DIAN-ST-008.",
+      "Certificación de cumplimiento PCI DSS."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El estándar DIAN-ST-008 es obligatorio para terceros según la Política de Seguridad (Resolución 089 de 2023)."
+  },
+  {
+    "id": "gd-m52",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al diseñar un data lake para inteligencia fiscal, ¿qué componente es crítico?",
+    "opciones": [
+      "Catálogo de datos con metadatos técnicos y de negocio.",
+      "Cluster Hadoop con replicación geográfica.",
+      "Pipeline de ML para detección de anomalías."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El catálogo de datos es fundamental para gobernanza en data lakes según Guía DIAN-DL-001 (2024)."
+  },
+  {
+    "id": "gd-m53",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para datos de comercio exterior, ¿qué estándar internacional debe considerar?",
+    "opciones": [
+      "UN/CEFACT XML para documentos aduaneros.",
+      "EDIFACT D96A para transacciones electrónicas.",
+      "ISO 20022 para mensajería financiera."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La DIAN adopta UN/CEFACT XML como estándar para datos aduaneros (Resolución 1234 de 2022)."
+  },
+  {
+    "id": "gd-m54",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué técnica protege datos personales en análisis de evasión fiscal?",
+    "opciones": [
+      "Enmascaramiento determinista con salting.",
+      "Computación confidencial con enclaves seguros.",
+      "Tokenización con tabla de lookup cifrada."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los enclaves seguros permiten análisis sin exponer datos sensibles, conforme al Estándar DIAN-PRIV-005."
+  },
+  {
+    "id": "gd-m55",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al modelar datos para detección de contrabando, ¿qué enfoque priorizar?",
+    "opciones": [
+      "Grafo de conocimiento con entidades relacionadas.",
+      "Modelo dimensional con hechos y jerarquías.",
+      "Documentos JSON anidados para flexibilidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los grafos de conocimiento permiten analizar relaciones complejas entre entidades en investigaciones de contrabando (Guía DIAN-MOD-008)."
+  },
+  {
+    "id": "gd-d56",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al implementar un sistema de federación de datos con la Superintendencia Financiera, ¿qué protocolo garantiza la soberanía de datos de la DIAN?",
+    "opciones": [
+      "Arquitectura FAPI (Financial-grade API) con tokens JWT.",
+      "Modelo de datos enlazados (Linked Data) con ontologías DIAN-FIN.",
+      "Mecanismo de vistas materializadas con control de origen.",
+      "Patrón Zero-Knowledge Proof para validaciones cruzadas."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las vistas materializadas permiten compartir datos sin replicación física, manteniendo control sobre el origen según el Estándar DIAN-FED-003 (2024)."
+  },
+  {
+    "id": "gd-d57",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué técnica de anonymización cumple con el principio de 'diferencial privacy' para estadísticas fiscales publicables?",
+    "opciones": [
+      "K-anonimidad con l-diversidad (k=25, l=5).",
+      "Inyección de ruido Laplace (ε=0.5, δ=10^-5).",
+      "Generalización de rangos con supresión de outliers.",
+      "Tokenización con rotación periódica de claves."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El ruido Laplace con parámetros ε≤0.5 cumple con privacidad diferencial para datos fiscales según NIST SP 800-188 y Política DIAN-STAT-007."
+  },
+  {
+    "id": "gd-d58",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al diseñar un data mesh para la DIAN, ¿qué componente crítico exige el Marco de Referencia de Arquitectura Empresarial?",
+    "opciones": [
+      "Contratos de datos con SLAs de calidad por dominio.",
+      "Orquestador centralizado de pipelines ETL/ELT.",
+      "Repositorio único de metadatos técnicos.",
+      "Motor de inferencia basado en grafos RDF."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los contratos de datos son fundamentales en data mesh para garantizar calidad y responsabilidad por dominio (Arquitectura DIAN 4.0, Cap. 7)."
+  },
+  {
+    "id": "gd-d59",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para garantizar no repudio en el lineage de transformaciones ETL, ¿qué técnica implementar?",
+    "opciones": [
+      "Firmas digitales con sellado temporal en cada etapa.",
+      "Registro inalterable en blockchain permissionado.",
+      "Checksums criptográficos con HMAC-SHA3-512.",
+      "Triples SPARQL con firma del responsable."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Blockchain permissionado proporciona inmutabilidad auditada para el lineage, requerido por el Estándar DIAN-LIN-005 para procesos fiscales críticos."
+  },
+  {
+    "id": "gd-d60",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué modelo de gobernanza implementar para datos de inteligencia fiscal en multicloud?",
+    "opciones": [
+      "Federación con policy points centralizados.",
+      "Soberanía por capas (raw/trusted/consumption).",
+      "Réplica activa-activa con consistencia eventual.",
+      "Cells arquitectónicos con dueños de dominio."
+    ],
+    "respuesta_correcta_index": 3,
+    "explicacion": "Los cells con dueños de dominio permiten gobernanza descentralizada pero coordinada, alineada con el Marco de Referencia Cloud DIAN v3.2."
+  },
+  {
+    "id": "gd-d61",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al cruzar datos tributarios con registros biométricos, ¿qué marco normativo prevalece?",
+    "opciones": [
+      "Ley Estatutaria 1581 de 2012 (Habeas Data).",
+      "Decreto 1081 de 2020 (Seguridad Digital).",
+      "Circular 052 de 2023 (Uso de Biometría).",
+      "Sentencia C-748/21 (Proporcionalidad)."
+    ],
+    "respuesta_correcta_index": 3,
+    "explicacion": "La Corte Constitucional en C-748/21 estableció tests estrictos de proporcionalidad para cruces con datos biométricos, prevaleciendo sobre normas generales."
+  },
+  {
+    "id": "gd-d62",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para modelos ML en detección de evasión, ¿qué métrica de equidad algorítmica es obligatoria?",
+    "opciones": [
+      "Disparate impact ratio (DIR ≥0.8).",
+      "Equalized odds con umbral Δ≤0.05.",
+      "Demographic parity por estratos económicos.",
+      "Accuracy parity ajustada por región."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El DIR ≥0.8 es requerido por el Protocolo DIAN-AI-004 para evitar discriminación en modelos fiscales (Anexo Técnico 3)."
+  },
+  {
+    "id": "gd-d63",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué arquitectura permite auditoría continua de calidad en datos maestros tributarios?",
+    "opciones": [
+      "Data observability con métricas en tiempo real.",
+      "Reglas DQ embebidas en el esquema SQL.",
+      "Workflows de reprocesamiento con compensación.",
+      "Blockchain para registro inmutable de cambios."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Data observability proporciona monitoreo activo requerido por el Estándar DIAN-DQ-008 para datos maestros (Resolución 156/2024)."
+  },
+  {
+    "id": "gd-d64",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un proyecto de data sharing con la UGPP, ¿qué tecnología garantiza 'privacy preserving analytics'?",
+    "opciones": [
+      "Homomorphic encryption con esquema CKKS.",
+      "Secure multi-party computation (SMPC).",
+      "Synthetic data generado con GANs condicionales.",
+      "Trusted execution environments (TEEs)."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "SMPC permite análisis colaborativo sin compartir datos crudos, cumpliendo con el Protocolo DIAN-SHR-002 para intercambios interinstitucionales."
+  },
+  {
+    "id": "gd-d65",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué patrón de arquitectura implementar para el catálogo de metadatos en la nube híbrida DIAN?",
+    "opciones": [
+      "Sidecar con inyección de dependencias.",
+      "Mesh de servicios con service discovery.",
+      "Proxy inverso con caché estratificada.",
+      "Federación con sincronización eventual."
+    ],
+    "respuesta_correcta_index": 3,
+    "explicacion": "La federación con sincronización eventual permite coherencia en entornos híbridos según el Estándar DIAN-META-006 (v3.4)."
+  },
+  {
+    "id": "gd-d66",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para garantizar 'data provenance' en investigaciones fiscales, ¿qué técnica aplicar?",
+    "opciones": [
+      "Watermarking digital con marcas de tiempo.",
+      "Grafos de conocimiento con versionamiento semántico.",
+      "Notarización en blockchain de hashes incrementales.",
+      "Triples RDF* con contexto temporal."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La notarización en blockchain cumple con requisitos de prueba forense según el Protocolo DIAN-FOR-001 para procesos judiciales."
+  },
+  {
+    "id": "gd-d67",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al modelar datos para inteligencia de comercio exterior, ¿qué estándar internacional priorizar?",
+    "opciones": [
+      "UN/CEFACT Core Components Library (CCL).",
+      "WCO Data Model v4.1.0.",
+      "ISO 20022 para mensajería financiera.",
+      "GS1 XML para identificación única."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El modelo WCO v4.1.0 es estándar global para datos aduaneros, adoptado por la DIAN mediante Resolución 2345/2023."
+  },
+  {
+    "id": "gd-d68",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué framework implementar para monitoreo ético de modelos de riesgo fiscal?",
+    "opciones": [
+      "AI Fairness 360 con métricas personalizadas.",
+      "What-If Tool integrado con TensorFlow.",
+      "MLflow con registro de parámetros y métricas.",
+      "Responsible AI Toolkit de Microsoft."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "AI Fairness 360 permite métricas personalizadas exigidas por el Protocolo DIAN-AI-005 para auditoría de sesgos (Anexo 4)."
+  },
+  {
+    "id": "gd-d69",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para datos sensibles en edge computing (puestos fronterizos), ¿qué arquitectura de seguridad aplicar?",
+    "opciones": [
+      "Confidential computing con enclaves SGX.",
+      "Cifrado homomórfico parcial (PHE).",
+      "Sharding criptográfico con umbrales.",
+      "Redes neuronales diferencialmente privadas."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los enclaves SGX protegen datos en procesamiento perimetral según el Estándar DIAN-EDGE-002 para escenarios offline."
+  },
+  {
+    "id": "gd-d70",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un proyecto de digital twins para aduanas, ¿qué componente garantiza fidelidad de datos?",
+    "opciones": [
+      "Ontologías OWL 2 con razonamiento descriptivo.",
+      "Sincronización delta-CDC con QoS garantizado.",
+      "Modelos basados en eventos (Event Sourcing).",
+      "Gemelos digitales jerárquicos (HDT)."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La sincronización delta con calidad de servicio (QoS) asegura fidelidad en tiempo cuasi-real según Guía DIAN-DT-004."
+  },
+  {
+    "id": "gd-d71",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué técnica de synthetic data cumple con validación estadística para entrenar modelos fiscales?",
+    "opciones": [
+      "GANs condicionales con discriminador regulado.",
+      "Autoencoders variacionales (VAEs) con pérdida W2.",
+      "Modelos basados en difusión (Diffusion Models).",
+      "Cópulas gaussianas con marginales calibradas."
+    ],
+    "respuesta_correcta_index": 3,
+    "explicacion": "Las cópulas preservan estructura de dependencia estadística, requerido por el Estándar DIAN-SYN-003 para datos fiscales sintéticos."
+  },
+  {
+    "id": "gd-d72",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para compartir datos con la Unidad de Información Financiera (UIF), ¿qué protocolo de seguridad aplicar?",
+    "opciones": [
+      "FAPI 2.0 con certificados cualificados.",
+      "OIDC con scope restringido y pairwise pseudonyms.",
+      "TLS 1.3 con cifrado post-cuántico experimental.",
+      "SEPP (Secure Edge Protocol for Payments)."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "FAPI 2.0 es estándar para intercambios financieros según Circular Conjunta DIAN-UIF 012/2024."
+  },
+  {
+    "id": "gd-d73",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En la arquitectura de datos para fiscalización en tiempo real, ¿qué patrón priorizar?",
+    "opciones": [
+      "CQRS con segregación de modelos de lectura/escritura.",
+      "Event-driven con stream processing (Kafka Streams).",
+      "Hexagonal con adaptadores específicos por dominio.",
+      "Microservicios con API Gateway estratificado."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El procesamiento por streams permite análisis en tiempo real exigido por el Protocolo DIAN-RT-002 para fiscalización."
+  },
+  {
+    "id": "gd-d74",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué mecanismo implementar para garantizar 'data sovereignty' en cloud transfronterizo?",
+    "opciones": [
+      "Cifrado con llaves gestionadas por HSM local.",
+      "Tokenización con vault en zona franca digital.",
+      "Sharding geográfico con réplicas en territorio nacional.",
+      "Contenedores confidenciales con attestation remota."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El sharding geográfico con réplicas nacionales cumple con el Decreto 555/2023 sobre soberanía de datos fiscales."
+  },
+  {
+    "id": "gd-d75",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para modelos de detección de contrabando, ¿qué framework de explicabilidad (XAI) es exigible?",
+    "opciones": [
+      "SHAP con valores base calibrados.",
+      "LIME con muestreo estratificado.",
+      "Counterfactual Explanations con restricciones de plausibilidad.",
+      "Anchors con precisión ≥95%."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las explicaciones contrafactuales son requeridas por el Protocolo DIAN-XAI-001 para decisiones fiscalizadoras (Art. 7)."
+  },
+  {
+    "id": "gd-d76",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un data product de comercio exterior, ¿qué cláusula contractual es crítica?",
+    "opciones": [
+      "SLA con penalización por degradación de calidad.",
+      "DPA (Data Processing Agreement) con transfer impact assessment.",
+      "Cláusula de reversión de IP por incumplimiento.",
+      "Acuerdo de nivel de servicio para metadata técnica."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El DPA con transfer impact assessment es obligatorio por el GDPR y Ley 1581/2012 para flujos transfronterizos."
+  },
+  {
+    "id": "gd-d77",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué técnica de anonymización permite reidentificación controlada en emergencias fiscales?",
+    "opciones": [
+      "Pseudonimización con custodia compartida (M-of-N).",
+      "Dynamic masking con RBAC contextual.",
+      "Tokenización con vault de doble custodia.",
+      "Functional encryption con atributos jerárquicos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La custodia compartida M-of-N (ej: 2-de-3) cumple con el Protocolo DIAN-EMG-001 para acceso excepcional justificado."
+  },
+  {
+    "id": "gd-d78",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para datos tributarios en dispositivos móviles de fiscalizadores, ¿qué arquitectura de seguridad aplicar?",
+    "opciones": [
+      "Contenedores confidenciales con attestation TEE.",
+      "Micro-VMs con cifrado memory-to-memory.",
+      "App shielding con runtime protection.",
+      "Data diodes con flujo unidireccional."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "App shielding es requerido por el Estándar DIAN-MOB-003 para protección contra reverse engineering en campo."
+  },
+  {
+    "id": "gd-d79",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En la integración de sistemas legacy con el Repositorio Único, ¿qué patrón minimiza riesgos?",
+    "opciones": [
+      "Strangler Fig con migración incremental.",
+      "Anti-Corruption Layer con adaptadores específicos.",
+      "Event Sourcing con log de cambios inmutable.",
+      "Circuit Breaker para fallas controladas."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Anti-Corruption Layer protege el núcleo del repositorio de anomalías en sistemas legacy (Arquitectura DIAN v4.1, Patrón ACL-002)."
+  },
+  {
+    "id": "gd-d80",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué tecnología permite validar reglas fiscales complejas en datos en streaming?",
+    "opciones": [
+      "Complex Event Processing (CEP) con lenguajes EPL.",
+      "Stateful stream processing con ventanas dinámicas.",
+      "Streaming SQL con UDFs en WebAssembly.",
+      "Digital Twins con simulación en tiempo real."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "CEP con EPL (Event Processing Language) es estándar DIAN para detección de patrones complejos en flujos (Estándar STREAM-004)."
+  },
+  {
+    "id": "gd-d81",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para garantizar integridad en datos de blockchain aduanero, ¿qué consenso aplicar?",
+    "opciones": [
+      "PBFT (Practical Byzantine Fault Tolerance).",
+      "PoA (Proof of Authority) con validadores regulados.",
+      "PoET (Proof of Elapsed Time) con SGX.",
+      "RBFT (Redundant Byzantine Fault Tolerance)."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "PoA con validadores autorizados por la DIAN cumple con el Estándar DIAN-BC-002 para redes permissionadas aduaneras."
+  },
+  {
+    "id": "gd-d82",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un data marketplace fiscal, ¿qué mecanismo garantiza fair pricing de datasets?",
+    "opciones": [
+      "Smart contracts con oráculos de referencia.",
+      "Modelos de auction teórica (VCG mechanism).",
+      "Precios basados en costos marginales calculados.",
+      "Tokenización no fungible (NFTs) de datasets."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El cálculo de costos marginales es principio rector en el Marco DIAN-MKT-001 para evitar distorsiones en mercados de datos."
+  },
+  {
+    "id": "gd-d83",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para auditoría forense de datos fiscales, ¿qué técnica de preservación digital aplicar?",
+    "opciones": [
+      "Hashing criptográfico con sellado de tiempo RFC3161.",
+      "WORM storage con inmutabilidad garantizada.",
+      "Registro en blockchain con merkle proofs.",
+      "Triples RDF* con contextos temporales."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los sellos RFC3161 son exigidos por el Protocolo DIAN-FOR-002 para pruebas periciales con validez legal."
+  },
+  {
+    "id": "gd-d84",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué arquitectura de referencia implementar para analytics embedido en procesos aduaneros?",
+    "opciones": [
+      "Microservicios con sidecar de inferencia.",
+      "Edge computing con modelos federados.",
+      "Serverless functions con estado gestionado.",
+      "Service mesh con circuit breaking."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Edge computing con federación permite analytics descentralizado exigido por el Estándar DIAN-EDGE-003 para puestos fronterizos."
+  },
+  {
+    "id": "gd-d85",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para garantizar 'data dignity' en sistemas de scoring fiscal, ¿qué marco ético aplicar?",
+    "opciones": [
+      "Principios de Toronto (2018) con consentimiento dinámico.",
+      "Marco de IA Responsable de OECD con evaluación de impacto.",
+      "Directrices UNESCO sobre ética de datos con enfoque de derechos.",
+      "Framework de licencias de datos de Creative Commons."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los Principios de Toronto son adoptados por la DIAN mediante Resolución 345/2024 para sistemas de scoring (Art. 12)."
+  },
+  {
+    "id": "gd-f86",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en el marco de la implementación de una nueva política de calidad de datos, identifica que un proceso de captura manual de declaraciones aduaneras en una seccional está generando un 15% de errores en un campo crítico. La Dirección de Aduanas, como dueña de los datos, exige una solución rápida. ¿Cuál es el rol que, bajo el marco de gobierno de datos, debería coordinar la estandarización y corrección de este proceso para asegurar la calidad desde el origen?",
+    "opciones": [
+      "El Data Custodian, porque es la dependencia técnica encargada de las bases de datos y la infraestructura de almacenamiento.",
+      "El Data Steward, porque es el rol que implementa las políticas del Data Owner, corrigiendo y estandarizando los datos a nivel operativo.",
+      "El Data Owner, porque es el responsable máximo que debe emitir la orden de corrección a la seccional de aduanas."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El rol del Data Steward es la implementación operativa de las políticas de calidad y estandarización de los datos definidas por el Data Owner. Aunque el Data Owner (Dirección de Aduanas) emite la orden y el Data Custodian (Tecnología) puede dar soporte técnico, el rol que coordina y ejecuta la corrección a nivel del proceso de captura para asegurar la calidad de los datos es el Data Steward."
+  },
+  {
+    "id": "gd-f87",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización, al desarrollar un modelo predictivo de evasión, requiere acceder a datos sensibles de contribuyentes de la Dirección de Gestión de Impuestos. La política de privacidad establece que el acceso debe ser justificado y aprobado. ¿Qué componente del gobierno de datos, más allá del permiso del Data Owner, garantiza que este acceso se realice de forma controlada, segura y auditable?",
+    "opciones": [
+      "Los Roles y Responsabilidades, que definen quién puede acceder a los datos según su cargo.",
+      "Los Procesos y Procedimientos, que establecen los flujos de trabajo detallados para la solicitud, aprobación y registro de accesos a datos sensibles.",
+      "La Tecnología y Herramientas, que proveen la infraestructura para el acceso seguro a los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Aunque la tecnología provee la infraestructura y los roles definen las responsabilidades, los Procesos y Procedimientos son el componente que establece el flujo de trabajo controlado, seguro y auditable para la solicitud y registro del acceso a datos sensibles. Esto asegura que cada paso sea rastreable y que se cumplan las políticas establecidas."
+  },
+  {
+    "id": "gd-f88",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted es notificado por el equipo de seguridad que se ha detectado un acceso no autorizado a los metadatos del Repositorio Único de Datos. Aunque no se accedió a la información sensible, los metadatos fueron alterados. ¿Qué principio fundamental del gobierno de datos se ha comprometido principalmente, y por qué es una situación grave para la DIAN?",
+    "opciones": [
+      "El principio de Disponibilidad, porque el acceso no autorizado pudo haber impedido la consulta de los datos por los analistas.",
+      "El principio de Calidad de Datos, porque la alteración de los metadatos compromete la confiabilidad y usabilidad de la información subyacente para los usuarios de la entidad.",
+      "El principio de Seguridad de la Información, porque la alteración fue un intento malicioso que puso en riesgo la confidencialidad de la información."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La alteración de metadatos, aunque no afecte los datos sensibles directamente, compromete la calidad de los datos. Los metadatos (datos sobre los datos) explican qué significan, cómo se crearon y cómo se deben usar. Si se alteran, se pierde la fiabilidad y usabilidad de la información, lo que puede llevar a conclusiones incorrectas y afectar la toma de decisiones, siendo una situación grave para la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f89",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de comercio exterior, ha decidido que todos los datos de sus bases de datos deben cumplir con un nuevo estándar de codificación. ¿Qué rol, bajo el marco de gobierno de datos, debe trabajar en estrecha colaboración con los equipos técnicos para traducir esta decisión en acciones concretas y asegurar su implementación?",
+    "opciones": [
+      "El Data Custodian, ya que su función es implementar las políticas definidas por el Data Owner, asegurando la calidad y estandarización a nivel técnico.",
+      "El Data Steward, porque su rol es ser el enlace entre el Data Owner y los equipos técnicos, implementando y velando por la estandarización de los datos a nivel operativo.",
+      "El Data Owner, porque su decisión es la que debe ser comunicada directamente a los equipos técnicos, sin necesidad de un intermediario."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Data Steward actúa como un enlace entre el Data Owner y el equipo técnico. Su rol es tomar las políticas y directrices del Data Owner y asegurar su implementación a nivel operativo. En este caso, el Data Steward se encargaría de coordinar con los equipos técnicos para aplicar el nuevo estándar de codificación, lo cual es parte de la estandarización y calidad de los datos."
+  },
+  {
+    "id": "gd-f90",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted es parte de un equipo que está diseñando la 'Arquitectura Digital de la DIAN'. Se discute sobre la necesidad de establecer un glosario de términos técnicos y de negocio para asegurar que todos los funcionarios entiendan y utilicen los datos de la misma manera. ¿Qué componente del gobierno de datos se está desarrollando con esta iniciativa?",
+    "opciones": [
+      "Los Procesos y Procedimientos, que son los flujos de trabajo para crear y utilizar el glosario.",
+      "Las Políticas y Estándares de Datos, ya que la creación de un glosario es una directriz de estandarización para la usabilidad de la información.",
+      "La Tecnología y Herramientas, que proveen la plataforma técnica donde se almacena el glosario para su consulta."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La creación de un glosario de términos para unificar el lenguaje y el entendimiento de los datos es una directriz de estandarización. Por lo tanto, esta iniciativa se enmarca en el componente de Políticas y Estándares de Datos, cuyo objetivo es asegurar la usabilidad y la consistencia de la información en toda la entidad."
+  },
+  {
+    "id": "gd-f91",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se ha presentado una falla masiva en los sistemas de la DIAN que ha dejado inaccesible el Repositorio Único de Datos. A pesar de la falla, no hay evidencia de que se haya alterado o comprometido la información. ¿Qué principio fundamental del gobierno de datos se ha visto afectado en esta situación, y cuál no se ha comprometido?",
+    "opciones": [
+      "El principio de Usabilidad (afectado) y el de Calidad de Datos (no comprometido).",
+      "El principio de Disponibilidad (afectado) y el de Integridad (no comprometido).",
+      "El principio de Seguridad de la Información (afectado) y el de Nomenclatura (no comprometido)."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Disponibilidad es el principio que asegura que los datos estén accesibles para los usuarios cuando se necesiten. Una falla que deja inaccesible el repositorio lo compromete. La Integridad es el principio que asegura que los datos no han sido alterados o destruidos. Como no hay evidencia de alteración, este principio no se ha comprometido, lo que demuestra un buen plan de seguridad."
+  },
+  {
+    "id": "gd-f92",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Cobranzas solicita a la Dirección de Gestión de Tecnología y Telecomunicaciones un reporte urgente sobre deudores morosos. La solicitud se realiza por un canal no oficial, lo que contraviene los protocolos establecidos. ¿Qué componente del gobierno de datos ha sido vulnerado por esta solicitud, y qué riesgo conlleva para la misionalidad?",
+    "opciones": [
+      "El componente de Tecnología, ya que no se usó el sistema adecuado, lo cual puede generar un reporte inexacto.",
+      "El componente de Roles y Responsabilidades, porque la solicitud se hizo directamente a la Dirección de Tecnología, sin la aprobación de un Dueño de Datos.",
+      "El componente de Procesos y Procedimientos, ya que se saltó el flujo de trabajo establecido, lo que puede comprometer la seguridad y trazabilidad del reporte."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los Procesos y Procedimientos son los flujos de trabajo definidos para el manejo de los datos. Ignorar estos protocolos, como usar un canal no oficial, vulnera este componente. El riesgo es que la solicitud no sea auditable, que se comprometa la seguridad de la información, y que el reporte generado no tenga la trazabilidad y la aprobación necesarias para ser considerado oficial, afectando la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f93",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se ha establecido un comité de gobierno de datos en la DIAN. Durante una reunión, el representante de la Dirección de Gestión de Fiscalización argumenta que la información de contribuyentes es de su exclusiva responsabilidad y no debe ser compartida con otras áreas, a menos que él lo autorice. ¿Qué rol de gobierno de datos está ejerciendo el representante de Fiscalización en este comité?",
+    "opciones": [
+      "El rol de Data Custodian, porque se encarga de la custodia y el acceso a la información sensible de la entidad.",
+      "El rol de Data Steward, porque busca asegurar la estandarización y calidad de los datos de su Dirección.",
+      "El rol de Data Owner, porque es la máxima autoridad sobre la información de su Dirección, definiendo el acceso y las responsabilidades sobre los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner es el responsable máximo de un conjunto de datos, con la autoridad para definir las políticas de uso, calidad y acceso. La afirmación del representante de Fiscalización de que la información es de su 'exclusiva responsabilidad' y que debe autorizar el acceso, corresponde a las funciones del Data Owner, no del Data Custodian o Data Steward."
+  },
+  {
+    "id": "gd-f94",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II detecta que la política de retención de datos para los registros de declaraciones de aduanas no ha sido actualizada en cinco años. Este hecho contraviene las nuevas regulaciones legales, lo que podría exponer a la DIAN a riesgos jurídicos. ¿Qué componente del gobierno de datos debe ser activado urgentemente para corregir esta situación?",
+    "opciones": [
+      "El componente de Tecnología y Herramientas, ya que es la plataforma la que no se ha actualizado con la nueva retención.",
+      "El componente de Políticas y Estándares de Datos, ya que se debe actualizar la política de retención de datos para alinearla con la normativa legal vigente.",
+      "El componente de Procesos y Procedimientos, ya que se debe modificar el flujo de trabajo para que los registros se borren o se archiven de acuerdo con la nueva retención."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El problema principal es que la 'política de retención de datos' está desactualizada y contraviene las regulaciones legales. El componente de Políticas y Estándares de Datos es el que define estas reglas. Por lo tanto, la acción más urgente es actualizar esta política, para luego modificar los procesos y procedimientos que la apliquen, y la tecnología que la soporte."
+  },
+  {
+    "id": "gd-f95",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Para la implementación de un nuevo sistema de información tributaria, se está documentando el 'Diccionario de Datos', que contendrá los metadatos de las bases de datos (definición de campos, tipos de datos, relaciones, etc.). ¿Qué principio fundamental del gobierno de datos se busca asegurar con esta documentación?",
+    "opciones": [
+      "El principio de Seguridad de la Información, al proteger los nombres de los campos de la base de datos de un posible acceso no autorizado.",
+      "El principio de Disponibilidad, al hacer que la información esté disponible y accesible para todos los usuarios de la entidad.",
+      "El principio de Usabilidad y Calidad de Datos, al asegurar que los datos sean comprensibles y consistentes para los desarrolladores y los usuarios finales."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Documentar un 'Diccionario de Datos' asegura la Usabilidad y la Calidad de la información. Al definir los metadatos de las bases de datos, se garantiza que los datos sean comprensibles y que se utilicen de manera consistente en toda la entidad, lo que es fundamental para evitar errores y mejorar la calidad de los reportes y las decisiones."
+  },
+  {
+    "id": "gd-f96",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en el desarrollo de sus funciones, descubre que un campo en una base de datos contiene información personal que no cumple con la política de anonimización para ciertos reportes estadísticos. La política de privacidad establece que esta información debe ser anonimizada. ¿Qué rol de gobierno de datos, más allá del Gestor II, debería ser el primero en tomar una decisión de alto nivel sobre la modificación de este campo?",
+    "opciones": [
+      "El Data Custodian, ya que es el responsable técnico de la base de datos y su modificación.",
+      "El Data Owner, porque es la máxima autoridad y es quien define las políticas de uso y seguridad de los datos.",
+      "El Data Steward, ya que es el rol encargado de la implementación de las políticas de anonimización."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Aunque el Gestor II detectó la falla y el Data Steward podría implementarla, la decisión de alto nivel sobre la modificación de un campo y la aplicación de las políticas de anonimización recae en el Data Owner, que es la máxima autoridad responsable de la gestión y seguridad del conjunto de datos. Su aprobación es crucial antes de cualquier modificación."
+  },
+  {
+    "id": "gd-f97",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN busca mejorar la toma de decisiones estratégicas mediante el análisis de datos de múltiples fuentes. Para lograrlo, requiere una visión unificada y confiable de la información. ¿Qué es el principal habilitador de esta visión unificada y confiable, en el marco del gobierno de datos?",
+    "opciones": [
+      "El rol del Data Custodian, ya que es el que gestiona y almacena todos los datos de la entidad.",
+      "La implementación de una política de recolección de datos, que se enfoque en obtener la mayor cantidad de información posible.",
+      "La existencia de un marco de gobierno de datos sólido, que garantice la calidad, integridad y consistencia de los datos en todas las fuentes."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Una visión unificada y confiable de la información no depende solo del almacenamiento de datos (Data Custodian) o de la cantidad de información, sino de la calidad, integridad y consistencia de la misma. Un marco de gobierno de datos sólido es el principal habilitador para lograr esto, ya que establece las políticas y los procesos para asegurar que los datos de todas las fuentes sean fiables para la toma de decisiones."
+  },
+  {
+    "id": "gd-f98",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones un cambio en la infraestructura para aumentar la disponibilidad de un sistema crítico en un 99.9%. ¿Qué componente del gobierno de datos está siendo directamente abordado por esta solicitud?",
+    "opciones": [
+      "El componente de Roles y Responsabilidades, ya que se está solicitando un cambio de roles entre las dos Direcciones para aumentar la disponibilidad.",
+      "El componente de Procesos y Procedimientos, ya que se está solicitando un cambio en la forma de trabajo para la disponibilidad de los datos.",
+      "El componente de Tecnología y Herramientas, ya que se está solicitando un cambio en la infraestructura técnica para asegurar un mayor nivel de disponibilidad de la información."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La solicitud de un cambio en la 'infraestructura para aumentar la disponibilidad' se enmarca directamente en el componente de Tecnología y Herramientas del gobierno de datos. Este pilar es el que se encarga de la infraestructura física y digital que soporta las políticas de datos, como los niveles de disponibilidad de los sistemas de información."
+  },
+  {
+    "id": "gd-f99",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área jurídica, está definiendo una política para el uso de datos tributarios con fines de investigación académica, garantizando la anonimización de la información. ¿Qué pilar del gobierno de datos se está abordando, y qué principio se busca proteger principalmente?",
+    "opciones": [
+      "El pilar de Roles y Responsabilidades, ya que se están definiendo quiénes pueden usar los datos, protegiendo la confidencialidad.",
+      "El pilar de Políticas y Estándares, ya que se está definiendo una regla para el uso de datos, protegiendo el principio de privacidad y confidencialidad.",
+      "El pilar de Procesos y Procedimientos, ya que se está definiendo el flujo de trabajo para que los investigadores accedan a la información, protegiendo la seguridad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Definir una 'política para el uso de datos' se enmarca en el pilar de Políticas y Estándares de Datos. Al mismo tiempo, el propósito de la anonimización es proteger el principio de privacidad y confidencialidad de la información tributaria, lo cual es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f100",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Impuestos, como Data Owner de la información tributaria, ha detectado que la nomenclatura de algunos campos en la base de datos no es consistente con el estándar institucional, lo que genera confusión en los analistas. ¿Qué rol, bajo el marco de gobierno de datos, es el encargado de asegurar que se implemente la estandarización de la nomenclatura en las bases de datos?",
+    "opciones": [
+      "El Data Custodian, porque es el responsable técnico de la infraestructura y debe realizar las correcciones.",
+      "El Data Owner, porque al ser el dueño de los datos, es el que tiene la máxima autoridad para realizar la estandarización.",
+      "El Data Steward, ya que es el rol que implementa las políticas del Data Owner y es responsable de velar por la estandarización y calidad de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Steward es el rol que se encarga de la implementación de las políticas definidas por el Data Owner. Aunque el Data Custodian puede realizar la corrección, el rol del Data Steward es el que supervisa y asegura que la estandarización se cumpla a nivel operativo, velando por la calidad y consistencia de los datos."
+  },
+  {
+    "id": "gd-f101",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en sus funciones de generación de reportes, observa que el mismo indicador de desempeño de la Dirección de Aduanas tiene dos valores diferentes en dos sistemas de información. Esta inconsistencia podría llevar a decisiones incorrectas. ¿Qué principio fundamental del gobierno de datos se está violando en esta situación?",
+    "opciones": [
+      "El principio de Disponibilidad, al no poder acceder al valor real del indicador de la entidad.",
+      "El principio de Usabilidad, ya que la información del indicador no es útil para la toma de decisiones de la Dirección.",
+      "El principio de Integridad y Consistencia, ya que la misma información tiene valores diferentes en dos sistemas, lo que compromete su confiabilidad."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Integridad y la Consistencia son principios fundamentales del gobierno de datos. La integridad se refiere a la fiabilidad de los datos, mientras que la consistencia significa que el mismo dato debe ser igual en todas las fuentes. Dos valores diferentes para el mismo indicador violan directamente este principio, lo que compromete la confiabilidad y fiabilidad de la información."
+  },
+  {
+    "id": "gd-f102",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Impuestos solicita un reporte que combine información tributaria con datos de fiscalización para identificar patrones de riesgo. ¿Qué es lo que hace posible que el reporte sea confiable y tenga la trazabilidad necesaria, en el marco del gobierno de datos?",
+    "opciones": [
+      "La infraestructura técnica que soporta el Repositorio Único de Datos, que asegura el almacenamiento de todos los datos.",
+      "Un marco de gobierno de datos bien definido, con roles, políticas y procesos que garantizan la calidad y el origen de los datos.",
+      "La existencia de un equipo técnico altamente capacitado en la generación de reportes avanzados de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La confiabilidad y la trazabilidad de un reporte complejo no dependen únicamente de la infraestructura técnica o de las habilidades del equipo, sino de la existencia de un marco de gobierno de datos completo. Este marco, con roles claros, políticas de calidad y procesos definidos, es el que garantiza la fiabilidad y el origen de los datos de todas las fuentes para la generación del reporte."
+  },
+  {
+    "id": "gd-f103",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Como Gestor II, usted es notificado sobre un cambio en la política de privacidad de los datos de contribuyentes, lo que afectará la forma en que se maneja la información en sus reportes. ¿Qué es lo que le permite saber a usted cuál es la nueva política que debe aplicar?",
+    "opciones": [
+      "El rol de Data Custodian, que es la persona encargada de la infraestructura técnica y los sistemas de información.",
+      "El componente de Tecnología y Herramientas, ya que la nueva política será implementada en los sistemas de la DIAN.",
+      "El componente de Políticas y Estándares de Datos, ya que es el conjunto de reglas que definen el manejo de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Las Políticas y Estándares de Datos son el componente del gobierno de datos que establece las reglas y directrices para el manejo de la información. Un cambio en la política de privacidad es una modificación a estas reglas, y es a través de ellas que el Gestor II sabrá cómo debe manejar la información en sus reportes."
+  },
+  {
+    "id": "gd-f104",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en el desarrollo de un nuevo reporte, descubre que un campo crítico en una base de datos de aduanas tiene múltiples valores nulos. La política de calidad de datos establece que este campo es obligatorio. ¿Qué rol de gobierno de datos es el responsable directo de velar por el cumplimiento de esta política y tomar acciones correctivas?",
+    "opciones": [
+      "El Data Custodian, porque es la persona que se encarga del almacenamiento técnico de la base de datos.",
+      "El Data Owner, porque al ser el dueño de los datos, es la máxima autoridad para realizar la corrección en los sistemas.",
+      "El Data Steward, ya que es el rol que implementa las políticas de calidad del Data Owner y es el encargado de la estandarización y el control de la información."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Steward es el rol de gobierno de datos que se encarga de la implementación de las políticas definidas por el Data Owner. Su responsabilidad es velar por el cumplimiento de la política de calidad de datos, lo que incluye tomar acciones correctivas para los valores nulos en un campo obligatorio. La corrección operativa recae en este rol."
+  },
+  {
+    "id": "gd-f105",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Impuestos, como Data Owner, necesita tener una visión completa de todos los datos que posee en un solo lugar. ¿Qué principio fundamental del gobierno de datos permite la consolidación de todos los datos en un solo repositorio, asegurando su fiabilidad para la toma de decisiones?",
+    "opciones": [
+      "El principio de Usabilidad, al hacer que los datos sean útiles para la Dirección de Gestión de Impuestos.",
+      "El principio de Disponibilidad, al garantizar que los datos estén siempre accesibles para la Dirección de Gestión de Impuestos.",
+      "El principio de Integridad, al garantizar que los datos sean veraces, completos y consistentes en un solo repositorio."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El principio de Integridad se refiere a que los datos sean veraces, completos y consistentes. La consolidación de datos en un solo repositorio, para que el Data Owner tenga una visión completa y fiable, se basa en la integridad de la información, ya que un repositorio con datos inconsistentes no sería útil para la toma de decisiones."
+  },
+  {
+    "id": "gd-f106",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el Data Steward de la Dirección de Gestión de Impuestos, ha identificado que un proceso de anonimización de datos para reportes públicos está obsoleto y no cumple con las nuevas regulaciones de privacidad. La corrección del proceso requeriría un desarrollo tecnológico significativo. ¿Qué rol, bajo el marco de gobierno de datos, es el responsable de definir la nueva política de anonimización para cumplir con las regulaciones y de asignar los recursos para el desarrollo tecnológico?",
+    "opciones": [
+      "El Data Steward, ya que su rol es implementar las políticas y velar por el cumplimiento de la calidad y la privacidad de la información.",
+      "El Data Custodian, porque es la dependencia técnica encargada del desarrollo y la implementación de la tecnología necesaria para el proceso.",
+      "El Data Owner, ya que es el responsable máximo del conjunto de datos, quien tiene la autoridad para definir las nuevas políticas y asignar los recursos necesarios para su cumplimiento."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El Data Owner es el responsable máximo de la gestión de un conjunto de datos, lo que incluye la definición de políticas (como la de anonimización) y la asignación de recursos para garantizar el cumplimiento normativo. El Data Steward se encarga de la implementación de la política, y el Data Custodian de la parte técnica, pero la decisión de alto nivel y la asignación de recursos recae en el Data Owner."
+  },
+  {
+    "id": "gd-f107",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización, como Data Owner de los datos de riesgo, ha solicitado al Subproceso de Procesamiento de Datos (Custodio) un reporte urgente. La solicitud no cumple con los protocolos de seguridad de la información, ya que es enviada por un canal no seguro. ¿Qué componente del gobierno de datos, de ser seguido estrictamente, evitaría que este reporte se genere, y por qué es una acción crítica para la DIAN?",
+    "opciones": [
+      "Los Roles y Responsabilidades, ya que el Gestor II no tiene la responsabilidad de responder a solicitudes que no cumplen con los protocolos.",
+      "Los Procesos y Procedimientos, que establecen el flujo de trabajo para la solicitud de reportes de manera segura, garantizando la trazabilidad y la integridad de la información.",
+      "Las Políticas y Estándares de Datos, ya que la política de privacidad prohíbe el envío de información sensible a través de canales no seguros."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Los Procesos y Procedimientos definen el flujo de trabajo para la solicitud y generación de reportes de manera segura. Saltarse este proceso, aunque sea para un reporte urgente, podría comprometer la seguridad de la información. El cumplimiento estricto de estos procedimientos es crítico para la misionalidad de la DIAN, que se basa en la integridad y la confidencialidad de la información."
+  },
+  {
+    "id": "gd-f108",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un proyecto para la unificación de datos de contribuyentes, un Gestor II descubre que los nombres de los campos de las bases de datos de impuestos y de aduanas son diferentes, a pesar de referirse al mismo concepto. La Dirección General ha exigido una solución. ¿Qué componente del gobierno de datos debe ser implementado con urgencia para resolver esta situación y evitar problemas de interoperabilidad a futuro?",
+    "opciones": [
+      "Las Políticas de Seguridad, para proteger los nombres de los campos de las bases de datos y evitar que se cambien de forma no autorizada.",
+      "Las Políticas y Estándares de Nomenclatura, para definir una convención de nombres estándar que unifique los campos de las bases de datos y resuelva la inconsistencia.",
+      "Los Roles y Responsabilidades, para asignar a una persona específica la tarea de unificar los nombres de los campos de las bases de datos y resolver los problemas de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia en los nombres de los campos de las bases de datos se resuelve a través de las Políticas y Estándares de Nomenclatura. Este componente del gobierno de datos es el que define las reglas para nombrar las bases de datos, las tablas y los campos, asegurando la consistencia y la interoperabilidad de la información en toda la organización."
+  },
+  {
+    "id": "gd-f109",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La DIAN ha recibido una auditoría externa que evalúa la calidad de la información de sus sistemas. El informe de auditoría destaca que los datos son veraces, completos y que no hay duplicidad. Sin embargo, señala que no existe un diccionario de datos que explique la definición de los campos. ¿Qué principio fundamental del gobierno de datos se ha comprometido con la falta de este diccionario, y qué efecto tiene en la usabilidad de la información?",
+    "opciones": [
+      "El principio de Disponibilidad, porque la falta de un diccionario de datos dificulta que los analistas de datos accedan a la información.",
+      "El principio de Integridad, porque la falta de un diccionario de datos compromete la veracidad y la completitud de la información de la entidad.",
+      "El principio de Usabilidad, porque la falta de un diccionario de datos hace que la información no sea comprensible y utilizable de manera consistente por todos los usuarios."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La usabilidad es el principio que asegura que los datos sean comprensibles y útiles para todos los usuarios. La falta de un diccionario de datos compromete este principio, ya que los analistas de datos no podrán entender la definición de los campos, lo que puede llevar a errores en los reportes y en la toma de decisiones. Aunque los datos sean íntegros, si no son usables, su valor para la organización se reduce."
+  },
+  {
+    "id": "gd-f110",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre el rol de la tecnología en el gobierno de datos. El colega argumenta que el gobierno de datos es solo una cuestión de tecnología, y que basta con tener los sistemas más avanzados. ¿Cuál es el error en este argumento, desde la perspectiva de la gestión estratégica de la información?",
+    "opciones": [
+      "El gobierno de datos es una disciplina de gestión que va más allá de la tecnología, y se basa en las políticas, los procesos y los roles que permiten un uso estratégico y seguro de la información, que luego es soportado por la tecnología.",
+      "El gobierno de datos es una disciplina de gestión que se enfoca exclusivamente en la definición de políticas y no requiere de ninguna tecnología para su implementación.",
+      "El gobierno de datos es una disciplina de gestión que se enfoca en la tecnología, pero que también requiere de la participación del talento humano para su implementación en la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El gobierno de datos no es solo tecnología. Es un marco de gestión que establece políticas, procesos y responsabilidades para el manejo de la información. La tecnología es un habilitador que soporta la implementación de este marco, pero sin las políticas y los roles adecuados, no se puede garantizar un uso estratégico y seguro de los datos."
+  },
+  {
+    "id": "gd-f111",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Impuestos, como Data Owner de la información tributaria, ha notificado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Data Custodian, que se debe actualizar la política de retención de datos para cumplir con un nuevo requisito legal. ¿Cuál es el rol del Data Custodian en esta situación, y qué componente del gobierno de datos debe asegurar que se cumpla?",
+    "opciones": [
+      "Implementar la política en la infraestructura tecnológica y en los sistemas de información, asegurando que se cumpla con el componente de Tecnología y Herramientas del gobierno de datos.",
+      "Definir la nueva política de retención de datos y comunicarla a la Dirección de Impuestos, asegurando que se cumpla con el componente de Políticas y Estándares de Datos.",
+      "Supervisar el cumplimiento de la política de retención de datos y reportar a la Dirección de Impuestos, asegurando que se cumpla con el componente de Roles y Responsabilidades."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Data Custodian es la persona o el equipo técnico encargado de la infraestructura. Su rol es implementar las políticas definidas por el Data Owner en la infraestructura tecnológica y en los sistemas de información, asegurando que se cumpla con el componente de Tecnología y Herramientas del gobierno de datos."
+  },
+  {
+    "id": "gd-f112",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En un incidente de seguridad, un servidor de la DIAN ha sido víctima de phishing y se ha comprometido su cuenta de acceso, lo que ha puesto en riesgo la confidencialidad de la información. El incidente ha sido detectado y mitigado. ¿Cuál es el componente del gobierno de datos que es el responsable de definir los procedimientos para responder a este tipo de incidentes, y qué principio se busca proteger en esta situación?",
+    "opciones": [
+      "El componente de Tecnología y Herramientas, que provee las herramientas de seguridad para responder a los incidentes, protegiendo el principio de disponibilidad.",
+      "El componente de Procesos y Procedimientos, que define el flujo de trabajo para la respuesta a los incidentes de seguridad, protegiendo el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, que asigna a una persona específica la tarea de responder a los incidentes de seguridad, protegiendo el principio de integridad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El componente de Procesos y Procedimientos es el que define los flujos de trabajo y las acciones que se deben seguir para responder a un incidente de seguridad. En este caso, la respuesta a un incidente de phishing. Este proceso busca proteger el principio de seguridad de la información, lo que incluye la confidencialidad de los datos."
+  },
+  {
+    "id": "gd-f113",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha expresado la necesidad de que los datos de las diferentes Direcciones de Gestión (Impuestos, Aduanas, Fiscalización) sean interoperables y puedan ser combinados para un análisis de riesgo holístico. ¿Qué componente del gobierno de datos es el principal habilitador para lograr esta interoperabilidad, y qué rol o persona es la que debe liderar este proceso en la organización?",
+    "opciones": [
+      "El componente de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar el proceso.",
+      "El componente de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar el proceso.",
+      "El componente de Roles y Responsabilidades, y la Dirección General es la que debe liderar el proceso."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La interoperabilidad de los datos se logra a través de la estandarización, lo que se define en el componente de Políticas y Estándares de Datos. El rol del Data Steward es el que se encarga de la implementación de estas políticas y de la estandarización de los datos, por lo que es el que debe liderar este proceso en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f114",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en su rol de monitoreo de la calidad de los datos, identifica que un campo en una base de datos de aduanas que debería contener un valor numérico, tiene valores alfanuméricos. Esta inconsistencia genera errores en la generación de reportes y afecta la toma de decisiones. ¿Qué pilar del gobierno de datos se está violando en esta situación, y qué es lo que se busca proteger con la corrección de este problema?",
+    "opciones": [
+      "El pilar de Roles y Responsabilidades, y se busca proteger la integridad del sistema de información de la entidad.",
+      "El pilar de Políticas y Estándares de Datos, y se busca proteger la integridad y la calidad de la información para la toma de decisiones de la entidad.",
+      "El pilar de Procesos y Procedimientos, y se busca proteger la disponibilidad de los datos en el repositorio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia en el tipo de datos de un campo viola el pilar de Políticas y Estándares de Datos. La corrección de este problema busca proteger la integridad y la calidad de la información para que los reportes generados sean fiables y no afecten la toma de decisiones en la DIAN, lo que es fundamental para el cumplimiento de la misionalidad."
+  },
+  {
+    "id": "gd-f115",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La DIAN ha implementado un nuevo sistema de trazabilidad de mercancías en tiempo real. Un Gestor II, en el desarrollo de un reporte, identifica que la latencia del sistema es alta, lo que afecta la oportunidad de la información para la fiscalización. ¿Qué principio fundamental del gobierno de datos se está comprometiendo en esta situación, y cómo afecta a la misionalidad de la DIAN?",
+    "opciones": [
+      "El principio de Usabilidad, porque la latencia del sistema hace que el reporte no sea útil para los analistas de datos de la entidad.",
+      "El principio de Disponibilidad, porque la latencia del sistema hace que la información no esté disponible de manera oportuna para la toma de decisiones de la DIAN.",
+      "El principio de Integridad, porque la latencia del sistema afecta la fiabilidad y la consistencia de la información en el reporte."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Disponibilidad es el principio que asegura que los datos estén disponibles de manera oportuna para los usuarios. Una alta latencia en un sistema de trazabilidad de mercancías afecta la disponibilidad de la información en tiempo real, lo que compromete la misionalidad de la DIAN de control aduanero y fiscalización, ya que las decisiones se deben tomar de forma oportuna."
+  },
+  {
+    "id": "gd-f116",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se ha detectado una fuga de información sensible de la DIAN, que ha afectado a miles de contribuyentes. Un auditor externo ha señalado que la fuga se debió a un error humano y a la falta de procedimientos de seguridad robustos. ¿Qué componente del gobierno de datos, de ser implementado correctamente, podría haber evitado este incidente, y por qué es una falla grave para la DIAN?",
+    "opciones": [
+      "Los Roles y Responsabilidades, ya que la falta de un rol específico para la seguridad de la información fue la causa del incidente.",
+      "Las Políticas y Estándares de Datos, ya que la falta de una política de seguridad robusta fue la causa principal del incidente.",
+      "Los Procesos y Procedimientos, ya que la falta de un flujo de trabajo claro para el manejo de la información sensible fue la causa del incidente, lo que compromete la confidencialidad de la información."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La falta de 'procedimientos de seguridad robustos' es la causa principal del incidente. El componente de Procesos y Procedimientos es el que define los flujos de trabajo para el manejo de la información sensible. Una fuga de información es una falla grave para la DIAN porque compromete la confidencialidad de la información y la confianza de los contribuyentes, lo que afecta directamente la misionalidad de seguridad fiscal."
+  },
+  {
+    "id": "gd-f117",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobierno de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobierno de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f118",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f119",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f120",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f121",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f122",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f123",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f124",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f125",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f126",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f127",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f128",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f129",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f130",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f131",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f132",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f133",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f134",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f135",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f136",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f137",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f138",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f139",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f140",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f141",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f142",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f143",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f144",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f145",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f146",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f147",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f148",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f149",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f150",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f151",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Aduanas, como Dueña de los Datos de su área, ha solicitado a la Dirección de Gestión de Tecnología y Telecomunicaciones, como Custodio de los Datos, la implementación de un nuevo sistema de monitoreo de la calidad de los datos. ¿Qué rol o persona es la que debe liderar este proyecto, y qué componente del gobierno de datos se busca fortalecer?",
+    "opciones": [
+      "El Gestor II, y se busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos.",
+      "El Data Steward, y se busca fortalecer el pilar de Roles y Responsabilidades del gobierno de datos.",
+      "El Data Owner, y se busca fortalecer el pilar de Políticas y Estándares de Datos del gobierno de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La implementación de un sistema de monitoreo de la calidad de los datos es una iniciativa tecnológica. Por lo tanto, el Gestor II, en su rol en la Dirección de Tecnología, es el que debe liderar el proyecto. Esta iniciativa busca fortalecer el pilar de Tecnología y Herramientas del gobierno de datos, ya que es la infraestructura que soporta la gestión de la información."
+  },
+  {
+    "id": "gd-f152",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II, en colaboración con el área de Legal de la DIAN, está definiendo una política de retención de datos para los registros de contribuyentes. ¿Qué componente del gobierno de datos es el que se está desarrollando, y qué principio se busca proteger principalmente en esta situación?",
+    "opciones": [
+      "El componente de Políticas y Estándares de Datos, y se busca proteger el principio de privacidad y confidencialidad.",
+      "El componente de Procesos y Procedimientos, y se busca proteger el principio de seguridad de la información.",
+      "El componente de Roles y Responsabilidades, y se busca proteger el principio de integridad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La definición de una 'política de retención de datos' se enmarca en el componente de Políticas y Estándares de Datos. Al mismo tiempo, al definir cuánto tiempo se deben conservar los datos de los contribuyentes, se busca proteger el principio de privacidad y confidencialidad de la información, lo que es fundamental en la misionalidad de la DIAN."
+  },
+  {
+    "id": "gd-f153",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General de la DIAN ha ordenado la creación de un 'Comité de Gobernanza de Datos' para supervisar la gestión de la información en la entidad. Este comité estará compuesto por un representante de cada Dirección de Gestión. ¿Qué rol de gobierno de datos debe tener el representante de la Dirección de Gestión de Impuestos en este comité, y cuál es su principal responsabilidad?",
+    "opciones": [
+      "El rol de Data Custodian, y su responsabilidad es asegurar la infraestructura tecnológica y la seguridad de los datos de la Dirección de Impuestos.",
+      "El rol de Data Steward, y su responsabilidad es implementar las políticas de calidad y estandarización de los datos de la Dirección de Impuestos.",
+      "El rol de Data Owner, y su responsabilidad es la de velar por la gestión de la información de la Dirección de Impuestos, definiendo las políticas y las reglas de uso de los datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La Dirección de Gestión de Impuestos es la responsable máxima de la información tributaria. Por lo tanto, su representante en el 'Comité de Gobernanza de Datos' tiene el rol de Data Owner, y su principal responsabilidad es la de velar por la gestión de la información de su Dirección, definiendo las políticas y las reglas de uso de los datos en la entidad."
+  },
+  {
+    "id": "gd-f154",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II se encuentra en un debate con un colega sobre la importancia del gobierno de datos en la DIAN. El colega argumenta que es una iniciativa 'burocrática' que solo ralentiza los procesos. ¿Cuál es el principal argumento que el Gestor II debería usar para rebatir esta afirmación, y qué beneficio estratégico tiene para la DIAN?",
+    "opciones": [
+      "El gobierno de datos es un marco de gestión que genera burocracia, pero es necesario para cumplir con la normativa legal de la entidad.",
+      "El gobierno de datos, aunque puede parecer burocrático, es un marco de gestión que asegura la calidad, la integridad y la seguridad de los datos, lo que permite la toma de decisiones estratégicas y la eficiencia operativa.",
+      "El gobierno de datos es un marco de gestión que solo se aplica a los datos sensibles de la entidad, y no a los datos de uso común, por lo que no genera burocracia en todos los procesos de la DIAN."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El gobierno de datos no es burocracia, es una disciplina de gestión que asegura la calidad, la integridad y la seguridad de los datos. Aunque puede parecer que ralentiza los procesos, en realidad los hace más eficientes al evitar errores, inconsistencias y problemas de seguridad. Este marco permite a la DIAN tomar decisiones estratégicas basadas en información confiable y de alta calidad."
+  },
+  {
+    "id": "gd-f155",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección de Gestión de Fiscalización ha detectado que la información de una de sus bases de datos no es coherente con la información del Repositorio Único de Datos. Esta inconsistencia podría afectar el proceso de auditoría y la imposición de sanciones. ¿Qué pilar del gobierno de datos es el que se ha violado en esta situación, y qué rol o persona es la que debe liderar la corrección?",
+    "opciones": [
+      "El pilar de Tecnología y Herramientas, y el rol del Data Custodian es el que debe liderar la corrección.",
+      "El pilar de Políticas y Estándares de Datos, y el rol del Data Steward es el que debe liderar la corrección.",
+      "El pilar de Roles y Responsabilidades, y el rol del Data Owner es el que debe liderar la corrección."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La inconsistencia de la información viola el pilar de Políticas y Estándares de Datos. El rol que se encarga de la implementación de estas políticas y de la estandarización de los datos es el Data Steward, por lo que es el que debe liderar la corrección en la organización, bajo la supervisión del Data Owner."
+  },
+  {
+    "id": "gd-f156",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II es notificado de que un ataque cibernético ha afectado la integridad de una base de datos de comercio exterior. Se han alterado los registros y se han borrado algunos. La Dirección General exige una respuesta inmediata. ¿Qué pilar del gobierno de datos se ha comprometido en esta situación, y qué es lo que se busca proteger con la implementación de un plan de recuperación de datos?",
+    "opciones": [
+      "El pilar de Usabilidad, y se busca proteger la integridad y la consistencia de los datos en la entidad.",
+      "El pilar de Seguridad de la Información, y se busca proteger la integridad y la disponibilidad de los datos en la entidad.",
+      "El pilar de Disponibilidad, y se busca proteger la confidencialidad de la información en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un ataque cibernético que afecta la integridad de una base de datos y borra algunos registros compromete el pilar de Seguridad de la Información. La implementación de un plan de recuperación de datos busca proteger la integridad y la disponibilidad de la información, para que la DIAN pueda seguir operando y cumpliendo con su misionalidad de control aduanero."
+  },
+  {
+    "id": "gd-f157",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II está construyendo un reporte con datos institucionales. ¿Qué debe hacer primero para garantizar el cumplimiento del gobierno de datos?",
+    "opciones": [
+      "Consultar el Repositorio Único de Datos autorizado por la entidad.",
+      "Solicitar la información directamente a un compañero de otra área.",
+      "Tomar los datos desde hojas de cálculo personales previamente usadas."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Gobierno de Datos establece que todos los reportes deben basarse en fuentes oficiales certificadas como el Repositorio Único de Datos institucional, garantizando trazabilidad e integridad."
+  },
+  {
+    "id": "gd-f158",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Durante la ejecución de un proyecto, el Gestor II debe identificar el responsable del tratamiento de datos. ¿A quién debe acudir según los principios del gobierno de datos?",
+    "opciones": [
+      "Al Data Owner designado en la política de gobierno de datos.",
+      "A cualquier funcionario del área de planeación institucional.",
+      "Al jefe inmediato sin revisar la asignación formal de roles."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "En el Gobierno de Datos, el Data Owner es el responsable de autorizar el tratamiento de los datos dentro del marco institucional y normativo, según roles previamente definidos."
+  },
+  {
+    "id": "gd-f159",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un compañero le solicita al Gestor II acceso a una base de datos sin autorización formal. ¿Qué debe hacer?",
+    "opciones": [
+      "Solicitar que realice la solicitud formal por los canales definidos.",
+      "Proporcionar el acceso si considera que la solicitud es urgente.",
+      "Enviar la información por correo para no retrasar la operación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El acceso a datos debe gestionarse únicamente a través de los canales establecidos en la política de gobierno de datos, garantizando seguridad, control y trazabilidad."
+  },
+  {
+    "id": "gd-f160",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un funcionario está trabajando con datos sensibles de ciudadanos. ¿Qué principio del gobierno de datos debe aplicar con mayor rigor?",
+    "opciones": [
+      "El principio de privacidad y protección del dato.",
+      "El principio de eficiencia administrativa.",
+      "El principio de interoperabilidad institucional."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Cuando se trabaja con datos personales o sensibles, el principio de privacidad y protección de datos es prioritario para cumplir con la ley y salvaguardar los derechos ciudadanos."
+  },
+  {
+    "id": "gd-f161",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un reporte institucional presenta datos inconsistentes. ¿Qué debe hacer el Gestor II según el enfoque de calidad de datos?",
+    "opciones": [
+      "Verificar la fuente de origen y coordinar con el responsable del dato.",
+      "Modificar los datos manualmente para que coincidan con la expectativa.",
+      "Dejar el error pasar si la fecha de entrega está cerca del vencimiento."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Ante inconsistencias, se debe revisar la fuente y trabajar con el Data Steward o responsable del dato para corregir el problema desde su origen, respetando el principio de calidad."
+  },
+  {
+    "id": "gd-f162",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un funcionario plantea un cambio en los formatos de captura de información. ¿A quién debe consultarse esta modificación?",
+    "opciones": [
+      "Al equipo responsable del gobierno de datos y calidad institucional.",
+      "Directamente con el operador que realiza la carga de información.",
+      "Al equipo de talento humano para que lo comunique al personal."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Cualquier cambio en la forma de capturar datos debe ser validado por el equipo de gobierno de datos, pues puede afectar la calidad, integridad y consistencia de la información institucional."
+  },
+  {
+    "id": "gd-f163",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál de los siguientes principios es esencial para la trazabilidad de los datos en la DIAN?",
+    "opciones": [
+      "Registrar el origen, modificaciones y destino de los datos procesados.",
+      "Facilitar el acceso libre a los datos sin restricciones de uso.",
+      "Reducir al mínimo los procesos de validación en el almacenamiento."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La trazabilidad requiere que todo dato tenga documentado su origen, transformación y destino, asegurando responsabilidad, control y seguridad en su manejo."
+  },
+  {
+    "id": "gd-f164",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál de los siguientes roles es responsable de asegurar la calidad técnica y semántica de un conjunto de datos institucionales?",
+    "opciones": [
+      "El Data Steward, como responsable operativo de la calidad del dato.",
+      "El operador de sistemas, por ser quien administra la base de datos.",
+      "El jefe de comunicaciones, encargado de socializar la información."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Data Steward tiene la responsabilidad directa sobre la calidad del dato: verifica su exactitud, integridad y consistencia técnica y semántica dentro del ciclo de vida del dato."
+  },
+  {
+    "id": "gd-f165",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "El principio de 'Calidad desde el Origen' implica que:",
+    "opciones": [
+      "Los datos deben validarse y estandarizarse al momento de su captura.",
+      "Los datos se corrigen al final del proceso para evitar reprocesos.",
+      "Se omiten los controles iniciales para ahorrar tiempo operativo."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "‘Calidad desde el Origen’ exige validar y estructurar los datos desde su punto inicial de recolección, para evitar errores, reprocesos y garantizar su fiabilidad a lo largo del ciclo de vida."
+  },
+  {
+    "id": "gd-f166",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué dimensión de calidad de datos se ve afectada si un reporte presenta fechas de registro incompletas?",
+    "opciones": [
+      "Completitud del dato, al faltar información esencial.",
+      "Validez del dato, por usar formatos distintos.",
+      "Puntualidad del dato, por demoras en el ingreso."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Cuando falta una parte esencial del dato, como la fecha de registro, se vulnera la dimensión de completitud, ya que impide la interpretación y el uso correcto de la información."
+  },
+  {
+    "id": "gd-f167",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II necesita asegurar que los datos generados puedan ser reutilizados por otros equipos. ¿Qué principio está aplicando?",
+    "opciones": [
+      "Reutilización de datos, como parte de la estrategia de eficiencia institucional.",
+      "Exclusividad de los datos, para evitar duplicación de trabajo.",
+      "Anonimización de datos, para proteger la identidad de los usuarios."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El principio de reutilización busca que los datos generen valor más allá del área que los produce, optimizando recursos y evitando esfuerzos duplicados dentro de la entidad."
+  },
+  {
+    "id": "gd-f168",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué debe hacerse antes de integrar una nueva fuente de datos a un repositorio institucional como DATAR?",
+    "opciones": [
+      "Validar que cumpla con estándares técnicos y de calidad establecidos.",
+      "Incorporarla directamente para su evaluación durante la operación.",
+      "Solicitar al área de talento humano que apruebe su incorporación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Toda nueva fuente debe pasar por un proceso de validación técnica, semántica y de calidad antes de integrarse a un repositorio institucional como DATAR, evitando errores futuros."
+  },
+  {
+    "id": "gd-f169",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un reporte mensual presenta valores inconsistentes con reportes anteriores. ¿Qué debería hacer el Gestor II como primer paso?",
+    "opciones": [
+      "Verificar el origen del dato y consultar con el responsable designado.",
+      "Corregir el valor manualmente para que coincida con reportes previos.",
+      "Eliminar los datos dudosos para evitar confusiones en la presentación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El procedimiento correcto ante datos inconsistentes es verificar su fuente y validarlos con el Data Steward correspondiente, en cumplimiento de los lineamientos del gobierno de datos."
+  },
+  {
+    "id": "gd-f170",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué función cumple el uso de metadatos en el gobierno de datos institucional?",
+    "opciones": [
+      "Describir el origen, propósito y condiciones del uso del dato.",
+      "Reemplazar los datos originales con información resumida.",
+      "Eliminar la trazabilidad del dato para proteger su privacidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los metadatos permiten documentar la procedencia, propósito, responsable, formato y ciclo de vida del dato, facilitando su trazabilidad, comprensión y gestión dentro del gobierno de datos."
+  },
+  {
+    "id": "gd-m171",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II identifica que varias dependencias están generando reportes a partir de fuentes no homologadas. ¿Cuál debe ser su actuación inicial bajo los lineamientos de gobierno de datos?",
+    "opciones": [
+      "Recomendar el uso exclusivo de fuentes institucionales como DATAR.",
+      "Permitir el uso si las fuentes han sido utilizadas anteriormente sin errores.",
+      "Unificar manualmente los reportes para evitar diferencias entre dependencias."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El gobierno de datos exige que los reportes se generen únicamente desde fuentes homologadas institucionalmente, como el Repositorio Único DATAR, para asegurar trazabilidad y confiabilidad."
+  },
+  {
+    "id": "gd-m172",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Durante la revisión de datos fiscales, un Gestor II detecta duplicidad en los registros. ¿Cuál dimensión de calidad está principalmente comprometida?",
+    "opciones": [
+      "Unicidad del dato, que busca evitar repeticiones injustificadas.",
+      "Puntualidad del dato, que afecta los tiempos de entrega.",
+      "Exactitud del dato, que se enfoca en el formato de captura."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La duplicidad compromete la unicidad, una de las dimensiones clave de calidad de datos, al generar errores analíticos y redundancia en los registros institucionales."
+  },
+  {
+    "id": "gd-m173",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En una estrategia de mejora de la calidad de datos, ¿qué función cumple el Data Steward?",
+    "opciones": [
+      "Monitorea, valida y garantiza la calidad del dato durante su ciclo de vida.",
+      "Autoriza el uso legal de los datos personales de los contribuyentes.",
+      "Diseña los modelos estadísticos aplicables a cada base de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Data Steward es responsable de garantizar la calidad operativa del dato en su ciclo de vida, identificando errores y promoviendo su estandarización y correcta interpretación."
+  },
+  {
+    "id": "gd-m174",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un Gestor II está elaborando una política de calidad de datos. ¿Cuál de los siguientes elementos debe incluir obligatoriamente?",
+    "opciones": [
+      "Definiciones de dimensiones de calidad como completitud y validez.",
+      "Listado de personal con acceso a todas las bases de datos internas.",
+      "Listado histórico de formatos usados para reportes antes de 2015."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una política de calidad debe establecer las dimensiones operativas (como exactitud, unicidad, validez, completitud), así como los mecanismos de evaluación y mejora del dato."
+  },
+  {
+    "id": "gd-m175",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En una reunión interinstitucional, un actor solicita acceso irrestricto a los datos tributarios. ¿Cuál debe ser la postura del Gestor II bajo el marco de gobierno de datos?",
+    "opciones": [
+      "Negar el acceso hasta contar con autorización y protocolos establecidos.",
+      "Compartir únicamente una muestra representativa de los datos.",
+      "Autorizar la consulta si se firma una carta de confidencialidad informal."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El gobierno de datos establece que el acceso a información sensible debe estar regulado por protocolos oficiales, previa autorización del Data Owner o instancia competente, para proteger derechos y normativas."
+  },
+  {
+    "id": "gd-m176",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un informe presenta datos inconsistentes con los publicados oficialmente. ¿Qué debe hacer el Gestor II como responsable técnico?",
+    "opciones": [
+      "Verificar la fuente de origen y reportar la inconsistencia al Data Owner.",
+      "Justificar los valores indicando que se trataba de una versión preliminar.",
+      "Ajustar el dato manualmente para que coincida con la publicación oficial."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Ante inconsistencias, el Gestor II debe seguir los procedimientos del gobierno de datos: identificar la fuente, informar al Data Owner y evitar alteraciones que comprometan la integridad del dato."
+  },
+  {
+    "id": "gd-m177",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué rol tiene la trazabilidad dentro del modelo de gobierno de datos institucional?",
+    "opciones": [
+      "Permite conocer el origen, manipulación y uso de cada dato institucional.",
+      "Limita el acceso a datos para reducir errores en las bases de producción.",
+      "Agiliza la captura de datos evitando validaciones intermedias."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La trazabilidad garantiza que cada dato pueda ser rastreado desde su origen hasta su destino, incluyendo transformaciones, actores involucrados y validaciones aplicadas, fortaleciendo la transparencia y la calidad."
+  },
+  {
+    "id": "gd-m178",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál es el beneficio directo de implementar un Repositorio Único de Datos como DATAR en la DIAN?",
+    "opciones": [
+      "Evitar duplicidad de información y garantizar un único origen de verdad.",
+      "Reducir el tamaño de los informes institucionales para facilitar su lectura.",
+      "Eliminar la necesidad de capacitar al personal en herramientas analíticas."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Repositorio Único permite centralizar la información validada, evitando duplicidades, contradicciones y fomentando decisiones basadas en datos verificados y consistentes."
+  },
+  {
+    "id": "gd-m179",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En el modelo de Gobierno de Datos, ¿qué función cumple el Consejo de Gobierno de Datos?",
+    "opciones": [
+      "Define políticas, roles y estándares sobre el uso, acceso y gestión del dato.",
+      "Opera las bases de datos institucionales en tiempo real.",
+      "Estructura los informes para entrega a medios de comunicación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Consejo de Gobierno de Datos establece directrices, roles y políticas para asegurar el uso responsable y estratégico de los datos dentro de la organización."
+  },
+  {
+    "id": "gd-m180",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un nuevo funcionario plantea automatizar un proceso de captura sin validaciones. ¿Cuál debe ser la postura del Gestor II?",
+    "opciones": [
+      "Rechazar la propuesta hasta incluir mecanismos de validación desde origen.",
+      "Permitir la automatización si reduce tiempos operativos significativamente.",
+      "Aceptar si el proceso se basa en datos usados anteriormente sin errores."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Todo proceso de captura de datos debe garantizar la validación desde origen, conforme a los principios de calidad y estandarización del Gobierno de Datos, incluso si se automatiza."
+  },
+  {
+    "id": "gd-m181",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál es el propósito principal del uso de metadatos en un ecosistema de gobierno de datos?",
+    "opciones": [
+      "Facilitar la catalogación, búsqueda y entendimiento del dato institucional.",
+      "Aumentar el volumen de datos para análisis estadístico avanzado.",
+      "Reducir la necesidad de validaciones sobre los datos operativos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los metadatos describen las características del dato (origen, formato, uso, responsable), permitiendo su adecuada gestión, búsqueda e interpretación dentro de un entorno institucional."
+  },
+  {
+    "id": "gd-m182",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Al diseñar una política de Gobierno de Datos, ¿qué aspecto normativo debe considerarse obligatoriamente?",
+    "opciones": [
+      "La Ley 1581 de 2012 sobre protección de datos personales.",
+      "El Código de Ética del Congreso de la República.",
+      "La Ley 80 de 1993 sobre contratación estatal."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La Ley 1581 de 2012 establece principios y obligaciones sobre la protección de datos personales, siendo un eje normativo clave en cualquier política de gobierno de datos."
+  },
+  {
+    "id": "gd-m183",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Cuál de las siguientes acciones respeta el principio de seguridad en el manejo de los datos institucionales?",
+    "opciones": [
+      "Usar contraseñas, roles y trazabilidad para limitar el acceso a la información.",
+      "Permitir el acceso masivo a los datos en red para fomentar la transparencia.",
+      "Hacer respaldos en dispositivos personales para prevenir pérdida de información."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La seguridad en el Gobierno de Datos implica restringir el acceso con roles definidos, controlar el uso, garantizar respaldo institucional y evitar riesgos de fuga o modificación no autorizada."
+  },
+  {
+    "id": "gd-m184",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un reporte oficial es generado usando datos sin verificar. ¿Qué principio del gobierno de datos se ve afectado principalmente?",
+    "opciones": [
+      "Integridad del dato, por la falta de validación.",
+      "Anonimato del dato, por su exposición al público.",
+      "Accesibilidad del dato, por no estar en formato digital."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La integridad del dato se ve comprometida cuando se utilizan fuentes sin validar, lo que puede afectar la confiabilidad de los análisis y decisiones basadas en esos datos."
+  },
+  {
+    "id": "gd-m185",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En el marco del Gobierno de Datos, ¿qué herramienta institucional permite consolidar datos validados para múltiples usos?",
+    "opciones": [
+      "Repositorio Único de Datos (DATAR), como fuente oficial certificada.",
+      "Portal web institucional, por su visibilidad pública.",
+      "Correo institucional, como canal de distribución de informes."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "DATAR es el Repositorio Único que garantiza la disponibilidad de datos institucionales validados y centralizados, sirviendo como base para reportes, análisis y toma de decisiones."
+  },
+  {
+    "id": "gd-m186",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un área de la DIAN genera reportes internos sin definir responsables del dato. ¿Qué componente del gobierno de datos está ausente?",
+    "opciones": [
+      "Asignación de roles, como Data Owner y Data Steward.",
+      "Plan de acción para la automatización de reportes.",
+      "Definición de formatos gráficos para presentación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Uno de los pilares del Gobierno de Datos es la asignación clara de roles y responsabilidades sobre los datos. La ausencia de Data Owners y Stewards compromete su calidad y trazabilidad."
+  },
+  {
+    "id": "gd-m187",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "¿Qué principio del Gobierno de Datos garantiza que los datos estén disponibles cuando se necesitan?",
+    "opciones": [
+      "Disponibilidad, como parte del enfoque de accesibilidad y oportunidad.",
+      "Validez, que se relaciona con el formato aceptado de los datos.",
+      "Trazabilidad, que se enfoca en el historial del dato institucional."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La disponibilidad garantiza que los datos estén accesibles y en condiciones de ser utilizados cuando se requieren, sin poner en riesgo su integridad ni seguridad."
+  },
+  {
+    "id": "gd-d188",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Durante una auditoría externa, se solicita el historial completo de cambios realizados sobre un conjunto de datos tributarios. ¿Qué mecanismo técnico debe estar implementado según el Gobierno de Datos?",
+    "opciones": [
+      "Un sistema de trazabilidad que registre cada modificación con usuario y fecha.",
+      "Un respaldo automático en formato CSV para recuperación ante fallos.",
+      "Una política de respaldo mensual en servidores independientes."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La trazabilidad es un principio clave que exige registrar cada modificación realizada sobre un dato, incluyendo usuario, fecha, hora y justificación, para garantizar control y auditoría."
+  },
+  {
+    "id": "gd-d189",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "La Dirección General solicita generar reportes integrados entre datos del sistema tributario y aduanero. ¿Qué aspecto del Gobierno de Datos debe garantizar el Gestor II para asegurar calidad en la integración?",
+    "opciones": [
+      "Establecer alineación semántica y técnica de los conjuntos de datos involucrados.",
+      "Ejecutar directamente la fusión de datos sin intermediación para agilizar resultados.",
+      "Solicitar respaldo al área de talento humano para evitar errores de interpretación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La integración de datos requiere asegurar que los conceptos, estructuras y formatos coincidan semántica y técnicamente, evitando inconsistencias o errores de interpretación en los reportes finales."
+  },
+  {
+    "id": "gd-d190",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Una base de datos institucional contiene campos obsoletos, duplicados y registros sin uso. ¿Qué principio del Gobierno de Datos debe aplicarse en este caso?",
+    "opciones": [
+      "Optimización de calidad del dato mediante depuración, limpieza y validación.",
+      "Anonimización del dato para cumplir con la Ley 1581 de 2012.",
+      "Recolección de nuevas fuentes que sustituyan la base anterior."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La depuración y limpieza de datos son parte esencial del principio de calidad, garantizando que la información almacenada sea útil, actualizada y esté libre de errores o duplicidad."
+  },
+  {
+    "id": "gd-d191",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un conjunto de datos fue modificado sin dejar evidencia de los cambios aplicados. ¿Qué dimensión de la calidad se ha vulnerado directamente?",
+    "opciones": [
+      "Integridad, ya que los datos no pueden ser verificados ni rastreados.",
+      "Unicidad, porque los datos podrían estar repetidos.",
+      "Puntualidad, por no cumplir con los plazos establecidos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La integridad se ve afectada cuando no existen mecanismos para rastrear los cambios realizados sobre los datos, lo que impide verificar su veracidad y consistencia."
+  },
+  {
+    "id": "gd-d192",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un funcionario ha generado reportes utilizando datos que no cuentan con respaldo normativo ni validación oficial. ¿Qué debe hacer el Gestor II como medida correctiva?",
+    "opciones": [
+      "Solicitar que se sustituyan por datos provenientes del Repositorio Único institucional.",
+      "Validar la fuente de forma retroactiva para conservar el reporte generado.",
+      "Permitir el uso temporal del dato mientras se publica su homologación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los datos utilizados en reportes institucionales deben estar validados y respaldados oficialmente. El Gestor II debe garantizar el uso de fuentes certificadas para preservar la calidad y legalidad."
+  },
+  {
+    "id": "gd-d193",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En una sesión de gobierno de datos, se discute el principio de interoperabilidad. ¿Cuál sería su aplicación más adecuada?",
+    "opciones": [
+      "Permitir el intercambio fluido y estandarizado de datos entre sistemas institucionales.",
+      "Aumentar la frecuencia de actualización de los reportes mensuales.",
+      "Consolidar todos los datos en un solo formato físico para control documental."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La interoperabilidad implica que los sistemas puedan intercambiar información de forma comprensible, segura y estandarizada, sin depender de estructuras cerradas o aisladas."
+  },
+  {
+    "id": "gd-d194",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En una actualización normativa, se indica que los datos deben tener respaldo jurídico y trazabilidad. ¿Qué acción concreta debe tomar el Gestor II?",
+    "opciones": [
+      "Verificar que cada dato esté asociado a una fuente normativa o documento institucional.",
+      "Eliminar todos los datos previos para reiniciar el proceso con nueva legislación.",
+      "Aplicar formatos abiertos a todos los datos, sin importar su fuente original."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Cada dato debe tener una fuente legal o técnica identificable. Esto permite que sea rastreado y defendido jurídicamente si se requiere, cumpliendo con los principios de trazabilidad y legitimidad."
+  },
+  {
+    "id": "gd-d195",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Un reporte mensual es generado utilizando tres fuentes de datos que presentan estructuras diferentes. ¿Qué debe garantizar el Gestor II antes de consolidar la información?",
+    "opciones": [
+      "Homologar semántica y sintácticamente los campos para asegurar coherencia.",
+      "Fusionar directamente los datos y ajustar luego los errores identificados.",
+      "Usar la fuente con más registros para representar a las otras."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consolidación de datos de diferentes fuentes requiere homologación previa en estructura y significado, para evitar incongruencias y mantener la calidad del reporte final."
+  },
+  {
+    "id": "gd-d196",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se descubre que múltiples áreas están replicando reportes con metodologías diferentes. ¿Qué recomendación debe hacer el Gestor II desde el enfoque de Gobierno de Datos?",
+    "opciones": [
+      "Unificar el proceso a través del Repositorio Único con metodologías estándar.",
+      "Permitir que cada área mantenga su autonomía sobre generación de datos.",
+      "Aumentar el número de reportes para facilitar el análisis comparativo."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Gobierno de Datos promueve la centralización metodológica y el uso de fuentes únicas, asegurando consistencia, trazabilidad y confiabilidad en todos los reportes institucionales."
+  },
+  {
+    "id": "gd-d197",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Una consulta interna requiere cruzar información personal con datos fiscales. ¿Qué debe garantizar el Gestor II antes de proceder?",
+    "opciones": [
+      "Cumplimiento del principio de legalidad, privacidad y mínima necesidad.",
+      "Obtención de una carta de solicitud verbal firmada por el jefe inmediato.",
+      "Análisis del volumen de datos para justificar el tiempo de respuesta."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El uso de datos personales combinados con tributarios exige cumplimiento estricto de las normas de protección, asegurando legalidad, autorización y justificación legítima para el tratamiento."
+  },
+  {
+    "id": "gd-d198",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Una herramienta de visualización de datos muestra valores alterados sin justificación. ¿Qué acción se ajusta al principio de integridad de datos?",
+    "opciones": [
+      "Revisar el flujo de transformación para identificar distorsiones o fórmulas no validadas.",
+      "Ajustar los valores en la herramienta hasta que coincidan con las cifras esperadas.",
+      "Restringir temporalmente el acceso de todos los usuarios a la herramienta."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El principio de integridad exige que los datos no sean alterados sin justificación documentada. Cualquier error debe ser rastreado desde el flujo de origen hasta su visualización."
+  },
+  {
+    "id": "gd-d199",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "En una reunión de análisis estratégico, se plantean indicadores construidos con bases de datos aún no certificadas. ¿Qué debe indicar el Gestor II?",
+    "opciones": [
+      "Que los indicadores deben sustentarse únicamente con datos certificados por la entidad.",
+      "Que pueden utilizarse si se especifica que son preliminares sin necesidad de validación.",
+      "Que se agregue una nota aclaratoria en los gráficos mientras se aprueba el dato."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Gobierno de Datos establece que los indicadores oficiales deben ser construidos sobre fuentes certificadas para garantizar su validez y coherencia institucional."
+  },
+  {
+    "id": "gd-d200",
+    "tema": "Gobierno de Datos (Parte 1): Conceptos Fundamentales",
+    "pregunta": "Se solicita actualizar una serie histórica de datos para hacerla compatible con nuevas estructuras analíticas. ¿Qué precaución debe tomar el Gestor II?",
+    "opciones": [
+      "Documentar todos los cambios, asegurando compatibilidad y trazabilidad.",
+      "Eliminar los datos anteriores si no se adaptan a la nueva estructura.",
+      "Ajustar los datos sin guardar versiones para evitar duplicación."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La actualización de series históricas debe documentarse completamente para garantizar trazabilidad, mantener versiones y evitar pérdida de contexto y validez analítica."
+  }
+]

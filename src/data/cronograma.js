@@ -57,44 +57,110 @@ const cronograma = [
           }
         ]
       },
-      // ... Puedes añadir más días y semanas aquí siguiendo tu cronograma real 
-      // Solo he puesto los dos primeros días para mantener el ejemplo manejable.
-      // Asegúrate de copiar con cuidado los datos de tu documento para que coincidan con la estructura. 
-    ]
-  },
-  {
-    semana: "Semana 2: Metodologías Ágiles y Competencias Transversales",
-    dias: [
       {
-        fecha: "Lunes, 4 de agosto",
+        fecha: "Miércoles, 30 de julio",
         jornadas: [
           {
             nombre: "Mañana (9:00 AM - 12:00 PM)",
             temas: [
-              "Conceptos Generales de Metodología Ágil para Datos"
+              "Diseño de Soluciones de Gestión de Datos"
             ],
             tipoSimulacro: "funcional"
           },
           {
             nombre: "Tarde (2:00 PM - 5:00 PM)",
             temas: [
-              "Roles y Responsabilidades en Metodología Ágil para Procesamiento de Datos"
+              "Herramientas ETL (Extract, Transform, Load)"
             ],
             tipoSimulacro: "funcional"
           },
           {
             nombre: "Noche (7:00 PM - 8:30 PM)",
             temas: [
-              "Competencia Comportamental: Comunicación Efectiva (Nivel 1 y 3)"
+              "Competencia Comportamental: Diligencia y Compromiso"
             ],
             tipoSimulacro: "comportamental"
           }
         ]
       },
-      // ... más días de la semana 2
+      {
+        fecha: "Jueves, 31 de julio",
+        jornadas: [
+          {
+            nombre: "Mañana (9:00 AM - 12:00 PM)",
+            temas: [
+              "SQL (Structured Query Language)"
+            ],
+            tipoSimulacro: "funcional"
+          },
+          {
+            nombre: "Tarde (2:00 PM - 5:00 PM)",
+            temas: [
+              "Python (Fundamentos para Datos)"
+            ],
+            tipoSimulacro: "funcional"
+          },
+          {
+            nombre: "Noche (7:00 PM - 8:30 PM)",
+            temas: [
+              "Repaso General de la Semana 1"
+            ],
+            tipoSimulacro: "mixto" // Ojo: Este simulacro podría ser especial (mixto de la semana)
+          }
+        ]
+      },
+      {
+        fecha: "Viernes, 1 de agosto",
+        jornadas: [
+          {
+            nombre: "Mañana (9:00 AM - 1:00 PM)",
+            temas: [
+              "Simulacro Parcial 1 (Funcionales - 2.5 horas)",
+              "Análisis del Simulacro (1.5 horas)"
+            ],
+            tipoSimulacro: "funcional-parcial" // Nuevo tipo para simulacros parciales grandes
+          }
+        ]
+      },
+      {
+        fecha: "Sábado, 2 de agosto",
+        jornadas: [
+          {
+            nombre: "Mañana (9:00 AM - 12:00 PM)",
+            temas: [
+              "Profundización en Puntos Débiles (Funcionales)"
+            ],
+            tipoSimulacro: "funcional" // Se usarán preguntas funcionales de los temas débiles
+          },
+          {
+            nombre: "Tarde (2:00 PM - 5:00 PM)",
+            temas: [
+              "Competencia Comportamental: Adaptabilidad (Nivel 1)",
+              "Competencia Comportamental: Orientación al Logro (Nivel 1)"
+            ],
+            tipoSimulacro: "comportamental"
+          },
+          {
+            nombre: "Noche (Libre / Repaso Ligero)",
+            temas: [], // Sin temas específicos de estudio activo
+            tipoSimulacro: "ninguno" // No hay simulacro definido para esta jornada
+          }
+        ]
+      },
+      {
+        fecha: "Domingo, 3 de agosto",
+        jornadas: [
+          {
+            nombre: "Descanso Activo",
+            temas: [], // Sin temas de estudio activo
+            tipoSimulacro: "ninguno" // No hay simulacro definido para esta jornada
+          }
+        ]
+      }
     ]
   }
-  // ... y así sucesivamente para Semana 3 y el día del examen.
+  // Aquí iría el resto de las semanas, como Semana 2 y Semana 3
+  // Por ahora, solo tenemos la Semana 1 completa.
 ];
 
 export default cronograma;

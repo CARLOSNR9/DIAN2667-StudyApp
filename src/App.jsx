@@ -4,11 +4,14 @@ import cronograma from './data/cronograma';
 import Simulacro from './components/Simulacro';
 import IntroDIAN2667 from './studyContent/IntroDIAN2667';
 import DianOrgMission from './studyContent/DianOrgMission';
+import GobiernoDatosParte1 from './studyContent/GobiernoDatosParte1';
 
 // Importa TODOS tus archivos JSON de preguntas aquí
-import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_datos.json';
+
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
 import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json';
+import funcionalesGobiernoDatos from './data/preguntas/funcionalesGobiernoDatos.json';
+
 // ... otros imports de JSON ...
 
 function App() {
@@ -45,6 +48,7 @@ function App() {
     "Herramientas ETL (Extract, Transform, Load)": funcionalesGobiernoDatos,
     "SQL (Structured Query Language)": funcionalesGobiernoDatos,
     "Python (Fundamentos para Datos)": funcionalesGobiernoDatos,
+    "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
     "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
@@ -69,10 +73,18 @@ function App() {
         onStartSimulacro={() => startTopicSimulacro("Introducción al Proceso de Selección DIAN 2667")}
       />
     ),
+
     "Estructura Organizacional y Misionalidad de la DIAN": (
       <DianOrgMission
         onBack={() => setActiveStudyMaterial(null)}
         onStartSimulacro={() => startTopicSimulacro("Estructura Organizacional y Misionalidad de la DIAN")}
+      />
+    ),
+
+    "Gobierno de Datos (Parte 1): Conceptos Fundamentales": (
+      <GobiernoDatosParte1
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Gobierno de Datos (Parte 1): Conceptos Fundamentales")}
       />
     ),
   };
