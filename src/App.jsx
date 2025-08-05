@@ -5,12 +5,14 @@ import Simulacro from './components/Simulacro';
 import IntroDIAN2667 from './studyContent/IntroDIAN2667';
 import DianOrgMission from './studyContent/DianOrgMission';
 import GobiernoDatosParte1 from './studyContent/GobiernoDatosParte1';
+import GobiernoDatosParte2 from './studyContent/GobiernoDatosParte2';
 
 // Importa TODOS tus archivos JSON de preguntas aquí
 
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
 import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json';
 import funcionalesGobiernoDatos from './data/preguntas/funcionalesGobiernoDatos.json';
+import preguntasGobiernoDatosParte2 from './data/preguntas/funcionales_gobierno_datos_parte2.json';
 
 // ... otros imports de JSON ...
 
@@ -42,7 +44,7 @@ function App() {
     "Introducción al Proceso de Selección DIAN 2667": funcionalesGobiernoDatos,
     "Estructura Organizacional y Misionalidad de la DIAN": preguntasDianOrgMission,
     "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
-    "Gobierno de Datos (Parte 2): Estándares y Políticas": funcionalesGobiernoDatos,
+    "Gobierno de Datos (Parte 2): Estándares y Políticas": preguntasGobiernoDatosParte2,
     "Ciclo de Vida de Gestión de Datos": funcionalesGobiernoDatos,
     "Diseño de Soluciones de Gestión de Datos": funcionalesGobiernoDatos,
     "Herramientas ETL (Extract, Transform, Load)": funcionalesGobiernoDatos,
@@ -87,6 +89,16 @@ function App() {
         onStartSimulacro={() => startTopicSimulacro("Gobierno de Datos (Parte 1): Conceptos Fundamentales")}
       />
     ),
+
+"Gobierno de Datos (Parte 2): Estándares y Políticas": ( // <-- ¡NUEVO MAPEADO!
+      <GobiernoDatosParte2
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Gobierno de Datos (Parte 2): Estándares y Políticas")}
+      />
+    ),
+
+
+
   };
 
   // Efecto para guardar completedJornadas en localStorage
