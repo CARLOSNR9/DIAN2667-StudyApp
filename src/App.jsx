@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Confetti from 'react-confetti'; // <-- Importación de la librería de confeti
 import PomodoroTimer from './components/PomodoroTimer';
 import cronograma from './data/cronograma';
 import Simulacro from './components/Simulacro';
@@ -6,14 +7,14 @@ import IntroDIAN2667 from './studyContent/IntroDIAN2667';
 import DianOrgMission from './studyContent/DianOrgMission';
 import GobiernoDatosParte1 from './studyContent/GobiernoDatosParte1';
 import GobiernoDatosParte2 from './studyContent/GobiernoDatosParte2';
+import CicloVidaDatos from './studyContent/CicloVidaDatos';
 
 // Importa TODOS tus archivos JSON de preguntas aquí
-
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
 import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_mission.json';
-import funcionalesGobiernoDatos from './data/preguntas/funcionalesGobiernoDatos.json';
+import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_datos.json';
 import preguntasGobiernoDatosParte2 from './data/preguntas/funcionales_gobierno_datos_parte2.json';
-
+import preguntasCicloVidaDatos from './data/preguntas/funcionales_ciclo_vida_datos.json';
 // ... otros imports de JSON ...
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
     }
   });
 
+  // --- NUEVO ESTADO PARA EL CONFETI ---
+  const [showConfetti, setShowConfetti] = useState(false);
 
   // --- Mapeo de Preguntas por Tema ---
   const questionBanks = {
@@ -51,6 +54,7 @@ function App() {
     "SQL (Structured Query Language)": funcionalesGobiernoDatos,
     "Python (Fundamentos para Datos)": funcionalesGobiernoDatos,
     "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
+    "Ciclo de Vida de Gestión de Datos": preguntasCicloVidaDatos,
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
     "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
@@ -90,15 +94,20 @@ function App() {
       />
     ),
 
-"Gobierno de Datos (Parte 2): Estándares y Políticas": ( // <-- ¡NUEVO MAPEADO!
+    "Gobierno de Datos (Parte 2): Estándares y Políticas": (
       <GobiernoDatosParte2
         onBack={() => setActiveStudyMaterial(null)}
         onStartSimulacro={() => startTopicSimulacro("Gobierno de Datos (Parte 2): Estándares y Políticas")}
       />
     ),
 
-
-
+    "Ciclo de Vida de Gestión de Datos": ( // <-- ¡NUEVO MAPEADO!
+      <CicloVidaDatos
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Ciclo de Vida de Gestión de Datos")}
+      />
+    ),
+    
   };
 
   // Efecto para guardar completedJornadas en localStorage
@@ -217,10 +226,10 @@ function App() {
     }
   };
 
-  // Modificación de handleSimulacroEnd para guardar el historial
+  // --- MODIFICACIÓN DE handleSimulacroEnd ---
   const handleSimulacroEnd = (score, wrongQuestions) => {
     if (activeSimulacro) {
-      const { id } = activeSimulacro;
+      const { id, numPreguntas } = activeSimulacro;
       const newEntry = {
         score: score,
         timestamp: new Date().toISOString(),
@@ -232,11 +241,22 @@ function App() {
         ...prevHistory,
         [id]: [newEntry, ...(prevHistory[id] || [])].slice(0, 5) // Guarda solo los últimos 5 intentos
       }));
-    }
 
-    console.log("Simulacro terminado. Puntuación:", score);
-    setActiveSimulacro(null);
-    alert(`Simulacro finalizado. Puntuación: ${score} puntos. Necesitas 70 para clasificar.`);
+      // Lógica para el confeti y mensaje de felicitación
+      const puntosPorPregunta = 100 / numPreguntas;
+      // Verificamos si la puntuación es exactamente 100 (ajustando por posibles errores de punto flotante)
+      if (Math.abs(score - 100) < 0.001) { 
+        setShowConfetti(true);
+        setTimeout(() => {
+          setShowConfetti(false);
+          alert(`¡INCREÍBLE! ¡Has obtenido un puntaje perfecto de 100 puntos en este simulacro!`);
+          setActiveSimulacro(null); // Ocultar el simulacro después del mensaje
+        }, 5000); // 5 segundos de confeti
+      } else {
+        alert(`Simulacro finalizado. Puntuación: ${score} puntos. Necesitas 70 para clasificar.`);
+        setActiveSimulacro(null); // Ocultar el simulacro
+      }
+    }
   };
 
   // Funciones de navegación (sin cambios)
@@ -251,61 +271,57 @@ function App() {
   };
 
   // Función para obtener todas las preguntas fallidas de todo el historial
-// Función para obtener todas las preguntas fallidas de todo el historial
-const getAllFailedQuestions = () => {
-  const allFailedIds = new Set(); // Usamos un Set para asegurar IDs únicos
-  // Itera sobre cada simulacro en el historial
-  for (const simulacroId in simulacroHistory) {
-    simulacroHistory[simulacroId].forEach(attempt => {
-      // AÑADIR ESTA VERIFICACIÓN:
-      // Asegurarse de que failedQuestionIds exista y sea un array antes de intentar iterar
-      if (attempt && Array.isArray(attempt.failedQuestionIds)) {
-        attempt.failedQuestionIds.forEach(qId => allFailedIds.add(qId));
+  const getAllFailedQuestions = () => {
+    const allFailedIds = new Set();
+    for (const simulacroId in simulacroHistory) {
+      simulacroHistory[simulacroId].forEach(attempt => {
+        if (attempt && Array.isArray(attempt.failedQuestionIds)) {
+          attempt.failedQuestionIds.forEach(qId => allFailedIds.add(qId));
+        }
+      });
+    }
+    let uniqueFailedQuestions = [];
+    const allAvailableQuestions = Object.values(questionBanks).flat();
+    allFailedIds.forEach(failedId => {
+      const question = allAvailableQuestions.find(q => q.id === failedId);
+      if (question) {
+        uniqueFailedQuestions.push(question);
       }
     });
-  }
-
-  // Ahora, recopila las preguntas completas de todos los bancos de preguntas
-  let uniqueFailedQuestions = [];
-  // Flatten all questions from all banks into a single array for easier lookup
-  const allAvailableQuestions = Object.values(questionBanks).flat();
-
-  allFailedIds.forEach(failedId => {
-    const question = allAvailableQuestions.find(q => q.id === failedId);
-    if (question) {
-      uniqueFailedQuestions.push(question);
-    }
-  });
-
-  return uniqueFailedQuestions;
-};
+    return uniqueFailedQuestions;
+  };
 
   // Función para iniciar el simulacro de "Mis Errores"
   const startMisErroresSimulacro = () => {
-    setActiveStudyMaterial(null); // Asegura que no haya material de estudio activo
+    setActiveStudyMaterial(null);
     const failedQuestions = getAllFailedQuestions();
 
     if (failedQuestions.length > 0) {
       setActiveSimulacro({
         tipo: 'mis-errores',
-        numPreguntas: failedQuestions.length, // O un número fijo, ej. 20, si hay muchas
+        numPreguntas: failedQuestions.length,
         preguntas: failedQuestions,
         titulo: `Simulacro: Mis Errores (${failedQuestions.length} preguntas)`,
-        id: 'simulacro-mis-errores' // ID único para este simulacro
+        id: 'simulacro-mis-errores'
       });
     } else {
       alert("¡Excelente! No tienes preguntas falladas registradas, o aún no has completado ningún simulacro.");
     }
   };
 
-
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-4 md:p-8"> {/* Padding responsivo */}
-      <header className="text-center mb-8 md:mb-12 relative"> {/* Margen responsivo y posición relativa */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-2 md:mb-4">DIAN ProExam</h1> {/* Título responsivo */}
+    <div className="min-h-screen bg-gray-50 text-gray-800 p-4 md:p-8">
+      {/* El componente Confetti se renderiza condicionalmente */}
+      {showConfetti && <Confetti
+        width={window.innerWidth}
+        height={window.innerHeight}
+        numberOfPieces={200}
+        recycle={false}
+      />}
+      <header className="text-center mb-8 md:mb-12 relative">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-2 md:mb-4">DIAN ProExam</h1>
         <p className="text-lg md:text-xl text-gray-600">Tu plataforma de estudio personalizada para la DIAN 2667</p>
 
-        {/* Botón "Volver al Cronograma" siempre visible (cuando no estás en el cronograma) */}
         {(activeSimulacro || activeStudyMaterial) && (
           <button
             onClick={resetAppToHome}
@@ -316,15 +332,13 @@ const getAllFailedQuestions = () => {
         )}
       </header>
 
-      <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 max-w-full lg:max-w-7xl mx-auto"> {/* Layout responsivo de columnas */}
-        {/* Contenedor del Pomodoro (barra lateral izquierda en PC, arriba en móvil) */}
-        <aside className="w-full lg:w-1/3 p-4 bg-white rounded-lg shadow-xl lg:sticky lg:top-8 lg:h-fit"> {/* Estilos responsivos */}
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 max-w-full lg:max-w-7xl mx-auto">
+        <aside className="w-full lg:w-1/3 p-4 bg-white rounded-lg shadow-xl lg:sticky lg:top-8 lg:h-fit">
           <PomodoroTimer />
           <div className="mt-4 md:mt-8 text-center text-xs md:text-sm text-gray-500">
             <p>El Pomodoro te ayuda a estudiar de forma concentrada.</p>
             <p>25 min estudio / 5 min descanso / 15 min descanso largo (cada 4 ciclos).</p>
           </div>
-          {/* Botón para iniciar el simulacro de "Mis Errores" en la barra lateral */}
           <div className="mt-6 border-t border-gray-200 pt-6">
             <h3 className="text-lg font-semibold mb-3 text-gray-700">Refuerzo Personalizado</h3>
             <button
@@ -341,10 +355,8 @@ const getAllFailedQuestions = () => {
           </div>
         </aside>
 
-        {/* Contenedor principal de contenido (Cronograma, Simulacro o Material de Estudio) */}
-        <main className="w-full lg:w-2/3 bg-white p-4 md:p-6 rounded-lg shadow-xl"> {/* Estilos responsivos */}
+        <main className="w-full lg:w-2/3 bg-white p-4 md:p-6 rounded-lg shadow-xl">
           {activeSimulacro ? (
-            // Renderiza el componente Simulacro si hay uno activo
             <Simulacro
               preguntas={activeSimulacro.preguntas}
               tipoSimulacro={activeSimulacro.tipo}
@@ -352,9 +364,7 @@ const getAllFailedQuestions = () => {
               onSimulacroEnd={handleSimulacroEnd}
             />
           ) : activeStudyMaterial ? (
-            // Renderiza el componente de material de estudio si hay uno activo
             studyMaterials[activeStudyMaterial] || (
-              // Mensaje de error si el material no se encuentra (posiblemente no mapeado)
               <div>
                 <button
                   onClick={resetAppToHome}
@@ -367,9 +377,7 @@ const getAllFailedQuestions = () => {
               </div>
             )
           ) : (
-            // Renderiza el cronograma por defecto
-            // Contenido del cronograma (el que ya tenías)
-            <div> {/* Se usa un div simple como contenedor padre para el cronograma */}
+            <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-700">Mi Cronograma de Estudio</h2>
 
               {cronograma.map((semana, semanaIndex) => (
@@ -381,7 +389,7 @@ const getAllFailedQuestions = () => {
                       {dia.jornadas.map((jornada, jornadaIndex) => {
                         const jornadaId = `${dia.fecha}-${jornada.nombre}`;
                         const isJornadaCompleted = completedJornadas.includes(jornadaId);
-                        const jornadaSimulacros = simulacroHistory[jornadaId] || []; // Obtiene todos los intentos de la jornada
+                        const jornadaSimulacros = simulacroHistory[jornadaId] || [];
 
                         return (
                           <div
@@ -391,8 +399,8 @@ const getAllFailedQuestions = () => {
                             <p className="font-semibold text-base md:text-lg text-gray-700">{jornada.nombre}</p>
                             <ul className="list-disc list-inside text-sm md:text-base text-gray-600 ml-3 md:ml-4 mt-1">
                               {jornada.temas.map((tema, temaIndex) => {
-                                const topicSimulacroId = `topic-${tema}`; // ID para el simulacro de tema específico
-                                const topicSimulacros = simulacroHistory[topicSimulacroId] || []; // Obtiene todos los intentos del tema
+                                const topicSimulacroId = `topic-${tema}`;
+                                const topicSimulacros = simulacroHistory[topicSimulacroId] || [];
 
                                 return (
                                   <li
@@ -401,7 +409,6 @@ const getAllFailedQuestions = () => {
                                     onClick={() => showStudyMaterial(tema)}
                                   >
                                     {tema}
-                                    {/* Mostrar historial de simulacro de TEMA ESPECÍFICO */}
                                     {topicSimulacros.length > 0 && (
                                       <div className="ml-2 md:ml-4 text-xs md:text-sm text-gray-600">
                                         Historial tema:
@@ -428,7 +435,6 @@ const getAllFailedQuestions = () => {
                                 Hacer Simulacro de Jornada (20 preguntas)
                               </button>
 
-                              {/* Mostrar historial de simulacro de JORNADA (debajo del botón) */}
                               {jornadaSimulacros.length > 0 && (
                                 <div className="mt-1 text-xs text-gray-600 w-full text-left pl-1">
                                   Historial jornada:
@@ -462,7 +468,6 @@ const getAllFailedQuestions = () => {
                           </div>
                         );
                       })}
-                      {/* Simulacro General del Día */}
                       {(() => {
                         const dailySimulacroId = `${dia.fecha}-general`;
                         const dailySimulacros = simulacroHistory[dailySimulacroId] || [];
