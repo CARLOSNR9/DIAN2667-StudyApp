@@ -8,6 +8,7 @@ import DianOrgMission from './studyContent/DianOrgMission';
 import GobiernoDatosParte1 from './studyContent/GobiernoDatosParte1';
 import GobiernoDatosParte2 from './studyContent/GobiernoDatosParte2';
 import CicloVidaDatos from './studyContent/CicloVidaDatos';
+import DisenoSoluciones from './studyContent/DisenoSoluciones';
 
 // Importa TODOS tus archivos JSON de preguntas aquí
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
@@ -15,6 +16,7 @@ import preguntasDianOrgMission from './data/preguntas/funcionales_dian_org_missi
 import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_datos.json';
 import preguntasGobiernoDatosParte2 from './data/preguntas/funcionales_gobierno_datos_parte2.json';
 import preguntasCicloVidaDatos from './data/preguntas/funcionales_ciclo_vida_datos.json';
+import preguntasDisenoSoluciones from './data/preguntas/funcionales_diseno_soluciones.json';
 // ... otros imports de JSON ...
 
 function App() {
@@ -55,6 +57,7 @@ function App() {
     "Python (Fundamentos para Datos)": funcionalesGobiernoDatos,
     "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
     "Ciclo de Vida de Gestión de Datos": preguntasCicloVidaDatos,
+    "Diseño de Soluciones de Gestión de Datos": preguntasDisenoSoluciones, 
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
     "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
@@ -105,6 +108,13 @@ function App() {
       <CicloVidaDatos
         onBack={() => setActiveStudyMaterial(null)}
         onStartSimulacro={() => startTopicSimulacro("Ciclo de Vida de Gestión de Datos")}
+      />
+    ),
+
+    "Diseño de Soluciones de Gestión de Datos": ( // <-- ¡NUEVO MAPEADO!
+      <DisenoSoluciones
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Diseño de Soluciones de Gestión de Datos")}
       />
     ),
     
