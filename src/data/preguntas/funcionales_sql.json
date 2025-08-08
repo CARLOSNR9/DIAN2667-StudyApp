@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sql-1",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Al migrar datos al DataR, se encuentra que el 10% de los NITs no cumplen con el formato estándar requerido por la Resolución 067 de 2024. Estos NITs tienen caracteres no numéricos que deben ser eliminados. ¿Qué comando SQL, alineado con las políticas de estandarización de la DIAN, prioriza el Gestor II?",
+    "opciones": [
+      "A. DELETE FROM contribuyentes WHERE nit NOT LIKE '9[0-9]%';",
+      "B. UPDATE contribuyentes SET nit = REGEXP_REPLACE(nit, '[^0-9]', '');",
+      "C. INSERT INTO errores SELECT * FROM contribuyentes WHERE LENGTH(nit) != 10;"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Resolución 067 exige la estandarización y no la eliminación de datos. El comando UPDATE con REGEXP_REPLACE es el más adecuado, ya que corrige el formato de los NITs, conservando la información y cumpliendo con las políticas de calidad de datos."
+  },
+  {
+    "id": "sql-2",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Fiscalización requiere un reporte para un cruce de información entre la tabla 'contribuyentes' y la tabla 'declaraciones_tributarias'. El Gestor II encuentra que algunos NITs en la tabla de declaraciones no tienen un registro asociado en la tabla de contribuyentes. ¿Qué tipo de JOIN debe usar para asegurar que el reporte solo muestre las declaraciones asociadas a un contribuyente válido y evitar datos inconsistentes?",
+    "opciones": [
+      "A. Un INNER JOIN entre las dos tablas para obtener solo los registros con coincidencia en ambas tablas.",
+      "B. Un LEFT JOIN de declaraciones_tributarias con contribuyentes para incluir todas las declaraciones, independientemente de la coincidencia.",
+      "C. Un RIGHT JOIN de declaraciones_tributarias con contribuyentes para incluir todos los registros de la segunda tabla."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Un INNER JOIN es el tipo de unión más adecuado para este caso, ya que solo devuelve los registros donde el nit_contribuyente tiene una coincidencia en ambas tablas. Esto asegura que el reporte solo incluya información de declaraciones con un contribuyente válido, evitando inconsistencias."
+  },
+  {
+    "id": "sql-3",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Fiscalización solicita un reporte que muestre el total de impuestos liquidados para los contribuyentes con declaraciones pendientes. Para garantizar la integridad de los datos, el Gestor II debe asegurarse de que la suma de los impuestos solo se realice para registros con un valor válido en el campo 'impuesto_liquidado'. ¿Qué función de SQL debería utilizar para cumplir con esta política de calidad de datos?",
+    "opciones": [
+      "A. La función SUM() para sumar los impuestos liquidados en la entidad.",
+      "B. La función COUNT() para contar los registros con valores válidos en la entidad.",
+      "C. La función SUM() en combinación con WHERE o CASE para excluir los valores nulos o no válidos de la suma."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La función SUM() ignora los valores nulos por defecto, pero si los datos contienen valores no numéricos, generará un error. La opción correcta es usar SUM() en combinación con una cláusula WHERE o un CASE para excluir los valores nulos o no válidos de la suma, garantizando así la integridad de los datos en el reporte."
+  },
+  {
+    "id": "sql-4",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está modelando una nueva tabla para el Repositorio Único de Datos (DataR) que almacenará información de los reportes de auditoría fiscal, que pueden cambiar de formato con el tiempo. La tabla debe ser flexible para adaptarse a estos cambios. ¿Qué tipo de base de datos es la más adecuada para este repositorio?",
+    "opciones": [
+      "A. Un DBMS relacional (SQL), ya que la información de los reportes de auditoría fiscal es estructurada y consistente.",
+      "B. Un DBMS no relacional (NoSQL), ya que la información es flexible y no estructurada, permitiendo la adaptación a los cambios sin una reestructuración de la base de datos.",
+      "C. Un Repositorio de Documentos, ya que la información de los reportes de auditoría fiscal es un archivo PDF de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un DBMS no relacional (NoSQL) es el más adecuado para este tipo de repositorio, ya que es flexible para datos no estructurados o semi-estructurados, como los reportes de auditoría fiscal. Esto permite que el repositorio se adapte a los cambios en el formato sin necesidad de una reestructuración, garantizando la escalabilidad de la arquitectura de datos."
+  },
+  {
+    "id": "sql-5",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión Jurídica solicita un reporte con los registros de los contribuyentes que han sido objeto de sanciones. La política de privacidad de la DIAN, basada en la Ley 1581 de 2012, exige aplicar controles de acceso. ¿Qué comando SQL se utiliza para otorgar permisos de acceso a un usuario?",
+    "opciones": [
+      "A. SELECT",
+      "B. INSERT",
+      "C. GRANT"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El comando GRANT es parte del Lenguaje de Control de Datos (DCL) y se utiliza para otorgar permisos de acceso a un usuario en una base de datos. Es el comando adecuado para cumplir con las políticas de seguridad y privacidad de la información."
+  },
+  {
+    "id": "sql-6",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un analista se queja de que una consulta con SELECT y múltiples JOIN tarda demasiado en ejecutarse. El Gestor II detecta que la base de datos no tiene índices en las columnas utilizadas en los JOIN. ¿Qué acción debería recomendar para optimizar el rendimiento del reporte?",
+    "opciones": [
+      "A. Usar una herramienta de visualización de datos.",
+      "B. Usar un LEFT JOIN para optimizar la consulta.",
+      "C. Crear índices en las columnas utilizadas en los JOIN."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La creación de índices en las columnas utilizadas en los JOIN es una práctica de optimización crucial en SQL. Los índices permiten que la base de datos encuentre los registros de forma más rápida, lo que mejora el rendimiento de la consulta."
+  },
+  {
+    "id": "sql-7",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un proceso ETL está fallando en la etapa de LOAD, con el error Duplicate Key. El Gestor II revisa y descubre que la tabla de destino (Facturacion_Electronica) tiene una llave primaria en el campo numero_factura y que la fuente de datos está enviando registros duplicados. ¿Cuál es la acción más estratégica para resolver el problema?",
+    "opciones": [
+      "A. Modificar la tabla de destino para que permita llaves primarias duplicadas.",
+      "B. Modificar el proceso TRANSFORM para que elimine los registros duplicados antes de la carga, y notificar al responsable de la fuente.",
+      "C. Modificar el proceso LOAD para que ignore los registros duplicados."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La acción más estratégica es corregir el problema desde el origen. Se debe modificar el proceso TRANSFORM para limpiar los datos antes de la carga, y notificar al responsable de la fuente para que corrija la causa raíz, asegurando así la integridad del dato."
+  },
+  {
+    "id": "sql-8",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Impuestos solicita un reporte que combine información de la tabla Declaraciones_Tributarias y Datos_Personales de contribuyentes. La política de privacidad de la DIAN prohíbe explícitamente el uso de información personal en reportes de análisis. El Gestor II debe cumplir con la solicitud sin violar la política. ¿Qué enfoque es el más adecuado?",
+    "opciones": [
+      "A. Usar SELECT con INNER JOIN en las dos tablas para obtener todos los registros con información personal, y luego anonimizar los datos en el reporte.",
+      "B. Usar SELECT con una consulta agregada (GROUP BY y COUNT) sin incluir información personal, para obtener un reporte estadístico que cumpla con la política.",
+      "C. Usar SELECT con WHERE para filtrar los registros con información personal, y luego anonimizar los datos en el reporte."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La política de privacidad prohíbe el uso de información personal en reportes de análisis. La acción más adecuada es usar GROUP BY y COUNT para generar un reporte estadístico que cumpla con la política y no contenga información personal."
+  },
+  {
+    "id": "sql-9",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe revocar los permisos de acceso a un usuario que ya no trabaja en la DIAN. La política de seguridad de la información exige que se revoquen todos los permisos de acceso del usuario de forma inmediata. ¿Qué comando SQL se utiliza para revocar estos permisos?",
+    "opciones": [
+      "A. El comando REVOKE para revocar los permisos de acceso.",
+      "B. El comando DELETE para eliminar el usuario de la base de datos.",
+      "C. El comando DROP para eliminar el usuario de la base de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando REVOKE es parte del Lenguaje de Control de Datos (DCL) y se utiliza específicamente para revocar los permisos de acceso de un usuario a una base de datos u objeto, lo cual es fundamental para cumplir con la política de seguridad."
+  },
+  {
+    "id": "sql-10",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un analista ha creado una consulta que usa SELECT con GROUP BY en un campo de texto con alta cardinalidad, lo que hace que la consulta tarde demasiado. El Gestor II detecta que el campo de texto no tiene un índice. ¿Qué acción debería recomendar para optimizar la consulta?",
+    "opciones": [
+      "A. Crear un índice en el campo de texto utilizado en el GROUP BY.",
+      "B. Usar un LEFT JOIN para optimizar la consulta.",
+      "C. Usar una herramienta de visualización de datos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La creación de índices en las columnas utilizadas en GROUP BY es una práctica de optimización en SQL que acelera la agrupación de registros. Esto mejora el rendimiento del reporte y la eficiencia operativa de la DIAN."
+  }
+]

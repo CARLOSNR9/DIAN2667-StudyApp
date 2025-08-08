@@ -10,6 +10,7 @@ import GobiernoDatosParte2 from './studyContent/GobiernoDatosParte2';
 import CicloVidaDatos from './studyContent/CicloVidaDatos';
 import DisenoSoluciones from './studyContent/DisenoSoluciones';
 import HerramientasETL from './studyContent/HerramientasETL';
+import SQLStudy from './studyContent/SQLStudy'; 
 
 // Importa TODOS tus archivos JSON de preguntas aquí
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
@@ -19,6 +20,7 @@ import preguntasGobiernoDatosParte2 from './data/preguntas/funcionales_gobierno_
 import preguntasCicloVidaDatos from './data/preguntas/funcionales_ciclo_vida_datos.json';
 import preguntasDisenoSoluciones from './data/preguntas/funcionales_diseno_soluciones.json';
 import preguntasHerramientasETL from './data/preguntas/funcionales_herramientas_etl.json'; 
+import preguntasSQL from './data/preguntas/funcionales_sql.json';
 // ... otros imports de JSON ...
 
 function App() {
@@ -61,6 +63,8 @@ function App() {
     "Ciclo de Vida de Gestión de Datos": preguntasCicloVidaDatos,
     "Diseño de Soluciones de Gestión de Datos": preguntasDisenoSoluciones, 
     "Herramientas ETL (Extract, Transform, Load)": preguntasHerramientasETL,
+    "SQL (Structured Query Language)": preguntasSQL,
+
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
     "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
@@ -127,6 +131,14 @@ function App() {
         onStartSimulacro={() => startTopicSimulacro("Herramientas ETL (Extract, Transform, Load)")}
       />
     ),
+    "SQL (Structured Query Language)": ( // <-- ¡NUEVO MAPEADO!
+      <SQLStudy
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("SQL (Structured Query Language)")}
+      />
+    ),
+
+
     
   };
 
