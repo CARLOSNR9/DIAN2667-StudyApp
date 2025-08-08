@@ -118,5 +118,2302 @@
     ],
     "respuesta_correcta_index": 0,
     "explicacion": "La creación de índices en las columnas utilizadas en GROUP BY es una práctica de optimización en SQL que acelera la agrupación de registros. Esto mejora el rendimiento del reporte y la eficiencia operativa de la DIAN."
-  }
+  },
+
+{
+    "id": "sql-11",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Como Gestor II, se le solicita obtener el NIT y el estado de todas las declaraciones tributarias que se encuentran pendientes de pago. Para esto, necesita consultar una tabla llamada `Declaraciones_Tributarias` con los campos `nit_contribuyente` y `estado`. ¿Cuál es la consulta SQL más adecuada para cumplir con esta solicitud de la entidad?",
+    "opciones": [
+        "A. SELECT nit_contribuyente, estado FROM Declaraciones_Tributarias WHERE estado = 'Pendiente';",
+        "B. SELECT nit_contribuyente, estado FROM Declaraciones_Tributarias WHERE estado <> 'Pagada';",
+        "C. SELECT nit_contribuyente, estado FROM Declaraciones_Tributarias WHERE estado IN ('Pendiente', 'Revision');"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consulta más adecuada es 'SELECT nit_contribuyente, estado FROM Declaraciones_Tributarias WHERE estado = 'Pendiente''. La cláusula WHERE filtra los registros que cumplen con una condición específica. En este caso, el estado es igual a 'Pendiente'. El uso de otros operadores o funciones puede no ser apropiado para la solicitud de la entidad."
+},
+{
+    "id": "sql-12",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un analista de la Dirección de Gestión de Impuestos ha solicitado al equipo de tecnología agregar una nueva columna llamada `tipo_impuesto` a la tabla `Declaraciones_Tributarias` para clasificar los registros. ¿Qué comando SQL debe utilizarse para modificar la estructura de la tabla sin perder los datos existentes de la entidad?",
+    "opciones": [
+        "A. UPDATE Declaraciones_Tributarias SET tipo_impuesto = NULL;",
+        "B. ALTER TABLE Declaraciones_Tributarias ADD tipo_impuesto VARCHAR(50);",
+        "C. CREATE COLUMN tipo_impuesto VARCHAR(50) IN Declaraciones_Tributarias;"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El comando 'ALTER TABLE' se utiliza para modificar la estructura de una tabla existente. En este caso, se usa para agregar una nueva columna llamada `tipo_impuesto` a la tabla `Declaraciones_Tributarias`. El uso de otros comandos puede generar errores o modificar los datos de la entidad."
+},
+{
+    "id": "sql-13",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión Jurídica ha solicitado eliminar un registro de un contribuyente de la tabla `Contribuyentes` debido a una orden judicial. El registro a eliminar tiene el `nit` '900000001'. ¿Qué comando SQL es el más adecuado para eliminar este registro sin afectar a los demás datos de la tabla?",
+    "opciones": [
+        "A. DROP FROM Contribuyentes WHERE nit = '900000001';",
+        "B. DELETE FROM Contribuyentes WHERE nit = '900000001';",
+        "C. TRUNCATE TABLE Contribuyentes WHERE nit = '900000001';"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El comando 'DELETE FROM' se utiliza para eliminar registros de una tabla que cumplen con una condición específica. El uso de 'DROP' elimina toda la tabla y 'TRUNCATE' elimina todos los registros, por lo que no son adecuados para la solicitud."
+},
+{
+    "id": "sql-14",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe actualizar el estado de una declaración tributaria a 'Pagada' para el `id_declaracion` '2024-001'. La tabla se llama `Declaraciones_Tributarias`. ¿Qué comando SQL es el más adecuado para realizar esta actualización de forma segura?",
+    "opciones": [
+        "A. UPDATE Declaraciones_Tributarias SET estado = 'Pagada' WHERE id_declaracion = '2024-001';",
+        "B. ALTER TABLE Declaraciones_Tributarias SET estado = 'Pagada' WHERE id_declaracion = '2024-001';",
+        "C. INSERT INTO Declaraciones_Tributarias (estado) VALUES ('Pagada') WHERE id_declaracion = '2024-001';"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'UPDATE' se utiliza para modificar registros existentes en una tabla. En este caso, se usa para actualizar el estado de una declaración tributaria a 'Pagada' para un `id_declaracion` específico. Los otros comandos no son adecuados para la solicitud."
+},
+{
+    "id": "sql-15",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un analista de la Dirección de Gestión de Aduanas necesita agregar un nuevo registro a la tabla `Importaciones` con la información de una operación de comercio exterior. ¿Qué comando SQL es el más adecuado para insertar este nuevo registro en la tabla de la entidad?",
+    "opciones": [
+        "A. INSERT INTO Importaciones ('fecha', 'valor', 'descripcion') VALUES ('2024-07-28', 10000, 'Computadoras');",
+        "B. ADD INTO Importaciones (fecha, valor, descripcion) VALUES ('2024-07-28', 10000, 'Computadoras');",
+        "C. INSERT INTO Importaciones (fecha, valor, descripcion) VALUES ('2024-07-28', 10000, 'Computadoras');"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El comando 'INSERT INTO' se utiliza para agregar nuevos registros a una tabla. La sintaxis correcta es 'INSERT INTO nombre_tabla (columnas) VALUES (valores)'. La opción C tiene la sintaxis correcta para la solicitud."
+},
+{
+    "id": "sql-16",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe otorgar permisos de lectura (`SELECT`) a un nuevo analista en la tabla `Declaraciones_Tributarias`, para que pueda consultar los datos. ¿Qué comando SQL es el que se utiliza para otorgar permisos de acceso a un usuario en una base de datos de la entidad?",
+    "opciones": [
+        "A. REVOKE SELECT ON Declaraciones_Tributarias TO 'analista';",
+        "B. GRANT SELECT ON Declaraciones_Tributarias TO 'analista';",
+        "C. DROP SELECT ON Declaraciones_Tributarias TO 'analista';"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El comando 'GRANT' es un comando DCL que se utiliza para otorgar permisos de acceso a un usuario en una base de datos. En este caso, se usa para otorgar permisos de lectura (`SELECT`) al analista. El comando 'REVOKE' revoca permisos y 'DROP' elimina objetos."
+},
+{
+    "id": "sql-17",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear una nueva tabla llamada `Contribuyentes` con los campos `nit`, `nombre`, `direccion` y `telefono`. El campo `nit` debe ser la llave primaria. ¿Qué comando SQL es el más adecuado para crear esta tabla con sus restricciones de la entidad?",
+    "opciones": [
+        "A. CREATE TABLE Contribuyentes (nit INT PRIMARY KEY, nombre VARCHAR(255), direccion VARCHAR(255), telefono VARCHAR(20));",
+        "B. CREATE TABLE Contribuyentes (nit INT, nombre VARCHAR(255), direccion VARCHAR(255), telefono VARCHAR(20));",
+        "C. CREATE TABLE Contribuyentes (nit INT NOT NULL, nombre VARCHAR(255), direccion VARCHAR(255), telefono VARCHAR(20));"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE TABLE' se utiliza para crear una nueva tabla. La sintaxis correcta para la creación de una tabla con una llave primaria es 'CREATE TABLE nombre_tabla (columna TIPO PRIMARY KEY, ...)'. La opción A tiene la sintaxis correcta para la solicitud."
+},
+{
+    "id": "sql-18",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de una auditoría, necesita obtener el total de declaraciones tributarias que se encuentran en estado 'Pagada'. La tabla se llama `Declaraciones_Tributarias`. ¿Qué función de SQL debería utilizar para contar estos registros en la entidad?",
+    "opciones": [
+        "A. SUM(estado) FROM Declaraciones_Tributarias WHERE estado = 'Pagada';",
+        "B. AVG(estado) FROM Declaraciones_Tributarias WHERE estado = 'Pagada';",
+        "C. COUNT(*) FROM Declaraciones_Tributarias WHERE estado = 'Pagada';"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La función 'COUNT()' se utiliza para contar el número de registros que cumplen con una condición. En este caso, se usa para contar el número de declaraciones tributarias que se encuentran en estado 'Pagada'. El uso de otras funciones como `SUM()` o `AVG()` no es adecuado para la solicitud de la entidad."
+},
+{
+    "id": "sql-19",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un nuevo proceso de validación, necesita asegurar que un campo llamado `impuesto_liquidado` en la tabla `Declaraciones_Tributarias` no pueda tener un valor nulo. ¿Qué restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. La restricción `PRIMARY KEY` en el campo `impuesto_liquidado`.",
+        "B. La restricción `NOT NULL` en el campo `impuesto_liquidado`.",
+        "C. La restricción `UNIQUE` en el campo `impuesto_liquidado`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La restricción `NOT NULL` se utiliza para asegurar que un campo no pueda tener un valor nulo. Es la restricción adecuada para el campo `impuesto_liquidado` para asegurar la integridad de los datos en la tabla `Declaraciones_Tributarias` de la entidad."
+},
+{
+    "id": "sql-20",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con el `valor_fob` promedio de todas las importaciones del último año. La tabla se llama `Importaciones`. ¿Qué función de SQL debería utilizar para calcular este promedio de la entidad?",
+    "opciones": [
+        "A. SUM(valor_fob) FROM Importaciones WHERE fecha > '2023-07-28';",
+        "B. AVG(valor_fob) FROM Importaciones WHERE fecha > '2023-07-28';",
+        "C. COUNT(valor_fob) FROM Importaciones WHERE fecha > '2023-07-28';"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La función `AVG()` se utiliza para calcular el valor promedio de una columna. En este caso, se usa para calcular el `valor_fob` promedio de todas las importaciones del último año. Las otras funciones no son adecuadas para la solicitud."
+},
+{
+    "id": "sql-21",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe insertar un nuevo registro en la tabla `Facturacion_Electronica` con la información de un documento electrónico. La tabla tiene los campos `id_factura`, `nit_emisor`, `fecha_emision` y `valor_total`. ¿Qué comando SQL es el más adecuado para esta inserción de la entidad?",
+    "opciones": [
+        "A. INSERT INTO Facturacion_Electronica VALUES ('2024-10-01', '123456789', '2024-07-28', 10000);",
+        "B. ADD INTO Facturacion_Electronica (id_factura, nit_emisor, fecha_emision, valor_total) VALUES ('2024-10-01', '123456789', '2024-07-28', 10000);",
+        "C. INSERT INTO Facturacion_Electronica (id_factura, nit_emisor, fecha_emision, valor_total) VALUES ('2024-10-01', '123456789', '2024-07-28', 10000);"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El comando `INSERT INTO` es el que se utiliza para agregar nuevos registros a una tabla. La sintaxis correcta es 'INSERT INTO nombre_tabla (columnas) VALUES (valores)'. La opción C tiene la sintaxis correcta para la solicitud."
+},
+{
+    "id": "sql-22",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear una copia de seguridad de una tabla llamada `Declaraciones_Tributarias` antes de realizar una modificación importante. ¿Qué comando SQL es el más adecuado para crear una copia de la tabla con los mismos datos de la entidad?",
+    "opciones": [
+        "A. CREATE TABLE Declaraciones_Tributarias_backup AS SELECT * FROM Declaraciones_Tributarias;",
+        "B. INSERT INTO Declaraciones_Tributarias_backup SELECT * FROM Declaraciones_Tributarias;",
+        "C. BACKUP TABLE Declaraciones_Tributarias TO Declaraciones_Tributarias_backup;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE TABLE ... AS SELECT' se utiliza para crear una nueva tabla a partir de los datos de otra tabla. Es el comando adecuado para crear una copia de seguridad de la tabla `Declaraciones_Tributarias` antes de realizar una modificación importante de la entidad."
+},
+{
+    "id": "sql-23",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión Jurídica ha solicitado revocar los permisos de lectura (`SELECT`) a un usuario en la tabla `Declaraciones_Tributarias`. ¿Qué comando SQL es el que se utiliza para revocar los permisos de acceso de un usuario en una base de datos de la entidad?",
+    "opciones": [
+        "A. REVOKE SELECT ON Declaraciones_Tributarias FROM 'usuario';",
+        "B. GRANT SELECT ON Declaraciones_Tributarias TO 'usuario';",
+        "C. DROP SELECT ON Declaraciones_Tributarias FROM 'usuario';"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando `REVOKE` es un comando DCL que se utiliza para revocar los permisos de acceso de un usuario en una base de datos. En este caso, se usa para revocar los permisos de lectura (`SELECT`) al usuario. El comando 'GRANT' otorga permisos y 'DROP' elimina objetos."
+},
+{
+    "id": "sql-24",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe actualizar el campo `estado` de todas las declaraciones tributarias de 'Pendiente' a 'Revision', para los registros que tienen un `impuesto_liquidado` mayor a 1000. ¿Qué comando SQL es el más adecuado para esta actualización de la entidad?",
+    "opciones": [
+        "A. UPDATE Declaraciones_Tributarias SET estado = 'Revision' WHERE estado = 'Pendiente' AND impuesto_liquidado > 1000;",
+        "B. ALTER TABLE Declaraciones_Tributarias SET estado = 'Revision' WHERE estado = 'Pendiente' AND impuesto_liquidado > 1000;",
+        "C. INSERT INTO Declaraciones_Tributarias (estado) VALUES ('Revision') WHERE estado = 'Pendiente' AND impuesto_liquidado > 1000;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'UPDATE' se utiliza para modificar registros existentes en una tabla. En este caso, se usa para actualizar el estado de las declaraciones tributarias que cumplen con dos condiciones, el estado es 'Pendiente' y el impuesto liquidado es mayor a 1000."
+},
+{
+    "id": "sql-25",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la limpieza de datos, necesita eliminar todos los registros de una tabla llamada `Registros_Obsoletos`. ¿Qué comando SQL es el más adecuado para eliminar todos los registros de la tabla de la entidad, sin afectar la estructura de la tabla?",
+    "opciones": [
+        "A. DROP TABLE Registros_Obsoletos;",
+        "B. DELETE FROM Registros_Obsoletos;",
+        "C. TRUNCATE TABLE Registros_Obsoletos;"
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El comando 'TRUNCATE TABLE' se utiliza para eliminar todos los registros de una tabla de forma rápida, sin afectar la estructura de la tabla. El comando 'DELETE FROM' elimina los registros uno por uno y 'DROP TABLE' elimina la tabla completa, por lo que no son adecuados para la solicitud de la entidad."
+},
+{
+    "id": "sql-26",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con la descripción de todas las importaciones que se realizaron en el último trimestre y que tienen un `valor_fob` mayor a 50000. ¿Qué comando de SQL es el más adecuado para esta consulta de la entidad?",
+    "opciones": [
+        "A. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob > 50000;",
+        "B. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' OR valor_fob > 50000;",
+        "C. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob < 50000;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consulta 'SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob > 50000;' es la más adecuada para la solicitud. La cláusula 'WHERE' se utiliza para filtrar los registros que cumplen con ambas condiciones, la fecha es mayor a '2024-04-28' y el valor_fob es mayor a 50000."
+},
+{
+    "id": "sql-27",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear una nueva tabla llamada `Auditorias` con los campos `id_auditoria`, `nit_contribuyente`, `fecha_inicio` y `fecha_fin`. El campo `id_auditoria` debe ser la llave primaria. ¿Qué comando SQL es el más adecuado para crear esta tabla con sus restricciones de la entidad?",
+    "opciones": [
+        "A. CREATE TABLE Auditorias (id_auditoria INT, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);",
+        "B. CREATE TABLE Auditorias (id_auditoria INT PRIMARY KEY, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);",
+        "C. CREATE TABLE Auditorias (id_auditoria INT NOT NULL, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El comando 'CREATE TABLE' se utiliza para crear una nueva tabla. La sintaxis correcta para la creación de una tabla con una llave primaria es 'CREATE TABLE nombre_tabla (columna TIPO PRIMARY KEY, ...)'. La opción B tiene la sintaxis correcta para la solicitud."
+},
+{
+    "id": "sql-28",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un nuevo proceso de validación, necesita asegurar que un campo llamado `nit` en la tabla `Contribuyentes` no pueda tener un valor nulo. ¿Qué restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. La restricción `PRIMARY KEY` en el campo `nit`.",
+        "B. La restricción `NOT NULL` en el campo `nit`.",
+        "C. La restricción `UNIQUE` en el campo `nit`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La restricción `NOT NULL` se utiliza para asegurar que un campo no pueda tener un valor nulo. Es la restricción adecuada para el campo `nit` para asegurar la integridad de los datos en la tabla `Contribuyentes` de la entidad."
+},
+{
+    "id": "sql-29",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con el total de importaciones realizadas por cada país. La tabla se llama `Importaciones` y tiene los campos `id_importacion`, `pais_origen` y `valor_fob`. ¿Qué función de SQL debería utilizar para contar estos registros en la entidad?",
+    "opciones": [
+        "A. SELECT pais_origen, COUNT(*) FROM Importaciones GROUP BY pais_origen;",
+        "B. SELECT pais_origen, SUM(valor_fob) FROM Importaciones GROUP BY pais_origen;",
+        "C. SELECT pais_origen, AVG(valor_fob) FROM Importaciones GROUP BY pais_origen;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consulta 'SELECT pais_origen, COUNT(*) FROM Importaciones GROUP BY pais_origen;' es la más adecuada para la solicitud. La cláusula 'GROUP BY' agrupa los registros por `pais_origen` y la función `COUNT()` cuenta el número de registros para cada país."
+},
+{
+    "id": "sql-30",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe actualizar el campo `telefono` de un contribuyente en la tabla `Contribuyentes`. El `nit` del contribuyente es '900000001' y el nuevo teléfono es '1234567890'. ¿Qué comando SQL es el más adecuado para esta actualización de la entidad?",
+    "opciones": [
+        "A. UPDATE Contribuyentes SET telefono = '1234567890' WHERE nit = '900000001';",
+        "B. ALTER TABLE Contribuyentes SET telefono = '1234567890' WHERE nit = '900000001';",
+        "C. INSERT INTO Contribuyentes (telefono) VALUES ('1234567890') WHERE nit = '900000001';"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'UPDATE' se utiliza para modificar registros existentes en una tabla. En este caso, se usa para actualizar el teléfono de un contribuyente con un `nit` específico. Los otros comandos no son adecuados para la solicitud."
+},
+
+{
+    "id": "sql-31",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un analista de la Dirección de Gestión de Fiscalización necesita generar un reporte que combine la información de la tabla `Declaraciones_Tributarias` con la tabla `Contribuyentes` y muestre el nombre del contribuyente y el total de impuestos liquidados. Ambas tablas se relacionan por el campo `nit_contribuyente`. ¿Qué tipo de `JOIN` es el más adecuado para esta consulta de la entidad?",
+    "opciones": [
+        "A. INNER JOIN, para obtener solo los registros con coincidencia en ambas tablas.",
+        "B. LEFT JOIN, para obtener todos los registros de la tabla `Declaraciones_Tributarias`, independientemente de la coincidencia.",
+        "C. RIGHT JOIN, para obtener todos los registros de la tabla `Contribuyentes`, independientemente de la coincidencia."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El `INNER JOIN` es el tipo de unión más adecuado para este caso. Se utiliza para obtener solo los registros donde el `nit_contribuyente` tiene una coincidencia en ambas tablas, lo que asegura que el reporte solo incluya información de contribuyentes que tienen declaraciones registradas."
+},
+{
+    "id": "sql-32",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que no han realizado ninguna declaración tributaria. Para ello, necesita combinar la tabla `Declaraciones_Tributarias` con la tabla `Contribuyentes`. ¿Qué tipo de `JOIN` es el más adecuado para esta consulta de la entidad?",
+    "opciones": [
+        "A. INNER JOIN, para obtener solo los registros con coincidencia en ambas tablas.",
+        "B. LEFT JOIN, para obtener todos los registros de la tabla `Contribuyentes` y los que no tienen una coincidencia en la tabla `Declaraciones_Tributarias`.",
+        "C. RIGHT JOIN, para obtener todos los registros de la tabla `Declaraciones_Tributarias` y los que no tienen una coincidencia en la tabla `Contribuyentes`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El `LEFT JOIN` de `Contribuyentes` con `Declaraciones_Tributarias` es el tipo de unión más adecuado para este caso. Se utiliza para obtener todos los registros de la tabla `Contribuyentes` y los que no tienen una coincidencia en la tabla `Declaraciones_Tributarias`, lo que permite identificar a los contribuyentes que no han realizado ninguna declaración."
+},
+{
+    "id": "sql-33",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre los `nit` de los contribuyentes con declaraciones pendientes y que no tienen una dirección registrada en la tabla `Contribuyentes`. ¿Qué tipo de `JOIN` es el más adecuado para esta consulta de la entidad?",
+    "opciones": [
+        "A. INNER JOIN, para obtener solo los registros con coincidencia en ambas tablas.",
+        "B. RIGHT JOIN, para obtener todos los registros de la tabla `Contribuyentes`, independientemente de la coincidencia.",
+        "C. LEFT JOIN, para obtener todos los registros de la tabla `Declaraciones_Tributarias` y los que no tienen una coincidencia en la tabla `Contribuyentes`."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El `LEFT JOIN` de `Declaraciones_Tributarias` con `Contribuyentes` es el tipo de unión más adecuado para este caso. Se utiliza para obtener todos los registros de la tabla `Declaraciones_Tributarias` y los que no tienen una coincidencia en la tabla `Contribuyentes`, lo que permite identificar a los contribuyentes con declaraciones pendientes y sin dirección registrada."
+},
+{
+    "id": "sql-34",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre el total de `impuesto_liquidado` por cada `nit_contribuyente` que tiene más de 10 declaraciones tributarias. ¿Qué función de SQL debería utilizar para contar los registros y filtrar los que tienen más de 10 declaraciones de la entidad?",
+    "opciones": [
+        "A. `COUNT(*)` y `GROUP BY` con `WHERE` en la tabla `Declaraciones_Tributarias`.",
+        "B. `COUNT(*)` y `GROUP BY` con `HAVING` en la tabla `Declaraciones_Tributarias`.",
+        "C. `SUM(impuesto_liquidado)` y `GROUP BY` con `WHERE` en la tabla `Declaraciones_Tributarias`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La consulta 'SELECT nit_contribuyente, COUNT(*) FROM Declaraciones_Tributarias GROUP BY nit_contribuyente HAVING COUNT(*) > 10;' es la más adecuada para la solicitud. La cláusula 'HAVING' se utiliza para filtrar los grupos de registros que cumplen con una condición, en este caso, que el número de declaraciones es mayor a 10."
+},
+{
+    "id": "sql-35",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre el nombre de los contribuyentes que tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `GROUP BY` para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "C. Una consulta con `INNER JOIN` para obtener el promedio del `impuesto_liquidado` de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener el promedio del `impuesto_liquidado` de todas las declaraciones y luego se utiliza en la cláusula `WHERE` para filtrar los registros que tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-36",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre el nombre de los contribuyentes que tienen más de una declaración tributaria en estado 'Pendiente'. Para ello, necesita combinar la tabla `Declaraciones_Tributarias` con la tabla `Contribuyentes`. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el nombre de los contribuyentes con declaraciones pendientes en la entidad.",
+        "B. Una consulta con `JOIN` y `GROUP BY` para obtener el nombre de los contribuyentes con más de una declaración pendiente en la entidad.",
+        "C. Una consulta con `LEFT JOIN` y `COUNT` para obtener el nombre de los contribuyentes con más de una declaración pendiente en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `JOIN` y `GROUP BY` es el tipo de consulta más adecuado para esta solicitud. Se utiliza para combinar las tablas, agrupar los registros por `nit_contribuyente` y `nombre_contribuyente`, y luego usar la cláusula `HAVING` con `COUNT(*)` para filtrar los registros que tienen más de una declaración pendiente. Esto permite a la DIAN tomar decisiones informadas sobre el recaudo."
+},
+{
+    "id": "sql-37",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la limpieza de datos, necesita eliminar todos los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta con `NOT IN` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`.",
+        "B. Una consulta con `JOIN` y `WHERE` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`.",
+        "C. Una consulta con `LEFT JOIN` y `IS NULL` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una subconsulta con `NOT IN` es el tipo de consulta más adecuado para esta solicitud. Se utiliza para seleccionar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes` y luego se utiliza un `DELETE` para eliminarlos, lo que asegura la integridad de los datos en la entidad."
+},
+{
+    "id": "sql-38",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un nuevo proceso de validación, necesita asegurar que un campo llamado `impuesto_liquidado` en la tabla `Declaraciones_Tributarias` no pueda tener un valor negativo. ¿Qué tipo de restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. Una restricción `PRIMARY KEY` en el campo `impuesto_liquidado`.",
+        "B. Una restricción `NOT NULL` en el campo `impuesto_liquidado`.",
+        "C. Una restricción `CHECK` en el campo `impuesto_liquidado` para que el valor sea mayor o igual a 0."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Una restricción `CHECK` se utiliza para asegurar que un campo cumpla con una condición específica. En este caso, se usa para asegurar que el `impuesto_liquidado` sea mayor o igual a 0, lo que garantiza la integridad de los datos en la tabla `Declaraciones_Tributarias` de la entidad."
+},
+{
+    "id": "sql-39",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con el total de `valor_fob` de todas las importaciones realizadas por cada país, pero solo para los países que tienen más de 100 importaciones. ¿Qué función de SQL debería utilizar para filtrar los países que tienen más de 100 importaciones de la entidad?",
+    "opciones": [
+        "A. `SUM(valor_fob)` y `GROUP BY` con `WHERE` en la tabla `Importaciones`.",
+        "B. `SUM(valor_fob)` y `GROUP BY` con `HAVING` en la tabla `Importaciones`.",
+        "C. `COUNT(*)` y `GROUP BY` con `WHERE` en la tabla `Importaciones`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La consulta 'SELECT pais_origen, SUM(valor_fob) FROM Importaciones GROUP BY pais_origen HAVING COUNT(*) > 100;' es la más adecuada para la solicitud. La cláusula `HAVING` se utiliza para filtrar los grupos de registros que cumplen con una condición, en este caso, que el número de importaciones es mayor a 100."
+},
+{
+    "id": "sql-40",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre el nombre de los contribuyentes que tienen una declaración tributaria con un `impuesto_liquidado` mayor a 10000. Para ello, necesita combinar la tabla `Declaraciones_Tributarias` con la tabla `Contribuyentes`. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor a 10000 y luego un `INNER JOIN` con la tabla `Contribuyentes`.",
+        "B. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor a 10000 en la entidad.",
+        "C. Una consulta con `LEFT JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor a 10000 en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `INNER JOIN` y `WHERE` es el tipo de consulta más adecuado para esta solicitud. Se utiliza para combinar las tablas y luego se usa la cláusula `WHERE` para filtrar los registros que tienen un `impuesto_liquidado` mayor a 10000, lo que permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-41",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un proceso de validación, necesita asegurar que un campo llamado `nit` en la tabla `Contribuyentes` no pueda tener un valor nulo y que sea único para cada registro. ¿Qué tipo de restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. La restricción `NOT NULL` en el campo `nit`.",
+        "B. La restricción `UNIQUE` en el campo `nit`.",
+        "C. La restricción `PRIMARY KEY` en el campo `nit`."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La restricción `PRIMARY KEY` se utiliza para asegurar que un campo no pueda tener un valor nulo y que sea único para cada registro. Es la restricción adecuada para el campo `nit` para garantizar la integridad de los datos en la tabla `Contribuyentes` de la entidad."
+},
+{
+    "id": "sql-42",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con la descripción de todas las importaciones que se realizaron en el último trimestre y que tienen un `valor_fob` mayor a 50000. ¿Qué comando de SQL es el más adecuado para esta consulta de la entidad?",
+    "opciones": [
+        "A. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob > 50000;",
+        "B. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' OR valor_fob > 50000;",
+        "C. SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob < 50000;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consulta 'SELECT descripcion FROM Importaciones WHERE fecha > '2024-04-28' AND valor_fob > 50000;' es la más adecuada para la solicitud. La cláusula 'WHERE' se utiliza para filtrar los registros que cumplen con ambas condiciones, la fecha es mayor a '2024-04-28' y el valor_fob es mayor a 50000."
+},
+{
+    "id": "sql-43",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear una nueva tabla llamada `Auditorias` con los campos `id_auditoria`, `nit_contribuyente`, `fecha_inicio` y `fecha_fin`. El campo `id_auditoria` debe ser la llave primaria. ¿Qué comando SQL es el más adecuado para crear esta tabla con sus restricciones de la entidad?",
+    "opciones": [
+        "A. CREATE TABLE Auditorias (id_auditoria INT, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);",
+        "B. CREATE TABLE Auditorias (id_auditoria INT PRIMARY KEY, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);",
+        "C. CREATE TABLE Auditorias (id_auditoria INT NOT NULL, nit_contribuyente INT, fecha_inicio DATE, fecha_fin DATE);"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El comando 'CREATE TABLE' se utiliza para crear una nueva tabla. La sintaxis correcta para la creación de una tabla con una llave primaria es 'CREATE TABLE nombre_tabla (columna TIPO PRIMARY KEY, ...)'. La opción B tiene la sintaxis correcta para la solicitud."
+},
+{
+    "id": "sql-44",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un nuevo proceso de validación, necesita asegurar que un campo llamado `nit` en la tabla `Contribuyentes` no pueda tener un valor nulo. ¿Qué restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. La restricción `PRIMARY KEY` en el campo `nit`.",
+        "B. La restricción `NOT NULL` en el campo `nit`.",
+        "C. La restricción `UNIQUE` en el campo `nit`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La restricción `NOT NULL` se utiliza para asegurar que un campo no pueda tener un valor nulo. Es la restricción adecuada para el campo `nit` para asegurar la integridad de los datos en la tabla `Contribuyentes` de la entidad."
+},
+{
+    "id": "sql-45",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "La Dirección de Gestión de Aduanas ha solicitado un reporte con el total de importaciones realizadas por cada país. La tabla se llama `Importaciones` y tiene los campos `id_importacion`, `pais_origen` y `valor_fob`. ¿Qué función de SQL debería utilizar para contar estos registros en la entidad?",
+    "opciones": [
+        "A. SELECT pais_origen, COUNT(*) FROM Importaciones GROUP BY pais_origen;",
+        "B. SELECT pais_origen, SUM(valor_fob) FROM Importaciones GROUP BY pais_origen;",
+        "C. SELECT pais_origen, AVG(valor_fob) FROM Importaciones GROUP BY pais_origen;"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La consulta 'SELECT pais_origen, COUNT(*) FROM Importaciones GROUP BY pais_origen;' es la más adecuada para la solicitud. La cláusula 'GROUP BY' agrupa los registros por `pais_origen` y la función `COUNT()` cuenta el número de registros para cada país."
+},
+{
+    "id": "sql-46",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe actualizar el campo `telefono` de un contribuyente en la tabla `Contribuyentes`. El `nit` del contribuyente es '900000001' y el nuevo teléfono es '1234567890'. ¿Qué comando SQL es el más adecuado para esta actualización de la entidad?",
+    "opciones": [
+        "A. UPDATE Contribuyentes SET telefono = '1234567890' WHERE nit = '900000001';",
+        "B. ALTER TABLE Contribuyentes SET telefono = '1234567890' WHERE nit = '900000001';",
+        "C. INSERT INTO Contribuyentes (telefono) VALUES ('1234567890') WHERE nit = '900000001';"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'UPDATE' se utiliza para modificar registros existentes en una tabla. En este caso, se usa para actualizar el teléfono de un contribuyente con un `nit` específico. Los otros comandos no son adecuados para la solicitud."
+},
+{
+    "id": "sql-47",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el total de `impuesto_liquidado` por cada `nit_contribuyente` que tiene más de 10 declaraciones tributarias. ¿Qué función de SQL debería utilizar para contar los registros y filtrar los que tienen más de 10 declaraciones de la entidad?",
+    "opciones": [
+        "A. `COUNT(*)` y `GROUP BY` con `WHERE` en la tabla `Declaraciones_Tributarias`.",
+        "B. `COUNT(*)` y `GROUP BY` con `HAVING` en la tabla `Declaraciones_Tributarias`.",
+        "C. `SUM(impuesto_liquidado)` y `GROUP BY` con `WHERE` en la tabla `Declaraciones_Tributarias`."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La consulta 'SELECT nit_contribuyente, COUNT(*) FROM Declaraciones_Tributarias GROUP BY nit_contribuyente HAVING COUNT(*) > 10;' es la más adecuada para la solicitud. La cláusula 'HAVING' se utiliza para filtrar los grupos de registros que cumplen con una condición, en este caso, que el número de declaraciones es mayor a 10."
+},
+{
+    "id": "sql-48",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe generar un reporte que muestre el nombre de los contribuyentes que tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `GROUP BY` para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "C. Una consulta con `INNER JOIN` para obtener el promedio del `impuesto_liquidado` de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener el promedio del `impuesto_liquidado` de todas las declaraciones y luego se utiliza en la cláusula `WHERE` para filtrar los registros que tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-49",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el diseño de un proceso de validación, necesita asegurar que un campo llamado `nit` en la tabla `Contribuyentes` no pueda tener un valor nulo y que sea único para cada registro. ¿Qué tipo de restricción de SQL debe utilizarse para lograr este objetivo de la entidad?",
+    "opciones": [
+        "A. La restricción `NOT NULL` en el campo `nit`.",
+        "B. La restricción `UNIQUE` en el campo `nit`.",
+        "C. La restricción `PRIMARY KEY` en el campo `nit`."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La restricción `PRIMARY KEY` se utiliza para asegurar que un campo no pueda tener un valor nulo y que sea único para cada registro. Es la restricción adecuada para el campo `nit` para garantizar la integridad de los datos en la tabla `Contribuyentes` de la entidad."
+},
+{
+    "id": "sql-50",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la limpieza de datos, necesita eliminar todos los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta con `NOT IN` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`.",
+        "B. Una consulta con `JOIN` y `WHERE` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`.",
+        "C. Una consulta con `LEFT JOIN` y `IS NULL` para eliminar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes`."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Una subconsulta con `NOT IN` es el tipo de consulta más adecuado para esta solicitud. Se utiliza para seleccionar los registros de la tabla `Declaraciones_Tributarias` que no tienen un `nit_contribuyente` en la tabla `Contribuyentes` y luego se utiliza un `DELETE` para eliminarlos, lo que asegura la integridad de los datos en la entidad."
+},
+
+{
+    "id": "sql-51",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de una auditoría tributaria, debe identificar a todos los contribuyentes que tienen un `impuesto_liquidado` de 0, pero que tienen un historial de declaraciones con un `impuesto_liquidado` mayor a 0 en años anteriores. Para ello, necesita combinar los datos de la tabla `Declaraciones_Tributarias` con los datos de un `SELECT` que contiene el `nit_contribuyente` y el `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Un `INNER JOIN` con un `WHERE` para filtrar los registros con un `impuesto_liquidado` de 0 y un `GROUP BY` con `HAVING` para contar los registros con un `impuesto_liquidado` mayor a 0 en años anteriores.",
+        "B. Un `LEFT JOIN` con una subconsulta para obtener los `nit_contribuyente` con un historial de declaraciones con un `impuesto_liquidado` mayor a 0 y luego un `WHERE` con `impuesto_liquidado` de 0 en la tabla `Declaraciones_Tributarias`.",
+        "C. Una consulta con `CASE` y `WHERE` para filtrar los registros con un `impuesto_liquidado` de 0 y un `COUNT` con `GROUP BY` para contar los registros con un `impuesto_liquidado` mayor a 0 en años anteriores."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un historial de declaraciones con un `impuesto_liquidado` mayor a 0 y luego se utiliza un `WHERE` con `impuesto_liquidado` de 0 en la tabla `Declaraciones_Tributarias`. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-52",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-53",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-54",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-55",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-56",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-57",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-58",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-59",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-60",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-61",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-62",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-63",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-64",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-65",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-66",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-67",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+    "id": "sql-68",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II, en el marco de la optimización de consultas, debe crear un índice en un campo de la tabla `Facturacion_Electronica` para acelerar la búsqueda de los registros. ¿Qué comando SQL es el más adecuado para crear un índice en la tabla de la entidad?",
+    "opciones": [
+        "A. CREATE INDEX idx_fecha ON Facturacion_Electronica (fecha_emision);",
+        "B. CREATE INDEX idx_fecha ON Facturacion_Electronica;",
+        "C. CREATE TABLE idx_fecha ON Facturacion_Electronica (fecha_emision);"
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El comando 'CREATE INDEX' se utiliza para crear un índice en una tabla. La sintaxis correcta es 'CREATE INDEX nombre_indice ON nombre_tabla (columna)'. El uso de un índice en un campo de la tabla `Facturacion_Electronica` acelera la búsqueda de los registros, lo que mejora el rendimiento de los reportes de la entidad."
+},
+{
+    "id": "sql-69",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II debe crear un reporte que muestre el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio del `impuesto_liquidado` de todas las declaraciones. ¿Qué tipo de consulta de SQL es el más adecuado para esta solicitud de la entidad?",
+    "opciones": [
+        "A. Una subconsulta para obtener el promedio del `impuesto_liquidado` de la entidad.",
+        "B. Una consulta con `LEFT JOIN` y una subconsulta para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad.",
+        "C. Una consulta con `INNER JOIN` y `WHERE` para obtener el nombre de los contribuyentes con un `impuesto_liquidado` mayor al promedio de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Una consulta con `LEFT JOIN` y una subconsulta es el tipo de consulta más adecuado para esta solicitud. Se utiliza para obtener los `nit_contribuyente` con un `impuesto_liquidado` mayor al promedio de la entidad y luego se utiliza un `LEFT JOIN` para obtener el nombre de los contribuyentes que tienen declaraciones pendientes y que no tienen un `impuesto_liquidado` mayor al promedio. Esto permite a la DIAN tomar decisiones informadas sobre la fiscalización."
+},
+{
+    "id": "sql-70",
+    "tema": "SQL (Structured Query Language)",
+    "pregunta": "Un Gestor II está desarrollando un proceso ETL para la consolidación de datos en el **DataR**. El proceso debe manejar grandes volúmenes de datos de múltiples fuentes. Para asegurar la integridad de los datos, el proceso debe ser transaccional, es decir, si alguna parte de la carga falla, todos los cambios deben ser revertidos. ¿Qué comando de SQL es el que se utiliza para gestionar las transacciones en la base de datos?",
+    "opciones": [
+        "A. El comando `COMMIT` para guardar permanentemente los cambios de una transacción.",
+        "B. El comando `ROLLBACK` para deshacer los cambios realizados en una transacción.",
+        "C. Los comandos `COMMIT` y `ROLLBACK` para gestionar las transacciones en la base de datos."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Los comandos `COMMIT` y `ROLLBACK` son los que se utilizan para gestionar las transacciones en la base de datos. El comando `COMMIT` guarda permanentemente los cambios de una transacción, y el comando `ROLLBACK` deshace los cambios realizados en una transacción, lo que garantiza la integridad de los datos en el proceso ETL."
+},
+{
+  "id": "sql-71",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al generar un reporte básico de contribuyentes en DataR, notas que la columna 'fecha_registro' muestra valores NULL. ¿Qué cláusula SQL asegura que solo se incluyan registros con fecha válida?",
+  "opciones": [
+    "A. WHERE fecha_registro IS NOT NULL",
+    "B. ORDER BY fecha_registro DESC",
+    "C. GROUP BY fecha_registro"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La cláusula WHERE con IS NOT NULL filtra registros sin fecha, cumpliendo con el principio de integridad de datos del Manual de Políticas de Seguridad de la DIAN (Cap. 4.2)."
+},
+{
+  "id": "sql-72",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Debes crear una tabla en DataR para almacenar facturas electrónicas. ¿Qué restricción SQL garantiza que cada factura tenga un ID único?",
+  "opciones": [
+    "A. PRIMARY KEY",
+    "B. DEFAULT CURRENT_DATE",
+    "C. CHECK (valor > 0)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "PRIMARY KEY asegura unicidad e identificación inequívoca de facturas, requerido por el Artículo 5 de la Resolución 000165 de 2023 sobre facturación electrónica."
+},
+{
+  "id": "sql-73",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para un reporte de contribuyentes morosos, necesitas listar NITs con deudas superiores a $10M. ¿Qué consulta SQL es correcta?",
+  "opciones": [
+    "A. SELECT nit FROM deudas WHERE monto > 10000000",
+    "B. DELETE FROM deudas WHERE monto < 10000000",
+    "C. UPDATE deudas SET estado = 'moroso'"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "SELECT con WHERE filtra registros según el criterio solicitado. Las otras opciones modifican datos en lugar de generar el reporte (Manual de DataR v3, p.15)."
+},
+{
+  "id": "sql-74",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al importar datos al DataR, el sistema rechaza registros con NITs vacíos. ¿Qué restricción debería tener la tabla?",
+  "opciones": [
+    "A. NOT NULL",
+    "B. FOREIGN KEY",
+    "C. UNIQUE"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "NOT NULL previene valores nulos en campos críticos como NIT, asegurando calidad de datos (Decreto 927 de 2023, Art. 12)."
+},
+{
+  "id": "sql-75",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Debes actualizar el estado de 500 facturas a 'PAGADA' en DataR. ¿Qué comando SQL usarías?",
+  "opciones": [
+    "A. UPDATE facturas SET estado = 'PAGADA' WHERE...",
+    "B. INSERT INTO facturas VALUES ('PAGADA')",
+    "C. ALTER TABLE facturas ADD estado"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "UPDATE modifica registros existentes. INSERT agregaría nuevos registros y ALTER cambiaría la estructura de la tabla (Manual SQL DIAN, p.22)."
+},
+{
+  "id": "sql-76",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para un reporte regional, necesitas contar contribuyentes por departamento. ¿Qué consulta usarías?",
+  "opciones": [
+    "A. SELECT departamento, COUNT(*) FROM contribuyentes GROUP BY departamento",
+    "B. SELECT COUNT(*) FROM contribuyentes ORDER BY departamento",
+    "C. DELETE FROM contribuyentes GROUP BY departamento"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "GROUP BY con COUNT() agrega datos por categoría (departamento), método estándar para reportes según Guía DataR (2025)."
+},
+{
+  "id": "sql-77",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al validar datos en DataR, encuentras duplicados en una tabla de NITs. ¿Qué SQL resolvería esto?",
+  "opciones": [
+    "A. CREATE UNIQUE INDEX idx_nit ON contribuyentes(nit)",
+    "B. DROP TABLE contribuyentes",
+    "C. ALTER TABLE contribuyentes ADD COLUMN direccion"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los índices UNIQUE previenen duplicados en campos clave como NIT, cumpliendo con el estándar de unicidad del Gobierno de Datos (Resolución 067/2024)."
+},
+{
+  "id": "sql-78",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Necesitas listar contribuyentes registrados en 2024. ¿Qué cláusula WHERE filtraría correctamente?",
+  "opciones": [
+    "A. WHERE fecha_registro BETWEEN '2024-01-01' AND '2024-12-31'",
+    "B. WHERE fecha_registro = CURRENT_DATE",
+    "C. WHERE fecha_registro LIKE '%2024%'"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "BETWEEN es el operador adecuado para rangos de fechas. LIKE no es óptimo para campos DATE y CURRENT_DATE solo filtraría el día actual."
+},
+{
+  "id": "sql-79",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para crear una tabla de retenciones en DataR, ¿qué tipo de dato SQL usarías para el valor numérico?",
+  "opciones": [
+    "A. DECIMAL(12,2)",
+    "B. VARCHAR(255)",
+    "C. BOOLEAN"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "DECIMAL(12,2) almacena valores monetarios con precisión (12 dígitos, 2 decimales), requerido para cálculos tributarios (Estatuto Tributario Art. 632)."
+},
+{
+  "id": "sql-80",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Debes eliminar 50 registros incorrectos de una tabla en DataR. ¿Qué comando SQL es apropiado?",
+  "opciones": [
+    "A. DELETE FROM errores WHERE id IN (lista_ids)",
+    "B. TRUNCATE TABLE errores",
+    "C. DROP DATABASE datar"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "DELETE con WHERE elimina registros específicos. TRUNCATE borraría toda la tabla y DROP eliminaría la base completa (violando políticas de seguridad)."
+},
+
+{
+  "id": "sql-81",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para un reporte de auditoría, necesitas cruzar datos de la tabla 'declaraciones' con 'retenciones' en DataR. ¿Qué tipo de JOIN devolvería solo los registros con coincidencias en ambas tablas?",
+  "opciones": [
+    "A. INNER JOIN",
+    "B. LEFT JOIN",
+    "C. FULL OUTER JOIN"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "INNER JOIN retorna solo registros con coincidencias en ambas tablas, cumpliendo con el requerimiento de auditoría (Manual de Auditoría DIAN v4, Cap. 3)."
+},
+{
+  "id": "sql-82",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al generar un reporte de facturas electrónicas por región, necesitas incluir contribuyentes incluso sin facturas. ¿Qué JOIN usarías?",
+  "opciones": [
+    "A. LEFT JOIN contribuyentes c ON f.nit = c.nit",
+    "B. RIGHT JOIN facturas f ON c.nit = f.nit",
+    "C. INNER JOIN contribuyentes c USING(nit)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "LEFT JOIN preserva todos los contribuyentes (tabla izquierda) aunque no tengan facturas, requerido para reportes completos según Resolución 165/2023."
+},
+{
+  "id": "sql-83",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Debes identificar contribuyentes con retenciones superiores al promedio. ¿Qué consulta SQL es correcta?",
+  "opciones": [
+    "A. SELECT nit FROM retenciones WHERE valor > (SELECT AVG(valor) FROM retenciones)",
+    "B. SELECT AVG(valor) FROM retenciones GROUP BY nit",
+    "C. DELETE FROM retenciones WHERE valor < AVG(valor)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La subconsulta calcula el promedio que se compara con cada registro. Esta técnica está recomendada en la Guía de Análisis Tributario DIAN (2025)."
+},
+{
+  "id": "sql-84",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para un reporte DIAN-UGPP, necesitas datos de empleados y sus empresas. ¿Qué consulta usaría JOIN correctamente?",
+  "opciones": [
+    "A. SELECT e.nombre, c.razon_social FROM empleados e JOIN contribuyentes c ON e.nit_empresa = c.nit",
+    "B. SELECT * FROM empleados, contribuyentes WHERE e.nit = c.nit",
+    "C. SELECT nombre FROM empleados UNION SELECT razon_social FROM contribuyentes"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La sintaxis explícita de JOIN con ON es el estándar para relaciones claras entre tablas (Manual SQL DIAN, p.45)."
+},
+{
+  "id": "sql-85",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al analizar discrepancias en DataR, necesitas registros que existen en 'declaraciones_2024' pero no en 'pagos_2024'. ¿Qué operador SQL usarías?",
+  "opciones": [
+    "A. NOT EXISTS (subconsulta)",
+    "B. GROUP BY WITH ROLLUP",
+    "C. CROSS APPLY"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "NOT EXISTS identifica registros sin correspondencia, técnica validada para auditorías según el Decreto 927/2023 (Art. 17)."
+},
+{
+  "id": "sql-86",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para consolidar datos de múltiples tablas regionales en DataR, ¿qué consulta usaría JOIN eficientemente?",
+  "opciones": [
+    "A. SELECT * FROM centro JOIN occidente USING(nit) JOIN sur ON centro.nit = sur.nit",
+    "B. SELECT nit FROM centro, occidente, sur WHERE centro.nit = occidente.nit",
+    "C. CREATE TABLE AS SELECT * FROM centro"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "JOIN explícito con USING/ON es óptimo para múltiples tablas. La coma implícita es obsoleta y CREATE TABLE no consolida (Guía DataR p.32)."
+},
+{
+  "id": "sql-87",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Necesitas el TOP 10 de contribuyentes con más transacciones en el último año. ¿Qué consulta combina correctamente JOIN y GROUP BY?",
+  "opciones": [
+    "A. SELECT c.nombre, COUNT(t.id) FROM transacciones t JOIN contribuyentes c ON t.nit = c.nit GROUP BY c.nombre ORDER BY COUNT(t.id) DESC LIMIT 10",
+    "B. SELECT nombre FROM contribuyentes GROUP BY nit HAVING COUNT(*) > 10",
+    "C. UPDATE contribuyentes SET ranking = 1 WHERE COUNT(transacciones) > 10"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La consulta agrupa conteos por contribuyente y ordena descendentemente, método estándar para rankings (Manual de Reportes DIAN, Anexo 5)."
+},
+{
+  "id": "sql-88",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para validar inconsistencias en el RUT, debes comparar registros activos en 'contribuyentes' con bajas en 'historico_bajas'. ¿Qué SQL usarías?",
+  "opciones": [
+    "A. SELECT c.nit FROM contribuyentes c WHERE EXISTS (SELECT 1 FROM historico_bajas h WHERE h.nit = c.nit)",
+    "B. SELECT nit FROM contribuyentes INTERSECT SELECT nit FROM historico_bajas",
+    "C. ALTER TABLE contribuyentes ADD CONSTRAINT CHECK (nit NOT IN historico_bajas)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "EXISTS identifica registros presentes en ambas tablas, técnica recomendada para cruce de bases según Resolución 067/2024 (Numeral 8.2)."
+},
+{
+  "id": "sql-89",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al generar un reporte de retenciones por sector económico, ¿qué consulta usaría JOIN y agregación correctamente?",
+  "opciones": [
+    "A. SELECT s.nombre, SUM(r.valor) FROM retenciones r JOIN sectores s ON r.sector_id = s.id GROUP BY s.nombre",
+    "B. SELECT nombre FROM sectores LEFT JOIN retenciones ON 1=1",
+    "C. SELECT COUNT(*) FROM retenciones GROUP BY ALL"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La consulta suma (SUM) valores agrupados por sector, usando JOIN para obtener nombres legibles. Requerido para reportes gerenciales (Política DIAN 2025-001)."
+},
+{
+  "id": "sql-90",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Debes identificar empresas con facturación superior al promedio de su sector. ¿Qué subconsulta es apropiada?",
+  "opciones": [
+    "A. SELECT empresa FROM facturas WHERE valor > (SELECT AVG(valor) FROM facturas f2 WHERE f2.sector = facturas.sector)",
+    "B. SELECT AVG(valor), sector FROM facturas GROUP BY empresa",
+    "C. DELETE FROM facturas WHERE valor < SELECT AVG(valor)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La subconsulta correlacionada calcula promedios por sector para comparación individual, método validado en análisis tributarios avanzados (Guía CNSC 2025)."
+},
+
+{
+  "id": "sql-91",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al optimizar una consulta lenta en DataR que analiza 5 millones de declaraciones, ¿qué técnica mejorarías primero según el Manual de Performance DIAN?",
+  "opciones": [
+    "A. Crear un índice en la columna 'fecha_declaracion'",
+    "B. Eliminar todos los WHERE para reducir filtros",
+    "C. Cambiar el motor de almacenamiento a CSV"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los índices en campos de filtro frecuentes como fechas mejoran performance en un 70-90% según el Manual DIAN (Ed. 2025, Cap. 6). CSV no soporta índices."
+},
+{
+  "id": "sql-92",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para una auditoría de calidad en DataR, debes verificar registros donde el NIT no coincida con el patrón estándar. ¿Qué expresión regular usarías en el WHERE?",
+  "opciones": [
+    "A. WHERE nit NOT REGEXP '^[0-9]{9,10}$'",
+    "B. WHERE nit LIKE '%000%'",
+    "C. WHERE LENGTH(nit) = 0"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La regex valida exactamente 9-10 dígitos numéricos, cumpliendo con el estándar DIAN para NITs (Resolución 042/2024, Anexo 1)."
+},
+{
+  "id": "sql-93",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al migrar datos tributarios a la nube, necesitas transformar fechas del formato 'dd/mm/yyyy' a 'yyyy-mm-dd'. ¿Qué función SQL usarías?",
+  "opciones": [
+    "A. STR_TO_DATE(fecha_old, '%d/%m/%Y') y DATE_FORMAT()",
+    "B. CONCAT(SUBSTRING(), '-', SUBSTRING())",
+    "C. ROUND(fecha_old, 2)"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "STR_TO_DATE y DATE_FORMAT son las únicas funciones que garantizan conversión segura de formatos, requerido en migraciones (Guía Cloud DIAN v3)."
+},
+{
+  "id": "sql-94",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un proceso ETL para el DataR, ¿cómo manejarías registros con valores nulos en campos obligatorios según la Resolución 067?",
+  "opciones": [
+    "A. Redirigir a una tabla de errores con motivo 'Campo obligatorio nulo'",
+    "B. Asignar valores aleatorios para completar los campos",
+    "C. Eliminar los registros sin notificación"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La Resolución 067/2024 exige cuarentena de registros inválidos con registro de causas (Numeral 5.3), no su eliminación o alteración arbitraria."
+},
+{
+  "id": "sql-95",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para generar el reporte anual de recaudo por regional, ¿qué estructura SQL optimizaría el rendimiento con 10+ millones de registros?",
+  "opciones": [
+    "A. Materialized View con refresco mensual",
+    "B. Tabla temporal con transacciones completas",
+    "C. Consulta directa con ORDER BY RAND()"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las vistas materializadas precalculan agregaciones complejas, reduciendo el tiempo de reportes de horas a segundos (Caso DIAN-Bogotá 2024)."
+},
+{
+  "id": "sql-96",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un stored procedure para actualizar estados de facturación masiva, ¿qué patrón garantiza integridad según el Manual DIAN?",
+  "opciones": [
+    "A. BEGIN TRANSACTION; UPDATE...; COMMIT;",
+    "B. TRUNCATE TABLE antes de insertar",
+    "C. Ejecutar sin validaciones en lote"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las transacciones ACID (BEGIN/COMMIT) previenen estados inconsistentes, requerido para procesos batch críticos (Manual DIAN §8.7)."
+},
+{
+  "id": "sql-97",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para proteger datos sensibles en un backup de DataR, ¿qué cláusula SQL cumpliría con el Estándar de Seguridad DIAN-2025?",
+  "opciones": [
+    "A. ENCRYPT BY KEY al exportar",
+    "B. COMPRESS sin contraseña",
+    "C. EXPORT en texto plano"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El Estándar DIAN-2025 exige encriptación AES-256 para backups (Numeral 9.2). COMPRESS sin password no cumple."
+},
+{
+  "id": "sql-98",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diagnosticar una consulta lenta en DataR con 15 JOINs, ¿qué herramienta del motor SQL usarías para analizar el plan de ejecución?",
+  "opciones": [
+    "A. EXPLAIN ANALYZE",
+    "B. SHOW PROCESSLIST",
+    "C. SELECT * FROM sql_log"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "EXPLAIN ANALYZE muestra el plan de ejecución con métricas reales, permitiendo optimizar JOINs complejos (Guía Performance DIAN, Anexo C)."
+},
+{
+  "id": "sql-99",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar historial de cambios en una tabla de contribuyentes, ¿qué técnica SQL es más adecuada según la Resolución 067?",
+  "opciones": [
+    "A. Triggers + tabla de historial",
+    "B. Copias diarias completas",
+    "C. Registrar solo cambios manuales"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los triggers automatizan el registro de cambios, cumpliendo con el principio de trazabilidad (Resolución 067/2024, Art. 12)."
+},
+{
+  "id": "sql-100",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un API REST para consultas al DataR, ¿qué enfoque SQL previene inyecciones?",
+  "opciones": [
+    "A. Prepared Statements con parámetros",
+    "B. Concatenar strings dinámicos",
+    "C. Ejecutar consultas directas desde el frontend"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los prepared statements sanitizan inputs automáticamente, requerido por el Estándar de Seguridad DIAN (v2025, §7.4)."
+},
+
+{
+  "id": "sql-101",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un Data Vault para el historico tributario en DataR, ¿qué patrón SQL garantiza la trazabilidad completa según el modelo anchor?",
+  "opciones": [
+    "A. Tablas Hub (negocio), Link (relaciones) y Satélite (contexto)",
+    "B. Esquema estrella con una sola tabla de hechos",
+    "C. Modelo plano con todas las columnas en una tabla"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Data Vault usa Hubs (identificadores empresariales), Links (relaciones) y Satélites (atributos temporales), cumpliendo con el estándar DIAN para trazabilidad (Manual Modelado Avanzado 2025, Cap. 4)."
+},
+{
+  "id": "sql-102",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para procesar streams de facturas electrónicas en tiempo real con Kafka y SQL, ¿qué técnica permite ventanas de tiempo deslizantes?",
+  "opciones": [
+    "A. TUMBLE y HOP en consultas streaming",
+    "B. GROUP BY tradicional con cron jobs",
+    "C. Tablas temporales con refresco manual"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "TUMBLE (ventanas fijas) y HOP (deslizantes) son operadores nativos en SQL para streaming (Kafka SQL DIAN Extension v2), requeridos para análisis en tiempo real."
+},
+{
+  "id": "sql-103",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de sharding para las declaraciones tributarias por regional, ¿qué función de particionamiento SQL es óptima?",
+  "opciones": [
+    "A. PARTITION BY RANGE (codigo_regional)",
+    "B. REBALANCE PARTITIONS AUTOMATIC",
+    "C. UNPARTITIONED TABLES"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "RANGE partitioning sobre códigos regionales permite localidad de datos y consultas más eficientes, aprobado en el Plan de Escalabilidad DIAN 2025."
+},
+{
+  "id": "sql-104",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar Zero-ETL entre DataR y el lago de datos, ¿qué tecnología SQL permite consultas federadas?",
+  "opciones": [
+    "A. External Tables con Polybase o Athena",
+    "B. Stored Procedures con lógica ETL",
+    "C. Copias completas diarias"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las External Tables permiten consultar datos in-situ sin moverlos, cumpliendo con la Política de Gobierno de Datos DIAN (Art. 15.3)."
+},
+{
+  "id": "sql-105",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al configurar Temporal Tables para el historico de cambios en el RUT, ¿qué cláusula SQL habilita el versionado automático?",
+  "opciones": [
+    "A. WITH SYSTEM VERSIONING",
+    "B. CREATE HISTORY TABLE",
+    "C. TRIGGERS ON UPDATE"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "SYSTEM VERSIONING es el estándar SQL:2011 para tablas temporales, manteniendo automáticamente el historial (Guía de Integridad DIAN v4)."
+},
+{
+  "id": "sql-106",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de grafos de relaciones entre contribuyentes, ¿qué extensión SQL permite consultas tipo Cypher?",
+  "opciones": [
+    "A. SQL Graph con MATCH y SHORTEST_PATH",
+    "B. JSON_ARRAYAGG con relaciones anidadas",
+    "C. Multiple self-JOINs manuales"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "SQL Graph (implementado en SQL Server y Oracle) soporta consultas de grafos nativas, esencial para detectar redes complejas (Manual Anti-Evasión DIAN)."
+},
+{
+  "id": "sql-107",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar masking dinámico para datos sensibles en DataR, ¿qué política SQL cumple con la Ley 1581?",
+  "opciones": [
+    "A. CREATE MASKING POLICY ... ON COLUMN",
+    "B. Vistas con columnas excluidas",
+    "C. Tablas duplicadas sin información sensible"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las políticas de enmascaramiento dinámico (nativas en Snowflake/Oracle) protegen datos PII sin duplicar información, según el Estándar DIAN de Privacidad."
+},
+{
+  "id": "sql-108",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para optimizar consultas analíticas sobre 10 años de datos tributarios, ¿qué estructura SQL reduce el I/O en un 70%?",
+  "opciones": [
+    "A. Columnstore Indexes",
+    "B. Índices B-tree tradicionales",
+    "C. Particionamiento por lista"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Columnstore almacenan datos por columnas (no por filas), permitiendo compresión avanzada y escaneos verticales (Benchmarks DIAN 2024)."
+},
+{
+  "id": "sql-109",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de caché para consultas frecuentes al RUT, ¿qué técnica SQL ofrece consistencia eventual?",
+  "opciones": [
+    "A. Materialized Views con refresco incremental",
+    "B. Tablas temporales en memoria",
+    "C. Copias completas horarias"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las vistas materializadas incrementales balancean performance y frescura de datos, aprobadas para el RUT v4 (Resolución 089/2025)."
+},
+{
+  "id": "sql-110",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar RBAC en DataR con 100+ roles, ¿qué objeto SQL centraliza los permisos?",
+  "opciones": [
+    "A. Database Roles con herencia",
+    "B. GRANT directo a usuarios",
+    "C. Stored Procedures sin seguridad"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Roles de base de datos permiten gestión escalable de permisos, requerido por el Estándar de Seguridad DIAN (Control AC-3)."
+},
+{
+  "id": "sql-111",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al procesar datos geográficos para fiscalización, ¿qué tipo de índice SQL optimiza consultas por ubicación?",
+  "opciones": [
+    "A. R-tree para geometrías",
+    "B. Índice hash tradicional",
+    "C. Bitmap sobre coordenadas"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los R-tree indexan datos espaciales multidimensionales, esenciales para consultas de proximidad (Sistema GeoDIAN v3)."
+},
+{
+  "id": "sql-112",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para garantizar calidad en el DataR, ¿qué constraint SQL valida reglas complejas entre tablas?",
+  "opciones": [
+    "A. CHECK con subconsultas correlacionadas",
+    "B. NOT NULL en columnas aisladas",
+    "C. UNIQUE sin contexto"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los CHECK avanzados permiten validar relaciones empresariales (ej: NITs existentes), conforme al Marco de Calidad DIAN 2025."
+},
+{
+  "id": "sql-113",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un data mart para inteligencia tributaria, ¿qué técnica SQL soporta predicciones in-database?",
+  "opciones": [
+    "A. Modelos ML en-database (como Oracle ML)",
+    "B. Exportar datos a Python",
+    "C. Consultas manuales con CASE"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las funciones ML nativas (ej: PREDICT) permiten analítica avanzada sin mover datos, aprobado en la Estrategia DIAN IA 2025."
+},
+{
+  "id": "sql-114",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para auditorías forenses en DataR, ¿qué tipo de tabla registra automáticamente cambios en todos los DML?",
+  "opciones": [
+    "A. Flashback Data Archive",
+    "B. Triggers personalizados por tabla",
+    "C. Logs de transacciones sin contexto"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Flashback Archive mantiene historial temporal accesible via SQL estándar, requerido por la Normativa de Auditoría DIAN (Art. 29)."
+},
+{
+  "id": "sql-115",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de reconciliación diaria, ¿qué patrón SQL garantiza exactamente una ejecución?",
+  "opciones": [
+    "A. Transacciones distribuidas XA",
+    "B. Jobs paralelos sin coordinación",
+    "C. DELETE/INSERT sin atomicidad"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las transacciones XA (two-phase commit) coordinan múltiples recursos, esencial para reconciliación exacta (Manual Contable DIAN v6)."
+},
+{
+  "id": "sql-116",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de series temporales de recaudo, ¿qué funciones SQL permiten forecasting nativo?",
+  "opciones": [
+    "A. TIME_SERIES y PREDICT (Oracle, SQL Server)",
+    "B. Agregaciones manuales por mes",
+    "C. Exportar a Excel para pronósticos"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las funciones nativas de series temporales detectan patrones estacionales directamente en la base de datos (Caso DIAN-Dirección de Estudios)."
+},
+{
+  "id": "sql-117",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar PII masking para el RUT, ¿qué técnica preserva formatos para validación?",
+  "opciones": [
+    "A. Dynamic Data Masking con formato #######-#",
+    "B. Enmascaramiento completo a 'XXXX'",
+    "C. Eliminar columnas sensibles"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El enmascaramiento que preserva formatos (ej: últimos dígitos) permite validaciones sintácticas sin exponer datos reales (Estándar DIAN PII-2025)."
+},
+{
+  "id": "sql-118",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para cargas masivas en DataR con 50M+ filas, ¿qué método SQL minimiza el logging?",
+  "opciones": [
+    "A. BULK INSERT en modo minimal-logging",
+    "B. Inserts individuales con transacciones",
+    "C. JDBC con batch size pequeño"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El modo bulk/minimal-logging reduce I/O en un 90% para cargas masivas (Guía de Performance DIAN para Big Data)."
+},
+{
+  "id": "sql-119",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un sandbox analítico en DataR, ¿qué objeto SQL aísla recursos?",
+  "opciones": [
+    "A. Resource Governor con límites de CPU/Memoria",
+    "B. Schemas sin controles",
+    "C. Usuarios con permisos DBA"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Resource Governor (SQL Server) o Database Resource Manager (Oracle) limitan consumo por sesión, requerido para entornos sandbox (Política DIAN-AI)."
+},
+{
+  "id": "sql-120",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para consultas federadas entre DataR y SIISCOMEX, ¿qué tecnología evita mover datos?",
+  "opciones": [
+    "A. Database Links con optimización distribuida",
+    "B. ETL tradicional con staging",
+    "C. Copias completas diarias"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los database links permiten consultas transparentes entre sistemas distintos, aprobados para interoperabilidad DIAN (Resolución 102/2024)."
+},
+{
+  "id": "sql-121",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un data warehouse tributario, ¿qué patrón SQL maneja dimensiones jerárquicas?",
+  "opciones": [
+    "A. Parent-Child con recursive CTEs",
+    "B. Tablas planas sin relaciones",
+    "C. JSON anidado en columnas"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las Common Table Expressions recursivas (WITH RECURSIVE) modelan jerarquías arbitrarias (ej: región>departamento>municipio), usado en DIAN-DWH."
+},
+{
+  "id": "sql-122",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para proteger consultas ad-hoc en DataR, ¿qué técnica limita exposición a datos sensibles?",
+  "opciones": [
+    "A. Row-Level Security con políticas dinámicas",
+    "B. Vistas materializadas completas",
+    "C. Sin controles de acceso"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "RLS filtra filas por contexto (ej: rol usuario), implementando el principio de mínimo privilegio (Estándar DIAN-SEG-012)."
+},
+{
+  "id": "sql-123",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diagnosticar deadlocks en procesos ETL, ¿qué herramienta SQL identifica las transacciones bloqueadas?",
+  "opciones": [
+    "A. Extended Events con deadlock graphs",
+    "B. Logs de errores genéricos",
+    "C. Monitorización manual de sesiones"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los deadlock graphs muestran ciclos de espera entre transacciones, esencial para resolver bloqueos (Manual DIAN-DBA v3)."
+},
+{
+  "id": "sql-124",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de caminos de evasión fiscal, ¿qué extensión SQL permite consultas de grafos recursivas?",
+  "opciones": [
+    "A. WITH RECURSIVE para path finding",
+    "B. Self-JOINs limitados a 2 niveles",
+    "C. Matrices externas en Python"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "RECURSIVE permite explorar profundidades arbitrarias en relaciones (ej: socios->empresas->facturas), usado en el Sistema AntiEvasion DIAN."
+},
+{
+  "id": "sql-125",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar CDC para replicación a DataR, ¿qué configuración minimiza impacto en producción?",
+  "opciones": [
+    "A. Change Tracking basado en logs",
+    "B. Triggers AFTER en todas las tablas",
+    "C. Consultas completas periódicas"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Change Tracking (no confundir con Change Data Capture) usa el transaction log con overhead <3%, aprobado para sistemas críticos (Benchmark DIAN-2025)."
+},
+{
+  "id": "sql-126",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para auditorías de integridad en DataR, ¿qué tipo de constraint SQL verifica reglas entre múltiples tablas?",
+  "opciones": [
+    "A. ASSERTION (estándar SQL aunque poco soportado)",
+    "B. CHECK en cada tabla aislada",
+    "C. Stored Procedures sin ejecución"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las assertions (implementadas via triggers o procedimientos) validan condiciones complejas entre tablas, requeridas por Auditoría DIAN (Norma INTEG-2025)."
+},
+{
+  "id": "sql-127",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al modelar eventos tributarios en DataR, ¿qué patrón SQL maneja esquemas flexibles?",
+  "opciones": [
+    "A. Event Sourcing con tablas de eventos + proyecciones",
+    "B. Tablas rígidas con columnas fijas",
+    "C. JSON crudo sin estructura"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Event Sourcing almacena cambios como eventos inmutables, permitiendo reprocesamiento y esquemas evolutivos (Arquitectura DIAN-Streams)."
+},
+{
+  "id": "sql-128",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para consultas de inteligencia empresarial en DataR, ¿qué optimización SQL acelera agregaciones?",
+  "opciones": [
+    "A. Materialized Views con agregados precalculados",
+    "B. Índices B-tree tradicionales",
+    "C. Particionamiento por hash"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las vistas materializadas con GROUP BY precalculado reducen tiempos de respuesta de minutos a segundos (Caso DIAN-BI 2024)."
+},
+{
+  "id": "sql-129",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un sistema de versionado para procedimientos en DataR, ¿qué tecnología SQL registra cambios?",
+  "opciones": [
+    "A. Temporal Tables para objetos DDL",
+    "B. Copias manuales en scripts",
+    "C. Sin control de versiones"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las temporal tables para DDL (implementadas en algunos RDBMS) automatizan el historial de cambios, requerido por el Código de Integridad DIAN."
+},
+{
+  "id": "sql-130",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de sentiment en reclamos tributarios, ¿qué función SQL procesa texto directamente?",
+  "opciones": [
+    "A. Sentiment Analysis con UDFs en SQL/PL",
+    "B. Exportar a herramientas externas",
+    "C. LIKE con patrones básicos"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Funciones definidas por usuario (UDFs) con librerías NLP permiten análisis in-database, aprobado en el Plan DIAN 2025 de Analítica Avanzada."
+},
+{
+  "id": "sql-131",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Un **Gestor II** de la DIAN está intentando obtener una lista de contribuyentes cuyo **estado** es 'Activo'. ¿Cuál es la consulta SQL correcta?",
+  "opciones": [
+    "A. SELECT * FROM Contribuyentes WHERE Estado = 'Activo';",
+    "B. SELECT Estado, NIT FROM Contribuyentes WHERE Estado = 'Activo';",
+    "C. SELECT * FROM Contribuyentes WHERE Estado = 'Activo' AND Estado IS NOT NULL;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La consulta correcta es la opción **A**, que selecciona todos los registros de los contribuyentes con estado 'Activo'. La opción B selecciona solo columnas específicas, y la opción C no es necesaria si ya estamos filtrando por 'Activo'."
+},
+{
+  "id": "sql-132",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para insertar un nuevo registro de contribuyente en la tabla de **Contribuyentes**, ¿qué consulta SQL debe utilizarse?",
+  "opciones": [
+    "A. INSERT INTO Contribuyentes (Nombre, NIT, Estado) VALUES ('Juan Pérez', '123456789', 'Activo');",
+    "B. INSERT Contribuyentes SET (Nombre, NIT, Estado) VALUES ('Juan Pérez', '123456789', 'Activo');",
+    "C. INSERT INTO Contribuyentes VALUES ('Juan Pérez', '123456789', 'Activo');"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es la correcta. En SQL, la sintaxis para **INSERT** especifica primero los nombres de las columnas y luego los valores correspondientes para cada una."
+},
+{
+  "id": "sql-133",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El **Gestor II** desea actualizar el **estado** de todos los contribuyentes que se encuentran en estado 'Inactivo' a 'Activo'. ¿Cuál es la consulta SQL correcta?",
+  "opciones": [
+    "A. UPDATE Contribuyentes SET Estado = 'Activo' WHERE Estado = 'Inactivo';",
+    "B. UPDATE Contribuyentes SET Estado = 'Activo';",
+    "C. UPDATE Contribuyentes SET Estado = 'Activo' WHERE Estado IS 'Inactivo';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que **UPDATE** permite modificar los registros que cumplen con una condición específica, en este caso, cambiar el estado de 'Inactivo' a 'Activo'."
+},
+{
+  "id": "sql-134",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En la DIAN, el Gestor II necesita obtener el total de **facturación** por contribuyente. ¿Qué consulta SQL debe utilizar para obtener la suma de los montos de facturación por cada contribuyente?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas GROUP BY ID_Contribuyente;",
+    "B. SELECT * FROM Facturas WHERE SUM(Monto) GROUP BY ID_Contribuyente;",
+    "C. SELECT SUM(Monto) FROM Facturas WHERE ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que usa **SUM(Monto)** para obtener la suma de facturación por cada contribuyente, utilizando **GROUP BY** para agrupar los resultados por contribuyente."
+},
+{
+  "id": "sql-135",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II está creando una tabla de **Contribuyentes** con una columna de **NIT** como **clave primaria**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. CREATE TABLE Contribuyentes (ID INT PRIMARY KEY, NIT VARCHAR(20) NOT NULL, Nombre VARCHAR(100));",
+    "B. CREATE TABLE Contribuyentes (NIT VARCHAR(20) PRIMARY KEY, Nombre VARCHAR(100));",
+    "C. CREATE TABLE Contribuyentes (NIT VARCHAR(20) UNIQUE, Nombre VARCHAR(100));"
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "La opción **B** es correcta, ya que establece la columna **NIT** como **clave primaria**, asegurando que cada NIT sea único en la tabla."
+},
+
+
+{
+  "id": "sql-136",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El **Gestor II** necesita obtener una lista de contribuyentes con el **monto total** de sus facturas y la **fecha de la última factura**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, SUM(Monto), MAX(Fecha) FROM Facturas GROUP BY ID_Contribuyente;",
+    "B. SELECT ID_Contribuyente, COUNT(Monto), MAX(Fecha) FROM Facturas GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, SUM(Monto), MIN(Fecha) FROM Facturas WHERE Estado = 'Activo';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **SUM(Monto)** calcula el total de las facturas y **MAX(Fecha)** obtiene la fecha de la última factura por contribuyente, agrupados por **ID_Contribuyente**."
+},
+{
+  "id": "sql-137",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II desea encontrar todos los contribuyentes cuyo **nombre** comience con 'Juan'. ¿Qué consulta SQL debería utilizar?",
+  "opciones": [
+    "A. SELECT * FROM Contribuyentes WHERE Nombre LIKE 'Juan%';",
+    "B. SELECT * FROM Contribuyentes WHERE Nombre = 'Juan%';",
+    "C. SELECT * FROM Contribuyentes WHERE Nombre IN ('Juan');"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza el operador **LIKE** con el comodín **%** para buscar registros cuyo **Nombre** comience con 'Juan'."
+},
+{
+  "id": "sql-138",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II debe generar un reporte que muestre la cantidad de **facturas** emitidas por cada contribuyente. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, COUNT(*) FROM Facturas GROUP BY ID_Contribuyente;",
+    "B. SELECT COUNT(*) FROM Facturas WHERE ID_Contribuyente GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas GROUP BY ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza **COUNT(*)** para contar el número de facturas por cada **ID_Contribuyente**, agrupando los resultados por contribuyente."
+},
+{
+  "id": "sql-139",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II desea obtener un listado de **contribuyentes activos** y sus respectivas **facturas** usando una **consulta con JOIN**. ¿Cuál es la consulta correcta?",
+  "opciones": [
+    "A. SELECT c.Nombre, f.Monto FROM Contribuyentes c INNER JOIN Facturas f ON c.ID = f.ID_Contribuyente WHERE c.Estado = 'Activo';",
+    "B. SELECT c.Nombre, f.Monto FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID = f.ID_Contribuyente WHERE c.Estado = 'Activo';",
+    "C. SELECT c.Nombre, f.Monto FROM Contribuyentes c RIGHT JOIN Facturas f ON c.ID = f.ID_Contribuyente WHERE c.Estado = 'Activo';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza un **INNER JOIN** para combinar los datos de **Contribuyentes** y **Facturas** donde el estado es 'Activo', asegurando que solo se muestren los contribuyentes activos."
+},
+{
+  "id": "sql-140",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II debe generar un reporte que muestre la **facturación total** por contribuyente, agrupado por **región**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID = f.ID_Contribuyente GROUP BY c.Region;",
+    "B. SELECT c.Region, COUNT(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID = f.ID_Contribuyente GROUP BY c.Region;",
+    "C. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID = f.ID_Contribuyente WHERE f.Monto > 0 GROUP BY c.Region;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza un **INNER JOIN** para combinar las tablas de **Contribuyentes** y **Facturas**, luego agrupa los datos por **región** y calcula la **suma de las facturas**."
+},
+
+
+
+{
+  "id": "sql-141",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN está realizando una auditoría tributaria y necesita obtener los contribuyentes con más de 10 facturas. ¿Qué consulta SQL debe utilizar el Gestor II para encontrar esta información?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, COUNT(*) FROM Facturas GROUP BY ID_Contribuyente HAVING COUNT(*) > 10;",
+    "B. SELECT ID_Contribuyente, COUNT(*) FROM Facturas WHERE COUNT(*) > 10 GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, COUNT(*) FROM Facturas GROUP BY ID_Contribuyente HAVING COUNT(Monto) > 10;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que **HAVING COUNT(*) > 10** filtra los resultados para mostrar solo aquellos contribuyentes que tienen más de 10 facturas."
+},
+{
+  "id": "sql-142",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II necesita verificar si hay **facturas duplicadas** en la base de datos de contribuyentes. ¿Qué consulta SQL debe utilizar para encontrar registros duplicados basados en el campo `NIT` y `Fecha`?",
+  "opciones": [
+    "A. SELECT NIT, Fecha, COUNT(*) FROM Facturas GROUP BY NIT, Fecha HAVING COUNT(*) > 1;",
+    "B. SELECT NIT, Fecha FROM Facturas WHERE COUNT(*) > 1 GROUP BY NIT, Fecha;",
+    "C. SELECT NIT, Fecha, COUNT(*) FROM Facturas GROUP BY NIT, Fecha ORDER BY COUNT(*) DESC;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que **HAVING COUNT(*) > 1** encuentra registros duplicados, es decir, facturas con el mismo **NIT** y **Fecha** más de una vez."
+},
+
+{
+  "id": "sql-143",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN desea realizar una **auditoría fiscal** que involucra el análisis de la facturación de contribuyentes. ¿Qué consulta SQL debe utilizar el Gestor II para obtener el total de facturación por contribuyente, agrupado por región y ordenado de mayor a menor?",
+  "opciones": [
+    "A. SELECT c.Region, c.ID_Contribuyente, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID = f.ID_Contribuyente GROUP BY c.Region, c.ID_Contribuyente ORDER BY SUM(f.Monto) DESC;",
+    "B. SELECT c.Region, c.ID_Contribuyente, COUNT(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID = f.ID_Contribuyente GROUP BY c.Region, c.ID_Contribuyente ORDER BY COUNT(f.Monto) DESC;",
+    "C. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID = f.ID_Contribuyente GROUP BY c.Region ORDER BY SUM(f.Monto) DESC;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **SUM(f.Monto)** calcula el total de facturación, y **ORDER BY SUM(f.Monto) DESC** asegura que los resultados estén ordenados de mayor a menor según el monto total de facturación."
+},
+{
+  "id": "sql-144",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un sistema ETL de la DIAN, se requiere consolidar datos de contribuyentes de varias tablas. ¿Qué consulta SQL debe utilizar el Gestor II para combinar las tablas de **Contribuyentes** y **Pagos**, y obtener la suma total de pagos por contribuyente?",
+  "opciones": [
+    "A. SELECT c.ID_Contribuyente, SUM(p.Monto) FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente GROUP BY c.ID_Contribuyente;",
+    "B. SELECT c.ID_Contribuyente, COUNT(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente GROUP BY c.ID_Contribuyente;",
+    "C. SELECT c.ID_Contribuyente, SUM(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente GROUP BY c.ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza un **LEFT JOIN** para combinar las tablas de **Contribuyentes** y **Pagos**, asegurando que todos los contribuyentes sean incluidos, incluso si no tienen pagos registrados, y calcula la **suma de los pagos**."
+},
+{
+  "id": "sql-145",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II de la DIAN desea **actualizar** el estado de todos los contribuyentes con el **estado 'Activo'** a 'Inactivo'. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. UPDATE Contribuyentes SET Estado = 'Inactivo' WHERE Estado = 'Activo';",
+    "B. UPDATE Contribuyentes SET Estado = 'Inactivo';",
+    "C. UPDATE Contribuyentes SET Estado = 'Activo' WHERE Estado = 'Inactivo';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es la correcta, ya que se debe **actualizar** solo los registros donde el **estado** sea 'Activo', cambiándolos a 'Inactivo', utilizando la cláusula **WHERE** para filtrar."
+},
+{
+  "id": "sql-146",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN necesita **eliminar** todos los registros de contribuyentes cuyo **estado** es 'Inactivo'. ¿Qué consulta SQL debe utilizar el Gestor II para hacerlo?",
+  "opciones": [
+    "A. DELETE FROM Contribuyentes WHERE Estado = 'Inactivo';",
+    "B. DELETE Contribuyentes WHERE Estado = 'Inactivo';",
+    "C. REMOVE FROM Contribuyentes WHERE Estado = 'Inactivo';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es la correcta, ya que utiliza el comando **DELETE** con la cláusula **WHERE** para eliminar únicamente los registros cuyo **estado** es 'Inactivo'."
+},
+{
+  "id": "sql-147",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II de la DIAN debe realizar una **consulta de auditoría** que incluya contribuyentes que hayan realizado pagos en el último mes. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, p.Monto, p.Fecha FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Fecha >= '2025-07-01';",
+    "B. SELECT c.Nombre, p.Monto FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Fecha >= '2025-07-01' AND c.Estado = 'Activo';",
+    "C. SELECT c.Nombre, p.Monto FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Fecha > '2025-06-30';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza **INNER JOIN** para combinar las tablas de **Contribuyentes** y **Pagos**, y filtra por la **fecha de los pagos** en el último mes."
+},
+{
+  "id": "sql-148",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En la DIAN, el Gestor II está diseñando un proceso ETL para procesar grandes volúmenes de datos de contribuyentes. ¿Qué estrategia debe aplicar para **optimizar el rendimiento** de la consulta de transformación?",
+  "opciones": [
+    "A. Crear **índices** en las columnas utilizadas en las consultas para mejorar el rendimiento de las búsquedas.",
+    "B. Reducir el número de registros procesados limitando la cantidad de datos extraídos.",
+    "C. Utilizar un solo servidor para realizar todas las consultas, sin dividir el procesamiento."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La creación de **índices** en las columnas más consultadas mejora significativamente el rendimiento de las **consultas** en grandes volúmenes de datos, lo que acelera el proceso de **transformación**."
+},
+{
+  "id": "sql-149",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II necesita realizar una **consulta compleja** que involucre datos de varias tablas. ¿Cuál es la consulta SQL más adecuada para obtener la **facturación total** por región de cada contribuyente?",
+  "opciones": [
+    "A. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.Region;",
+    "B. SELECT c.Region, COUNT(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.Region;",
+    "C. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE c.Estado = 'Activo' GROUP BY c.Region;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque utiliza un **INNER JOIN** para combinar los datos de **Contribuyentes** y **Facturas**, agrupando los resultados por **región** y calculando la **suma de los montos**."
+},
+{
+  "id": "sql-150",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II desea obtener una lista de contribuyentes cuya **facturación total** sea mayor a $1,000,000. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.Nombre HAVING SUM(f.Monto) > 1000000;",
+    "B. SELECT c.Nombre, COUNT(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.Nombre HAVING SUM(f.Monto) > 1000000;",
+    "C. SELECT c.Nombre, f.Monto FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE SUM(f.Monto) > 1000000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque usa **HAVING SUM(f.Monto) > 1000000** para filtrar los contribuyentes cuya **facturación total** supera el valor establecido, después de agrupar los resultados por **Nombre**."
+},
+{
+  "id": "sql-151",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN necesita generar un reporte de todos los contribuyentes que no han realizado pagos en los últimos 6 meses. ¿Qué consulta SQL debe utilizar el Gestor II?",
+  "opciones": [
+    "A. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago < '2024-02-01' OR p.FechaPago IS NULL;",
+    "B. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c RIGHT JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago > '2024-02-01';",
+    "C. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c INNER JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago < '2024-02-01';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque usa un **LEFT JOIN** para incluir todos los contribuyentes, incluso aquellos sin pagos realizados, y filtra los registros con fechas de pago anteriores a los últimos 6 meses."
+},
+{
+  "id": "sql-152",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II necesita obtener el número de **facturas emitidas** por cada contribuyente en el último trimestre del año. ¿Qué consulta SQL debería usar?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, COUNT(*) FROM Facturas WHERE Fecha >= '2025-10-01' AND Fecha <= '2025-12-31' GROUP BY ID_Contribuyente;",
+    "B. SELECT ID_Contribuyente, COUNT(*) FROM Facturas WHERE Fecha >= '2025-01-01' AND Fecha <= '2025-12-31' GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, COUNT(*) FROM Facturas WHERE Fecha > '2025-10-01' GROUP BY ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque filtra las **facturas emitidas** en el último trimestre del año utilizando la condición de fecha y agrupa por **ID_Contribuyente** para contar las facturas."
+},
+{
+  "id": "sql-153",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un sistema ETL para la DIAN, se debe **agrupar** la facturación de contribuyentes por tipo de impuesto. ¿Qué consulta SQL debe utilizar el Gestor II?",
+  "opciones": [
+    "A. SELECT TipoImpuesto, SUM(Monto) FROM Facturas GROUP BY TipoImpuesto;",
+    "B. SELECT TipoImpuesto, COUNT(*) FROM Facturas GROUP BY TipoImpuesto;",
+    "C. SELECT TipoImpuesto, SUM(Monto) FROM Facturas WHERE TipoImpuesto IS NOT NULL GROUP BY TipoImpuesto;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **GROUP BY** permite agrupar los datos por **TipoImpuesto** y **SUM(Monto)** calcula la facturación total por cada tipo de impuesto."
+},
+{
+  "id": "sql-154",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El **Gestor II** necesita obtener los contribuyentes que han realizado pagos superiores a $1,000,000. ¿Qué consulta SQL debe usar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID = p.ID_Contribuyente GROUP BY c.Nombre HAVING SUM(p.Monto) > 1000000;",
+    "B. SELECT c.Nombre, p.Monto FROM Contribuyentes c INNER JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.Monto > 1000000;",
+    "C. SELECT c.Nombre, COUNT(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID = p.ID_Contribuyente HAVING COUNT(p.Monto) > 1000000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **HAVING SUM(p.Monto) > 1000000** filtra los contribuyentes que han realizado pagos superiores a $1,000,000, agrupando por **Nombre**."
+},
+{
+  "id": "sql-155",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un proceso de **auditoría** en la DIAN, el Gestor II necesita obtener todos los contribuyentes que no han realizado pagos en el último año. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago < '2024-01-01' OR p.FechaPago IS NULL;",
+    "B. SELECT c.Nombre FROM Contribuyentes c RIGHT JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago >= '2024-01-01';",
+    "C. SELECT c.Nombre FROM Contribuyentes c INNER JOIN Pagos p ON c.ID = p.ID_Contribuyente WHERE p.FechaPago < '2024-01-01';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que el **LEFT JOIN** incluye a los contribuyentes que no tienen pagos registrados o cuyos pagos son anteriores a la fecha indicada, lo que permite identificar a aquellos que no han realizado pagos en el último año."
+},
+{
+  "id": "sql-156",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II desea obtener el **promedio de facturación** por contribuyente en el último trimestre del año. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, AVG(Monto) FROM Facturas WHERE Fecha >= '2025-10-01' AND Fecha <= '2025-12-31' GROUP BY ID_Contribuyente;",
+    "B. SELECT ID_Contribuyente, AVG(Monto) FROM Facturas GROUP BY ID_Contribuyente WHERE Fecha BETWEEN '2025-10-01' AND '2025-12-31';",
+    "C. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas WHERE Fecha > '2025-10-01' GROUP BY ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **AVG(Monto)** calcula el **promedio** de facturación por contribuyente en el último trimestre del año, agrupado por **ID_Contribuyente**."
+},
+{
+  "id": "sql-157",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN está utilizando un sistema ETL para **cargar** datos de contribuyentes. ¿Qué consulta SQL debe utilizar el Gestor II para asegurarse de que los registros de **facturación** se carguen solo si tienen un valor mayor a cero?",
+  "opciones": [
+    "A. SELECT * FROM Facturas WHERE Monto > 0;",
+    "B. SELECT * FROM Facturas WHERE Monto IS NOT NULL;",
+    "C. INSERT INTO Facturas (Monto) SELECT Monto FROM Contribuyentes WHERE Monto > 0;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque filtra los registros de **Facturas** para cargar solo aquellos con un **Monto mayor a cero**, lo cual es esencial para garantizar que solo se carguen datos válidos."
+},
+{
+  "id": "sql-158",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En la **auditoría fiscal**, el **Gestor II** necesita consultar el total de **facturación** por tipo de impuesto, pero los datos están distribuidos en diferentes tablas. ¿Qué consulta SQL debe usar para obtener este reporte?",
+  "opciones": [
+    "A. SELECT t.TipoImpuesto, SUM(f.Monto) FROM Facturas f INNER JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;",
+    "B. SELECT t.TipoImpuesto, SUM(f.Monto) FROM Facturas f LEFT JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;",
+    "C. SELECT t.TipoImpuesto, COUNT(f.Monto) FROM Facturas f INNER JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza un **INNER JOIN** entre las tablas de **Facturas** y **TiposImpuesto**, y agrupa los resultados por **TipoImpuesto**, sumando los montos de cada tipo de impuesto."
+},
+{
+  "id": "sql-159",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II debe obtener los **contribuyentes activos** cuyo total de facturación supere los $500,000. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE c.Estado = 'Activo' GROUP BY c.Nombre HAVING SUM(f.Monto) > 500000;",
+    "B. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE c.Estado = 'Activo' HAVING SUM(f.Monto) > 500000;",
+    "C. SELECT c.Nombre, f.Monto FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE c.Estado = 'Activo' AND f.Monto > 500000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque usa **HAVING SUM(f.Monto) > 500000** para filtrar los contribuyentes activos cuya **facturación total** supera los $500,000, y agrupa los resultados por **Nombre**."
+},
+
+{
+  "id": "sql-160",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II está diseñando un **reporte fiscal** para obtener la **facturación total** de cada contribuyente, agrupado por **tipo de impuesto**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT t.TipoImpuesto, SUM(f.Monto) FROM Facturas f INNER JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;",
+    "B. SELECT t.TipoImpuesto, SUM(f.Monto) FROM Facturas f LEFT JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;",
+    "C. SELECT t.TipoImpuesto, COUNT(f.Monto) FROM Facturas f INNER JOIN TiposImpuesto t ON f.TipoImpuestoID = t.ID GROUP BY t.TipoImpuesto;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque se utiliza un **INNER JOIN** para combinar las tablas de **Facturas** y **TiposImpuesto**, agrupando los datos por **TipoImpuesto** y sumando los montos correspondientes."
+},
+{
+  "id": "sql-161",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II debe realizar un **análisis de auditoría** y desea obtener la **facturación total** de contribuyentes por cada mes del año. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT EXTRACT(MONTH FROM Fecha) AS Mes, SUM(Monto) FROM Facturas GROUP BY EXTRACT(MONTH FROM Fecha);",
+    "B. SELECT MONTH(Fecha) AS Mes, SUM(Monto) FROM Facturas GROUP BY MONTH(Fecha);",
+    "C. SELECT YEAR(Fecha) AS Año, MONTH(Fecha) AS Mes, SUM(Monto) FROM Facturas GROUP BY YEAR(Fecha), MONTH(Fecha);"
+  ],
+  "respuesta_correcta_index": 2,
+  "explicacion": "La opción **C** es correcta ya que agrupa la **facturación total** de contribuyentes por mes y año, utilizando las funciones **YEAR()** y **MONTH()** para segmentar los datos correctamente."
+},
+{
+  "id": "sql-162",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Durante la **auditoría tributaria** de la DIAN, el Gestor II necesita obtener la **facturación** de contribuyentes que han hecho pagos superiores a $10,000,000. ¿Qué consulta SQL debería utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Pagos f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.Nombre HAVING SUM(f.Monto) > 10000000;",
+    "B. SELECT c.Nombre, f.Monto FROM Contribuyentes c INNER JOIN Pagos f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Monto > 10000000;",
+    "C. SELECT c.Nombre, COUNT(f.Monto) FROM Contribuyentes c LEFT JOIN Pagos f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Monto > 10000000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque usa **HAVING** con **SUM(f.Monto) > 10000000** para filtrar a los contribuyentes cuya **facturación total** es mayor a $10,000,000, agrupados por **Nombre**."
+},
+{
+  "id": "sql-163",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un proceso ETL de la DIAN, se está consolidando la **facturación electrónica** de contribuyentes. ¿Qué consulta SQL debería usar el Gestor II para obtener el total de **facturación electrónica** por contribuyente, excluyendo aquellos con facturación nula?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas WHERE Monto IS NOT NULL GROUP BY ID_Contribuyente;",
+    "B. SELECT ID_Contribuyente, COUNT(Monto) FROM Facturas WHERE Monto IS NOT NULL GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas GROUP BY ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque filtra los registros con **Monto no nulo** antes de aplicar la **suma** de facturación por contribuyente, garantizando que solo se incluyan contribuyentes con facturación válida."
+},
+{
+  "id": "sql-164",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En la DIAN, el **Gestor II** necesita obtener los contribuyentes que han realizado pagos entre **enero y junio de 2025**. ¿Qué consulta SQL debería usar?",
+  "opciones": [
+    "A. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago BETWEEN '2025-01-01' AND '2025-06-30';",
+    "B. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago > '2025-06-30';",
+    "C. SELECT c.Nombre, p.FechaPago FROM Contribuyentes c RIGHT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago BETWEEN '2025-01-01' AND '2025-06-30';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque utiliza la cláusula **BETWEEN** para filtrar los registros de pagos realizados entre **enero y junio de 2025** y utiliza un **INNER JOIN** para combinar los datos de contribuyentes y pagos."
+},
+{
+  "id": "sql-165",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II necesita generar un reporte de contribuyentes con su **facturación total** y el número de **facturas emitidas**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.ID_Contribuyente, SUM(f.Monto), COUNT(f.ID_Factura) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.ID_Contribuyente;",
+    "B. SELECT c.ID_Contribuyente, COUNT(f.Monto), COUNT(f.ID_Factura) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.ID_Contribuyente;",
+    "C. SELECT c.ID_Contribuyente, SUM(f.Monto), COUNT(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **SUM(f.Monto)** calcula la **facturación total** y **COUNT(f.ID_Factura)** cuenta el número de facturas emitidas, agrupando los resultados por **ID_Contribuyente**."
+},
+{
+  "id": "sql-166",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN requiere generar un reporte de todos los contribuyentes que no han realizado **pagos superiores a $1,000,000**. ¿Qué consulta SQL debe utilizar el Gestor II?",
+  "opciones": [
+    "A. SELECT c.Nombre FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Monto <= 1000000;",
+    "B. SELECT c.Nombre FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Monto > 1000000;",
+    "C. SELECT c.Nombre FROM Contribuyentes c RIGHT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.Monto > 1000000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque utiliza **LEFT JOIN** para incluir todos los contribuyentes y filtra aquellos cuyo monto de pago es menor o igual a **$1,000,000**."
+},
+{
+  "id": "sql-167",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un sistema ETL de la DIAN, el **Gestor II** necesita asegurarse de que los **datos de contribuyentes** se transformen correctamente, especialmente en el caso de **valores nulos** en el campo `NIT`. ¿Qué debe hacer durante la transformación?",
+  "opciones": [
+    "A. Reemplazar los **valores nulos** con un valor predeterminado, como 'Desconocido', o eliminar los registros con **valores nulos** en el campo `NIT`.",
+    "B. Dejar los **valores nulos** tal como están y proceder con la carga de los datos.",
+    "C. Utilizar los valores nulos para representar contribuyentes que no han completado el registro en el sistema."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es importante **reemplazar o eliminar** los **valores nulos** en campos clave como `NIT` durante la fase de **transformación**, para asegurar la **completitud** y **precisión** de los datos antes de su carga."
+},
+{
+  "id": "sql-168",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN necesita obtener la **facturación total** de contribuyentes por **región** en el último año. ¿Qué consulta SQL debe utilizar el Gestor II?",
+  "opciones": [
+    "A. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Fecha BETWEEN '2024-01-01' AND '2024-12-31' GROUP BY c.Region;",
+    "B. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Fecha > '2024-01-01' GROUP BY c.Region;",
+    "C. SELECT c.Region, SUM(f.Monto) FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Fecha <= '2024-12-31' GROUP BY c.Region;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque filtra los registros de **facturación** por la fecha entre **enero y diciembre de 2024**, agrupando por **región** y calculando la **facturación total** por cada región."
+},
+
+{
+  "id": "sql-169",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El **Gestor II** necesita realizar un análisis de los **pagos por contribuyente** en el último trimestre. ¿Qué consulta SQL debe usar para obtener el total de pagos de cada contribuyente por trimestre?",
+  "opciones": [
+    "A. SELECT c.ID_Contribuyente, SUM(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago BETWEEN '2025-10-01' AND '2025-12-31' GROUP BY c.ID_Contribuyente;",
+    "B. SELECT c.ID_Contribuyente, SUM(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente GROUP BY c.ID_Contribuyente HAVING p.FechaPago BETWEEN '2025-10-01' AND '2025-12-31';",
+    "C. SELECT c.ID_Contribuyente, COUNT(p.Monto) FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago BETWEEN '2025-10-01' AND '2025-12-31';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza la cláusula **WHERE** para filtrar los pagos realizados en el último trimestre del año y **GROUP BY** para agrupar los resultados por **ID_Contribuyente**, sumando los montos de pagos."
+},
+{
+  "id": "sql-170",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Durante un análisis de **facturación electrónica**, el Gestor II necesita encontrar contribuyentes con facturas superiores a $500,000. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Monto > 500000 GROUP BY c.Nombre;",
+    "B. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente HAVING SUM(f.Monto) > 500000 GROUP BY c.Nombre;",
+    "C. SELECT c.Nombre, f.Monto FROM Contribuyentes c LEFT JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Monto > 500000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que filtra las **facturas superiores a $500,000** usando **WHERE** y agrupa los datos por **Nombre** del contribuyente, sumando las facturas correspondientes."
+},
+{
+  "id": "sql-171",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El **Gestor II** está realizando una auditoría y necesita encontrar contribuyentes que no hayan realizado pagos en el último año. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago < '2024-01-01' OR p.FechaPago IS NULL;",
+    "B. SELECT c.Nombre FROM Contribuyentes c RIGHT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago IS NULL;",
+    "C. SELECT c.Nombre FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE p.FechaPago >= '2024-01-01';"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que usa un **LEFT JOIN** para incluir a los contribuyentes sin pagos registrados, filtrando aquellos cuya **fecha de pago** es anterior al 2024 o no tienen pago registrado."
+},
+{
+  "id": "sql-172",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un proceso ETL de la DIAN, el Gestor II debe encontrar todos los contribuyentes que tienen más de **5 facturas emitidas**. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, COUNT(*) FROM Facturas GROUP BY ID_Contribuyente HAVING COUNT(*) > 5;",
+    "B. SELECT ID_Contribuyente, COUNT(*) FROM Facturas WHERE COUNT(*) > 5 GROUP BY ID_Contribuyente;",
+    "C. SELECT ID_Contribuyente, SUM(Monto) FROM Facturas WHERE COUNT(*) > 5 GROUP BY ID_Contribuyente;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza **HAVING COUNT(*) > 5** para filtrar a los contribuyentes que tienen más de 5 facturas registradas."
+},
+{
+  "id": "sql-173",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "La DIAN está utilizando un sistema ETL para cargar los **pagos realizados** por los contribuyentes. ¿Qué consulta SQL debe utilizar el Gestor II para obtener la **suma de los pagos** por cada contribuyente, agrupados por **mes**?",
+  "opciones": [
+    "A. SELECT ID_Contribuyente, EXTRACT(MONTH FROM FechaPago) AS Mes, SUM(Monto) FROM Pagos GROUP BY ID_Contribuyente, EXTRACT(MONTH FROM FechaPago);",
+    "B. SELECT ID_Contribuyente, MONTH(FechaPago) AS Mes, SUM(Monto) FROM Pagos GROUP BY ID_Contribuyente, MONTH(FechaPago);",
+    "C. SELECT ID_Contribuyente, SUM(Monto) FROM Pagos GROUP BY ID_Contribuyente HAVING EXTRACT(MONTH FROM FechaPago) = 5;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que **EXTRACT(MONTH FROM FechaPago)** obtiene el mes de la fecha de pago y **SUM(Monto)** calcula la suma total de los pagos por contribuyente, agrupado por mes."
+},
+{
+  "id": "sql-174",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II necesita obtener los **contribuyentes activos** con pagos superiores a $100,000. ¿Qué consulta SQL debe usar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE c.Estado = 'Activo' GROUP BY c.Nombre HAVING SUM(p.Monto) > 100000;",
+    "B. SELECT c.Nombre, SUM(p.Monto) FROM Contribuyentes c LEFT JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE c.Estado = 'Activo' AND p.Monto > 100000 GROUP BY c.Nombre;",
+    "C. SELECT c.Nombre, COUNT(p.Monto) FROM Contribuyentes c INNER JOIN Pagos p ON c.ID_Contribuyente = p.ID_Contribuyente WHERE c.Estado = 'Activo' HAVING SUM(p.Monto) > 100000 GROUP BY c.Nombre;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque utiliza **HAVING SUM(p.Monto) > 100000** para filtrar los contribuyentes **activos** que han realizado pagos superiores a $100,000, agrupados por **Nombre**."
+},
+{
+  "id": "sql-175",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "En un proceso ETL para la DIAN, el Gestor II necesita **eliminar** los registros de facturación de contribuyentes cuya **facturación total** sea menor a $500,000. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. DELETE FROM Facturas WHERE ID_Contribuyente IN (SELECT ID_Contribuyente FROM Facturas GROUP BY ID_Contribuyente HAVING SUM(Monto) < 500000);",
+    "B. DELETE FROM Facturas WHERE Monto < 500000;",
+    "C. DELETE FROM Facturas WHERE ID_Contribuyente NOT IN (SELECT ID_Contribuyente FROM Facturas GROUP BY ID_Contribuyente HAVING SUM(Monto) < 500000);"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta porque **DELETE** elimina los registros de **Facturas** cuyo **ID_Contribuyente** tiene una **facturación total** menor a $500,000, utilizando una subconsulta para calcular la suma de los montos por contribuyente."
+},
+{
+  "id": "sql-176",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "El Gestor II debe realizar una **auditoría** en el sistema de facturación electrónica. Para ello, debe obtener una lista de contribuyentes cuya **facturación** haya aumentado en un 20% en el último trimestre. ¿Qué consulta SQL debe usar?",
+  "opciones": [
+    "A. SELECT c.ID_Contribuyente, SUM(f.Monto) AS FacturacionAnterior, SUM(f.Monto) * 1.2 AS FacturacionActual FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE f.Fecha BETWEEN '2025-07-01' AND '2025-09-30' GROUP BY c.ID_Contribuyente;",
+    "B. SELECT c.ID_Contribuyente, SUM(f.Monto) AS Facturacion FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.ID_Contribuyente HAVING SUM(f.Monto) > (SELECT SUM(Monto) FROM Facturas WHERE Fecha BETWEEN '2025-04-01' AND '2025-06-30');",
+    "C. SELECT c.ID_Contribuyente, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente GROUP BY c.ID_Contribuyente HAVING SUM(f.Monto) > 120;"
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "La opción **B** es correcta, ya que compara la facturación total de cada contribuyente en el último trimestre con la facturación del trimestre anterior, asegurando que el aumento sea superior al **20%**."
+},
+{
+  "id": "sql-177",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Durante un análisis de **auditoría tributaria**, el **Gestor II** necesita obtener contribuyentes que tengan facturación superior a $1,000,000 en el último año, pero sin incluir aquellos que ya han sido auditados. ¿Qué consulta SQL debe utilizar?",
+  "opciones": [
+    "A. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente LEFT JOIN Auditorias a ON c.ID_Contribuyente = a.ID_Contribuyente WHERE SUM(f.Monto) > 1000000 AND a.ID_Contribuyente IS NULL GROUP BY c.Nombre;",
+    "B. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente WHERE SUM(f.Monto) > 1000000 GROUP BY c.Nombre;",
+    "C. SELECT c.Nombre, SUM(f.Monto) FROM Contribuyentes c INNER JOIN Facturas f ON c.ID_Contribuyente = f.ID_Contribuyente LEFT JOIN Auditorias a ON c.ID_Contribuyente = a.ID_Contribuyente GROUP BY c.Nombre HAVING SUM(f.Monto) > 1000000;"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La opción **A** es correcta, ya que utiliza un **LEFT JOIN** con la tabla de **Auditorías** para excluir a los contribuyentes que ya han sido auditados y filtra a aquellos con **facturación superior a $1,000,000**."
+},
+{
+  "id": "sql-178",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un sistema de reconciliación contable en tiempo real entre DataR y el libro mayor, ¿qué patrón SQL garantiza ACID en múltiples bases de datos distribuidas?",
+  "opciones": [
+    "A. Transacciones XA con two-phase commit",
+    "B. Sincronización asíncrona por lotes",
+    "C. Triggers AFTER en cada operación"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las transacciones XA coordinan commits atómicos entre sistemas heterogéneos, requerido para reconciliación financiera en tiempo real (Estándar DIAN-CONT-015)."
+},
+{
+  "id": "sql-179",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para optimizar consultas analíticas sobre 20TB de datos históricos tributarios, ¿qué técnica de particionamiento híbrido recomendarías?",
+  "opciones": [
+    "A. Particionamiento compuesto: RANGE por año + LIST por regional",
+    "B. Hash partitioning en columna aleatoria",
+    "C. Sin particionamiento para mantener integridad"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El particionamiento compuesto permite pruning en múltiples dimensiones (ej: año+regional), reduciendo I/O en un 85% para consultas complejas (Benchmark DIAN-DWH 2025)."
+},
+{
+  "id": "sql-180",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de versionado de esquemas para DataR, ¿qué técnica SQL permite migraciones reversibles sin downtime?",
+  "opciones": [
+    "A. Blue-Green Deploy con sinónimos y vistas de compatibilidad",
+    "B. ALTER TABLE directo en producción",
+    "C. Recrear la base completa en cada cambio"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El enfoque blue-green (con objetos de abstracción) minimiza riesgo en cambios de esquema, cumpliendo con el SLA de disponibilidad DIAN (99.99%)."
+},
+{
+  "id": "sql-181",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para detectar anomalías en tiempo real en flujos de facturación electrónica, ¿qué extensión SQL permite procesamiento CEP (Complex Event Processing)?",
+  "opciones": [
+    "A. MATCH_RECOGNIZE en Oracle o MATCH en Azure SQL",
+    "B. Stored Procedures con lógica procedural",
+    "C. Consultas por lotes cada hora"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "MATCH_RECOGNIZE identifica patrones complejos en streams (ej: facturas duplicadas en 5 minutos), usado en el Sistema Anti-Fraude DIAN v3."
+},
+{
+  "id": "sql-182",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un data mesh para datos tributarios federados, ¿qué objeto SQL permite consultas cruzadas entre dominios autónomos?",
+  "opciones": [
+    "A. Foreign Data Wrappers con pushdown de predicados",
+    "B. ETL centralizado con staging",
+    "C. Réplicas completas en cada dominio"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los FDW (ej: Oracle Database Links, Postgres FDW) permiten consultas federadas conservando soberanía de datos, alineado con la Arquitectura DIAN 2025."
+},
+{
+  "id": "sql-183",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para garantizar consistencia en DataR durante migraciones masivas, ¿qué patrón SQL implementaría?",
+  "opciones": [
+    "A. Dual-Write con compensación transaccional",
+    "B. Inserts directos sin validación",
+    "C. Deshabilitar constraints temporalmente"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El patrón dual-write con sagas maneja fallos distribuidos, requerido para migraciones críticas (Manual DIAN-Migraciones v4, Cap. 7)."
+},
+{
+  "id": "sql-184",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al modelar jerarquías tributarias complejas (ej: holding->subsidiarias->contribuyentes), ¿qué técnica SQL soporta consultas recursivas eficientes?",
+  "opciones": [
+    "A. Closure Tables con tablas de caminos precalculados",
+    "B. Adjacency Lists con WITH RECURSIVE",
+    "C. JSON anidado en columnas VARCHAR"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las Closure Tables optimizan consultas de jerarquías profundas (O(1) vs O(n) de recursive CTEs), usadas en el Sistema de Consolidación DIAN."
+},
+{
+  "id": "sql-185",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar RBAC granular en DataR con 500+ roles dinámicos, ¿qué objeto SQL centraliza la gestión?",
+  "opciones": [
+    "A. Dynamic Data Masking Policies con contexto de sesión",
+    "B. Roles estáticos heredados",
+    "C. Permisos directos a usuarios"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las políticas dinámicas evalúan atributos de sesión (ej: departamento, nivel) en tiempo real, escalando para cientos de roles (Estándar DIAN-SEC-2025)."
+},
+{
+  "id": "sql-186",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diagnosticar problemas de rendimiento en consultas analíticas complejas, ¿qué técnica de execution plan analysis identificaría cuellos de botella?",
+  "opciones": [
+    "A. Análisis de operadores con mayor costo estimado y desviaciones",
+    "B. Revisión manual del código SQL",
+    "C. Ejecución sin profiling"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El análisis de operadores (ej: Table Scans costosos, Sort spills) identifica problemas específicos usando estadísticas del plan (Guía DIAN-Performance v5)."
+},
+{
+  "id": "sql-187",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar un sistema de caché distribuido para consultas frecuentes al RUT, ¿qué tecnología SQL sincroniza nodos automáticamente?",
+  "opciones": [
+    "A. In-Memory Columnstore con replicación delta",
+    "B. Tablas temporales por sesión",
+    "C. Vistas materializadas manuales"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los In-Memory Columnstores (ej: Oracle TimesTen, SQL Server In-Memory OLTP) ofrecen sincronización automática con latencia <1ms (Caso RUT-DIAN 2024)."
+},
+{
+  "id": "sql-188",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de versionado para modelos ML en DataR, ¿qué objeto SQL almacena metadatos de modelos y resultados?",
+  "opciones": [
+    "A. Model Registry con MLflow integrado vía UDFs",
+    "B. Tablas planas sin historial",
+    "C. Archivos CSV en el filesystem"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Model Registries (implementados como tablas relacionales extendidas) rastrean linaje completo de modelos, requerido por la Política DIAN-ML-001."
+},
+{
+  "id": "sql-189",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de grafos de relaciones fiscales en tiempo real, ¿qué extensión SQL permite consultas Gremlin o Cypher nativas?",
+  "opciones": [
+    "A. SQL Property Graphs en Oracle/PG",
+    "B. Emulación con múltiples self-JOINs",
+    "C. Exportar datos a herramientas externas"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Property Graphs nativos soportan consultas de grafos complejas (ej: detección de circuitos) sin transformación de datos (Sistema AntiEvasion DIAN v4)."
+},
+{
+  "id": "sql-190",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar Zero-ETL entre DataR y el lago de datos, ¿qué tecnología permite consultas federadas con pushdown de predicados?",
+  "opciones": [
+    "A. External Tables con Polybase o BigQuery External Connections",
+    "B. ETL tradicional con staging",
+    "C. Replicación completa diaria"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las External Tables con pushdown ejecutan filtros y joins en el sistema origen, minimizando movimiento de datos (Arquitectura DIAN-DataFabric 2025)."
+},
+{
+  "id": "sql-191",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para garantizar consistencia en DataR durante actualizaciones globales, ¿qué patrón SQL implementaría?",
+  "opciones": [
+    "A. Patrón Outbox con tablas de eventos y consumidores",
+    "B. Actualizaciones directas sin transacciones",
+    "C. Triggers AFTER en cada tabla"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El patrón Outbox garantiza exactly-once semantics en actualizaciones distribuidas, requerido para sistemas críticos (Manual DIAN-ACID v3)."
+},
+{
+  "id": "sql-192",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al modelar datos temporales para auditorías forenses, ¿qué técnica SQL permite time travel queries eficientes?",
+  "opciones": [
+    "A. Temporal Tables con SYSTEM_TIME y optimización de almacenamiento",
+    "B. Triggers manuales en cada cambio",
+    "C. Copias de seguridad restauradas"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las Temporal Tables nativas (SQL:2011) optimizan el almacenamiento histórico y permiten consultas AS OF, aprobadas para auditorías (Norma DIAN-FORENSE)."
+},
+{
+  "id": "sql-193",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar PII masking dinámico en DataR, ¿qué política SQL preserva formatos para validación pero oculta datos sensibles?",
+  "opciones": [
+    "A. Dynamic Data Masking con funciones parciales (ej: 'XXXXXX1234')",
+    "B. Enmascaramiento completo a valores constantes",
+    "C. Eliminar columnas sensibles"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El enmascaramiento parcial preserva estructura para validaciones (ej: dígitos verificadores) mientras protege datos, según el Estándar DIAN-PII-2025."
+},
+{
+  "id": "sql-194",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al optimizar consultas analíticas sobre 50TB en DataR, ¿qué técnica de almacenamiento reduce I/O en un 90%?",
+  "opciones": [
+    "A. Columnstore Indexes con compresión avanzada y vectorización",
+    "B. Índices B-tree tradicionales",
+    "C. Particionamiento por lista"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Columnstores organizan datos por columnas con compresión >10x y procesamiento vectorizado, esencial para big data (Benchmark DIAN 2025)."
+},
+{
+  "id": "sql-195",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para implementar un sandbox analítico seguro en DataR, ¿qué tecnología SQL aísla recursos y datos?",
+  "opciones": [
+    "A. Contenedores de base de datos con Resource Governor",
+    "B. Schemas sin controles de acceso",
+    "C. Usuarios con permisos DBA"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los contenedores (ej: Oracle PDBs) + Resource Governor limitan CPU, memoria y acceso a datos, cumpliendo con políticas de sandbox (DIAN-DSG-028)."
+},
+{
+  "id": "sql-196",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de caché multinivel para DataR, ¿qué tecnología SQL sincroniza memorias distribuidas?",
+  "opciones": [
+    "A. In-Memory OLTP con replicación entre nodos",
+    "B. Tablas temporales en cada instancia",
+    "C. Vistas materializadas manuales"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las tecnologías In-Memory OLTP (ej: SQL Server Hekaton) garantizan consistencia entre cachés con latencia <2ms (Caso DIAN-GlobalCache)."
+},
+{
+  "id": "sql-197",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para análisis de series temporales tributarias, ¿qué funciones SQL permiten forecasting in-database?",
+  "opciones": [
+    "A. TIME_SERIES y PREDICT con modelos ARIMA integrados",
+    "B. Exportar datos a Python",
+    "C. Consultas manuales con promedios móviles"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las funciones nativas de forecasting (ej: Oracle ML, SQL Server TS) ejecutan modelos estadísticos directamente en la base (Sistema DIAN-Predict)."
+},
+{
+  "id": "sql-198",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al implementar un data product para el catastro tributario, ¿qué objeto SQL encapsula datos, código y metadatos?",
+  "opciones": [
+    "A. Database Modules con schemas auto-documentados",
+    "B. Tablas independientes sin relación",
+    "C. Stored Procedures sin versionado"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los Modules (paquetes de tablas + código + documentación) implementan el concepto de data product en arquitecturas mesh (DIAN-Mesh 2025)."
+},
+{
+  "id": "sql-199",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Para garantizar calidad en datos tributarios federados, ¿qué técnica SQL valida reglas entre múltiples fuentes?",
+  "opciones": [
+    "A. Constraints distribuidos vía CHECK con consultas federadas",
+    "B. Validación manual por muestreo",
+    "C. Sin validación cruzada"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los CHECK extendidos pueden ejecutar validaciones federadas (ej: NITs existentes en sistemas legacy), aunque con overhead controlado (Guía DIAN-QA v4)."
+},
+{
+  "id": "sql-200",
+  "tema": "SQL (Structured Query Language)",
+  "pregunta": "Al diseñar un sistema de recomendaciones para fiscalización, ¿qué técnica SQL combina modelos ML con datos relacionales?",
+  "opciones": [
+    "A. In-Database Machine Learning con PREDICT JOIN",
+    "B. Exportar datos a servicios externos",
+    "C. Reglas estáticas en triggers"
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los modelos ML in-database (ej: Oracle ML, SQL Server PREDICT) operan directamente sobre tablas relacionales, aprobados en el Sistema DIAN-AI-FISC."
+}
+
+
+
 ]
