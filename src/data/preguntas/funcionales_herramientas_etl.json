@@ -1,0 +1,2456 @@
+[
+  {
+    "id": "etl-1",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué herramienta ETL es más adecuada para procesar facturas UBL 2.1 en la DIAN?",
+    "opciones": [
+      "Microsoft SSIS",
+      "Talend",
+      "Apache Spark"
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Talend es una herramienta de código abierto que ofrece soporte nativo para el formato XML/UBL 2.1, lo que la hace ideal para la gestión de facturación electrónica."
+  },
+  {
+    "id": "etl-2",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Según la Ley 1581, ¿qué medida debe aplicar un proceso ETL con datos personales?",
+    "opciones": [
+      "Encriptación AES-256.",
+      "Almacenamiento en CSV.",
+      "Compartir datos con terceros."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La encriptación de datos sensibles es una medida de seguridad fundamental para cumplir con la Ley 1581 de protección de datos personales."
+  },
+  {
+    "id": "etl-3",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué proceso se realiza durante la transformación de datos en una herramienta ETL?",
+    "opciones": [
+      "Limpiar, validar y enriquecer los datos.",
+      "Extraer datos de las fuentes originales.",
+      "Cargar datos en el repositorio de destino."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La etapa de transformación se encarga de limpiar, filtrar, validar y estandarizar los datos para asegurar su calidad y adecuación para el análisis."
+  },
+
+  {
+    "id": "etl-4",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe generar un reporte de fiscalización combinando datos de declaraciones tributarias del Repositorio Único de Datos (DataR) y datos de facturación electrónica de una fuente externa. ¿Qué etapa del proceso ETL se encarga de obtener la información de ambas fuentes en un sistema de la DIAN?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos de las fuentes originales.",
+      "B. La etapa de transformación, que valida y enriquece los datos de la entidad.",
+      "C. La etapa de carga, que mueve los datos al repositorio de destino de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La etapa de extracción es la primera del proceso ETL y se encarga de obtener los datos de las fuentes originales, como el DataR y los sistemas de facturación electrónica, para su posterior procesamiento."
+  },
+  {
+    "id": "etl-5",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "El equipo de gestión de datos de la DIAN necesita unificar el formato de los nombres de los contribuyentes para mejorar la calidad de los reportes. ¿En qué etapa del proceso ETL se lleva a cabo la estandarización y normalización de estos datos?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos estandarizados desde su origen.",
+      "B. En la etapa de carga, para que los datos sean movidos al repositorio de destino de la entidad.",
+      "C. En la etapa de transformación, que se encarga de limpiar y estandarizar los datos para la entidad."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La etapa de transformación se encarga de la limpieza, validación y estandarización de los datos. En este caso, la unificación del formato de los nombres de los contribuyentes se realiza en esta etapa para asegurar la calidad de la información para los reportes."
+  },
+  {
+    "id": "etl-6",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II ha finalizado el proceso de extracción y transformación de datos de un nuevo sistema de la DIAN. Ahora debe mover la información limpia y estandarizada al Repositorio Único de Datos (DataR) para que los analistas puedan utilizarla. ¿Qué etapa del proceso ETL se está ejecutando en este momento?",
+    "opciones": [
+      "A. La etapa de extracción, para obtener los datos estandarizados desde la entidad.",
+      "B. La etapa de carga, para mover los datos al repositorio de destino de la entidad.",
+      "C. La etapa de transformación, para estandarizar los datos antes de su uso en la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La etapa de carga es la última del proceso ETL y se encarga de mover la información limpia y estandarizada al repositorio de destino. En este caso, al Repositorio Único de Datos (DataR) para que los analistas de la DIAN puedan utilizarla."
+  },
+  {
+    "id": "etl-7",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de facturación electrónica de un sistema externo. La herramienta ETL notifica un error de conexión con la fuente de datos. ¿A qué etapa del proceso ETL pertenece este problema?",
+    "opciones": [
+      "A. A la etapa de extracción, que no ha podido obtener los datos de la fuente original.",
+      "B. A la etapa de transformación, que no puede estandarizar los datos por la falla en la entidad.",
+      "C. A la etapa de carga, que no puede mover los datos al destino de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de conexión con la fuente de datos se relaciona directamente con la etapa de extracción. Esta etapa es la encargada de obtener los datos de las fuentes originales, por lo que un error de conexión impide su ejecución."
+  },
+  {
+    "id": "etl-8",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II diseña una solución ETL para combinar datos de aduanas y de la UGPP. La solución requiere anonimizar ciertos datos personales para cumplir con la Ley 1581 de 2012. ¿En qué etapa del proceso ETL se debe realizar la anonimización de la información?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos anonimizados desde su origen.",
+      "B. En la etapa de carga, para que los datos anonimizados sean movidos al repositorio de destino.",
+      "C. En la etapa de transformación, que se encarga de la anonimización de los datos para la entidad."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-9",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL está moviendo datos de un sistema de fiscalización a un almacén de datos (Data Warehouse) de la DIAN. La herramienta ETL notifica un error porque el formato de los datos no es compatible con el del destino. ¿A qué etapa del proceso ETL pertenece este problema?",
+    "opciones": [
+      "A. A la etapa de extracción, que no ha obtenido los datos compatibles desde el sistema de fiscalización.",
+      "B. A la etapa de transformación, que no ha estandarizado los datos para que sean compatibles con el destino.",
+      "C. A la etapa de carga, que no puede mover los datos al repositorio de destino por la incompatibilidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El problema de incompatibilidad de formato se produce en la etapa de transformación, donde los datos deben ser estandarizados para que sean compatibles con el repositorio de destino. Un error en esta etapa impide la correcta carga de la información."
+  },
+  {
+    "id": "etl-10",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II diseña una solución ETL para la DIAN que debe combinar datos de contribuyentes con datos de operaciones aduaneras. La solución requiere el uso de reglas para eliminar los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de limpiar los datos y eliminar los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+  "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-11",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL está extrayendo información de declaraciones tributarias de un sistema obsoleto de la DIAN. La herramienta ETL notifica que la extracción de los datos es muy lenta. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos obsoleta.",
+      "B. El flujo de trabajo, que no está diseñado para la extracción de datos en paralelo en la entidad.",
+      "C. La programación de tareas, que no está configurada para la extracción de datos en la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Un conector de datos es el componente que se encarga de la conexión con la fuente de datos. Si el conector no está optimizado para una fuente de datos obsoleta, la extracción de los datos puede ser muy lenta y afectar la eficiencia del proceso ETL."
+  },
+  {
+    "id": "etl-12",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II diseña una solución ETL para la DIAN que debe cargar datos de impuestos y de aduanas en un Data Lake. La solución requiere que los datos se carguen en su formato original. ¿Qué tipo de proceso de integración de datos se está utilizando en este caso?",
+    "opciones": [
+      "A. Un proceso ETL, ya que la solución requiere la extracción, transformación y carga de los datos.",
+      "B. Un proceso ELT, ya que la solución requiere la extracción y carga de los datos en su formato original, sin transformarlos.",
+      "C. Un proceso de carga directa, ya que los datos se mueven al Data Lake sin ningún tipo de validación."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Un proceso ELT (Extract, Load, Transform) es el más adecuado para este caso. Este proceso extrae datos y los carga directamente en el destino (generalmente un lago de datos), y luego los transforma según se necesite. La carga de los datos en su formato original es la característica principal de ELT."
+  },
+  {
+    "id": "etl-13",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está moviendo datos de un sistema de fiscalización a un almacén de datos (Data Warehouse). La herramienta ETL notifica que el proceso ha fallado al intentar cargar un registro con un formato de fecha incorrecto. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Corregir manualmente el formato de fecha del registro en el sistema de fiscalización.",
+      "B. Ignorar el error y continuar con la carga de los demás registros en el almacén de datos.",
+      "C. Revisar la etapa de transformación para implementar una regla que estandarice el formato de fecha de los registros antes de la carga."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Un error de formato de fecha debe ser corregido en la etapa de transformación, donde se estandarizan los datos. La acción correcta es implementar una regla que estandarice el formato de fecha de los registros antes de la carga, lo que evita que el error se repita en el futuro."
+  },
+  {
+    "id": "etl-14",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar una solución ETL para la DIAN que combine información de impuestos con datos de la UGPP. La solución requiere el uso de reglas para eliminar los registros de contribuyentes que no tienen un NIT válido. ¿Qué etapa del proceso ETL se encarga de validar la información de los registros?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos validados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de limpiar y validar los datos.",
+      "C. En la etapa de carga, para mover los datos validados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La validación de datos es una tarea de transformación. En este caso, la validación del NIT de los contribuyentes se realiza en esta etapa para asegurar la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-15",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta ETL notifica un error porque la fuente de datos no tiene un campo 'NIT' que es obligatorio para la transformación. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Corregir manualmente la fuente de datos para agregar el campo 'NIT' faltante en la entidad.",
+      "B. Ignorar el error y continuar con la extracción de los demás datos del sistema de la entidad.",
+      "C. Revisar la etapa de extracción para implementar una regla que agregue un valor por defecto al campo 'NIT' faltante antes de la transformación."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "La falta de un campo obligatorio en la fuente de datos es un problema que se debe corregir en la etapa de extracción. La acción correcta es implementar una regla que agregue un valor por defecto al campo 'NIT' faltante antes de la transformación, lo que evita que el error se repita en el futuro."
+  },
+  {
+    "id": "etl-16",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II diseña una solución ETL para la DIAN que debe combinar datos de impuestos y de aduanas en un almacén de datos (Data Warehouse). La solución requiere que los datos se carguen en un formato específico. ¿Qué etapa del proceso ETL se encarga de la compatibilidad del formato de los datos con el repositorio de destino?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos compatibles desde su origen.",
+      "B. En la etapa de transformación, que se encarga de estandarizar los datos para que sean compatibles con el destino.",
+      "C. En la etapa de carga, para mover los datos compatibles al repositorio de destino de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La compatibilidad del formato de los datos con el repositorio de destino se asegura en la etapa de transformación. Esta etapa es la encargada de estandarizar los datos para que sean compatibles con el destino, lo que evita que el proceso de carga falle."
+  },
+  {
+    "id": "etl-17",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar una solución ETL para la DIAN que combine información de facturación electrónica y registros aduaneros. La solución requiere el uso de reglas para eliminar los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de limpiar los datos y eliminar los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-18",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está moviendo datos de un sistema de fiscalización a un almacén de datos (Data Warehouse). La herramienta ETL notifica que el proceso ha fallado al intentar cargar un registro con un formato de fecha incorrecto. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Corregir manualmente el formato de fecha del registro en el sistema de fiscalización.",
+      "B. Ignorar el error y continuar con la carga de los demás registros en el almacén de datos.",
+      "C. Revisar la etapa de transformación para implementar una regla que estandarice el formato de fecha de los registros antes de la carga."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "Un error de formato de fecha debe ser corregido en la etapa de transformación, donde se estandarizan los datos. La acción correcta es implementar una regla que estandarice el formato de fecha de los registros antes de la carga, lo que evita que el error se repita en el futuro."
+  },
+{
+    "id": "etl-19",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II está a cargo de un proceso ETL que combina datos de un sistema de fiscalización con registros de operaciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos aduaneros es una API que tiene un límite de peticiones por minuto. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Configurar un conector de datos que se adapte al límite de peticiones de la API, para que la extracción se realice de manera gradual y sin fallos.",
+      "B. Notificar a la Dirección de Gestión de Aduanas que su API no es compatible con el proceso ETL, y que debe ser actualizada a la entidad.",
+      "C. Desactivar el monitoreo del proceso ETL, ya que los fallos en la extracción son normales cuando se trabaja con APIs de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe al límite de peticiones de la API de aduanas. La acción más adecuada es configurar un conector de datos que se adapte a este límite, para que la extracción se realice de manera gradual y sin fallos, lo que garantiza la eficiencia del proceso ETL."
+  },
+  {
+    "id": "etl-20",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de declaraciones de renta de diferentes años en un solo repositorio. El proceso requiere estandarizar el formato de los datos de cada año, ya que han cambiado con el tiempo. ¿Qué etapa del proceso ETL se encarga de este tipo de tarea, y qué componente de la herramienta ETL es el más adecuado para realizarla?",
+    "opciones": [
+      "A. La etapa de extracción, utilizando un conector de datos que se adapte a los diferentes formatos de la entidad.",
+      "B. La etapa de transformación, utilizando reglas de transformación que estandaricen el formato de los datos de cada año en la entidad.",
+      "C. La etapa de carga, utilizando una programación de tareas que mueva los datos estandarizados al repositorio de destino de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La etapa de transformación se encarga de estandarizar el formato de los datos. Las reglas de transformación son el componente de la herramienta ETL más adecuado para realizar esta tarea, ya que permiten definir cómo se deben estandarizar los datos de cada año para que sean consistentes y coherentes en el repositorio de destino."
+  },
+  {
+    "id": "etl-21",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-22",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-23",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-24",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-25",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-26",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-27",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-28",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-29",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-30",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-31",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-32",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-33",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-34",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-35",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-36",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-37",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-38",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-39",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-40",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-41",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-42",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-43",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-44",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-45",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-46",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-47",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-48",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-49",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-50",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-51",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-52",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-53",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-54",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-55",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-56",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-57",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-58",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-59",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-60",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-61",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-62",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-63",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-64",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-65",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-66",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-67",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-68",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-69",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-70",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-71",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-72",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-73",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-74",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-75",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-76",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-77",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-78",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+
+  {
+    "id": "etl-79",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II está a cargo de un proceso ETL crítico que combina datos de facturación electrónica con registros de la UGPP. El proceso falla repetidamente en la etapa de Transformación debido a que la lógica de negocio para un campo clave ha cambiado sin previo aviso. Esta falla afecta un reporte a la Dirección General. ¿Qué acción debe tomar el Gestor II para mitigar el impacto y asegurar una solución a largo plazo?",
+    "opciones": [
+      "A. Revertir la última ejecución del proceso ETL, ajustar la lógica de negocio para el nuevo formato y notificar la falla al área de análisis de la entidad.",
+      "B. Notificar a la Dirección de Gestión de Impuestos sobre el cambio en la lógica de negocio y solicitar una documentación formal para actualizar el proceso ETL de forma definitiva.",
+      "C. Desactivar el proceso ETL hasta que se tenga una solución definitiva y notificar a la Dirección de Gestión de Impuestos que el reporte a la Dirección General no se puede generar."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El problema se origina en un cambio en la lógica de negocio, lo que afecta la etapa de Transformación. La acción más adecuada es notificar al área responsable del cambio y solicitar una documentación formal para actualizar el proceso ETL, lo que asegura una solución a largo plazo y la consistencia de la información."
+  },
+  {
+    "id": "etl-80",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En la DIAN, un proceso ETL está extrayendo datos de un sistema legado para un almacén de datos (Data Warehouse) de la entidad. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que tiene una alta latencia. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos obsoleta.",
+      "B. El flujo de trabajo, que no está diseñado para la extracción de datos en paralelo en la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Un conector de datos es el componente que se encarga de la conexión con la fuente de datos. Si el conector no está optimizado para una fuente de datos obsoleta, la extracción de los datos puede ser muy lenta y afectar la eficiencia del proceso ETL."
+  },
+  {
+    "id": "etl-81",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. El proceso requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-82",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-83",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-84",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-85",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-86",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-87",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-88",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-89",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-90",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-91",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-92",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-93",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-94",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+  {
+    "id": "etl-95",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar información de facturación electrónica y registros aduaneros para la detección de contrabando. La solución requiere anonimizar ciertos datos personales de los contribuyentes para cumplir con la Ley 1581 de 2012. ¿Qué etapa del proceso ETL se encarga de la anonimización de la información?",
+    "opciones": [
+      "A. La etapa de extracción, que obtiene los datos anonimizados de la fuente original.",
+      "B. La etapa de transformación, que se encarga de la limpieza y la anonimización de los datos.",
+      "C. La etapa de carga, que mueve los datos anonimizados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La anonimización de los datos es una tarea de transformación. Se realiza en esta etapa para que los datos cumplan con la política de privacidad y la Ley 1581 de 2012 antes de ser movidos al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-96",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está extrayendo información de declaraciones aduaneras. La herramienta de monitoreo del proceso indica una alta tasa de fallos en la etapa de Extracción. Después de investigar, se descubre que la fuente de datos es un sistema obsoleto que no responde a las peticiones del conector de datos. ¿Qué acción debe tomar el Gestor II para resolver este problema?",
+    "opciones": [
+      "A. Notificar a la Dirección de Gestión de Aduanas que su sistema obsoleto no es compatible con el proceso ETL y que debe ser actualizado.",
+      "B. Implementar una solución de ETL que se adapte al sistema obsoleto, para que la extracción se realice de manera manual y sin fallos.",
+      "C. Configurar un conector de datos que se adapte al sistema obsoleto de la entidad, para que la extracción se realice de manera gradual y sin fallos, y notificar a la Dirección de Aduanas sobre el problema."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El problema de la alta tasa de fallos en la etapa de Extracción se debe a que la fuente de datos es un sistema obsoleto. La acción más adecuada es notificar a la Dirección de Gestión de Aduanas para que el sistema sea actualizado, ya que la DIAN requiere la información de manera oportuna para la fiscalización."
+  },
+  {
+    "id": "etl-97",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un Gestor II debe diseñar un proceso ETL para combinar datos de facturación electrónica y registros aduaneros. El proceso requiere la eliminación de los registros duplicados de los contribuyentes. ¿Qué etapa del proceso ETL se encarga de eliminar estos registros duplicados?",
+    "opciones": [
+      "A. En la etapa de extracción, para obtener los datos sin duplicados desde su origen.",
+      "B. En la etapa de transformación, que se encarga de la limpieza y la eliminación de los duplicados.",
+      "C. En la etapa de carga, para mover los datos sin duplicados al repositorio de destino."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La limpieza de datos, que incluye la eliminación de registros duplicados, es una tarea que se realiza en la etapa de transformación. Esta acción asegura la calidad de la información antes de ser movida al repositorio de destino para el análisis."
+  },
+  {
+    "id": "etl-98",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Un proceso ETL de la DIAN está cargando datos de facturación electrónica a un almacén de datos (Data Warehouse). La herramienta de monitoreo del proceso indica que la etapa de Carga es muy lenta, lo que afecta la disponibilidad de la información para el análisis. ¿Qué componente de la herramienta ETL podría ser el origen de este problema?",
+    "opciones": [
+      "A. El conector de datos, que no está optimizado para la fuente de datos de la entidad.",
+      "B. El destino de carga, que tiene una alta latencia o una capacidad limitada para recibir los datos de la entidad.",
+      "C. Las reglas de transformación, que están generando errores en el formato de los datos de la entidad."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La lentitud en la etapa de Carga se debe a que el destino de carga tiene una alta latencia o una capacidad limitada para recibir los datos. Un destino con estas características afecta la eficiencia del proceso ETL, lo que compromete la disponibilidad de la información para el análisis."
+  },
+
+  
+{
+  "id": "etl-99",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un sistema de ETL para la DIAN, los datos de contribuyentes son extraídos de diversas fuentes. ¿Qué debe considerar el Gestor II al realizar la **extracción** de datos?",
+  "opciones": [
+    "A. Extraer todos los datos disponibles sin filtrar para obtener una vista completa.",
+    "B. Extraer solo los datos relevantes según las necesidades del proceso de análisis o auditoría.",
+    "C. Extraer solo los datos más recientes y excluir la información histórica."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "En la fase de **extracción**, es importante seleccionar solo los datos relevantes, evitando sobrecargar el sistema con datos innecesarios que puedan dificultar el análisis o generar inconsistencias."
+},
+{
+  "id": "etl-100",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de transformación de datos para reportes fiscales, un campo numérico contiene valores con comas y puntos. ¿Qué debe hacer el Gestor II en la fase de transformación?",
+  "opciones": [
+    "A. Dejar los valores tal como están, ya que no afectan el resultado final del análisis.",
+    "B. Transformar los valores eliminando comas y puntos para estandarizarlos a formato numérico.",
+    "C. Eliminar los registros con valores incorrectos y reemplazarlos con valores estimados."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "En la fase de **transformación**, se deben estandarizar los datos para que todos los valores tengan el mismo formato, lo que facilita el análisis y garantiza que los resultados sean precisos."
+},
+{
+  "id": "etl-101",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de carga de datos en un **Data Warehouse** de la DIAN, se presentan errores de carga debido a restricciones de capacidad. ¿Qué medida puede tomar el Gestor II para optimizar este proceso?",
+  "opciones": [
+    "A. Cargar los datos en pequeños lotes incrementales en lugar de hacerlo todo de una vez.",
+    "B. Cargar todos los datos en un solo proceso para maximizar la eficiencia.",
+    "C. Aplazar la carga de datos hasta que la capacidad del sistema sea suficiente."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El uso de **cargas incrementales** es una buena práctica para optimizar el uso de recursos del sistema y evitar que se sobrecargue el sistema durante el proceso de **carga de datos**."
+},
+{
+  "id": "etl-102",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la **transformación** de datos en un proceso ETL, se identifican registros duplicados. ¿Cuál es la mejor práctica a seguir en este caso?",
+  "opciones": [
+    "A. Eliminar los registros duplicados y proceder con la carga.",
+    "B. Mantener todos los registros, ya que los duplicados no afectan el análisis.",
+    "C. Consultar con el Data Steward antes de eliminar los duplicados."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Eliminar los **registros duplicados** en la fase de **transformación** es fundamental para garantizar que los datos sean precisos y consistentes antes de ser cargados en el sistema final."
+},
+{
+  "id": "etl-103",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL en la DIAN ha sido configurado para actualizar los datos de contribuyentes de manera diaria. ¿Cómo puede el Gestor II asegurarse de que los datos se carguen correctamente sin afectar el rendimiento del sistema?",
+  "opciones": [
+    "A. Programar la carga de datos durante las horas de menor actividad del sistema.",
+    "B. Realizar la carga de datos sin horarios específicos para agilizar el proceso.",
+    "C. Cargar todos los datos de una vez sin dividir en intervalos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **programación de cargas en horarios de menor actividad** garantiza que el sistema tenga suficiente capacidad para procesar los datos sin afectar el rendimiento ni interrumpir otros procesos críticos."
+},
+{
+  "id": "etl-104",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En el proceso de **extracción de datos** para la DIAN, se detecta que una fuente de datos externa no está disponible temporalmente. ¿Qué debería hacer el Gestor II?",
+  "opciones": [
+    "A. Realizar una **extracción de datos** desde una fuente secundaria o usar datos almacenados en caché.",
+    "B. Aplazar el proceso hasta que la fuente de datos externa esté disponible.",
+    "C. Eliminar la fuente externa y buscar un nuevo proveedor de datos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Cuando una fuente de datos externa no está disponible, es posible recurrir a fuentes secundarias o utilizar **datos en caché** como medida temporal, garantizando la continuidad del proceso."
+},
+{
+  "id": "etl-105",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Al realizar un proceso ETL para integrar datos de contribuyentes, se presentan errores en la transformación debido a registros inconsistentes. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Validar y limpiar los registros antes de la transformación para corregir los errores.",
+    "B. Ignorar los errores y continuar con el proceso para cumplir con los plazos.",
+    "C. Eliminar los registros problemáticos y continuar sin ellos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **validación y limpieza de los registros** es un paso crucial durante la fase de **transformación** para asegurar que los datos sean consistentes y precisos antes de ser cargados en el sistema."
+},
+{
+  "id": "etl-106",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL, el Gestor II detecta que el sistema de carga no está procesando correctamente los datos por errores en los registros de fecha. ¿Qué acción debe tomar?",
+  "opciones": [
+    "A. Corregir el formato de fecha en la fase de transformación para que los registros sean válidos.",
+    "B. Proceder con la carga y corregir los errores después de la carga.",
+    "C. Dejar los datos tal como están para evitar retrasos en el proceso."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El formato de fecha debe corregirse en la fase de **transformación** para asegurar que los datos sean consistentes y estén correctamente formateados antes de la carga."
+},
+{
+  "id": "etl-107",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de carga, los datos de un contribuyente están siendo duplicados debido a un error en la configuración. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Revisar y corregir las reglas de carga para evitar la duplicación de registros.",
+    "B. Cargar los datos de todos modos, ya que los duplicados no afectan el análisis.",
+    "C. Eliminar todos los registros duplicados después de completar la carga."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El Gestor II debe revisar y corregir las **reglas de carga** para garantizar que no se produzcan duplicados, lo que asegura la calidad de los datos antes de ser almacenados."
+},
+{
+  "id": "etl-108",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un informe de facturación electrónica contiene datos con formatos incorrectos debido a un error en el proceso de transformación. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Ajustar el proceso de transformación para que los datos sean convertidos al formato correcto.",
+    "B. Permitir que el sistema genere el informe con los datos incorrectos.",
+    "C. Reportar el error al proveedor del sistema y esperar la corrección."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial que el **proceso de transformación** corrija los datos antes de que sean utilizados en un informe oficial. Asegurar que los datos estén en el formato correcto es vital para la validez del informe."
+},
+{
+  "id": "etl-109",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL está fallando debido a un error en la **extracción** de datos desde una fuente externa. ¿Qué debe hacer el Gestor II en este caso?",
+  "opciones": [
+    "A. Investigar y solucionar el problema de conexión a la fuente de datos antes de continuar con el proceso.",
+    "B. Proceder con los datos disponibles de otras fuentes sin esperar la corrección.",
+    "C. Cancelar el proceso ETL y reprogramarlo para otro día."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es crucial que el problema de **extracción** se solucione antes de continuar con las siguientes fases, ya que los datos extraídos deben ser válidos para que el proceso ETL sea efectivo."
+},
+{
+  "id": "etl-110",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Al implementar una solución ETL para datos de contribuyentes, el sistema está tomando demasiado tiempo en la fase de transformación. ¿Qué medida puede tomar el Gestor II para mejorar la eficiencia?",
+  "opciones": [
+    "A. Optimizar las reglas de transformación utilizando **expresiones más simples** y aplicando transformaciones en **lotes pequeños**.",
+    "B. Permitir que el proceso de transformación se ejecute sin cambios y aumentar el número de servidores.",
+    "C. Realizar la transformación de manera manual para reducir el tiempo de espera."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **optimización** de las reglas de transformación y el uso de **procesos en lotes pequeños** son prácticas recomendadas para mejorar el rendimiento del proceso ETL sin comprometer la calidad de los datos."
+},
+{
+  "id": "etl-111",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El Gestor II detecta que el proceso ETL está generando registros incompletos debido a una mala configuración en la fase de carga. ¿Qué debe hacer?",
+  "opciones": [
+    "A. Revisar y ajustar la configuración de la carga para asegurar que todos los registros sean cargados correctamente.",
+    "B. Continuar con la carga y corregir los registros después de completar el proceso.",
+    "C. Eliminar los registros incompletos y proceder con la carga de los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **ajuste en la configuración de la carga** es esencial para garantizar que todos los registros se carguen correctamente. Evitar que los datos incompletos lleguen al sistema es una prioridad."
+},
+
+{
+  "id": "etl-112",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL, se ha detectado que los datos extraídos de una base de datos externa contienen errores de formato. ¿Qué acción debe tomar el Gestor II durante la fase de transformación?",
+  "opciones": [
+    "A. Ignorar los errores y proceder con la carga de los datos en el sistema.",
+    "B. Validar y limpiar los datos para corregir los errores de formato antes de cargarlos.",
+    "C. Eliminar los registros con errores y reemplazarlos con datos manualmente corregidos."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "Durante la fase de **transformación**, se deben aplicar reglas de validación y limpieza para asegurar que los datos sean consistentes y estén en el formato correcto antes de ser cargados en el sistema."
+},
+
+{
+  "id": "etl-113",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante un proceso de **ETL** para la integración de datos de contribuyentes de diferentes bases de datos, un error inesperado ocurre en la fase de transformación. ¿Qué acción debe tomar el Gestor II en esta situación?",
+  "opciones": [
+    "A. Revisar los registros de error, corregir la transformación y reintentar el proceso sin hacer una auditoría completa.",
+    "B. Detener el proceso, investigar la causa raíz del error en la transformación, y luego reintentar el proceso con un plan de contingencia.",
+    "C. Continuar con el proceso sin revisar los errores y hacer las correcciones cuando los datos sean reportados."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "Cuando ocurre un error en la fase de transformación, el **Gestor II** debe investigar el origen del problema y aplicar un plan de **contingencia**, asegurando que la transformación se realice correctamente antes de continuar con el proceso de carga."
+},
+{
+  "id": "etl-114",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un equipo está ejecutando un proceso ETL en la DIAN que involucra la carga de millones de registros. El tiempo de carga es excesivo. ¿Qué estrategia debe aplicarse para mejorar la eficiencia del proceso?",
+  "opciones": [
+    "A. Dividir el proceso en **lotes más pequeños** y cargar los datos de manera incremental para evitar la sobrecarga del sistema.",
+    "B. Optimizar los procesos de transformación utilizando más memoria y procesadores en el servidor.",
+    "C. Cargar todos los registros de una sola vez, sin dividirlos en bloques, para agilizar la ejecución."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **carga incremental** en **lotes pequeños** ayuda a **distribuir la carga** en el tiempo, mejorando la **eficiencia del sistema** y reduciendo el impacto en el rendimiento durante el proceso de carga masiva."
+},
+{
+  "id": "etl-115",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la **extracción de datos** para un proceso de facturación electrónica, se presenta un error en la conexión con la base de datos externa. ¿Qué debe hacer el Gestor II para manejar esta situación de forma adecuada?",
+  "opciones": [
+    "A. Ignorar el error y seguir con la extracción de datos desde la fuente interna.",
+    "B. Detener el proceso, investigar el error de conexión y aplicar una solución de contingencia para continuar con la extracción de datos.",
+    "C. Continuar la extracción manualmente sin consultar a los responsables de la base de datos."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "El **Gestor II** debe asegurarse de que el proceso de **extracción** se realice correctamente, por lo que debe investigar y solucionar el error de conexión, aplicando una **solución de contingencia** antes de proceder con el proceso."
+},
+{
+  "id": "etl-116",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "La DIAN está implementando un proceso ETL para integrar datos de contribuyentes con diferentes formatos. Durante la fase de transformación, se detecta que algunos datos no cumplen con las reglas de validación. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Descartar los registros con datos inválidos y proceder con el resto.",
+    "B. Corregir los datos inválidos durante la transformación para cumplir con las reglas de calidad antes de cargarlos.",
+    "C. Permitir que los datos invalidos se carguen y hacer las correcciones después de la carga."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "Durante la fase de **transformación**, es fundamental **validar y corregir los datos** para asegurar que sean consistentes con las **reglas de calidad** antes de proceder con la carga final, evitando problemas posteriores."
+},
+{
+  "id": "etl-117",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL en la DIAN está generando datos incorrectos debido a la **falta de validación** en los pasos de **transformación**. ¿Qué enfoque debe adoptarse para solucionar este problema?",
+  "opciones": [
+    "A. Modificar los datos directamente en el repositorio de destino para corregir los errores.",
+    "B. Implementar reglas de **validación de calidad de datos** durante la fase de transformación para asegurar que los datos cumplan con los requisitos del negocio.",
+    "C. Ignorar los errores de transformación si los datos no afectan significativamente los informes."
+  ],
+  "respuesta_correcta_index": 1,
+  "explicacion": "Es esencial implementar reglas de **validación de calidad de datos** en la fase de **transformación** para asegurar que los datos sean precisos y útiles antes de ser cargados en el sistema de destino."
+},
+{
+  "id": "etl-118",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un sistema de **ETL** está extrayendo datos de múltiples fuentes externas. ¿Qué debe hacer el Gestor II para garantizar que los datos extraídos sean coherentes y completos?",
+  "opciones": [
+    "A. Aplicar un proceso de **limpieza y normalización** de datos en la fase de transformación para asegurar consistencia.",
+    "B. Extraer todos los datos sin aplicar ninguna validación o limpieza.",
+    "C. Cargar los datos tal como se extraen sin ningún procesamiento previo."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El proceso de **limpieza y normalización** durante la **transformación** asegura que los datos sean consistentes y estén listos para su análisis o carga en el sistema final."
+},
+{
+  "id": "etl-119",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de **carga de datos** en un **Data Warehouse** de la DIAN, un error impide que los datos se carguen correctamente en el repositorio. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Revisar los registros de error, corregir el problema y reintentar la carga de los datos.",
+    "B. Ignorar los errores y proceder con la carga de los datos sin cambios.",
+    "C. Cancelar el proceso y reprogramarlo sin analizar el origen del error."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe revisar los registros de error, identificar la causa raíz del problema y aplicar la corrección antes de intentar cargar nuevamente los datos, garantizando la calidad y consistencia del proceso."
+},
+{
+  "id": "etl-120",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL para la **integración de datos aduaneros**, el **error de formato** impide que los datos sean cargados correctamente. ¿Qué debería hacer el Gestor II?",
+  "opciones": [
+    "A. Corregir el formato de los datos en la fase de **transformación** para asegurar que cumplan con los requisitos del sistema.",
+    "B. Cargar los datos en el sistema sin corregir el formato y realizar ajustes posteriores.",
+    "C. Eliminar los registros problemáticos y cargar los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe corregir los errores de **formato** durante la fase de **transformación**, garantizando que los datos sean compatibles con el sistema de destino antes de ser cargados."
+},
+{
+  "id": "etl-121",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL en la DIAN presenta inconsistencias en los **datos transformados** debido a cambios en la estructura de la fuente de datos original. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Revisar la estructura de la fuente de datos y ajustar las reglas de transformación para manejar los cambios.",
+    "B. Ignorar los cambios en la fuente y continuar con el proceso de transformación sin modificaciones.",
+    "C. Detener el proceso y esperar a que se resuelvan los problemas con la fuente de datos original."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Cuando hay cambios en la **estructura de la fuente de datos**, es necesario revisar y **ajustar las reglas de transformación** para garantizar que los datos sean procesados correctamente."
+},
+{
+  "id": "etl-122",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "La DIAN está utilizando una herramienta ETL para cargar grandes volúmenes de datos. Para **optimizar el rendimiento**, ¿qué estrategia debería aplicar el Gestor II durante la fase de carga?",
+  "opciones": [
+    "A. Utilizar **carga incremental** en lugar de cargar todos los datos de una vez para reducir la carga en el sistema.",
+    "B. Cargar todos los datos a la vez para acelerar el proceso.",
+    "C. Cargar los datos sin validación para evitar retrasos en el proceso."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **carga incremental** reduce el impacto en el sistema al cargar solo los datos nuevos o modificados, lo que mejora el rendimiento y minimiza los tiempos de inactividad."
+},
+{
+  "id": "etl-123",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL, el Gestor II nota que algunos datos de contribuyentes no cumplen con las **normas fiscales** durante la fase de transformación. ¿Qué debe hacer?",
+  "opciones": [
+    "A. Ajustar los datos para que cumplan con las **normas fiscales** antes de cargarlos en el sistema.",
+    "B. Cargar los datos sin hacer modificaciones, ya que no afectarán el análisis.",
+    "C. Eliminar los registros que no cumplan con las normas y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es necesario que los **datos fiscales** sean transformados para cumplir con las **normas fiscales** antes de ser cargados, garantizando su validez para el análisis y el cumplimiento de la normativa."
+},
+{
+  "id": "etl-124",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL, la transformación de datos de un **sistema legado** a un nuevo **Data Warehouse** está resultando en un bajo rendimiento. ¿Qué medida debería tomar el Gestor II?",
+  "opciones": [
+    "A. Optimizar las consultas y aplicar **transformaciones paralelas** para mejorar el rendimiento.",
+    "B. Continuar con las transformaciones actuales sin realizar cambios en el proceso.",
+    "C. Cambiar el sistema de destino y trabajar directamente con los datos sin transformarlos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **optimización de consultas** y la **transformación paralela** son buenas prácticas para mejorar el rendimiento en procesos ETL, especialmente cuando se manejan grandes volúmenes de datos provenientes de sistemas antiguos."
+},
+{
+  "id": "etl-125",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso ETL, se han detectado problemas con los **datos incompletos** en la fuente externa. ¿Qué debe hacer el Gestor II en la fase de transformación?",
+  "opciones": [
+    "A. Aplicar reglas de **completitud de datos** para llenar los valores faltantes o eliminar los registros incompletos.",
+    "B. Dejar los datos incompletos tal como están y cargarlos para evitar retrasos.",
+    "C. Ignorar los datos incompletos si no afectan los resultados finales del análisis."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Durante la fase de **transformación**, es importante aplicar **reglas de completitud** para garantizar que los datos sean completos y aptos para su análisis, o eliminarlos si son irreparables."
+},
+
+{
+  "id": "etl-126",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL de integración de datos tributarios, se detecta que algunos datos están siendo transformados incorrectamente debido a un cambio en el formato de la fuente de datos. ¿Qué debe hacer el Gestor II para resolver el problema?",
+  "opciones": [
+    "A. Revisar y actualizar las reglas de transformación para que se alineen con el nuevo formato de la fuente de datos.",
+    "B. Cargar los datos sin realizar ninguna transformación para no retrasar el proceso.",
+    "C. Eliminar los registros problemáticos y proceder con el resto de los datos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial revisar y **actualizar las reglas de transformación** para adaptarse al nuevo formato de la fuente de datos, garantizando que todos los datos sean transformados correctamente antes de la carga."
+},
+{
+  "id": "etl-127",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la fase de **extracción** de un proceso ETL para cargar datos fiscales, el sistema se enfrenta a problemas de conexión con una fuente externa. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Verificar la conexión y utilizar una fuente secundaria mientras se soluciona el problema de conexión.",
+    "B. Continuar el proceso sin extraer datos de la fuente externa y proceder con las fuentes internas.",
+    "C. Suspender todo el proceso hasta que la fuente externa esté disponible nuevamente."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Si se enfrenta a problemas de conexión con una fuente externa, el **Gestor II** debe buscar una **fuente secundaria** para asegurar que el proceso de extracción continúe sin interrupciones."
+},
+{
+  "id": "etl-128",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Al utilizar herramientas ETL para procesar datos aduaneros, el Gestor II detecta que el sistema está procesando de forma ineficiente debido a un volumen elevado de registros. ¿Qué estrategia puede aplicar para mejorar el rendimiento?",
+  "opciones": [
+    "A. Dividir el proceso en **lotes pequeños** y cargarlos de manera incremental para evitar sobrecargar el sistema.",
+    "B. Cargar todos los datos al mismo tiempo para aprovechar al máximo la capacidad del sistema.",
+    "C. Eliminar los registros con menores impactos y proceder con los más relevantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **carga incremental** en **lotes pequeños** ayuda a **optimizar el rendimiento** del sistema al procesar datos de manera más eficiente, evitando la sobrecarga del sistema durante el proceso de carga masiva."
+},
+{
+  "id": "etl-129",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso de ETL está extrayendo datos de contribuyentes de múltiples sistemas. El Gestor II nota que algunos de los registros contienen **valores atípicos** durante la transformación. ¿Qué acción debe tomar?",
+  "opciones": [
+    "A. Aplicar **reglas de validación** para identificar y corregir o eliminar los valores atípicos antes de cargarlos.",
+    "B. Dejar los valores atípicos tal como están, ya que no afectan el análisis.",
+    "C. Ignorar los valores atípicos y continuar con el proceso de carga."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es fundamental aplicar **reglas de validación** para identificar y corregir los **valores atípicos** durante la fase de transformación, asegurando que los datos cargados sean precisos y consistentes."
+},
+{
+  "id": "etl-130",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de carga en un **Data Warehouse** de la DIAN, se detectan registros duplicados. ¿Qué estrategia debe aplicar el Gestor II para evitar que los duplicados afecten la calidad de los datos?",
+  "opciones": [
+    "A. Utilizar procesos de **deduplicación** para eliminar los registros duplicados durante la carga.",
+    "B. Permitir que los duplicados se carguen y realizar ajustes después.",
+    "C. Ignorar los duplicados, ya que no impactan significativamente el análisis final."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **deduplicación** es esencial para garantizar que los datos cargados sean **únicos** y no afecten la integridad del análisis y los informes en el **Data Warehouse**."
+},
+{
+  "id": "etl-131",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En el proceso ETL, el sistema de carga no está procesando correctamente los datos debido a un **error en el mapeo de campos** entre las fuentes de datos. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Revisar y corregir el **mapeo de campos** entre las fuentes y el sistema de destino para asegurar que la carga se realice correctamente.",
+    "B. Proceder con la carga y corregir el mapeo de campos solo si se presentan errores durante la carga.",
+    "C. Eliminar el proceso de mapeo y cargar los datos sin transformarlos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **mapeo de campos** es crucial para asegurar que los datos de diferentes fuentes se alineen correctamente en el sistema de destino. Es necesario corregir cualquier error de mapeo antes de continuar con el proceso."
+},
+{
+  "id": "etl-132",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "La DIAN está utilizando un proceso ETL para integrar datos de facturación electrónica. El **tiempo de procesamiento** es más largo de lo esperado. ¿Qué estrategia puede implementar el Gestor II para mejorar la eficiencia?",
+  "opciones": [
+    "A. Optimizar las transformaciones y reducir la complejidad de las reglas de negocio aplicadas a los datos.",
+    "B. Incrementar el número de servidores para acelerar el proceso, sin revisar las transformaciones.",
+    "C. Dividir el proceso en lotes pequeños, pero sin revisar las transformaciones."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **optimización de las transformaciones** y la **reducción de la complejidad** de las reglas de negocio aplicadas a los datos puede mejorar el rendimiento del proceso ETL, reduciendo significativamente el tiempo de procesamiento."
+},
+{
+  "id": "etl-133",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la **extracción de datos** de una base de datos externa para un proceso de ETL en la DIAN, se detecta que los datos están incompletos. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Consultar con el responsable de la base de datos externa para corregir la falta de datos antes de continuar con el proceso.",
+    "B. Cargar los datos incompletos de todas formas para evitar demoras en el proceso.",
+    "C. Eliminar los datos incompletos y proceder solo con los registros completos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Cuando se detecta que los datos están incompletos, es esencial **consultar con la fuente de datos** externa para asegurarse de que los datos completos sean extraídos antes de proceder con el proceso ETL."
+},
+{
+  "id": "etl-134",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "La DIAN ha implementado un sistema ETL para cargar datos históricos de contribuyentes en un **Data Warehouse**. ¿Qué estrategia debe seguir el Gestor II para garantizar que los datos históricos sean consistentes con los datos actuales?",
+  "opciones": [
+    "A. Comparar los datos históricos con los datos actuales y aplicar transformaciones para asegurar su consistencia.",
+    "B. Cargar los datos históricos sin realizar ninguna transformación, ya que no afectan el análisis.",
+    "C. Eliminar los datos históricos y reemplazarlos con los registros actuales."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial **comparar los datos históricos** con los datos actuales y aplicar transformaciones para garantizar que todos los datos sean consistentes antes de ser cargados en el **Data Warehouse**."
+},
+{
+  "id": "etl-135",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante un proceso ETL, se presentan **errores en la validación** de los datos transformados. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Revisar las reglas de validación y ajustar los datos transformados para que cumplan con los criterios establecidos.",
+    "B. Cargar los datos sin modificar los errores de validación para no retrasar el proceso.",
+    "C. Descartar los datos que no pasen la validación y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe revisar las **reglas de validación** y corregir los datos transformados para asegurar que cumplan con los criterios establecidos antes de la carga, garantizando la calidad de los datos."
+},
+{
+  "id": "etl-136",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El sistema ETL de la DIAN presenta problemas de **sincronización de datos** entre varias fuentes de información. ¿Qué debe hacer el Gestor II para resolver este problema?",
+  "opciones": [
+    "A. Implementar un sistema de **sincronización en tiempo real** entre todas las fuentes de datos.",
+    "B. Aumentar la capacidad de almacenamiento sin revisar el proceso de sincronización.",
+    "C. Cargar los datos con retraso y hacer las correcciones más tarde."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Para resolver problemas de **sincronización**, se debe implementar un sistema de **sincronización en tiempo real** que garantice que los datos de todas las fuentes estén alineados y sean consistentes en todo momento."
+},
+{
+  "id": "etl-137",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Al realizar una **carga de datos** en el **Data Warehouse**, el Gestor II se da cuenta de que los registros están **incompletos**. ¿Qué debe hacer en este caso?",
+  "opciones": [
+    "A. Detener el proceso, revisar la fuente de datos y aplicar una corrección en la carga antes de proceder.",
+    "B. Cargar los registros incompletos y realizar una corrección posterior.",
+    "C. Eliminar los registros incompletos y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El proceso de **carga de datos** no debe continuar hasta que los **registros incompletos** sean revisados y corregidos, garantizando que los datos cargados sean consistentes y completos."
+},
+{
+  "id": "etl-138",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la fase de transformación, los **datos de contribuyentes** se encuentran con múltiples formatos de fecha. ¿Qué estrategia debe aplicar el Gestor II?",
+  "opciones": [
+    "A. Normalizar los **formatos de fecha** para que todos sean consistentes y fáciles de procesar.",
+    "B. Dejar los formatos de fecha tal como están y procesarlos como están.",
+    "C. Eliminar los campos de fecha y proceder con los datos sin ellos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es fundamental **normalizar los formatos de fecha** durante la **transformación** para que los datos sean consistentes y puedan ser procesados adecuadamente en el sistema de destino."
+},
+{
+  "id": "etl-139",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL, se presenta un **error de mapeo de datos** debido a una actualización en la estructura de los datos de origen. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Revisar y ajustar el mapeo de datos para alinear la nueva estructura con el sistema de destino.",
+    "B. Ignorar el error y continuar con el proceso sin realizar ajustes.",
+    "C. Eliminar los datos problemáticos y proceder con el resto."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial revisar y **ajustar el mapeo de datos** para garantizar que la nueva estructura de los datos de origen se alinee correctamente con el sistema de destino, evitando errores en el procesamiento."
+},
+{
+  "id": "etl-140",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL de **facturación electrónica**, el sistema muestra un **error de integración de datos** debido a una incompatibilidad de formatos. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Implementar **transformaciones adicionales** para convertir los datos al formato estándar requerido por el sistema.",
+    "B. Cargar los datos tal cual están y dejar que el sistema realice las correcciones automáticas.",
+    "C. Eliminar los registros con formato incompatible y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **transformación de datos** es esencial para garantizar que todos los registros sean convertidos a un formato compatible antes de ser cargados en el sistema de facturación electrónica."
+},
+
+{
+  "id": "etl-141",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante la **extracción de datos** de una base de datos externa para la DIAN, el sistema está teniendo problemas de rendimiento. ¿Qué debe hacer el Gestor II para solucionar este problema?",
+  "opciones": [
+    "A. Optimizar las consultas de extracción para seleccionar solo los datos relevantes y mejorar el rendimiento.",
+    "B. Ignorar el problema de rendimiento y continuar con la extracción sin cambios.",
+    "C. Realizar la extracción fuera de horas pico, sin ajustar la consulta."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Para mejorar el **rendimiento de la extracción**, es necesario optimizar las consultas y seleccionar solo los datos relevantes, lo que evitará sobrecargar el sistema."
+},
+{
+  "id": "etl-142",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL en la DIAN está extrayendo datos de varias fuentes, pero los datos de algunos contribuyentes no coinciden con los registros originales. ¿Qué debe hacer el Gestor II durante la fase de transformación?",
+  "opciones": [
+    "A. Validar los registros problemáticos, corregir los datos y aplicar reglas de calidad antes de la carga.",
+    "B. Permitir que los datos erróneos sean cargados y realizar las correcciones después.",
+    "C. Eliminar los registros erróneos y proceder con los registros válidos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Durante la fase de **transformación**, el Gestor II debe **validar y corregir** los datos antes de la carga para asegurar que la calidad de los registros sea adecuada y se ajusten a los estándares establecidos."
+},
+{
+  "id": "etl-143",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL, los datos de facturación electrónica contienen **valores inconsistentes** debido a cambios en el formato de fecha. ¿Qué debe hacer el Gestor II en la fase de transformación?",
+  "opciones": [
+    "A. Normalizar los **formatos de fecha** y corregir los valores inconsistentes para asegurar la coherencia en los datos.",
+    "B. Dejar los valores inconsistentes tal como están y proceder con la carga.",
+    "C. Eliminar los registros con valores inconsistentes y proceder solo con los válidos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe **normalizar** los datos para que todos los valores de fecha sean consistentes, lo que garantiza que los datos sean procesados y analizados correctamente en las etapas siguientes."
+},
+{
+  "id": "etl-144",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El Gestor II está implementando un proceso de **ETL** para integrar datos de contribuyentes. Sin embargo, los registros están siendo **duplicados** durante la transformación. ¿Qué acción debe tomar?",
+  "opciones": [
+    "A. Implementar una **deduplicación** de los datos durante la fase de transformación para evitar duplicados.",
+    "B. Permitir que los registros duplicados sean cargados y corregirlos después de la carga.",
+    "C. Ignorar los duplicados, ya que no afectan significativamente el análisis."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **deduplicación** durante la fase de transformación es esencial para garantizar que los datos cargados sean **únicos** y no afecten la integridad de los informes o análisis posteriores."
+},
+{
+  "id": "etl-145",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL de integración de datos tributarios, un error se presenta durante la fase de transformación debido a una incompatibilidad de formato entre las fuentes de datos. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Ajustar las reglas de transformación para alinear los formatos de datos y evitar inconsistencias.",
+    "B. Cargar los datos tal como están y realizar ajustes en los informes posteriores.",
+    "C. Detener el proceso y esperar que la fuente de datos original realice las modificaciones."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Cuando se detecta una **incompatibilidad de formato**, el Gestor II debe **ajustar las reglas de transformación** para que los datos sean consistentes y compatibles con el sistema de destino."
+},
+{
+  "id": "etl-146",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL está tardando demasiado tiempo en la fase de carga de datos debido a un volumen elevado de registros. ¿Qué estrategia debería aplicar el Gestor II para mejorar el rendimiento?",
+  "opciones": [
+    "A. Implementar **carga incremental** para reducir el volumen de datos procesados en cada ciclo.",
+    "B. Aumentar el número de servidores sin cambiar la estrategia de carga de datos.",
+    "C. Realizar la carga de datos en un solo ciclo para aprovechar al máximo la capacidad del sistema."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **carga incremental** permite procesar los datos en **lotes más pequeños**, lo que mejora el **rendimiento** y evita sobrecargar el sistema durante la fase de carga."
+},
+{
+  "id": "etl-147",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL, se presentan problemas de **conformidad de datos** entre diferentes fuentes. ¿Qué acción debe tomar el Gestor II en la fase de transformación?",
+  "opciones": [
+    "A. Definir y aplicar **reglas de calidad** para asegurar que los datos sean consistentes y conformes entre todas las fuentes.",
+    "B. Continuar con el proceso sin aplicar reglas de validación y transformar los datos directamente.",
+    "C. Eliminar los datos que no cumplan con las reglas de calidad y proceder con el resto."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Para garantizar la **conformidad de los datos**, es esencial aplicar **reglas de calidad** durante la fase de **transformación**, lo que asegura que los datos sean coherentes y válidos antes de su carga."
+},
+{
+  "id": "etl-148",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El Gestor II está configurando un proceso ETL para cargar los **registros de facturación electrónica**. Los datos contienen valores **nulos** en ciertos campos. ¿Qué debe hacer el Gestor II durante la transformación?",
+  "opciones": [
+    "A. Aplicar una **regla de tratamiento de valores nulos** para reemplazar o excluir los registros incompletos.",
+    "B. Dejar los valores nulos tal como están y cargarlos sin modificaciones.",
+    "C. Ignorar los registros con valores nulos y continuar con los registros completos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es necesario aplicar una **regla de tratamiento de valores nulos** en la fase de **transformación** para asegurar que los registros incompletos no afecten la calidad de los datos procesados."
+},
+{
+  "id": "etl-149",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de **transformación**, se presentan discrepancias entre los datos extraídos de varias fuentes. ¿Qué debe hacer el Gestor II para garantizar que los datos sean coherentes?",
+  "opciones": [
+    "A. Aplicar **reglas de negocio** para unificar los datos y resolver las discrepancias.",
+    "B. Ignorar las discrepancias y continuar con la carga de los datos tal como están.",
+    "C. Eliminar los datos que no sean consistentes con las fuentes principales."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Las **reglas de negocio** son esenciales durante la **transformación** para resolver las discrepancias y garantizar que los datos sean consistentes y coherentes antes de ser cargados en el sistema de destino."
+},
+{
+  "id": "etl-150",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL, los datos de contribuyentes no están siendo procesados de manera eficiente debido a un alto volumen de registros en la fase de **extracción**. ¿Qué estrategia debe aplicar el Gestor II?",
+  "opciones": [
+    "A. Optimizar las consultas de extracción para limitar la cantidad de datos extraídos a los necesarios.",
+    "B. Extraer todos los registros de una vez sin aplicar ningún filtro para acelerar el proceso.",
+    "C. Cargar los datos de forma paralela, dividiendo el proceso en varias instancias de carga."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **optimización de las consultas de extracción** para **extraer solo los datos necesarios** mejora la eficiencia del proceso y reduce el volumen de datos innecesarios que podrían ralentizar el proceso."
+},
+ {
+    "id": "etl-151",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En la DIAN, durante la extracción de datos para un reporte de fiscalización, falla la conexión con el sistema RUES. ¿Qué acción prioriza el cumplimiento de la Resolución 019 de 2016?",
+    "opciones": [
+      "A. Reintentar la conexión automáticamente con backoff exponencial.",
+      "B. Registrar el error en logs con timestamp y notificar al área de TI.",
+      "C. Omitir la fuente de datos y continuar con otras extracciones."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Resolución 019 exige registro detallado de fallos (incluyendo timestamps) para auditoría. El reintento automático sin supervisión podría violar controles de seguridad."
+  },
+  {
+    "id": "etl-152",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al transformar datos de facturas electrónicas (UBL 2.1), ¿qué validación es obligatoria según el Decreto 2242 de 2015?",
+    "opciones": [
+      "A. Verificar la estructura XML contra el esquema XSD oficial.",
+      "B. Convertir los montos a dólares usando TRM del día.",
+      "C. Eliminar campos opcionales para optimizar espacio."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Decreto 2242 exige validación estructural con XSD para garantizar cumplimiento técnico de facturas electrónicas. Las otras opciones no son obligatorias."
+  },
+  {
+    "id": "etl-153",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En un proceso ETL para cargar datos al RUT, se detectan NITs duplicados. ¿Qué acción asegura la calidad de datos según DAMA-DMBOK?",
+    "opciones": [
+      "A. Cargar todos los registros y marcar duplicados para revisión manual.",
+      "B. Aplicar reglas de deduplicación con matching exacto y fuzzy.",
+      "C. Eliminar aleatoriamente uno de los registros duplicados."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "DAMA-DMBOK recomienda técnicas de deduplicación (exacta y aproximada) para manejar inconsistencias, asegurando integridad en sistemas críticos como el RUT."
+  },
+  {
+    "id": "etl-154",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué herramienta ETL es más adecuada para integrar datos de SIISCOMEX con el sistema tributario, considerando flujos en tiempo real?",
+    "opciones": [
+      "A. Microsoft SSIS con ejecuciones programadas cada hora.",
+      "B. Apache Nifi con procesamiento streaming.",
+      "C. Talend Open Studio para ejecuciones nocturnas."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Apache Nifi es especializado en flujos de datos en tiempo real, clave para integrar sistemas transaccionales como SIISCOMEX con baja latencia."
+  },
+  {
+    "id": "etl-155",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al diseñar un proceso ETL para reportes a la UGPP, ¿qué técnica optimiza el rendimiento según el Manual de Seguridad de la DIAN?",
+    "opciones": [
+      "A. Particionar datos por regional y período fiscal.",
+      "B. Ejecutar transformaciones complejas en la base de destino.",
+      "C. Usar tablas temporales sin índices."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El particionamiento mejora performance en consultas frecuentes por regional/periodo, alineado con estándares DIAN para reportes masivos."
+  },
+  {
+    "id": "etl-156",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Durante la carga de datos a un almacén fiscal, falla el 5% de los registros. ¿Qué estrategia cumple con BCBS 239?",
+    "opciones": [
+      "A. Reintentar la carga fallida en modo no transaccional.",
+      "B. Aislar registros fallidos en zona de cuarentena para análisis.",
+      "C. Forzar la carga omitiendo validaciones."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "BCBS 239 exige trazabilidad de datos problemáticos. La cuarentena permite investigar causas sin corromper el almacén."
+  },
+  {
+    "id": "etl-157",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué componente de Talend es esencial para transformaciones que cumplan con UBL 2.1 en la DIAN?",
+    "opciones": [
+      "A. tMap con componentes XML/JSON.",
+      "B. tFileList para procesamiento por lotes.",
+      "C. tLogRow para depuración."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "tMap permite mapeo y validación de estructuras XML complejas como UBL 2.1, requerido por el Decreto 2242."
+  },
+  {
+    "id": "etl-158",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En un ETL para auditorías, ¿qué práctica viola la Ley 1581 de 2012?",
+    "opciones": [
+      "A. Encriptar datos personales durante la extracción.",
+      "B. Conservar datos depurados más allá del período legal.",
+      "C. Validar NITs contra el RUT oficial."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "La Ley 1581 exige eliminar datos personales una vez cumplido su propósito. Retenerlos sin justificación viola principios de minimización."
+  },
+  {
+    "id": "etl-159",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para monitorear un proceso ETL de facturación electrónica, ¿qué métrica es prioritaria según el Decreto 2242?",
+    "opciones": [
+      "A. Porcentaje de facturas validadas contra XSD.",
+      "B. Tiempo promedio de transformación por registro.",
+      "C. Número de hilos de ejecución en paralelo."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Decreto 2242 enfatiza validación estructural (XSD) como requisito legal para facturas electrónicas."
+  },
+  {
+    "id": "etl-160",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al integrar Informatica PowerCenter con el RUT, ¿qué configuración previene riesgos operacionales?",
+    "opciones": [
+      "A. Workflows con reinicio automático ante fallos.",
+      "B. Conexiones directas a producción sin staging.",
+      "C. Ejecuciones sin logs para mejorar rendimiento."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Los reinicios automáticos controlados (con límites) mitigan riesgos en sistemas críticos como el RUT, según BCBS 239."
+  },
+{
+    "id": "etl-161",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué técnica de extracción es óptima para datos de SIISCOMEX con volúmenes >1TB diarios?",
+    "opciones": [
+      "A. Extracción completa con truncate/insert.",
+      "B. CDC (Change Data Capture) basado en logs.",
+      "C. Consultas SELECT * sin filtros."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "CDC minimiza carga en sistemas fuente al capturar solo cambios, crítico para grandes volúmenes en entornos como SIISCOMEX."
+  },
+  {
+    "id": "etl-162",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En la DIAN, ¿qué regla de transformación es esencial para reportes a la UGPP?",
+    "opciones": [
+      "A. Unificación de formatos de fecha (YYYY-MM-DD).",
+      "B. Conversión de texto a mayúsculas.",
+      "C. Eliminación de campos numéricos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La UGPP exige estandarización de fechas para interoperabilidad. Las otras opciones no son relevantes para reportes."
+  },
+  {
+    "id": "etl-163",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué característica de Apache Nifi es clave para procesos ETL en tiempo real con la UGPP?",
+    "opciones": [
+      "A. Processor Groups para aislamiento de flujos.",
+      "B. Templates predefinidos para facturación.",
+      "C. Soporte nativo para UBL 2.1."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Processor Groups permiten orquestar flujos independientes (ej: datos laborales vs. tributarios), asegurando modularidad."
+  },
+  {
+    "id": "etl-164",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al cargar datos a un almacén fiscal, ¿qué estrategia cumple con ISO 27001?",
+    "opciones": [
+      "A. Carga masiva con permisos de root.",
+      "B. Transacciones atómicas con rollback ante fallos.",
+      "C. Deshabilitar logs para evitar sobrecarga."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "ISO 27001 requiere atomicidad y trazabilidad. El rollback garantiza integridad ante fallos."
+  },
+  {
+    "id": "etl-165",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Microsoft SSIS, ¿qué componente asegura calidad en datos del RUT?",
+    "opciones": [
+      "A. Data Profiling Task para análisis estadístico.",
+      "B. File System Task para mover archivos.",
+      "C. Execute SQL Task para consultas simples."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Data Profiling Task identifica anomalías (ej: NITs inválidos), clave para calidad en sistemas como el RUT."
+  },
+  {
+    "id": "etl-166",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué error en un proceso ETL viola el Manual de Seguridad de la DIAN?",
+    "opciones": [
+      "A. Logs detallados con información sensible sin encriptar.",
+      "B. Uso de staging areas para transformaciones.",
+      "C. Particionamiento por rangos de fechas."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El Manual exige encriptación de datos sensibles en logs. Las otras opciones son buenas prácticas."
+  },
+  {
+    "id": "etl-167",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para optimizar una transformación de facturas, ¿qué técnica es viable según DAMA-DMBOK?",
+    "opciones": [
+      "A. Paralelizar por lote de 100 facturas.",
+      "B. Procesar en un solo hilo secuencial.",
+      "C. Ignorar validaciones XSD por rendimiento."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "DAMA-DMBOK recomienda paralelismo controlado para equilibrio entre rendimiento y calidad."
+  },
+  {
+    "id": "etl-168",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Talend, ¿qué configuración previene pérdida de datos durante extracciones?",
+    "opciones": [
+      "A. tSetGlobalVar para almacenar en memoria.",
+      "B. tFileArchive para backup de inputs.",
+      "C. tWarn para notificar sin acciones."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "tFileArchive garantiza recuperabilidad ante fallos, requerido para procesos críticos en la DIAN."
+  },
+  {
+    "id": "etl-169",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué patrón de diseño ETL es óptimo para actualizar el RUT?",
+    "opciones": [
+      "A. Slowly Changing Dimension (SCD) Tipo 2.",
+      "B. Truncate-and-Insert completo.",
+      "C. Merge sin verificación de cambios."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "SCD Tipo 2 mantiene historial de cambios, esencial para trazabilidad en registros como el RUT."
+  },
+  {
+    "id": "etl-170",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Informatica, ¿qué objeto asegura reusabilidad en flujos ETL para facturación?",
+    "opciones": [
+      "A. Mapplets con reglas de validación UBL.",
+      "B. Sessions sin parámetros.",
+      "C. Workflows monolíticos."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Mapplets encapsulan lógica reusable (ej: validaciones UBL 2.1), clave para mantenimiento según Decreto 2242."
+  },
+
+  {
+    "id": "etl-171",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al diseñar un proceso ETL para integrar datos de comercio exterior en la DIAN, ¿qué técnica de particionamiento optimiza las consultas sobre 10+ años de datos históricos?",
+    "opciones": [
+      "A. Particionamiento por hash en columnas de texto.",
+      "B. Particionamiento por rango de fechas y código aduanero.",
+      "C. No particionar para mantener integridad referencial."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El particionamiento por rango de fechas y código aduanero permite pruning eficiente en consultas históricas, reduciendo I/O hasta en 70% para datasets masivos (CASO: SIISCOMEX)."
+  },
+  {
+    "id": "etl-172",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En un entorno hybrid cloud de la DIAN, ¿qué patrón de ingestión de datos cumple con el Manual de Seguridad para datos 'Secreto Fiscal'?",
+    "opciones": [
+      "A. Extracción directa desde on-premise a cloud sin staging.",
+      "B. Pipeline con encriptación AES-256 en tránsito y PGP en reposo.",
+      "C. Sync completo diario via FTP sin compresión."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "El Manual exige doble capa de encriptación (AES-256 para tránsito, PGP para reposo) cuando se manejan datos clasificados como 'Secreto Fiscal' en entornos híbridos."
+  },
+  {
+    "id": "etl-173",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para implementar CDC (Change Data Capture) en Oracle RAC de la DIAN con disponibilidad 24/7, ¿qué configuración minimiza impacto operacional?",
+    "opciones": [
+      "A. LogMiner con supplemental logging en PRIMARY KEY.",
+      "B. Triggers AFTER INSERT/UPDATE en tablas fuente.",
+      "C. Queries completas cada 5 minutos con diff algorítmico."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "LogMiner con supplemental logging tiene overhead <3% en RAC, mientras triggers afectan rendimiento transaccional. Las queries completas generan carga innecesaria."
+  },
+  {
+    "id": "etl-174",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al diseñar un data pipeline para análisis de evasión en IVA, ¿qué arquitectura soporta machine learning y cumple BCBS 239?",
+    "opciones": [
+      "A. Lambda Architecture con capa batch (Spark) y speed (Flink).",
+      "B. Kappa Architecture con stream processing único.",
+      "C. Monolito ETL con procesamiento por lotes."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Lambda Architecture satisface BCBS 239 al proveer: 1) Batch layer para datos históricos auditables, 2) Speed layer para detección en tiempo real con ML."
+  },
+  {
+    "id": "etl-175",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Talend, ¿qué diseño de tMap garantiza validación XSD de 500k facturas/segundo cumpliendo Decreto 2242?",
+    "opciones": [
+      "A. tMap con schema validation + parallelización en 20 threads.",
+      "B. tJavaRow con validación manual via regex.",
+      "C. tFileInputXML sin validación estructural."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "tMap con validación paralelizada logra throughput requerido (>500k docs/seg) manteniendo compliance con validación XSD exigida por Decreto 2242."
+  },
+  {
+    "id": "etl-176",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para datos maestros de contribuyentes distribuidos en 5 sistemas regionales, ¿qué estrategia asegura consistencia eventual?",
+    "opciones": [
+      "A. Patrón Event Sourcing con Kafka como cola backplane.",
+      "B. Réplicas snapshot cada 24 horas via SFTP.",
+      "C. Sincronización manual con hojas de cálculo."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Event Sourcing + Kafka garantiza consistencia eventual mediante flujo ordenado de eventos de cambio, crítico para sistemas distribuidos geográficamente."
+  },
+  {
+    "id": "etl-177",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Informatica PowerCenter, ¿qué configuración de workflow optimiza el procesamiento de 100M+ declaraciones de renta?",
+    "opciones": [
+      "A. Particionamiento dinámico + carga balanceada por nodo.",
+      "B. Ejecución secuencial en single thread.",
+      "C. Reintentos ilimitados sin backoff."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El particionamiento dinámico con balanceo reduce tiempo de procesamiento de 8 horas a <1h para volúmenes masivos (CASO: DIAN 2024)."
+  },
+  {
+    "id": "etl-178",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué técnica de anonymización en ETL cumple GDPR para datos de fiscalización, preservando utility analítica?",
+    "opciones": [
+      "A. Tokenización reversible con vault centralizado.",
+      "B. Enmascaramiento estático de todos los campos.",
+      "C. Eliminación de registros con datos personales."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La tokenización reversible (con vault restringido) permite re-identificación controlada mientras protege datos, balanceando compliance y utilidad."
+  },
+  {
+    "id": "etl-179",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para garantizar exactly-once semantics en carga a SIISCOMEX, ¿qué patrón implementar?",
+    "opciones": [
+      "A. Idempotent writes con claves naturales + transaction logs.",
+      "B. Inserts directos sin verificación de duplicados.",
+      "C. Batch updates sin transacciones."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Writes idempotentes + logs evitan duplicados por reprocesamiento, crítico en sistemas transaccionales como SIISCOMEX."
+  },
+  {
+    "id": "etl-180",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Apache Nifi, ¿qué processor group minimiza latencia en flujos de facturación electrónica?",
+    "opciones": [
+      "A. ExecuteSQL -> ConvertRecord -> PutDatabaseRecord.",
+      "B. GetFile -> TransformXML -> PutHDFS.",
+      "C. ListenHTTP -> EvaluateXPath -> PutKafka."
+    ],
+    "respuesta_correcta_index": 2,
+    "explicacion": "El flujo basado en HTTP/Kafka logra latencias <100ms para validación de facturas, vs >500ms en enfoques batch tradicionales."
+  },
+  {
+    "id": "etl-181",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Al implementar Slowly Changing Dimension (SCD) Tipo 4 para el RUT, ¿qué componente almacena histórico?",
+    "opciones": [
+      "A. Tabla de cambios (change table) separada.",
+      "B. Columnas adicionales en tabla principal.",
+      "C. Archivos CSV en el filesystem."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "SCD Tipo 4 usa tablas de cambios independientes para histórico, optimizando consultas sobre datos actuales (patrón implementado en RUT v3)."
+  },
+  {
+    "id": "etl-182",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para datos de UGPP con relaciones many-to-many complejas, ¿qué modelo en Talend preserva rendimiento?",
+    "opciones": [
+      "A. Esquema en estrella con tablas de hechos y dimensiones.",
+      "B. Tablas normalizadas en 5FN con joins múltiples.",
+      "C. JSON anidado en columnas VARCHAR."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "El modelo estrella simplifica queries analíticas sobre relaciones complejas, reduciendo joins en 60% vs normalización extrema (benchmarks DIAN 2024)."
+  },
+  {
+    "id": "etl-183",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué configuración de Spark optimiza ETL para 1TB de datos aduaneros diarios?",
+    "opciones": [
+      "A. 100 executors con 4 cores + 8GB RAM c/u.",
+      "B. Single executor con 500GB RAM.",
+      "C. Dynamic allocation sin límite de memoria."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La configuración distribuida (100x4c/8GB) balancea paralelismo y overhead de red, procesando 1TB en <2h (CASO: DIAN-SIISCOMEX)."
+  },
+  {
+    "id": "etl-184",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En SSIS, ¿qué diseño maneja adecuadamente late-arriving dimensions para datos tributarios?",
+    "opciones": [
+      "A. Lookup cache full con fallback a NULL.",
+      "B. Redirect rows to error output + reproceso.",
+      "C. Ignorar registros con dimensiones faltantes."
+    ],
+    "respuesta_correcta_index": 1,
+    "explicacion": "Redirección a error output permite recuperar late-arriving data vía reprocesos controlados, manteniendo integridad en el almacén dimensional."
+  },
+  {
+    "id": "etl-185",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para implementar data lineage en Informatica según BCBS 239, ¿qué metadata es obligatoria?",
+    "opciones": [
+      "A. Timestamp de transformación + usuario responsable.",
+      "B. Solo nombres de tablas origen/destino.",
+      "C. Estadísticas de rendimiento sin contexto."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "BCBS 239 exige trazabilidad completa: qué datos, cuándo se transformaron y por quién, para auditoría forense."
+  },
+  {
+    "id": "etl-186",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En un data lake de la DIAN, ¿qué formato de almacenamiento soporta schema evolution para auditorías históricas?",
+    "opciones": [
+      "A. Parquet con schema registry.",
+      "B. CSV con headers en primera fila.",
+      "C. Texto plano sin estructura."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Parquet + schema registry permite evolucionar esquemas manteniendo compatibilidad hacia atrás, crítico para auditorías multiperíodo."
+  },
+  {
+    "id": "etl-187",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para garantizar ACID en carga incremental a Oracle desde Spark, ¿qué patrón aplicar?",
+    "opciones": [
+      "A. MERGE statement con control de concurrencia.",
+      "B. INSERTS directos sin transacciones.",
+      "C. TRUNCATE + INSERT completo."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "MERGE (UPSERT) con isolation level READ COMMITTED asegura atomicidad y consistencia en actualizaciones incrementales."
+  },
+  {
+    "id": "etl-188",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "En Pentaho, ¿qué transformación minimiza memory overhead para joins entre 10M+ registros?",
+    "opciones": [
+      "A. Merge Join con datos ordenados previamente.",
+      "B. Database Join con queries anidadas.",
+      "C. Memory Group By sin índices."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Merge Join sobre inputs ordenados usa O(1) memoria vs O(n) en otros métodos, escalando a decenas de millones de registros."
+  },
+  {
+    "id": "etl-189",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "¿Qué técnica en Talend reduce 90% el tiempo de validación UBL 2.1?",
+    "opciones": [
+      "A. Compilación de esquemas XSD a código nativo.",
+      "B. Validación via tJavaFlex con expresiones regulares.",
+      "C. Procesamiento single-thread secuencial."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "La compilación de XSD a código nativo (via JAXB o similar) reduce latencia de validación de 50ms a <5ms por documento."
+  },
+  {
+    "id": "etl-190",
+    "tema": "Herramientas ETL (Extract, Transform, Load)",
+    "pregunta": "Para ETL en VPC de AWS con datos 'Secreto Fiscal', ¿qué arquitectura cumple ISO 27001?",
+    "opciones": [
+      "A. Glue Jobs con encriptación KMS + VPC endpoints.",
+      "B. EC2 sin grupos de seguridad habilitados.",
+      "C. Transferencia directa via Internet público."
+    ],
+    "respuesta_correcta_index": 0,
+    "explicacion": "Glue + KMS + VPC endpoints garantizan: 1) Encriptación en reposo/tránsito, 2) Aislamiento de red, 3) Logging centralizado - requisitos ISO 27001."
+  },
+{
+  "id": "etl-191",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL en la DIAN, se requiere transformar datos de contribuyentes que están distribuidos en múltiples sistemas. ¿Qué enfoque debe adoptar el Gestor II para garantizar la calidad y consistencia de los datos transformados?",
+  "opciones": [
+    "A. Definir reglas de **validación de calidad de datos** en la fase de transformación para asegurar que los datos sean consistentes antes de ser cargados.",
+    "B. Ignorar los problemas de calidad de los datos y proceder directamente con la carga.",
+    "C. Realizar las validaciones solo después de la carga, para reducir el tiempo de transformación."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es necesario aplicar **reglas de validación de calidad de datos** durante la fase de **transformación** para garantizar que los datos sean consistentes, completos y correctos antes de su carga en el sistema de destino."
+},
+{
+  "id": "etl-192",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante un proceso ETL para la integración de datos de contribuyentes, los datos extraídos contienen múltiples errores debido a un formato inconsistente. ¿Qué debe hacer el Gestor II en la fase de transformación para corregir este problema?",
+  "opciones": [
+    "A. Establecer reglas de **normalización y estandarización** para que todos los datos se ajusten a un formato uniforme.",
+    "B. Cargar los datos tal como están, sin realizar ninguna modificación.",
+    "C. Eliminar todos los registros con formatos incorrectos y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Durante la fase de **transformación**, el Gestor II debe aplicar reglas de **normalización y estandarización** para garantizar que todos los datos sean consistentes y compatibles con el formato requerido."
+},
+{
+  "id": "etl-193",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso de ETL para la integración de datos tributarios, se presentan datos **duplicados** debido a un error en la extracción. ¿Qué debe hacer el Gestor II durante la transformación?",
+  "opciones": [
+    "A. Aplicar una estrategia de **deduplicación** para eliminar los registros duplicados antes de cargar los datos.",
+    "B. Cargar todos los registros duplicados y hacer la deduplicación después de la carga.",
+    "C. Ignorar los duplicados, ya que no afectan el análisis de los datos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **deduplicación** durante la fase de **transformación** es fundamental para garantizar que los datos cargados sean **únicos** y no afecten la integridad de los informes o análisis posteriores."
+},
+{
+  "id": "etl-194",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En el proceso ETL de la DIAN, se cargan datos de contribuyentes de diferentes regiones. Algunos datos están incompletos debido a fallos en la extracción. ¿Qué acción debe tomar el Gestor II?",
+  "opciones": [
+    "A. Corregir los datos incompletos durante la fase de **transformación** y asegurar que la extracción se realice correctamente.",
+    "B. Cargar los datos incompletos y ajustarlos posteriormente en el **Data Warehouse**.",
+    "C. Eliminar los registros incompletos y proceder solo con los registros completos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe corregir los datos incompletos durante la fase de **transformación** antes de cargarlos en el sistema, garantizando la calidad y la consistencia de los datos."
+},
+{
+  "id": "etl-195",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El proceso ETL de la DIAN ha sido configurado para cargar datos de contribuyentes desde una base de datos externa. ¿Qué estrategia debe adoptar el Gestor II si se encuentra con un **error de conexión** durante la extracción?",
+  "opciones": [
+    "A. Intentar reconectar la base de datos y, si el error persiste, utilizar una fuente secundaria de datos.",
+    "B. Ignorar el error de conexión y proceder con la extracción de datos desde otras fuentes.",
+    "C. Cancelar el proceso ETL y esperar a que la base de datos externa se recupere."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **Gestor II** debe intentar resolver el problema de conexión y, si es necesario, utilizar una **fuente secundaria** para asegurar que el proceso ETL continúe sin interrupciones."
+},
+{
+  "id": "etl-196",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Un proceso ETL en la DIAN está cargando millones de registros en el **Data Warehouse**. La carga está tomando demasiado tiempo. ¿Qué estrategia debe aplicar el Gestor II para optimizar el proceso?",
+  "opciones": [
+    "A. Implementar un proceso de **carga incremental** para cargar solo los datos nuevos o actualizados.",
+    "B. Cargar todos los datos de una vez, sin segmentar el proceso.",
+    "C. Reducir el volumen de datos cargados y proceder solo con los datos más recientes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "La **carga incremental** es una estrategia eficiente que carga solo los datos nuevos o modificados, mejorando el rendimiento del sistema y reduciendo los tiempos de carga."
+},
+{
+  "id": "etl-197",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El proceso ETL en la DIAN requiere transformar datos de contribuyentes provenientes de diversas fuentes, pero las reglas de negocio han cambiado. ¿Qué debe hacer el Gestor II durante la fase de transformación?",
+  "opciones": [
+    "A. Actualizar las reglas de transformación para alinearlas con las nuevas reglas de negocio antes de cargar los datos.",
+    "B. Continuar con las reglas antiguas de transformación sin realizar ningún ajuste.",
+    "C. Cargar los datos sin transformarlos para no retrasar el proceso."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial **actualizar las reglas de transformación** para asegurarse de que los datos sean consistentes con las nuevas reglas de negocio, lo que garantizará la precisión y la relevancia de los datos cargados."
+},
+{
+  "id": "etl-198",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de **transformación** en un proyecto ETL, se identifica que los datos de contribuyentes contienen **valores nulos** en campos obligatorios. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Aplicar una **regla de reemplazo** para los valores nulos o eliminar los registros con valores nulos.",
+    "B. Ignorar los valores nulos y proceder con la carga de los datos.",
+    "C. Cargar los datos nulos como están y realizar la corrección después de la carga."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Los **valores nulos** en campos obligatorios deben ser **tratados** adecuadamente durante la fase de **transformación**, utilizando reglas de reemplazo o eliminando registros cuando sea necesario para asegurar la calidad de los datos."
+},
+{
+  "id": "etl-199",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El Gestor II observa que el proceso ETL de la DIAN está tomando mucho más tiempo de lo esperado. ¿Qué acción puede tomar para **optimizar el rendimiento** del proceso de transformación?",
+  "opciones": [
+    "A. Revisar las **reglas de transformación** y simplificarlas para mejorar la velocidad del proceso.",
+    "B. Añadir más servidores al proceso sin revisar las reglas de transformación.",
+    "C. Ignorar la optimización y esperar a que el sistema finalice el proceso de forma natural."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Simplificar y **optimizar las reglas de transformación** puede reducir significativamente los tiempos de procesamiento y mejorar la **eficiencia** del proceso ETL, especialmente cuando se manejan grandes volúmenes de datos."
+},
+{
+  "id": "etl-200",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "Durante el proceso de **carga de datos** en el **Data Warehouse**, el sistema genera errores debido a la **incompatibilidad de tipos de datos**. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Ajustar el **mapeo de datos** para garantizar que los tipos de datos sean compatibles entre las fuentes y el sistema de destino.",
+    "B. Proceder con la carga y corregir los errores de tipo de datos después de la carga.",
+    "C. Eliminar los registros con tipos de datos incompatibles y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **mapeo de datos** es fundamental para garantizar que los **tipos de datos** sean compatibles. El **Gestor II** debe revisar y corregir cualquier incompatibilidad antes de proceder con la carga final."
+},
+{
+  "id": "etl-201",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL de facturación electrónica, se detecta que algunos registros tienen **valores incorrectos** debido a una mala configuración en la transformación. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Corregir las **reglas de transformación** para que los valores sean procesados correctamente antes de la carga.",
+    "B. Continuar con el proceso sin modificar los valores incorrectos para no retrasar el proceso.",
+    "C. Eliminar los registros con valores incorrectos y proceder con los datos restantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es esencial **corregir las reglas de transformación** para asegurarse de que los valores sean **correctos** y compatibles con los requisitos del sistema antes de la carga."
+},
+{
+  "id": "etl-202",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "El Gestor II detecta que el proceso de **carga** está tardando más de lo esperado debido a un volumen elevado de datos. ¿Qué estrategia debe aplicar para mejorar la eficiencia?",
+  "opciones": [
+    "A. Implementar un **procesamiento por lotes** para distribuir la carga de datos y mejorar el rendimiento.",
+    "B. Aumentar el número de servidores para procesar más datos sin revisar el proceso de carga.",
+    "C. Reducir el volumen de datos cargados y proceder solo con los registros más importantes."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "El **procesamiento por lotes** permite cargar los datos en **bloques pequeños**, lo que mejora el rendimiento del sistema y evita sobrecargarlo durante la fase de carga."
+},
+{
+  "id": "etl-203",
+  "tema": "Herramientas ETL (Extract, Transform, Load)",
+  "pregunta": "En un proceso ETL para la DIAN, los datos extraídos contienen **valores erróneos** debido a una mala configuración en el sistema de origen. ¿Qué debe hacer el Gestor II?",
+  "opciones": [
+    "A. Ajustar el sistema de **extracción** para que solo se extraigan los datos correctos y completos.",
+    "B. Cargar los datos tal como están y corregir los valores erróneos después de la carga.",
+    "C. Eliminar los registros con valores erróneos y proceder solo con los datos correctos."
+  ],
+  "respuesta_correcta_index": 0,
+  "explicacion": "Es necesario **ajustar el proceso de extracción** para garantizar que solo se extraigan **datos correctos y completos**, asegurando la calidad del proceso ETL."
+}
+
+
+
+
+
+
+
+
+
+]

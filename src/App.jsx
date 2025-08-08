@@ -9,6 +9,7 @@ import GobiernoDatosParte1 from './studyContent/GobiernoDatosParte1';
 import GobiernoDatosParte2 from './studyContent/GobiernoDatosParte2';
 import CicloVidaDatos from './studyContent/CicloVidaDatos';
 import DisenoSoluciones from './studyContent/DisenoSoluciones';
+import HerramientasETL from './studyContent/HerramientasETL';
 
 // Importa TODOS tus archivos JSON de preguntas aquí
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
@@ -17,6 +18,7 @@ import funcionalesGobiernoDatos from './data/preguntas/funcionales_gobierno_dato
 import preguntasGobiernoDatosParte2 from './data/preguntas/funcionales_gobierno_datos_parte2.json';
 import preguntasCicloVidaDatos from './data/preguntas/funcionales_ciclo_vida_datos.json';
 import preguntasDisenoSoluciones from './data/preguntas/funcionales_diseno_soluciones.json';
+import preguntasHerramientasETL from './data/preguntas/funcionales_herramientas_etl.json'; 
 // ... otros imports de JSON ...
 
 function App() {
@@ -58,6 +60,7 @@ function App() {
     "Gobierno de Datos (Parte 1): Conceptos Fundamentales": funcionalesGobiernoDatos,
     "Ciclo de Vida de Gestión de Datos": preguntasCicloVidaDatos,
     "Diseño de Soluciones de Gestión de Datos": preguntasDisenoSoluciones, 
+    "Herramientas ETL (Extract, Transform, Load)": preguntasHerramientasETL,
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
     "Competencia Comportamental: Honestidad y Justicia": comportamentalesEtica,
@@ -115,6 +118,13 @@ function App() {
       <DisenoSoluciones
         onBack={() => setActiveStudyMaterial(null)}
         onStartSimulacro={() => startTopicSimulacro("Diseño de Soluciones de Gestión de Datos")}
+      />
+    ),
+
+    "Herramientas ETL (Extract, Transform, Load)": ( // <-- ¡NUEVO MAPEADO!
+      <HerramientasETL
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Herramientas ETL (Extract, Transform, Load)")}
       />
     ),
     
