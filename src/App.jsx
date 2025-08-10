@@ -11,6 +11,8 @@ import CicloVidaDatos from './studyContent/CicloVidaDatos';
 import DisenoSoluciones from './studyContent/DisenoSoluciones';
 import HerramientasETL from './studyContent/HerramientasETL';
 import SQLStudy from './studyContent/SQLStudy'; 
+import PythonStudy from './studyContent/PythonStudy';
+
 
 // Importa TODOS tus archivos JSON de preguntas aquí
 import comportamentalesEtica from './data/preguntas/comportamentales_etica.json';
@@ -21,6 +23,7 @@ import preguntasCicloVidaDatos from './data/preguntas/funcionales_ciclo_vida_dat
 import preguntasDisenoSoluciones from './data/preguntas/funcionales_diseno_soluciones.json';
 import preguntasHerramientasETL from './data/preguntas/funcionales_herramientas_etl.json'; 
 import preguntasSQL from './data/preguntas/funcionales_sql.json';
+import preguntasPython from './data/preguntas/funcionales_python.json';
 // ... otros imports de JSON ...
 
 function App() {
@@ -59,6 +62,7 @@ function App() {
     "Diseño de Soluciones de Gestión de Datos": preguntasDisenoSoluciones, 
     "Herramientas ETL (Extract, Transform, Load)": preguntasHerramientasETL,
     "SQL (Structured Query Language)": preguntasSQL,
+    "Python (Fundamentos para Datos)": preguntasPython,
 
 
     "Competencia Comportamental: Comportamiento Ético (Nivel 1 y 4)": comportamentalesEtica,
@@ -133,7 +137,14 @@ function App() {
       />
     ),
 
+"Python (Fundamentos para Datos)": ( // <-- ¡NUEVO MAPEADO!
+      <PythonStudy
+        onBack={() => setActiveStudyMaterial(null)}
+        onStartSimulacro={() => startTopicSimulacro("Python (Fundamentos para Datos)")}
+      />
+    ),
 
+    
     
   };
 
